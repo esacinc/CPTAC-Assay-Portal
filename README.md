@@ -1,9 +1,17 @@
 # CPTAC Assay Portal
 
-## CMS (Wordpress 4.3.1)
-Login: /cms/wp-login.php
-Username: Admin
-Password: 3(0c8Wv5A^uOO4Uojc
+CPTAC ASSAY Portal is a php webapp.
+* found that php-curl extention is required
+* uses .htaccess to redirect and set global php variables
+* must set directory AllowOverride to All in apache virtual host file to enable .htaccess behavior
+
+./core directory includes the Slim and Twig frameworks used in this project.
+
+./swpg_global_settings.php includes db connection properties.
+
+
+Assay Import Module:
+* uses curl calls to parse html in json object for data of interest.
 
 ## URLs
 * Production: [https://assays.cancer.gov/](https://assays.cancer.gov/)
