@@ -1,0 +1,82 @@
+/*
+ * Typography
+ * ======================================================================== */
+/***********************************/
+/**             LOGIN             **/
+/***********************************/
+.login-page {
+  background-color: #ddd; }
+
+.login-page .page-footer {
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  color: #868e96;
+  text-align: center; }
+  @media (min-height: 600px) {
+    .login-page .page-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
+
+.widget-login-container {
+  padding-top: 10%; }
+
+.widget-login-logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400; }
+  .widget-login-logo .fa-circle {
+    font-size: 13px;
+    margin: 0 20px; }
+
+.widget-login {
+  padding: 30px; }
+  .widget-login > header h1, .widget-login > header h2, .widget-login > header h3, .widget-login > header h4, .widget-login > header h5, .widget-login > header h6 {
+    font-weight: 400;
+    text-align: center; }
+
+.widget-login-info {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1px;
+  margin-bottom: 0;
+  text-align: center; }
+
+.login-form .form-control {
+  font-size: 0.9rem;
+  border: none;
+  background-color: #eeeeee; }
+  .login-form .form-control:focus {
+    background-color: #868e96; }
+
+.login-form__or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1.5em 0 1.75em;
+  font-size: .8125em;
+  font-weight: 700; }
+
+.login-form__or:after, .login-form__or:before {
+  display: inline-block;
+  content: "";
+  background-color: #ccc;
+  width: 50%;
+  height: 1px; }
+
+.login-form__or:before {
+  margin-right: .5em; }
+
+.login-form__or:after {
+  margin-left: .5em; }
+
+/*# sourceMappingURL=authenticate.component.css.map */

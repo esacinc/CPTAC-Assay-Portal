@@ -1,0 +1,1589 @@
+0: library/js/phosphosite_plus_protein_map.js
+1: http://www.phosphosite.org/uniprotAccAction.do?id=Q9Z0M6
+All settings loaded, start with execution
+Step 1 - Open PhosphositePlus page
+load started
+load finished
+Status: success
+Step 2 - Write the result
+'waitFor()' finished in 1012ms.
+<html><head><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+
+
+<!-- Jquery global js file -->
+<script language="JavaScript" type="text/javascript" src="/dist/6.5.6_1/js/min/global.min.js"></script>
+
+<!-- msdb css file -->
+<link rel="stylesheet" type="text/css" href="/dist/6.5.6_1/css/min/msdb.min.css">
+
+<!--strut2 tag library -->
+
+
+<!--Custom tag library -->
+
+
+
+
+    
+    
+
+
+
+
+
+ <!--strut2 tag library -->
+
+
+
+<style type="text/css">
+
+    .headerStyle {
+        background-image: url(//media.cellsignal.com/www/images/project-images/img/assets/background-header@15.png);
+        background-color: #3e7998;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        width:100%;
+    }
+    .pspLogoText {
+        padding-left:0px;
+        font-size:30px;
+        color:#ffffff;
+        font-family:PT Serif;
+        font-weight:normal;
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    .containerHeader {
+        width:1000px;
+        position:relative;
+        margin:auto;
+        max-width:1000px;
+        border-spacing: 0px;
+    }
+
+    .containerHeader td {
+        color:#ffffff;
+    }
+
+    /* Styles for Menu dropdowns in header*/
+    .clearfix:after {
+        display:block;
+        clear:both;
+    }
+
+    /*----- Menu Outline -----*/
+    .menu-wrap {
+        width:100%;
+        box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+        background:#BDBDBD
+    }
+
+    .menu {
+        vertical-align: middle;
+        /* width:1280px;*/
+        width:auto;
+        margin:0px auto;
+    }
+
+    .menu li {
+        margin:0px;
+        list-style:none;
+        font-family:Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    }
+
+    .menu a {
+        transition:all linear 0.15s;
+        color:#ffffff;
+    }
+
+    .menu li:hover > a, .menu .current-item > a {
+        text-decoration:none;
+        color:#ffffff;
+    }
+
+    .menu .arrow {
+        font-size:16px;
+        line-height:0%;
+    }
+
+    /*----- Top Level -----*/
+    .menu > ul > li {
+        float:left;
+        display:inline-block;
+        position:relative;
+        font-size:19px;
+    }
+
+    .menu > ul > li > a {
+        /* padding:5px 30px; */  /*10px 40px */
+        padding:5px 30px;
+        display:inline-block;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+        font-family: Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+        background:#BDBDBD;
+    }
+
+    /*----- Bottom Level -----*/
+    .menu li:hover .sub-menu {
+        z-index:1;
+        opacity:1;
+    }
+
+    .sub-menu {
+        width:200%;
+        padding:5px 0px;
+        position:absolute;
+        top:100%;
+        left:0px;
+        z-index:-1;
+        opacity:0;
+        transition:opacity linear 0.15s;
+        box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+        background:#BDBDBD;
+    }
+
+    .sub-menu li {
+        display:block;
+        font-size:16px;
+    }
+
+    .sub-menu li a {
+        padding:10px 30px;
+        display:block;
+        font-family: Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .sub-menu li a:hover, .sub-menu .current-item a {
+        background: #3E7998;
+    }
+
+    .cstPSPText {
+        color:#ffffff;font-family:PT Serif;font-weight:normal;font-size:15px
+    }
+
+    .cstPSPText:hover{
+        text-decoration:none;
+    }
+
+    .titleMainHeaderText  {
+        color: #3e7998;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 10px 10px 10px 20px;
+    }
+</style>
+
+
+    
+        <meta charset="utf-8">
+        <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js" charset="utf-8"></script>
+
+        <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="/dist/6.5.6_1/css/min/msdb_ie6.min">
+        <![endif]-->
+
+        <!--[if gte IE 7]>
+        <link rel="stylesheet" type="text/css" href="/dist/6.5.6_1/css/min/msdb_ie7.min">
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/x-icon" href="/dist/6.5.6_1/images/favicon.ico">
+
+        <script type="text/javascript">
+            function recordOutboundLink(link, category, action) {
+                _gat._getTrackerByName()._trackEvent(category, action, link.href);
+                setTimeout('document.location = "' + link.href + '"', 100);
+            }
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-4351229-4', 'auto');
+            ga('send', 'pageview');
+
+            function handleOutboundLinkClicks(event) {  //On click event tracking
+                ga('send', 'event', {
+                    eventCategory: 'Outbound Link',
+                    eventAction: 'click',
+                    eventLabel: event.target.href,
+                    transport: 'beacon'
+                });
+            }
+        </script>
+    <title>CD97 (mouse)</title></head>
+    
+
+    <body onload="checkErrors()" style="margin: 0px; padding-bottom: 82px;" bgcolor="#FFFFFF"><div id="checkJS" class="checkJavascript" style="visibility: hidden;">Javascript is not enabled on this browser. This site will not work properly without Javascript.</div>
+    <script type="text/javascript">
+        setStyleValue('checkJS','visibility', 'hidden');
+        
+        var cookieEnabled = (navigator.cookieEnabled)
+        if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled) {
+            document.cookie = "testcookie"
+            cookieEnabled = (document.cookie.indexOf("testcookie") != -1)
+        }
+        if (!cookieEnabled) {
+            alert('You must enable cookie support for your browser to use this site.');
+            putSessionAttribute("cookieEnabled", "no");
+        } else {
+            putSessionAttribute("cookieEnabled", "yes");
+        }
+    </script>
+
+
+
+    <div class="headerStyle">
+        <table class="containerHeader">
+            <tbody><tr>
+                <td width="333px">
+                    <a href="/homeAction" target="_self" style="text-decoration: none;">
+                        <table>
+                            <tbody><tr>
+                                <td rowspan="2"><img src="images/header/logo_psp_white_cp.png" alt="PhosphoSitePlus Homepage" align="center" height="60px"></td>
+                                <td valign="top"><span class="pspLogoText">PhosphoSite<span style="color:#f1b6da">Plus<sup>®</sup></span></span></td>
+                            </tr>
+                        </tbody></table>
+                    </a>
+                </td>
+                <td valign="top" align="center"><a href="https://www.cellsignal.com/" class="cstPSPText" target="_blank">Powered by Cell Signaling Technology</a></td>
+                <td style="float:right">
+                    <div class="menu-wrap">
+                        <nav class="menu">
+                            <ul class="clearfix" style="float:right; margin:0px; padding-right:10px;">
+                                <li>
+                                    
+                                    <a href="/../staticFeedback.action" style="padding: 5px 5px"><img src="images/header/icon_feedback.png" alt="Feedback" align="center"> Feedback</a>
+                                </li>
+                                <li><span style="color:#ffffff;">&nbsp;|&nbsp;</span></li>
+                                <li>
+                                    
+                                    <a href="/../staticContact.action" style="padding: 5px 5px"><img src="images/header/icon_contact.png" alt="Contact" align="center"> Contact</a>
+                                </li>
+                                <li><span style="color:#ffffff;">&nbsp;|&nbsp;</span></li>
+                                <li>
+                                    
+                                    
+                                        <a href="loginAction" style="padding: 5px 5px"><img src="images/header/login_icon.png" alt="Login" align="center"> Login</a>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+        <table class="containerHeader">
+            <tbody><tr>
+                <td>
+                    <div class="menu-wrap">
+                        <nav class="menu">
+                            <ul class="clearfix" style="margin: 0px 0px 0px 12%;">
+                                <li><a href="/homeAction">Home</a></li>
+                                <li><a href="#">Search</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            
+                                            <a href="/../psrSearchAction.action">Protein, Sequence, or Reference Search</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../siteSearchAction.action">Site Search</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../siteSearchCompAction.action">Comparative Site Search</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Browse</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            
+                                            <a href="/../browseDiseaseAction.action">Disease</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../browseCellLineAction.action">CellLine</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../browseTissueAction.action">Tissue</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    
+                                    <a href="/../staticMotifAnalysis.action">Tools</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="/../staticMotifAnalysis.action">Motif Analysis</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../sequenceLogoAction.action">Sequence Logo</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Downloads</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            
+                                            <a href="/../staticDownloads.action">Datasets from PSP</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../Supplemental_Files.action">Supplemental Files</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="../staticAboutPhosphosite">About&nbsp;&nbsp;</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            
+                                            <a href="/../staticAboutPhosphosite.action">Overview</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../staticUsingPhosphosite.action">Using</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../staticPrivacyCookiePolicy.action">Privacy &amp; Cookies</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../staticCurationProcess.action">Curation Process</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../staticSiteStatistics.action">Site Statistics</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="/../staticCiteUs.action">How to cite us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+    <div id="titleMainHeader" class="titleMainHeaderText containerHeader"><a href="/homeAction"> Home </a> &gt; Protein &gt; CD97
+        <select name="" id="select_id" class="titleBottom" style="font-size:13px; color: #333; margin-left:5px;">
+    <option value="14145">mouse</option>
+    <option value="14144">human</option>
+    <option value="36667014">rat</option>
+
+
+</select>
+
+
+        <span style="float:right">
+                    
+<form id="simpleSearchSubmitAction" name="simpleSearchForm" onsubmit="return validateRequest();" action="/simpleSearchSubmitAction.action" method="POST" enctype="multipart/form-data" style="margin-bottom:0px">
+                <table width="100%" border="0px" cellpadding="0px">
+                    <tbody><tr>
+                        <td class="popupInfoItem" style="color:#003366;"><label>New Protein Search:</label>&nbsp;</td>
+                        <td><input type="text" name="searchStr" size="30" value="" id="searchStr"></td>
+                        <td><input type="submit" value="Submit" id="simpleSearchSubmitAction_0" class="searchButton" style="margin-top: 0px;margin-bottom: 0px;">
+</td>
+                    </tr>
+                </tbody></table>
+            </form>
+
+
+
+        </span></div>
+
+    <span class="htmlErrors"> <!-- Struts2 ActionErrors Display  //TODO: check for FieldErros in future -->
+            
+            
+        </span>
+        <script type="text/javascript">
+            function changeImg(item, source) {
+                var page = "http://cst-psp01.cellsignal.com:8080/jsp/Protein.jsp";
+                if (!page.match(item + ".jsp")) {
+                    document.getElementById(item).src = source;
+                }
+            }
+            function checkErrors() {
+                
+                
+
+                
+                
+
+                return true;
+            }
+        </script>
+
+<link rel="stylesheet" type="text/css" href="/dist/6.5.6_1/css/jquery-ui.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script src="/dist/6.5.6_1/js/saveSVG.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script type="text/javascript">
+    $( "#select_id" ).change(function () { //redirect url to organism selected
+        var selectedValue = $(this).val();
+        if (selectedValue) {
+            window.location = "proteinAction.action?id="+ selectedValue +"&showAllSites=true"; // redirect
+        }
+        return false;
+    });
+
+    function validateRequest () {
+        var isValid = true;
+        if(!$.trim($("#searchStr").val()).length) {
+            isValid = false;
+            alert("Please provide a protein search String.");
+        }
+        return isValid;
+    }
+
+    var currentTabIndex;
+    var currTabText ;
+    $( function() {
+        $("#showModSitesPopUp").show();
+        $( "#tabs1" ).tabs({
+
+            beforeLoad: function( event, ui ) {
+                // console.log("$('#tabs1').tabs().tabs('option', 'active')  :" + $('#tabs1').tabs().tabs('option', 'active') );
+                if ($('#tabs1').tabs().tabs('option', 'active') == 1) {
+                    $("#showModSitesPopUp").show();
+                } else {
+                    $("#showModSitesPopUp").hide();
+                }
+
+                ui.ajaxSettings.cache = false;
+                if (ui.tab.data("loaded")) {
+                    event.preventDefault();
+                    return;
+                }
+
+                ui.panel.html('Loading.......Please wait <img src="/images/wait.gif" alt="Wait" />'),
+
+                        currentTabIndex = $('#tabs1').tabs().tabs('option', 'active');
+                ui.jqXHR.success(function(results) {
+                    ui.tab.data("loaded", true);
+                }),
+                        ui.jqXHR.error(function () {
+                            ui.panel.html(
+                                    "Couldn't load this tab.Please refresh the page and re-try !!");
+                        })
+
+            },
+
+            load: function( event, ui ) {
+            }
+
+        }).css("min-height", "750px");
+
+        updateShowMore(); //Cancer table showMore
+
+        $('a[href="#plot"]').click(function () { //show or hide plot
+            if ($(this).attr("id") == "minimizePlot") {
+                $('#proteincartoon').slideToggle('slow');
+                $('#controlpanel').slideToggle('slow');
+                $('#maximizePlot').show();
+            } else {
+                $('#maximizePlot').hide();
+                $('#proteincartoon').show("slow");
+                $('#controlpanel').show("slow");
+            }
+        });
+
+    } ).tooltip({
+        tooltipClass: 'tooltipStyle',
+        position:{
+            my: 'left+5 top', at: 'right top', collision: 'flipfit'
+        },
+    });
+
+    function updateShowMore() {
+        // Configure/customize these variables.
+        var showChar = 150;  // How many characters are shown by default
+        var ellipsesText = "...";
+        var moreText = "view more >";
+        var lessText = "view less <";
+
+        $('.showMoreText').each(function() {
+            var content = $(this).html();
+
+            if(content.length > showChar) {
+                var html = content.substr(0, showChar) + '<span class="moreEllipses">' + ellipsesText+ '&nbsp;</span><span class="showMoreContent"><span>' + content.substr(showChar, content.length - showChar) + '</span>&nbsp;&nbsp;<a href="" class="moreTextLink">' + moreText + '</a></span>';
+                $(this).html(html);
+            }
+        });
+
+        $(".moreTextLink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moreText);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lessText);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
+    }
+</script><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+<div class="dataContainer">
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        <div style="padding-left: 5px;padding-bottom: 5px; float:left; width:1000px" class="bold01">
+            CD97 antigen
+        </div>
+    
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+            
+            
+            
+            
+            
+            
+            
+                
+            
+        
+        
+        
+
+        
+        <param id="PTMsites" name="PTMsites" value="[{&quot;ID&quot;:&quot;N227&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:227,&quot;NMER&quot;:&quot;SGQHQCH&lt;font color=#993333&gt;n&lt;/font&gt;STVCKNT&quot;,&quot;PUBMED&quot;:1151114461,&quot;MODIFICATION&quot;:&quot;N-GLYCOSYLATION&quot;,&quot;MODCOLOR&quot;:&quot;OTHER&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;N299&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:299,&quot;NMER&quot;:&quot;DFNPATV&lt;font color=#993333&gt;n&lt;/font&gt;YTIQKLI&quot;,&quot;PUBMED&quot;:1151114465,&quot;MODIFICATION&quot;:&quot;N-GLYCOSYLATION&quot;,&quot;MODCOLOR&quot;:&quot;OTHER&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T371&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:371,&quot;NMER&quot;:&quot;EQDNKDV&lt;font color=#993333&gt;t&lt;/font&gt;TVHHGQT&quot;,&quot;PUBMED&quot;:68718175,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;G376&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:376,&quot;NMER&quot;:&quot;DVTTVHH&lt;font color=#993333&gt;g&lt;/font&gt;QTWMELD&quot;,&quot;PUBMED&quot;:68718181,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;Q377&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:377,&quot;NMER&quot;:&quot;VTTVHHG&lt;font color=#993333&gt;q&lt;/font&gt;TWMELDW&quot;,&quot;PUBMED&quot;:68718187,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;N395&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:395,&quot;NMER&quot;:&quot;AGAKISE&lt;font color=#993333&gt;n&lt;/font&gt;GSSVAGI&quot;,&quot;PUBMED&quot;:1151114469,&quot;MODIFICATION&quot;:&quot;N-GLYCOSYLATION&quot;,&quot;MODCOLOR&quot;:&quot;OTHER&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;Y430&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:430,&quot;NMER&quot;:&quot;RASLEDF&lt;font color=#993333&gt;y&lt;/font&gt;GSPIPSV&quot;,&quot;PUBMED&quot;:110911825,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;N461&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:461,&quot;NMER&quot;:&quot;NTEKLAS&lt;font color=#993333&gt;n&lt;/font&gt;VTFKFDF&quot;,&quot;PUBMED&quot;:1151114473,&quot;MODIFICATION&quot;:&quot;N-GLYCOSYLATION&quot;,&quot;MODCOLOR&quot;:&quot;OTHER&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T513&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:513,&quot;NMER&quot;:&quot;FCHCNHL&lt;font color=#993333&gt;t&lt;/font&gt;SFAILMA&quot;,&quot;PUBMED&quot;:68712963,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;Y522&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:522,&quot;NMER&quot;:&quot;FAILMAQ&lt;font color=#993333&gt;y&lt;/font&gt;HVQDPRL&quot;,&quot;PUBMED&quot;:68712969,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;K714&quot;,&quot;REF&quot;:3,&quot;LTP&quot;:0,&quot;HTP&quot;:3,&quot;POS&quot;:714,&quot;NMER&quot;:&quot;SEINPNM&lt;font color=#993333&gt;k&lt;/font&gt;KLRKARV&quot;,&quot;PUBMED&quot;:24574857,&quot;MODIFICATION&quot;:&quot;UBIQUITYLATION&quot;,&quot;MODCOLOR&quot;:&quot;UBIQUITYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;K792&quot;,&quot;REF&quot;:4,&quot;LTP&quot;:0,&quot;HTP&quot;:4,&quot;POS&quot;:792,&quot;NMER&quot;:&quot;ACMVTGS&lt;font color=#993333&gt;k&lt;/font&gt;YTEFNSS&quot;,&quot;PUBMED&quot;:30772537,&quot;MODIFICATION&quot;:&quot;UBIQUITYLATION&quot;,&quot;MODCOLOR&quot;:&quot;UBIQUITYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;Y793&quot;,&quot;REF&quot;:4,&quot;LTP&quot;:0,&quot;HTP&quot;:4,&quot;POS&quot;:793,&quot;NMER&quot;:&quot;CMVTGSK&lt;font color=#993333&gt;y&lt;/font&gt;TEFNSST&quot;,&quot;PUBMED&quot;:82379,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T794&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:794,&quot;NMER&quot;:&quot;MVTGSKY&lt;font color=#993333&gt;t&lt;/font&gt;EFNSSTT&quot;,&quot;PUBMED&quot;:30817231,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;N797&quot;,&quot;REF&quot;:1,&quot;LTP&quot;:0,&quot;HTP&quot;:1,&quot;POS&quot;:797,&quot;NMER&quot;:&quot;GSKYTEF&lt;font color=#993333&gt;n&lt;/font&gt;SSTTGTG&quot;,&quot;PUBMED&quot;:63735597,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S798&quot;,&quot;REF&quot;:4,&quot;LTP&quot;:0,&quot;HTP&quot;:4,&quot;POS&quot;:798,&quot;NMER&quot;:&quot;SKYTEFN&lt;font color=#993333&gt;s&lt;/font&gt;STTGTGT&quot;,&quot;PUBMED&quot;:8298177,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S799&quot;,&quot;REF&quot;:3,&quot;LTP&quot;:0,&quot;HTP&quot;:3,&quot;POS&quot;:799,&quot;NMER&quot;:&quot;KYTEFNS&lt;font color=#993333&gt;s&lt;/font&gt;TTGTGTs&quot;,&quot;PUBMED&quot;:30817237,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T800&quot;,&quot;REF&quot;:2,&quot;LTP&quot;:0,&quot;HTP&quot;:2,&quot;POS&quot;:800,&quot;NMER&quot;:&quot;YTEFNSS&lt;font color=#993333&gt;t&lt;/font&gt;TGTGTsQ&quot;,&quot;PUBMED&quot;:61957497,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T801&quot;,&quot;REF&quot;:6,&quot;LTP&quot;:0,&quot;HTP&quot;:6,&quot;POS&quot;:801,&quot;NMER&quot;:&quot;TEFNSST&lt;font color=#993333&gt;t&lt;/font&gt;GTGTsQt&quot;,&quot;PUBMED&quot;:8298185,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T803&quot;,&quot;REF&quot;:3,&quot;LTP&quot;:0,&quot;HTP&quot;:3,&quot;POS&quot;:803,&quot;NMER&quot;:&quot;FNSSTTG&lt;font color=#993333&gt;t&lt;/font&gt;GTsQtRA&quot;,&quot;PUBMED&quot;:61922105,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S806&quot;,&quot;REF&quot;:2,&quot;LTP&quot;:0,&quot;HTP&quot;:2,&quot;POS&quot;:806,&quot;NMER&quot;:&quot;STTGTGT&lt;font color=#993333&gt;s&lt;/font&gt;QtRALRs&quot;,&quot;PUBMED&quot;:36520889,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;T808&quot;,&quot;REF&quot;:5,&quot;LTP&quot;:0,&quot;HTP&quot;:5,&quot;POS&quot;:808,&quot;NMER&quot;:&quot;TGTGTsQ&lt;font color=#993333&gt;t&lt;/font&gt;RALRssE&quot;,&quot;PUBMED&quot;:61922111,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S813&quot;,&quot;REF&quot;:2,&quot;LTP&quot;:0,&quot;HTP&quot;:2,&quot;POS&quot;:813,&quot;NMER&quot;:&quot;sQtRALR&lt;font color=#993333&gt;s&lt;/font&gt;sESGM__&quot;,&quot;PUBMED&quot;:9573557,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S814&quot;,&quot;REF&quot;:31,&quot;LTP&quot;:0,&quot;HTP&quot;:31,&quot;POS&quot;:814,&quot;NMER&quot;:&quot;QtRALRs&lt;font color=#993333&gt;s&lt;/font&gt;ESGM___&quot;,&quot;PUBMED&quot;:6463375,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0},{&quot;ID&quot;:&quot;S816&quot;,&quot;REF&quot;:10,&quot;LTP&quot;:0,&quot;HTP&quot;:10,&quot;POS&quot;:816,&quot;NMER&quot;:&quot;RALRssE&lt;font color=#993333&gt;s&lt;/font&gt;GM_____&quot;,&quot;PUBMED&quot;:6463225,&quot;MODIFICATION&quot;:&quot;PHOSPHORYLATION&quot;,&quot;MODCOLOR&quot;:&quot;PHOSPHORYLATION&quot;,&quot;allNum&quot;:0}]">
+        
+        <param id="Domains" name="Domains" value="[{&quot;ID&quot;:&quot;&quot;,&quot;START&quot;:1,&quot;END&quot;:818},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:534,&quot;END&quot;:554},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:753,&quot;END&quot;:773},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:603,&quot;END&quot;:623},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:680,&quot;END&quot;:700},{&quot;ID&quot;:&quot;EGF_CA&quot;,&quot;START&quot;:214,&quot;END&quot;:258},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:638,&quot;END&quot;:658},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:724,&quot;END&quot;:744},{&quot;ID&quot;:&quot;GPS&quot;,&quot;START&quot;:480,&quot;END&quot;:518},{&quot;ID&quot;:&quot;EGF_CA&quot;,&quot;START&quot;:165,&quot;END&quot;:212},{&quot;ID&quot;:&quot;TM&quot;,&quot;START&quot;:563,&quot;END&quot;:583},{&quot;ID&quot;:&quot;7tm_2&quot;,&quot;START&quot;:526,&quot;END&quot;:766},{&quot;ID&quot;:&quot;EGF_CA&quot;,&quot;START&quot;:69,&quot;END&quot;:118}]">
+        <param id="ProteinSequence" value="MRGVRCPGLLVVCILLSLSGAGTQKAESKNCAKWCPINSKCVSNRSCVCKPGFSSEKELITNPAESCEDINECLLPGFSCGDFAMCKNSEGSYTCVCNLGYKLLSGAESFVNESENTCQASVNTGTTPVPSRIHTVTTAPGNLPEQTTTVHQTQMGDSEERTPKDVNECISGQNHCHQSTHCINKLGGYSCICRQGWKPVPGSPNGPVSTVCEDVDECSSGQHQCHNSTVCKNTVGSYKCHCRPGWKPTSGSLRGPDTICQEPPFPTWTLLPTAHSQTLLRFSVEVQNLLRDFNPATVNYTIQKLIEAVDKLLEDPMETQTQQVAAQLLSNLEQSLRTLAQFLPKGPFTYTSPSNTELSLMVKEQDNKDVTTVHHGQTWMELDWAVTAGAKISENGSSVAGILSSPNMEKLLGNTPLNLEQRRASLEDFYGSPIPSVSLKLLSNINSVFLTNTNTEKLASNVTFKFDFTSVESIEPRHELICAFWKAHNGNGYWDTDGCSMNGTGFCHCNHLTSFAILMAQYHVQDPRLELITKVGLLLSLICLLLCILTFLLVKPIQSSRTMVHLHLCICLFLGSIIFLVGVENEGGEVGLRCRLVAMMLHFCFLAAFCWMALEGVELYFLVVRVFQGQGLSTWQRCLIGYGVPLLIVAISMAVVKMDGYGHATYCWLDFRKQGFLWSFSGPVAFIIFCNAAIFVITVWKLTKKFSEINPNMKKLRKARVLTITAIAQLLVLGCTWGFGLFLFNPHSTWLSYIFTLLNCLQGLFLYVMLCLLNKKVREEYWKWACMVTGSKYTEFNSSTTGTGTSQTRALRSSESGM">
+        <param id="Mutations" value="[]">
+        <param id="ProteinName" value="CD97">
+        <param id="SNPs" value="[]">
+        <param id="ProteinMutationFrequencies" value="[{&quot;cancertype&quot;:&quot;Kidney (Clear Cell)&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Kidney (Chromophobe)&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Endometrial&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Glioblastoma&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Prostate&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Colorectal&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Thyroid&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Head/Neck&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Stomach&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Bladder&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Lung (Squamous)&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Leukemia&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Lung adenocarcinoma&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Ovarian&quot;,&quot;prop&quot;:0.0},{&quot;cancertype&quot;:&quot;Breast&quot;,&quot;prop&quot;:0.0}]">
+
+        <div id="proteincartoon" style="width:800px;height:400px;float:left;"><svg width="800" height="400" style="background-color: white;"><g transform="translate(50,0)"><svg width="700" height="360"><g style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect width="700" height="360" style="fill: #ffffff;"></rect><g id="lines"><line class="line" stroke-width="1" stroke="#d7301f" x1="-86.53610771113831" y1="333" x2="-86.53610771113831" y2="360" visibility="hidden" style="stroke-dasharray: 3px, 3px;"></line></g><g><rect x="-91.53610771113831" y="355" width="10" height="10" visibility="hidden" style="fill: #ffffff; stroke: #d7301f;"></rect></g><g id="lines"><line class="line" stroke-width="1" stroke="#6a51a3" x1="-86.53610771113831" y1="333" x2="-86.53610771113831" y2="327.27272727272725" visibility="hidden" style="stroke-dasharray: 3px, 3px;"></line></g><g><rect x="-91.53610771113831" y="322.27272727272725" width="10" height="10" visibility="hidden" style="fill: #ffffff; stroke: #6a51a3;"></rect></g><g id="lines"><line class="line" stroke-width="1" stroke="#666666" x1="193.63525091799264" y1="333" x2="193.63525091799264" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="255.32435740514077" y1="333" x2="255.32435740514077" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="317.0134638922889" y1="333" x2="317.0134638922889" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="321.29742962056304" y1="333" x2="321.29742962056304" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="322.15422276621786" y1="333" x2="322.15422276621786" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="337.5764993880049" y1="333" x2="337.5764993880049" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="367.56425948592414" y1="333" x2="367.56425948592414" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="394.124847001224" y1="333" x2="394.124847001224" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="438.67809057527535" y1="333" x2="438.67809057527535" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="446.38922888616895" y1="333" x2="446.38922888616895" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="610.8935128518972" y1="333" x2="610.8935128518972" y2="298.4804052252733"></line><line class="line" stroke-width="1" stroke="#666666" x1="677.7233782129742" y1="333" x2="677.7233782129742" y2="288.8829645427886"></line><line class="line" stroke-width="1" stroke="#666666" x1="678.5801713586292" y1="333" x2="678.5801713586292" y2="288.8829645427886"></line><line class="line" stroke-width="1" stroke="#666666" x1="679.436964504284" y1="333" x2="679.436964504284" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="682.0073439412485" y1="333" x2="682.0073439412485" y2="317.6752865902426"></line><line class="line" stroke-width="1" stroke="#666666" x1="682.8641370869033" y1="333" x2="682.8641370869033" y2="288.8829645427886"></line><line class="line" stroke-width="1" stroke="#666666" x1="683.7209302325581" y1="333" x2="683.7209302325581" y2="298.4804052252733"></line><line class="line" stroke-width="1" stroke="#666666" x1="684.577723378213" y1="333" x2="684.577723378213" y2="308.07784590775793"></line><line class="line" stroke-width="1" stroke="#666666" x1="685.4345165238678" y1="333" x2="685.4345165238678" y2="269.6880831778193"></line><line class="line" stroke-width="1" stroke="#666666" x1="687.1481028151775" y1="333" x2="687.1481028151775" y2="298.4804052252733"></line><line class="line" stroke-width="1" stroke="#666666" x1="689.718482252142" y1="333" x2="689.718482252142" y2="308.07784590775793"></line><line class="line" stroke-width="1" stroke="#666666" x1="691.4320685434516" y1="333" x2="691.4320685434516" y2="279.2855238603039"></line><line class="line" stroke-width="1" stroke="#666666" x1="695.7160342717259" y1="333" x2="695.7160342717259" y2="308.07784590775793"></line><line class="line" stroke-width="1" stroke="#666666" x1="696.5728274173806" y1="333" x2="696.5728274173806" y2="29.75206611570252"></line><line class="line" stroke-width="1" stroke="#666666" x1="698.2864137086904" y1="333" x2="698.2864137086904" y2="231.29832044788057"></line></g><g id="circles"><circle r="4" cx="193.63525091799264" cy="317.6752865902426" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="255.32435740514077" cy="317.6752865902426" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="317.0134638922889" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="321.29742962056304" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="322.15422276621786" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="337.5764993880049" cy="317.6752865902426" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="367.56425948592414" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="394.124847001224" cy="317.6752865902426" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="438.67809057527535" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="446.38922888616895" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="610.8935128518972" cy="298.4804052252733" style="fill: #bf812d; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="677.7233782129742" cy="288.8829645427886" style="fill: #bf812d; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="678.5801713586292" cy="288.8829645427886" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="679.436964504284" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="682.0073439412485" cy="317.6752865902426" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="682.8641370869033" cy="288.8829645427886" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="683.7209302325581" cy="298.4804052252733" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="684.577723378213" cy="308.07784590775793" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="685.4345165238678" cy="269.6880831778193" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="687.1481028151775" cy="298.4804052252733" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="689.718482252142" cy="308.07784590775793" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="691.4320685434516" cy="279.2855238603039" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="695.7160342717259" cy="308.07784590775793" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="696.5728274173806" cy="29.75206611570252" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><circle r="4" cx="698.2864137086904" cy="231.29832044788057" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle></g><g><rect x="0" y="333" width="700" height="12" style="fill: #ffffff; stroke-width: 1px; stroke: #666666;"></rect><rect x="58.26193390452876" y="333" width="41.98286413708692" height="12" style="fill: #aec7e8; stroke-width: 1px; stroke: #666666;"></rect><rect x="140.5140758873929" y="333" width="40.26927784577725" height="12" style="fill: #aec7e8; stroke-width: 1px; stroke: #666666;"></rect><rect x="182.49694002447978" y="333" width="37.69889840881274" height="12" style="fill: #aec7e8; stroke-width: 1px; stroke: #666666;"></rect><rect x="410.4039167686659" y="333" width="32.55813953488371" height="12" style="fill: #ffbb78; stroke-width: 1px; stroke: #666666;"></rect><rect x="449.81640146878823" y="333" width="205.63035495716036" height="12" style="fill: #98df8a; stroke-width: 1px; stroke: #666666;"></rect><rect x="456.6707466340269" y="333" width="17.13586291309673" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="481.5177478580171" y="333" width="17.135862913096673" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="515.7894736842105" y="333" width="17.135862913096616" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="545.7772337821298" y="333" width="17.135862913096616" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="581.7625458996328" y="333" width="17.13586291309673" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="619.4614443084455" y="333" width="17.13586291309673" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect><rect x="644.3084455324357" y="333" width="17.13586291309673" height="12" style="fill: #ff9896; stroke-width: 1px; stroke: #666666;"></rect></g><g><a target="_blank" xlink:href="http://pfam.xfam.org/family/"><text y="343" x="350" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;"></text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/EGF_CA"><text y="343" x="79.25336597307222" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">EGF_</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/EGF_CA"><text y="343" x="160.64871481028152" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">EGF_</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/EGF_CA"><text y="343" x="201.34638922888615" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">EGF_</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/GPS"><text y="343" x="426.68298653610776" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">GPS</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/7tm_2"><text y="343" x="552.6315789473684" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">7tm_2</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="465.23867809057526" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="490.0856793145655" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="524.3574051407588" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="554.3451652386781" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="590.3304773561811" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="628.0293757649938" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a><a target="_blank" xlink:href="http://pfam.xfam.org/family/TM"><text y="343" x="652.876376988984" text-anchor="middle" style="color: rgb(102, 102, 102); font-weight: normal; font-size: 12px; font-family: Arial; cursor: pointer;">T</text></a></g><g><text y="358" x="0" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="0.8567931456548347" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="1.7135862913096693" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="2.5703794369645045" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="3.4271725826193387" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="4.283965728274174" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="5.140758873929009" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="5.997552019583843" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="6.854345165238677" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="7.711138310893514" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="8.567931456548347" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="9.424724602203183" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="10.281517747858018" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="11.138310893512852" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="11.995104039167686" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="12.851897184822521" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="13.708690330477355" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="14.56548347613219" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="15.422276621787027" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="16.27906976744186" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="17.135862913096695" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="17.99265605875153" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="18.849449204406366" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="19.7062423500612" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="20.563035495716036" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="21.41982864137087" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="22.276621787025704" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="23.133414932680537" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="23.99020807833537" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="24.84700122399021" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="25.703794369645042" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="26.560587515299876" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="27.41738066095471" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="28.274173806609546" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="29.13096695226438" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="29.987760097919214" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="30.844553243574055" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="31.70134638922889" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="32.55813953488372" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="33.414932680538556" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="34.27172582619339" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="35.12851897184822" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="35.98531211750306" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="36.84210526315789" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="37.69889840881273" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="38.555691554467565" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="39.4124847001224" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="40.26927784577723" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="41.12607099143207" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="41.98286413708691" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="42.83965728274174" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="43.696450428396574" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="44.55324357405141" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="45.41003671970625" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="46.266829865361075" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="47.123623011015916" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="47.98041615667074" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="48.83720930232558" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="49.69400244798042" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="50.55079559363525" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="51.407588739290084" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="52.264381884944925" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="53.12117503059975" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="53.97796817625459" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="54.83476132190942" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="55.69155446756426" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="56.54834761321909" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="57.40514075887393" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="58.26193390452876" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="59.1187270501836" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="59.97552019583843" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="60.83231334149327" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="61.68910648714811" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="62.545899632802936" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="63.40269277845778" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="64.2594859241126" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="65.11627906976744" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="65.97307221542228" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="66.82986536107711" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="67.68665850673194" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="68.54345165238678" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="69.40024479804161" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="70.25703794369645" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="71.1138310893513" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="71.97062423500611" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="72.82741738066096" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="73.68421052631578" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="74.54100367197063" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="75.39779681762546" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="76.2545899632803" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="77.11138310893513" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="77.96817625458996" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="78.8249694002448" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="79.68176254589963" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="80.53855569155446" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="81.3953488372093" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="82.25214198286415" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="83.10893512851897" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="83.96572827417381" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="84.82252141982865" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="85.67931456548348" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="86.53610771113831" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="87.39290085679315" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="88.24969400244798" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="89.10648714810281" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="89.96328029375765" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="90.8200734394125" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="91.67686658506732" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="92.53365973072215" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="93.39045287637698" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="94.24724602203183" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="95.10403916768666" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="95.96083231334148" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="96.81762545899632" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="97.67441860465117" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="98.531211750306" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="99.38800489596083" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="100.24479804161568" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="101.1015911872705" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="101.95838433292533" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="102.81517747858017" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="103.67197062423502" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="104.52876376988985" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="105.38555691554467" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="106.2423500611995" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="107.09914320685435" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="107.95593635250918" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="108.81272949816402" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="109.66952264381884" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="110.52631578947368" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="111.38310893512852" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="112.23990208078335" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="113.09669522643819" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="113.95348837209303" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="114.81028151774785" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="115.66707466340269" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="116.52386780905752" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="117.38066095471237" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="118.2374541003672" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="119.09424724602202" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="119.95104039167686" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="120.8078335373317" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="121.66462668298654" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="122.52141982864137" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="123.37821297429622" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="124.23500611995104" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="125.09179926560587" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="125.9485924112607" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="126.80538555691555" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="127.66217870257039" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="128.5189718482252" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="129.37576499388004" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="130.2325581395349" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="131.0893512851897" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="131.94614443084456" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="132.8029375764994" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="133.65973072215422" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="134.51652386780904" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="135.3733170134639" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="136.23011015911874" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="137.08690330477356" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="137.94369645042838" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="138.80048959608322" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="139.65728274173807" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="140.5140758873929" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="141.37086903304774" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="142.2276621787026" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="143.0844553243574" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="143.94124847001223" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="144.79804161566707" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="145.65483476132192" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="146.51162790697674" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="147.36842105263156" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="148.2252141982864" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="149.08200734394126" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="149.93880048959608" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="150.79559363525092" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="151.65238678090577" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="152.5091799265606" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="153.3659730722154" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="154.22276621787026" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="155.0795593635251" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="155.93635250917993" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="156.79314565483475" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="157.6499388004896" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="158.50673194614444" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="159.36352509179926" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="160.2203182374541" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="161.07711138310893" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="161.93390452876378" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="162.7906976744186" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="163.64749082007344" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="164.5042839657283" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="165.3610771113831" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="166.21787025703793" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="167.07466340269278" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="167.93145654834763" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="168.78824969400245" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="169.6450428396573" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="170.5018359853121" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="171.35862913096696" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="172.21542227662178" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="173.07221542227663" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="173.92900856793148" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="174.7858017135863" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="175.64259485924111" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="176.49938800489596" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="177.35618115055078" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="178.21297429620563" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="179.06976744186048" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="179.9265605875153" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="180.78335373317015" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="181.640146878825" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="182.49694002447978" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="183.35373317013463" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="184.21052631578945" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="185.0673194614443" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="185.92411260709915" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="186.78090575275397" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="187.63769889840881" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="188.49449204406366" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="189.35128518971848" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="190.20807833537333" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="191.06487148102818" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="191.92166462668297" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="192.77845777233782" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="193.63525091799264" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="194.49204406364748" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="195.34883720930233" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="196.20563035495715" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="197.062423500612" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="197.91921664626685" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="198.77600979192167" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="199.6328029375765" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="200.48959608323136" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="201.34638922888615" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="202.203182374541" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="203.05997552019582" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="203.91676866585067" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="204.77356181150552" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="205.63035495716034" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="206.48714810281518" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="207.34394124847003" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="208.20073439412485" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="209.0575275397797" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="209.91432068543455" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="210.77111383108934" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="211.62790697674419" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="212.484700122399" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="213.34149326805385" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="214.1982864137087" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="215.05507955936352" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="215.91187270501837" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="216.76866585067322" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="217.62545899632804" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="218.48225214198288" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="219.33904528763767" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="220.19583843329252" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="221.05263157894737" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="221.9094247246022" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="222.76621787025704" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="223.62301101591189" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="224.4798041615667" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="225.33659730722155" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="226.19339045287637" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="227.05018359853122" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="227.90697674418607" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="228.76376988984086" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="229.6205630354957" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="230.47735618115053" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="231.33414932680537" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="232.19094247246022" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="233.04773561811504" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="233.9045287637699" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="234.76132190942474" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="235.61811505507956" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="236.4749082007344" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="237.33170134638925" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="238.18849449204404" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="239.0452876376989" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="239.9020807833537" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="240.75887392900856" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="241.6156670746634" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="242.47246022031823" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="243.32925336597307" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="244.18604651162792" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="245.04283965728274" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="245.8996328029376" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="246.75642594859244" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="247.61321909424723" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="248.47001223990208" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="249.3268053855569" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="250.18359853121174" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="251.0403916768666" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="251.8971848225214" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="252.75397796817626" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="253.6107711138311" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="254.46756425948593" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="255.32435740514077" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="256.1811505507956" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="257.0379436964504" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="257.89473684210526" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="258.7515299877601" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="259.6083231334149" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="260.4651162790698" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="261.3219094247246" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="262.1787025703794" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="263.0354957160343" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="263.8922888616891" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="264.74908200734393" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="265.6058751529988" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="266.46266829865357" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="267.31946144430844" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="268.17625458996326" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="269.0330477356181" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="269.88984088127296" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="270.7466340269278" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="271.6034271725826" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="272.4602203182375" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="273.3170134638923" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="274.1738066095471" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="275.030599755202" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="275.88739290085675" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="276.74418604651163" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="277.60097919216645" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="278.45777233782127" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="279.31456548347614" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="280.17135862913096" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="281.0281517747858" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="281.88494492044066" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="282.7417380660955" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="283.5985312117503" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="284.4553243574052" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="285.31211750305994" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="286.1689106487148" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="287.02570379436963" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="287.88249694002445" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="288.73929008567933" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="289.59608323133415" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="290.45287637698897" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="291.30966952264384" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="292.16646266829866" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="293.0232558139535" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="293.88004895960836" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="294.7368421052631" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="295.593635250918" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="296.4504283965728" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="297.30722154222764" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="298.1640146878825" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="299.02080783353733" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="299.87760097919215" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="300.73439412484703" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="301.59118727050185" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="302.44798041615667" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="303.30477356181154" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="304.1615667074663" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="305.0183598531212" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="305.875152998776" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="306.7319461444308" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="307.5887392900857" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="308.4455324357405" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="309.30232558139534" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="310.1591187270502" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="311.01591187270503" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="311.87270501835985" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="312.7294981640147" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="313.5862913096695" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="314.44308445532437" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="315.2998776009792" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="316.156670746634" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="317.0134638922889" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="317.8702570379437" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="318.7270501835985" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="319.5838433292534" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="320.4406364749082" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="321.29742962056304" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="322.15422276621786" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="323.0110159118727" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="323.86780905752755" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="324.72460220318237" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="325.5813953488372" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="326.43818849449207" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="327.2949816401469" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="328.1517747858017" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="329.0085679314566" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="329.8653610771114" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="330.7221542227662" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="331.57894736842104" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="332.43574051407586" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="333.29253365973074" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="334.14932680538556" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="335.0061199510404" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="335.86291309669525" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="336.71970624235007" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="337.5764993880049" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="338.43329253365977" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="339.2900856793146" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="340.1468788249694" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="341.0036719706242" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="341.86046511627904" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="342.7172582619339" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="343.57405140758874" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="344.43084455324356" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="345.28763769889844" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="346.14443084455326" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="347.0012239902081" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="347.85801713586295" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="348.71481028151777" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="349.5716034271726" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="350.42839657282747" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="351.28518971848223" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="352.1419828641371" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="352.9987760097919" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="353.8555691554468" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="354.71236230110156" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="355.5691554467564" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="356.42594859241126" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="357.2827417380661" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="358.13953488372096" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="358.9963280293757" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="359.8531211750306" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="360.7099143206854" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="361.5667074663403" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="362.4235006119951" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="363.28029375765" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="364.13708690330475" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="364.99388004895957" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="365.85067319461444" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="366.70746634026926" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="367.56425948592414" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="368.4210526315789" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="369.2778457772338" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="370.1346389228886" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="370.9914320685435" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="371.8482252141983" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="372.70501835985317" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="373.56181150550793" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="374.41860465116275" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="375.27539779681763" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="376.13219094247245" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="376.9889840881273" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="377.8457772337821" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="378.70257037943696" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="379.5593635250918" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="380.41615667074666" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="381.2729498164015" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="382.12974296205635" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="382.9865361077111" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="383.84332925336594" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="384.7001223990208" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="385.55691554467563" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="386.4137086903305" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="387.27050183598527" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="388.12729498164015" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="388.98408812729497" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="389.84088127294984" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="390.69767441860466" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="391.55446756425954" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="392.4112607099143" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="393.2680538555691" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="394.124847001224" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="394.9816401468788" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="395.8384332925337" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="396.69522643818846" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="397.55201958384333" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="398.40881272949815" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="399.265605875153" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="400.12239902080785" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="400.9791921664627" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="401.8359853121175" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="402.6927784577723" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="403.5495716034272" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="404.406364749082" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="405.2631578947369" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="406.11995104039164" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="406.9767441860465" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="407.83353733170134" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="408.6903304773562" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="409.54712362301103" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="410.4039167686659" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="411.26070991432067" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="412.1175030599755" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="412.97429620563037" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="413.8310893512852" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="414.68788249694006" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="415.5446756425948" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="416.4014687882497" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="417.2582619339045" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="418.1150550795594" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="418.9718482252142" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="419.8286413708691" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="420.68543451652386" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="421.5422276621787" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="422.39902080783355" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="423.25581395348837" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="424.11260709914325" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="424.969400244798" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="425.8261933904529" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="426.6829865361077" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="427.5397796817626" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="428.3965728274174" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="429.2533659730723" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="430.11015911872704" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="430.96695226438186" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="431.82374541003674" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="432.68053855569156" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="433.53733170134643" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="434.3941248470012" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="435.25091799265607" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="436.1077111383109" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="436.96450428396577" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="437.8212974296206" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="438.67809057527535" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="439.5348837209302" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="440.39167686658504" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="441.2484700122399" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="442.10526315789474" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="442.9620563035496" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="443.8188494492044" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="444.67564259485926" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="445.5324357405141" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="446.38922888616895" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="447.24602203182377" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="448.10281517747853" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="448.9596083231334" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="449.81640146878823" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="450.6731946144431" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="451.52998776009787" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="452.38678090575274" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="453.24357405140756" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="454.10036719706244" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="454.95716034271726" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="455.81395348837214" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="456.6707466340269" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="457.5275397796817" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="458.3843329253366" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="459.2411260709914" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="460.0979192166463" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="460.95471236230105" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="461.8115055079559" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="462.66829865361075" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="463.5250917992656" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="464.38188494492044" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="465.2386780905753" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="466.0954712362301" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="466.9522643818849" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="467.8090575275398" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="468.6658506731946" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="469.5226438188495" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="470.37943696450424" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="471.2362301101591" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="472.09302325581393" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="472.9498164014688" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="473.8066095471236" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="474.6634026927785" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="475.52019583843327" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="476.3769889840881" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="477.23378212974296" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="478.0905752753978" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="478.94736842105266" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="479.8041615667074" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="480.6609547123623" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="481.5177478580171" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="482.374541003672" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="483.2313341493268" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="484.0881272949817" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="484.94492044063645" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="485.80171358629127" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="486.65850673194615" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="487.51529987760097" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="488.37209302325584" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="489.2288861689106" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="490.0856793145655" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="490.9424724602203" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="491.7992656058752" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="492.65605875153" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="493.5128518971849" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="494.36964504283964" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="495.22643818849446" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="496.08323133414933" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="496.94002447980415" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="497.796817625459" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="498.6536107711138" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="499.51040391676867" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="500.3671970624235" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="501.22399020807836" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="502.0807833537332" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="502.93757649938806" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="503.7943696450428" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="504.65116279069764" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="505.5079559363525" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="506.36474908200734" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="507.2215422276622" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="508.078335373317" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="508.93512851897185" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="509.79192166462667" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="510.64871481028155" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="511.50550795593637" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="512.3623011015912" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="513.2190942472461" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="514.0758873929008" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="514.9326805385557" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="515.7894736842105" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="516.6462668298653" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="517.5030599755202" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="518.3598531211751" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="519.2166462668298" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="520.0734394124847" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="520.9302325581396" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="521.7870257037944" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="522.6438188494492" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="523.500611995104" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="524.3574051407588" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="525.2141982864136" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="526.0709914320686" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="526.9277845777234" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="527.7845777233782" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="528.641370869033" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="529.4981640146879" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="530.3549571603427" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="531.2117503059976" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="532.0685434516524" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="532.9253365973071" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="533.7821297429621" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="534.6389228886169" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="535.4957160342717" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="536.3525091799265" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="537.2093023255815" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="538.0660954712362" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="538.9228886168911" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="539.7796817625459" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="540.6364749082007" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="541.4932680538556" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="542.3500611995104" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="543.2068543451652" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="544.06364749082" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="544.920440636475" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="545.7772337821298" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="546.6340269277846" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="547.4908200734394" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="548.3476132190942" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="549.204406364749" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="550.061199510404" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="550.9179926560588" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="551.7747858017135" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="552.6315789473684" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="553.4883720930233" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="554.3451652386781" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="555.2019583843329" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="556.0587515299878" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="556.9155446756425" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="557.7723378212975" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="558.6291309669523" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="559.4859241126071" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="560.3427172582619" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="561.1995104039167" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="562.0563035495716" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="562.9130966952264" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="563.7698898408813" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="564.6266829865361" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="565.483476132191" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="566.3402692778458" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="567.1970624235006" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="568.0538555691554" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="568.9106487148103" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="569.7674418604652" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="570.6242350061199" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="571.4810281517748" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="572.3378212974296" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="573.1946144430844" text-anchor="middle" visibility="hidden" style="font-size: 13px;">D</text><text y="358" x="574.0514075887393" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="574.9082007343942" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="575.7649938800489" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="576.6217870257038" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="577.4785801713587" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="578.3353733170135" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="579.1921664626683" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="580.0489596083231" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="580.9057527539779" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="581.7625458996328" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="582.6193390452877" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="583.4761321909425" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="584.3329253365973" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="585.1897184822521" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="586.046511627907" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="586.9033047735618" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="587.7600979192167" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="588.6168910648715" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="589.4736842105262" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="590.3304773561812" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="591.187270501836" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="592.0440636474908" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="592.9008567931456" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="593.7576499388006" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="594.6144430844553" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="595.4712362301102" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="596.328029375765" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="597.1848225214198" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="598.0416156670747" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="598.8984088127295" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="599.7552019583843" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="600.6119951040391" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="601.4687882496941" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="602.3255813953488" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="603.1823745410037" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="604.0391676866585" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="604.8959608323133" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="605.7527539779682" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="606.6095471236231" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="607.4663402692778" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="608.3231334149326" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="609.1799265605875" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="610.0367197062424" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="610.8935128518972" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="611.750305997552" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="612.6070991432068" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="613.4638922888616" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="614.3206854345166" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="615.1774785801714" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="616.0342717258261" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="616.891064871481" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="617.7478580171359" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="618.6046511627907" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="619.4614443084455" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="620.3182374541004" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="621.1750305997551" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="622.0318237454101" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="622.8886168910649" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="623.7454100367197" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="624.6022031823745" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="625.4589963280293" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="626.3157894736842" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="627.172582619339" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="628.0293757649939" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="628.8861689106487" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="629.7429620563036" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="630.5997552019584" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="631.4565483476132" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="632.313341493268" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="633.170134638923" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="634.0269277845778" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="634.8837209302325" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="635.7405140758874" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="636.5973072215422" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="637.454100367197" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="638.3108935128519" text-anchor="middle" visibility="hidden" style="font-size: 13px;">P</text><text y="358" x="639.1676866585068" text-anchor="middle" visibility="hidden" style="font-size: 13px;">H</text><text y="358" x="640.0244798041615" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="640.8812729498164" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="641.7380660954713" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="642.5948592411261" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="643.4516523867809" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="644.3084455324357" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="645.1652386780905" text-anchor="middle" visibility="hidden" style="font-size: 13px;">I</text><text y="358" x="646.0220318237454" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="646.8788249694003" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="647.7356181150551" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="648.5924112607099" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="649.4492044063647" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="650.3059975520196" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="651.1627906976744" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="652.0195838433293" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="652.8763769889841" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="653.7331701346388" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="654.5899632802938" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="655.4467564259486" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="656.3035495716034" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="657.1603427172582" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="658.0171358629132" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="658.8739290085679" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="659.7307221542228" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="660.5875152998776" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="661.4443084455324" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="662.3011015911873" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="663.1578947368421" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="664.0146878824969" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="664.8714810281517" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="665.7282741738067" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="666.5850673194615" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="667.4418604651163" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="668.2986536107711" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="669.1554467564259" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="670.0122399020808" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="670.8690330477357" text-anchor="middle" visibility="hidden" style="font-size: 13px;">W</text><text y="358" x="671.7258261933905" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="672.5826193390452" text-anchor="middle" visibility="hidden" style="font-size: 13px;">C</text><text y="358" x="673.4394124847001" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text><text y="358" x="674.296205630355" text-anchor="middle" visibility="hidden" style="font-size: 13px;">V</text><text y="358" x="675.1529987760098" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="676.0097919216646" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="676.8665850673195" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="677.7233782129742" text-anchor="middle" visibility="hidden" style="font-size: 13px;">K</text><text y="358" x="678.5801713586292" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Y</text><text y="358" x="679.436964504284" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="680.2937576499388" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="681.1505507955936" text-anchor="middle" visibility="hidden" style="font-size: 13px;">F</text><text y="358" x="682.0073439412485" text-anchor="middle" visibility="hidden" style="font-size: 13px;">N</text><text y="358" x="682.8641370869033" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="683.7209302325581" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="684.577723378213" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="685.4345165238678" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="686.2913096695227" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="687.1481028151775" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="688.0048959608323" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="688.8616891064871" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="689.718482252142" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="690.5752753977969" text-anchor="middle" visibility="hidden" style="font-size: 13px;">Q</text><text y="358" x="691.4320685434516" text-anchor="middle" visibility="hidden" style="font-size: 13px;">T</text><text y="358" x="692.2888616891065" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="693.1456548347613" text-anchor="middle" visibility="hidden" style="font-size: 13px;">A</text><text y="358" x="694.0024479804162" text-anchor="middle" visibility="hidden" style="font-size: 13px;">L</text><text y="358" x="694.859241126071" text-anchor="middle" visibility="hidden" style="font-size: 13px;">R</text><text y="358" x="695.7160342717259" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="696.5728274173806" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="697.4296205630355" text-anchor="middle" visibility="hidden" style="font-size: 13px;">E</text><text y="358" x="698.2864137086904" text-anchor="middle" visibility="hidden" style="font-size: 13px;">S</text><text y="358" x="699.1432068543452" text-anchor="middle" visibility="hidden" style="font-size: 13px;">G</text><text y="358" x="700" text-anchor="middle" visibility="hidden" style="font-size: 13px;">M</text></g></g></svg><g class="xAxis" transform="translate(0,360)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,6V0.5H700.5V6"></path><g class="tick" opacity="1" transform="translate(85.32252141982865,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">100</text></g><g class="tick" opacity="1" transform="translate(171.0018359853121,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">200</text></g><g class="tick" opacity="1" transform="translate(256.6811505507956,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">300</text></g><g class="tick" opacity="1" transform="translate(342.36046511627904,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">400</text></g><g class="tick" opacity="1" transform="translate(428.0397796817626,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">500</text></g><g class="tick" opacity="1" transform="translate(513.7190942472461,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">600</text></g><g class="tick" opacity="1" transform="translate(599.3984088127295,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">700</text></g><g class="tick" opacity="1" transform="translate(685.077723378213,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">800</text></g></g><text class="x label" text-anchor="end" x="700" y="390" style="font-size: 13px; font-family: Arial;">Residue number</text><g class="yAxis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="#000" d="M-6,360.5H0.5V0.5H-6"></path><g class="tick" opacity="1" transform="translate(0,327.77272727272725)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,279.7855238603039)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">5</text></g><g class="tick" opacity="1" transform="translate(0,231.79832044788057)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">10</text></g><g class="tick" opacity="1" transform="translate(0,183.81111703545724)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">15</text></g><g class="tick" opacity="1" transform="translate(0,135.82391362303392)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,87.83671021061053)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">25</text></g><g class="tick" opacity="1" transform="translate(0,39.849506798187235)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">30</text></g></g><text class="y label" text-anchor="middle" y="-50" x="-180" dy="0.8em" transform="rotate(-90)" style="font-size: 13px; font-family: Arial;">Total number of references</text><g class="axisRed" fill="none" font-size="10" font-family="sans-serif" text-anchor="start" visibility="hidden" transform="translate(700, 0)"><path class="domain" stroke="#000" d="M6,360.5H0.5V0.5H6"></path><g class="tick" opacity="1" transform="translate(0,360.5)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0</text></g><text text-anchor="start" dx="5.2em" dy="-2.6em" transform="rotate(90)" visibility="hidden" style="font-size: 12px; font-family: Arial; fill: #d7301f;">No recurrent (&gt;2) missense mutations!</text></g><g class="axisPurple" fill="none" font-size="10" font-family="sans-serif" text-anchor="start" visibility="hidden"><path class="domain" stroke="#000" d="M6,360.5H0.5V0.5H6"></path><g class="tick" opacity="1" transform="translate(0,357.52479338842977)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em"></text></g><g class="tick" opacity="1" transform="translate(0,327.77272727272725)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,298.0206611570248)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.1</text></g><g class="tick" opacity="1" transform="translate(0,268.2685950413223)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.2</text></g><g class="tick" opacity="1" transform="translate(0,238.51652892561984)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.3</text></g><g class="tick" opacity="1" transform="translate(0,208.76446280991738)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.4</text></g><g class="tick" opacity="1" transform="translate(0,179.0123966942149)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.5</text></g><g class="tick" opacity="1" transform="translate(0,149.26033057851242)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.6</text></g><g class="tick" opacity="1" transform="translate(0,119.50826446280996)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.7</text></g><g class="tick" opacity="1" transform="translate(0,89.75619834710744)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.8</text></g><g class="tick" opacity="1" transform="translate(0,60.00413223140498)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">0.9</text></g><g class="tick" opacity="1" transform="translate(0,30.25206611570252)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">1</text></g><g class="tick" opacity="1" transform="translate(0,0.5)"><line stroke="#000" x2="6"></line><text fill="#000" x="9" dy="0.32em">1.1</text></g><text text-anchor="start" x="10" y="10" visibility="hidden" style="font-size: 12px; font-family: Arial; fill: #807dba;">No disease causing germline SNPs known!</text></g><circle cx="636" cy="15" r="10" class="compassNav" style="fill: #ffffff; stroke: #666666; stroke-width: 1px;"></circle><path d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z" class="compassNav" transform="translate(631, 10) scale(0.02)" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></path><circle cx="658" cy="15" r="10" class="compassNav" style="fill: #ffffff; stroke: #666666; stroke-width: 1px;"></circle><line class="compassNav" stroke-width="2" stroke="#666666" x1="654" y1="15" x2="662" y2="15"></line><line class="compassNav" stroke-width="2" stroke="#666666" x1="658" y1="11" x2="658" y2="19"></line><circle cx="614" cy="15" r="10" class="compassNav" style="fill: #ffffff; stroke: #666666; stroke-width: 1px;"></circle><line class="compassNav" stroke-width="2" stroke="#666666" x1="610" y1="15" x2="618" y2="15"></line><path d="M582 14 l20 -12 a100,40 0 0,0 0,24z" class="compassNav" style="fill: #ffffff; stroke: #666666; stroke-width: 1px;"></path><path d="M690 14 l-20 -12 a100,40 0 0,1 0,24z" class="compassNav" style="fill: #ffffff; stroke: #666666; stroke-width: 1px;"></path><path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z" class="compassNav" transform="translate(552,0) scale(0.05)" style="fill: #336699; stroke: #336699; stroke-width: 1px; cursor: pointer;"></path></g></svg></div>
+        <div id="controlpanel" style="width:200px;height:400px;float:left;">
+
+            <div style="font:12px Verdana;font-weight:bold;">Show on y-axis
+                <a href="#plot" id="minimizePlot" title="Minimize Lollipop Plot" class="doubleCircleButton" style="float:right;">-</a>
+            </div>
+            <div style="font:12px Verdana;">
+                <form id="form">
+                    <input type="radio" name="d3yaxis" value="REF" checked="checked">References (<abbr title="HTP (High Throughput Papers): The number of records in which this modification site was assigned using ONLY proteomic discovery mass spectrometry.">HTP</abbr> + <abbr title="LTP (Low Throughput Papers): The number of records in which this modification site was determined using methods other than discovery mass spectrometry.">LTP</abbr>)<br>
+                    <input type="radio" name="d3yaxis" value="LTP">References (<abbr title="LTP (Low Throughput Papers): The number of records in which this modification site was determined using methods other than discovery mass spectrometry.">LTP</abbr>)<br>
+                    <input type="radio" name="d3yaxis" value="HTP">References (<abbr title="HTP (High Throughput Papers): The number of records in which this modification site was assigned using ONLY proteomic discovery mass spectrometry.">HTP</abbr>)<br>
+                    
+                </form>
+            </div>
+            <div style="font:12px Verdana;">
+                <input type="checkbox" id="logTransformation"> log2 Transformation<br>
+            </div>
+            <br>
+            <div style="font:12px Verdana;font-weight:bold;">Filter PTM sites</div>
+            <div style="font:12px Verdana;">
+                <input type="checkbox" id="refFilter"> Minimum 5 References
+            </div>
+            <br>
+            <div style="font:12px Verdana;font-weight:bold;">Add Disease Variants</div>
+            <div style="font:12px Verdana;">
+                <input type="checkbox" id="showmutations"> <highlightred>Somatic Cancer Mutations</highlightred><br>
+                <input type="checkbox" id="showSNPs"> <highlightpurple>Germline Disease SNPs</highlightpurple><br>
+            </div>
+            <br>
+            <div style="font:12px Verdana;font-weight:bold;">Legend: PTM sites</div>
+            <div id="legend" width="200" heigt="100"><svg width="150" height="200"><g><circle r="5" cx="7" cy="10" style="fill: #4393c3; stroke: #666666; stroke-width: 1px;"></circle><text x="20" y="15" text-anchor="start" style="font-size: 12px; font-family: Verdana;">Phosphorylation</text><circle r="5" cx="7" cy="30" style="fill: #bf812d; stroke: #666666; stroke-width: 1px;"></circle><text x="20" y="35" text-anchor="start" style="font-size: 12px; font-family: Verdana;">Ubiquitylation</text><circle r="5" cx="7" cy="50" style="fill: #666666; stroke: #666666; stroke-width: 1px;"></circle><text x="20" y="55" text-anchor="start" style="font-size: 12px; font-family: Verdana;">Other</text></g></svg></div>
+        </div>
+        <div style="width:1000px;">
+            <span style="width:950px; height:2px;float:left">&nbsp;</span>
+            <a href="#plot" id="maximizePlot" title="Maximize Lollipop Plot" class="doubleCircleButton" style="float:right;display: none;">+</a>
+        </div>
+
+        <script language="JavaScript" type="text/javascript" src="/dist/6.5.6_1/js/lollipop.js"></script>
+        <br>
+    
+    <div id="tabs1" style="margin-left: 10px; margin-bottom: 10px; width: 990px; overflow: hidden; min-height: 750px;" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+
+            <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="ui-id-2" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true">
+                
+                    
+                    
+                
+                <a href="../overviewExecuteAction?id=14145&amp;showAllSites=true" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Protein Information</a>
+            </li>
+            
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-4" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false">
+                
+                    
+                    
+                
+                <a href="../siteTableNewAction?id=14145&amp;showAllSites=true" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Site Table</a>
+            </li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-6" aria-labelledby="ui-id-5" aria-selected="false" aria-expanded="false">
+                
+                    
+                
+                <a href="../downstreamActionExecute?id=14145" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">PTM Effects</a>
+            </li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="disease" aria-labelledby="ui-id-7" aria-selected="false" aria-expanded="false"><a href="#disease" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">Cancer</a></li>
+            
+            
+                <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-9" aria-labelledby="ui-id-8" aria-selected="false" aria-expanded="false">
+                    
+                        
+                        
+                    
+                    <a href="../showMsaAction?protGroup=308700&amp;showAllSites=true" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">Conservation</a>
+                </li>
+            
+            <li style="float: right; padding-right: 10px; padding-top:5px">
+                
+                    
+                        <span id="showModSitesPopUp" onclick="return false;" style="display: none;" onmouseover="showDivById('Show_Modification_Legend')" onmouseout="hideDivById('Show_Modification_Legend')" class="link12Red">Show Modification Abbreviations</span>
+                        <div id="Show_Modification_Legend" class="popupInfo" style="display:none; visibility: visible">
+                            <table>
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tbody><tr>
+                                            <td><span class="popupInfoItem">p</span></td>
+                                            <td><span class="popupInfoItem">Phosphorylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ac</span></td>
+                                            <td><span class="popupInfoItem">Acetylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">me</span></td>
+                                            <td><span class="popupInfoItem">Methylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">m1</span></td>
+                                            <td><span class="popupInfoItem">Mono-methylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">m2</span></td>
+                                            <td><span class="popupInfoItem">Di-methylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">m3</span></td>
+                                            <td><span class="popupInfoItem">Tri-methylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ub</span></td>
+                                            <td><span class="popupInfoItem">Ubiquitylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">sm</span></td>
+                                            <td><span class="popupInfoItem">Sumoylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ne</span></td>
+                                            <td><span class="popupInfoItem">Neddylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">gl</span></td>
+                                            <td><span class="popupInfoItem">O-GlcNAc</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ga</span></td>
+                                            <td><span class="popupInfoItem">O-GalNAc</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">pa</span></td>
+                                            <td><span class="popupInfoItem">Palmitoylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ad</span></td>
+                                            <td><span class="popupInfoItem">Adenylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">sn</span></td>
+                                            <td><span class="popupInfoItem">S-Nitrosylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ca</span></td>
+                                            <td><span class="popupInfoItem">Caspase cleavage</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">sc</span></td>
+                                            <td><span class="popupInfoItem">Succinylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">ng</span></td>
+                                            <td><span class="popupInfoItem">N-Glycosylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <tr>
+                                            <td><span class="popupInfoItem">n-ub</span></td>
+                                            <td><span class="popupInfoItem">N-terminal Ubiquitylation</span></td>
+                                        </tr>
+                                    
+                                    
+                                
+                            </tbody></table>
+                        </div>
+                    
+                
+            </li>
+        </ul><div id="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function popMenu_info (tableId, obj) {
+        //console.log("in Here111");
+        //console.log("-->"+$( "#"+obj.id ).parent().offset().top );
+        //console.log("--2> " + $('#'+ tableId).height() ) ;
+        //console.log("--3>"+  $('#tabs1').offset().top);
+        var left= $('#'+obj.id).offset().left - $('.dataContainer').offset().left;
+        var height = $( "#"+obj.id ).parent().offset().top - $('#tabs1').offset().top  - $('#'+ tableId).height();
+        var attrStyle = "top:" + height +"px; left:" + left +"px; visibility:visible; display:table;";
+        $("#" + tableId).attr('style', attrStyle);
+    }
+
+    /** show more hyper link for Text **/
+    $(document).ready(function () {
+        // Configure/customize these variables.
+        var showChar = 100;  // How many characters are shown by default
+        var ellipsesText = "...";
+        var moreText = "view more >";
+        var lessText = "view less <";
+
+        $('.showMore').each(function() {
+            var content = $(this).html();
+
+            if(content.length > showChar) {
+                var html = content.substr(0, showChar) + '<span class="moreEllipses">' + ellipsesText+ '&nbsp;</span><span class="showMoreContent"><span>' + content.substr(showChar, content.length - showChar) + '</span>&nbsp;&nbsp;<a href="" class="moreLink">' + moreText + '</a></span>';
+                $(this).html(html);
+            }
+        });
+
+        $(".moreLink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moreText);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lessText);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
+    });
+
+</script>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr valign="top">
+        <td>
+            <table width="100%" border="0" cellpadding="2" cellspacing="5">
+                <tbody><tr>
+                    <td>
+                        <span class="bold01">CD97</span>
+                        Receptor potentially involved in both adhesion and signaling processes early after leukocyte activation. Plays an essential role in leukocyte migration. Belongs to the G-protein coupled receptor 2 family. LN-TM7 subfamily. 3 isoforms of the human protein are produced by alternative splicing. Note: This description may include information from UniProtKB.
+                    </td>
+                </tr>
+                
+                    <tr><td><span class="bold02">Protein type:&nbsp;</span>GPCR, family 2; Membrane protein, integral; Membrane protein, multi-pass; Receptor, GPCR</td></tr>
+                
+                
+                    <tr><td><span class="bold02">Chromosomal Location of Human Ortholog:&nbsp;</span><a href="https://www.ncbi.nlm.nih.gov/mapview/maps.cgi?TAXID=9606&amp;chr=8" class="link12HoverRed" target="_blank">8 C2|8 40.22 cM</a></td></tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Cellular Component:&nbsp;</span>
+                            <span class="showMore">focal adhesion; integral component of membrane; membrane; plasma membrane</span>
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Molecular Function:&nbsp;</span>
+                            <span class="showMore">calcium ion binding; G-protein coupled receptor activity; signal transducer activity; transmembrane <span class="moreEllipses">...&nbsp;</span><span class="showMoreContent"><span>receptor activity</span>&nbsp;&nbsp;<a href="" class="moreLink">view more &gt;</a></span></span>
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Biological Process:&nbsp;</span>
+                            <span class="showMore">cell adhesion; cell surface receptor signaling pathway; G-protein coupled receptor signaling pathway<span class="moreEllipses">...&nbsp;</span><span class="showMoreContent"><span>; positive regulation of synaptogenesis; signal transduction</span>&nbsp;&nbsp;<a href="" class="moreLink">view more &gt;</a></span></span>
+                        </td>
+                    </tr>
+                
+                
+                
+                
+                <tr>
+                    <td>
+                        <span class="bold02">Reference #:&nbsp;</span>
+                        <a href="https://www.uniprot.org/uniprot/Q9Z0M6" class="link12HoverRed" target="_blank">Q9Z0M6</a>
+                        (UniProtKB)
+                    </td>
+                </tr>
+            
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Alt. Names/Synonyms:&nbsp;</span>AA409984; Cd97; CD97 antigen; EGF-TM7 receptor; OTTMUSP00000025113; TM7LN1
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Gene Symbols:&nbsp;</span>Cd97
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Molecular weight:</span>
+                            
+                            90,413&nbsp;Da
+                        </td>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>
+                            <span class="bold02">Basal Isoelectric point:</span>
+                            
+                            7.38&nbsp;
+                            
+                                
+                                
+                            
+                            <a href="javascript:chromeless('/../isoelectricCalcAction.action?id=14145&residues=28','775', '775');" class="link12HoverRed">
+                                Predict pI for various phosphorylation states
+                            </a>
+                        </td>
+                    </tr>
+                
+                
+                
+            </tbody></table>
+        </td>
+        <td valign="top" style="padding-left:15px;">
+            <table width="250px" border="0" cellpadding="0" cellspacing="0" bgcolor="#4C7895" style="border-radius: 10px; -moz-border-radius: 10px; border:1px solid #4C7895">
+                <thead>
+                    <tr><th align="center" style="padding: 5px 0px; color:#FFFFFF">Select Structure to View Below</th>
+                </tr></thead>
+                <tbody>
+                    <tr>
+                        <td bgcolor="#FFFFFF">
+                            <h2 style="padding:5px 0 2px 13px; margin:0;" class="bold01">CD97</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="structImg" src="images/struct_unavailable.jpg" width="248" height="250" alt="Protein Structure Not Found.">
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <br>
+            
+        </td>
+    </tr>
+
+    
+    
+        <tr>
+            <td colspan="3">
+                <table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr>
+                        <td valign="middle"><span class="bold02">Cross-references to other databases:&nbsp;</span>
+                            
+                                
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://string-db.org/newstring_cgi/show_network_section.pl?identifier=Q9Z0M6" target="_blank" class="link12HoverRed" title="STRING provides visualizations of known and predicted protein-protein interactions">STRING</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                        
+                                        <a href="http://www.reactome.org/content/query?cluster=true&amp;q=Q9Z0M6" target="_blank" class="link12HoverRed" title="">Reactome</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://biogps.org/#goto=genereport&amp;id=26364" target="_blank" class="link12HoverRed" title="BioGPS provides tissue-specific profiles of mRNA expression">BioGPS</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://pfam.xfam.org/protein?acc=Q9Z0M6" target="_blank" class="link12HoverRed" title="Pfam is a protein family database that identifies structural domains and other protein features">Pfam</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://phospho.elm.eu.org/byAccession/Q9Z0M6.html" target="_blank" class="link12HoverRed" title="Phospho.ELM is a database of S/T/Y phosphorylatio sites">Phospho.ELM</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://networkin.info/search.php?Search_Type=Basic&amp;Sequence_Id=Q9Z0M6" target="_blank" class="link12HoverRed" title="NetworKIN is a resource for exploring cellular phosphorylation networks">NetworKIN</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="https://www.uniprot.org/uniprot/Q9Z0M6" target="_blank" class="link12HoverRed" title="UniProt Knowledgebase is the comprehensive, high-quality and freely accessible resource of protein sequence and functional information">UniProtKB</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=Retrieve&amp;dopt=full_report&amp;list_uids=26364" target="_blank" class="link12HoverRed" title="Entrez Gene is NCBIs (National Center for Biotechnology Information) repository for gene sequence and functional information">Entrez-Gene</a>
+                                    
+                                
+                                
+                            
+                                &nbsp;|&nbsp;
+                                
+                                    
+                                        
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        <a href="http://www.ensembl.org/Mus_musculus/Gene/Summary?g=ENSMUSG00000002885" target="_blank" class="link12HoverRed" title="Ensembl is a genome database for vertebrates and other eukaryotic species from European Bioinformatics Institute and the Wellcome Trust Sanger Institute">Ensembl Gene</a>
+                                    
+                                
+                                
+                            
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+    
+</tbody></table>
+
+
+
+
+
+
+
+<!--ProteinOverview Page-->
+</div><div id="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;"></div><div id="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;"></div>
+        <div id="disease" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;">
+            <h3>Protein Mutation Frequency in Cancer</h3>
+            <p>
+                The 'lollipop plot' above illustrates recurrent (observed in 3 or more out of 4440 TCGA tumor samples from 15 cancer types) and therefore potentially oncogenic missense mutations (click on 'Show Cancer Mutations').
+                The bar plot below shows the proportion of tumor samples that have any kind of altering mutation(s) in the given protein.
+            </p>
+            <br>
+            <p>
+            </p><div id="diseaseBarplot" style="width:900px;height:400px;float:none;"><svg width="700" height="400"><g transform="translate(150,0)"><g class="x axis" transform="translate(0,350)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,6V0.5H550.5V6"></path><g class="tick" opacity="1" transform="translate(0.5,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">0</text></g></g><text class="x label" text-anchor="middle" x="275" y="380" style="font-size: 13px;">Percentage (%) of tumor samples showing mutations of the protein</text><g class="y axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: Arial;"><path class="domain" stroke="#000" d="M-6,350.5H0.5V0.5H-6"></path><g class="tick" opacity="1" transform="translate(0,337.2516556291391)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Kidney (Clear Cell)</text></g><g class="tick" opacity="1" transform="translate(0,314.07284768211923)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Kidney (Chromophobe)</text></g><g class="tick" opacity="1" transform="translate(0,290.8940397350994)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Endometrial</text></g><g class="tick" opacity="1" transform="translate(0,267.7152317880795)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Glioblastoma</text></g><g class="tick" opacity="1" transform="translate(0,244.53642384105962)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Prostate</text></g><g class="tick" opacity="1" transform="translate(0,221.35761589403972)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Colorectal</text></g><g class="tick" opacity="1" transform="translate(0,198.1788079470199)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Thyroid</text></g><g class="tick" opacity="1" transform="translate(0,175)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Head/Neck</text></g><g class="tick" opacity="1" transform="translate(0,151.82119205298017)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Stomach</text></g><g class="tick" opacity="1" transform="translate(0,128.64238410596028)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Bladder</text></g><g class="tick" opacity="1" transform="translate(0,105.4635761589404)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Lung (Squamous)</text></g><g class="tick" opacity="1" transform="translate(0,82.28476821192054)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Leukemia</text></g><g class="tick" opacity="1" transform="translate(0,59.10596026490066)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Lung adenocarcinoma</text></g><g class="tick" opacity="1" transform="translate(0,35.92715231788079)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Ovarian</text></g><g class="tick" opacity="1" transform="translate(0,12.74834437086092)"><line stroke="#000" x2="-6"></line><text fill="#000" x="-9" dy="0.32em">Breast</text></g></g><rect class="bar" width="0" y="326.82119205298017" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="303.6423841059603" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="280.46357615894044" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="257.28476821192055" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="234.10596026490066" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="210.9271523178808" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="187.74834437086093" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="164.56953642384107" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="141.3907284768212" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="118.21192052980132" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="95.03311258278146" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="71.8543046357616" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="48.67549668874172" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="25.496688741721847" height="20.860927152317885" style="fill: #3690c0;"></rect><rect class="bar" width="0" y="2.3178807947019777" height="20.860927152317885" style="fill: #3690c0;"></rect></g></svg></div>
+            <script language="JavaScript" type="text/javascript" src="/dist/6.5.6_1/js/disease.js"></script>
+            <p></p>
+            <p>
+                <span class="showMoreText">
+                    Learn more about the integration of cancer data in PhosphoSitePlus: <br>
+                    We integrated 4440 tumor samples fro<span class="moreEllipses">...&nbsp;</span><span class="showMoreContent"><span>m 15 cancer types from TCGA (<a href="https://cancergenome.nih.gov/" target="_blank">The Cancer Genome Atlas</a>).
+                    To retrieve more detailed mutation information, we recommend <a href="http://www.cbioportal.org" target="_blank">cBioPortal</a>.<br>
+                    <br>We integrated the following cancer types: <br>
+
+                    <table style="padding-left:10px">
+                        <tbody><tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/23634996" target="_blank">Acute Myeloid Leukemia (TCGA, NEJM 2013)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/24476821" target="_blank">Bladder Urothelial Carcinoma (TCGA, Nature 2014)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/26451490" target="_blank">Breast Invasive Carcinoma (TCGA, Cell 2015)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/22810696" target="_blank">Colorectal Adenocarcinoma (TCGA, Nature 2012)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/24120142" target="_blank">Glioblastoma (TCGA, Cell 2013)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/25631445" target="_blank">Head and Neck Squamous Cell Carcinoma (TCGA, Nature 2015)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/25155756" target="_blank">Kidney Chromophobe (TCGA, Cancer Cell 2014)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/23792563" target="_blank">Kidney Renal Clear Cell Carcinoma (TCGA, Nature 2013)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/25079552" target="_blank">Lung Adenocarcinoma (TCGA, Nature 2014)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/22960745" target="_blank">Lung Squamous Cell Carcinoma (TCGA, Nature 2012)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/21720365" target="_blank">Ovarian Serous Cystadenocarcinoma (TCGA, Nature 2011)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/25417114" target="_blank">Papillary Thyroid Carcinoma (TCGA, Cell 2014)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/26544944" target="_blank">Prostate Adenocarcinoma (TCGA, Cell 2015)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/25079317" target="_blank">Stomach Adenocarcinoma (TCGA, Nature 2014)</a></td></tr>
+                        <tr><td>• <a href="https://www.ncbi.nlm.nih.gov/pubmed/23636398" target="_blank">Uterine Corpus Endometrial Carcinoma (TCGA, Nature 2013)</a></td></tr>
+                    </tbody></table>
+                </span>&nbsp;&nbsp;<a href="" class="moreTextLink">view more &gt;</a></span></span>
+            </p>
+        </div><div id="ui-id-9" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-8" role="tabpanel" aria-hidden="true" style="display: none;"></div>
+
+        
+        
+        
+        
+        
+        
+    </div>
+
+    
+    
+</div><div class="d3-tip" style="position: absolute; top: 0px; opacity: 0; pointer-events: none; box-sizing: border-box; background-color: rgb(222, 235, 247); color: rgb(102, 102, 102);"></div><div class="d3-tip" style="position: absolute; top: 0px; opacity: 0; pointer-events: none; box-sizing: border-box; background-color: rgb(252, 187, 161); color: rgb(102, 102, 102);"></div><div class="d3-tipSNP" style="position: absolute; top: 0px; opacity: 0; pointer-events: none; box-sizing: border-box; background-color: rgb(188, 189, 220); color: rgb(102, 102, 102);"></div>
+
+
+
+<style type="text/css">
+
+    .footer {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .footerContent {
+        width: 100%;
+        background: #3e7998 url(//media.cellsignal.com/www/images/project-images/img/assets/background-header@15.png) no-repeat scroll bottom center;
+    }
+
+    .containerFooter {
+        width: 1000px;
+        position:relative; margin:auto;
+        padding: 5px 0px 5px 20px;
+    }
+
+    .containerFooter td {
+        color: white;
+    }
+
+    .containerFooter tr {
+        vertical-align: middle;
+    }
+
+    .containerFooter img {
+        vertical-align: middle;
+    }
+
+    .bottomHeader {
+        width: 1000px;
+        margin:auto;
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: black;
+    }
+</style>
+
+<!--Footer section-->
+        <div class="footer" style="display: block; height: 82px;">
+            
+            <div class="footerContent">
+                <table width="100%" border="0" cellspacing="0" cellpadding="1" class="containerFooter">
+                    <tbody><tr>
+                        <td width="25%" valign="top">Developed with grants from&nbsp;
+                            <a href="https://www.nih.gov/" target="_blank">
+                                <img src="images/footer/logo_nih.png" alt="NIH Logo">
+                            </a>
+                        </td>
+                        <td width="32%" valign="top">and literature mining with Linguamatics&nbsp;
+                            <a href="https://www.linguamatics.com/" target="_blank">
+                                <img src="images/footer/logo_i2e.png" alt="I2E Logo">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+                                <img src="images/footer/logo_ccLicense.png" alt="Creative Commons License" align="left" height="30px">
+                            </a>PhosphoSite, created by Cell Signaling Technology is licensed under a Creative
+                            Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div style="background-color: #666666;">
+                <p class="bottomHeader" style="padding: 5px 0px;color:#FFFFFF">©2003-2018 Cell Signaling Technology, Inc. </p>
+             </div>
+        </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script></body></html>

@@ -1,0 +1,59 @@
+#SetEnvIfNoCase
+
+# Disallow malicious hosts
+
+order allow,deny
+allow from all
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#ls -l
+
+# RewriteBase /
+
+# RewriteCond %{REQUEST_URI} !/assays/maintenance$
+# RewriteCond %{REMOTE_HOST} !^129\.43\.2\.(177)$
+# RewriteRule !^/assays/maintenance.*$ /assays/maintenance [R=302,L]
+
+RewriteCond %{REQUEST_URI} siteAction.do [NC]
+RewriteRule ^(.*)$ http://www.phosphosite.org/$1 [L]
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} ^/
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^129.43.164.68$
+RewriteRule (.*)$ http://assaysdev.cancer.gov/ [R=301,L]
+
+# RewriteCond %{HTTP_HOST} ^cptacdev.cancer.gov$
+# RewriteRule (.*)$ http://assaysdev.cancer.gov/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^129.43.40.21$
+RewriteRule (.*)$ http://assays.cancer.gov/ [R=301,L]
+
+# RewriteCond %{HTTP_HOST} ^cptac.cancer.gov$
+# RewriteRule (.*)$ http://assays.cancer.gov/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+### Wordpress specific ###
+#
+# RewriteBase /cms/
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule . /cms/index.php [L]
+#
+# END wordpress
+#
+
+</IfModule>

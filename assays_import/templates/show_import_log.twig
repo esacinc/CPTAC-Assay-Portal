@@ -1,0 +1,217 @@
+{% extends layout_template_name %}
+{% block styles_head %}
+    {{ parent() }}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.3.2/sweet-alert.min.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+    {% set execute_button_class = "btn-primary" %}
+    {% set execute_test_button_class = "" %}
+    {% set disabled = '' %}
+    {% set disabled_text = '' %}
+    {% set executing = false %}
+
+    {% if data.executed_imports %}
+        {% for single in data.executed_imports %}
+            {% if single.number_of_records == 0 %}
+                {% set execute_button_class = "btn-danger" %}
+                {% set execute_test_button_class = "btn-danger" %}
+                {% set disabled = ' disabled="disabled"' %}
+                {% set disabled_text = ' (disabled)' %}
+                {% set executing = true %}
+            {% endif %}
+            {% if single.import_in_progress or single.reimport_in_progress %}
+                {% set execute_button_class = "btn-danger" %}
+                {% set execute_test_button_class = "btn-danger" %}
+                {% set disabled = ' disabled="disabled"' %}
+                {% set disabled_text = ' (disabled)' %}
+                {% set executing = true %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <div class="row-fluid">
+        {% if errors %}
+            <div class="alert alert-block">
+                <h4>Form Errors</h4>
+                {% for single_error in errors %}
+                    <p>{{ single_error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="row-fluid">
+        {% if flash['success'] %}
+            <div class="alert alert-block alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                {{ flash['success'] }}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12">
+
+            {% if data.import_executed_status == true %}
+
+                <div class="alert alert-success">The import has been executed.</div>
+                <ol>
+                    <li>An email confirmation of the import execution time has been sent to your inbox at
+                        <strong>{{ data.session.email }}</strong>.
+                    </li>
+                    <li>Another email confirmation will be sent when the import has finished.</li>
+                    <li>Please note that, depending on the amount of records, the import process may take some time to
+                        complete. Please be patient.
+                    </li>
+                    <li>If you do not receive confirmation emails from the system, please <a href="/support/">submit a
+                            support ticket</a>.
+                    </li>
+                </ol>
+                <p><a href="/assays_import/execute/?import_log_id={{ data.laboratory_data.import_log_id|e }}"
+                      class="btn btn-default"><i class="icon-arrow-left"></i> Back to Overview</a></p>
+                <div class="import-log-container"></div>
+                <div class="download-log"></div>
+
+
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Notify NCI modal -->
+    <div id="notify_nci_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="notifyNciModalLabel"
+         aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel"><i class="icon-envelope"></i> Notify NCI</h3>
+        </div>
+        <div class="modal-body">
+            <div class="control-group">
+                <div id="notify_nci_container">
+                    <p id="notify_nci_instructions"></p>
+                    <div class="control-group">
+                        <p><em>Send an email to notify NCI that this import is ready for reveiw.</em></p>
+                        <label for="notify_nci_comment">Add a Message <span class="muted">(optional)</span></label>
+                        <textarea id="notify_nci_comment" name="notify_nci_comment"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" id="notify_nci_submit_button" class="btn btn-small btn-primary">Send</button>
+            <button id="cancel_close_button" class="btn btn-small" data-dismiss="modal" aria-hidden="true">Cancel
+            </button>
+        </div>
+    </div>
+
+    <!-- Executing Import modal -->
+    <div id="import_executing_modal" class="modal hide fade" tabindex="-1" role="dialog"
+         aria-labelledby="preloaderModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="preloaderModalLabel">Import is Currently Executing</h3>
+        </div>
+        <div class="modal-body">
+            <img src="/site/library/images/preloader_90x90.gif" width="90" height="90" alt="animated preloader image">
+            <p>Running two imports at once is not allowed</p>
+        </div>
+    </div>
+
+    <!-- Preloader modal -->
+    <div id="preloader_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="preloaderModalLabel"
+         aria-hidden="true">
+        <div class="modal-body">
+            <img src="/site/library/images/preloader_90x90.gif" width="90" height="90" alt="animated preloader image">
+            <h4>Initializing&hellip; please wait</h4>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+{% block js_bottom %}
+    {{ parent() }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.3.2/sweet-alert.min.js"></script>
+    <script type="text/javascript">
+
+        var show_log = "{{ show_log }}";
+
+        $(document).ready(function () {
+
+            var account_id = "{{ data.session.account_id }}";
+            var import_log_id = "{{ data.laboratory_data.import_log_id|e }}";
+            var laboratory_id = "{{ data.laboratory_data.laboratory_id|e }}";
+            var panorama_errors_email_recipients_names = "{{ data.panorama_errors_email_recipients.names|join(', ') }}";
+
+            var import_log_status = false;
+
+            $(".import-log-container").hide();
+
+
+
+        });
+
+
+        function nl2br(str, is_xhtml) {
+            var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+            return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+        }
+
+        function update_import_log() {
+            // show the import log
+            var import_log_id = {{ data.laboratory_data.import_log_id|e }};
+            //var log_file = "{{ path_to_this_module }}/library/import_logs/{{ "now"|date("Y-m-d") }}/" + import_log_id + ".txt";
+            var log_file = "{{ path_to_this_module }}/read_import_log";
+            $(".import-log-container").show();
+
+            $.ajax({
+                type: "GET"
+                //,dataType: "json"
+                , url: log_file
+                , data: {
+                    "cache_id": "{{ log_cache_id }}",
+                    "import_log_id": "{{ data.laboratory_data.import_log_id|e }}"
+                }
+                , success: function (data) {
+                    if(data.import_in_progress == 0) {
+                        show_log = false;
+                    }
+                    $(".import-log-container").html(nl2br(data.import_log_text)).text();
+                    $(".download-log").html('<a href="' + "{{ path_to_this_module }}/download_import_log?import_log_id={{ data.laboratory_data.import_log_id|e }}" + '" target="_blank">Download Log</a>');
+                }
+            });
+
+        }
+
+        $(".import-log-container").on("blur", function () {
+            setTimeout(function () {
+                // scroll to bottom
+                $(".import-log-container").animate({scrollTop: $(".import-log-container")[0].scrollHeight}, 1000);
+            }, 1000);
+        });
+
+
+        function run_log() {
+
+            var update_import_log_box = setTimeout(function () {
+                update_import_log();
+                if(show_log) {
+                    run_log();
+                }
+            }, 1000);
+
+            var scroll_top_log_box = setTimeout(function () {
+                // scroll to bottom
+                $(".import-log-container").animate({scrollTop: $(".import-log-container")[0].scrollHeight}, 1000);
+            }, 5000);
+
+
+        }
+
+        if (show_log) {
+            run_log();
+        }
+
+    </script>
+{% endblock %}

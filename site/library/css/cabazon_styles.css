@@ -1,0 +1,551 @@
+/* Site theme based off of underlying Twitter Bootstrap setup */
+
+html,
+body {
+  overflow-y: auto;
+}
+
+a:hover,
+a.btn-link:hover,
+dd a:hover {
+  text-decoration: none;
+}
+
+
+.container-outer {
+  background-repeat: no-repeat;
+  background-position: right -39px;
+}
+
+.navbar-inner {
+  background-color: #ffffff;
+  /*background-image: linear-gradient(to bottom,#fff,#f2f2f2);*/
+  background-image: none;
+}
+
+.navbar .btn-navbar {
+  float: left;
+  margin-top: 10px;
+}
+
+.nciLogo a,
+.nciURL a,
+.nihText a {
+  background-repeat: no-repeat;
+  display: block;
+  height: 39px;
+  text-indent: -9999px;
+}
+
+.navbar-inner {
+  border: 1px solid #000;
+}
+
+.navbar .nav {
+  float: none;
+  margin: 0 0 0 0;
+}
+
+.navbar .nav li.nciLogo {
+  float: left;
+}
+
+.navbar .nav li.nciURL {
+  float: right;
+}
+
+.navbar .nav li.nihText {
+  float: right;
+}
+
+ul.logo {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.nciLogo a {
+  background-image: url('/site/library/images/white-ncilogo.gif');
+  width: 263px;
+  margin-top: 1px;
+}
+
+.nciURL a {
+  background-image: url('/site/library/images/white-nciurl.gif');
+  width: 110px;
+}
+
+.nihText a {
+  background-image: url('/site/library/images/white-nihtext.gif');
+  width: 209px;
+}
+
+.navbar .nav>li>a {
+  padding: 0;
+}
+
+.navbar .nav.pull-right {
+  margin-right: inherit;
+}
+
+.row-outer-details {
+  background: #f2f2f2;
+  padding: 20px 30px;
+}
+
+.row-outer h3 {
+  font: 1.6em "ITC Avant Garde", "avant garde", "Century Gothic", Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.page-header {
+  padding-bottom: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+.page-header a {
+  background-image: url('/site/library/images/cptc-logo.png');
+  display: block;
+  height: 85px;
+  width: 300px;
+}
+
+.page-header h3 {
+  display: none;
+}
+
+.genSiteUtilityContainer {
+  float: right;
+  margin: -67px 0 0 auto;
+  padding: 0 11px 0 0;
+  text-align: right;
+  font-size: .85em;
+}
+
+ol.genSiteUtilityLinks,
+.genSiteUtilityLinks li {
+  padding: 0;
+  margin: 0 0 10px 10px;
+}
+
+ol.genSiteUtilityLinks li {
+  display: inline;
+  color: #ffffff;
+}
+
+ol.genSiteUtilityLinks li a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ol.genSiteUtilityLinks li a:hover {
+  text-decoration: none;
+}
+
+.page-title {
+  margin-left: 18px;
+  float: left;
+}
+
+.no-margin {
+  margin-left: 0;
+}
+
+.cptc-certified-logo {
+  height: 101px;
+  margin-left: 24px;
+}
+
+footer .span12 {
+  text-align: center;
+}
+
+.footer-link {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer .span12 ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Checkbox Filters */
+
+
+.checkbox-filters h5 {
+  margin: 0 0 6px 0;
+  padding: 59px 0 0 0;
+}
+
+.checkbox-wrapper {
+  clear: both;
+  margin: 0 0 2px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: -2px;
+}
+
+
+  /**
+    Site Navigation
+  **/
+  
+  #genSlotMainNav {
+    margin: 0 12px;
+    position: relative;
+    z-index: 9999;
+  }
+    #genSlotMainNav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+      #genSlotMainNav ul li {
+        float: left;
+        position: relative;
+      }
+    #genSlotMainNav ul.genSiteMainNav {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+      ul.genSiteMainNav a,
+      ul.genSiteAdditionalMainNav a {
+        display: block;
+      }
+      
+      /* Fly Out Menus */
+      
+      /* ================================================================ 
+      This copyright notice must be untouched at all times.
+
+      The original version of this stylesheet and the associated (x)html
+      is available at http://www.cssplay.co.uk/menus/latest-flyout.html
+      Copyright (c) 2005-2009 Stu Nicholls. All rights reserved.
+      This stylesheet and the associated (x)html may be modified in any 
+      way to fit your requirements.
+      
+      Edited and simplified by Mal Jones for the National Cancer Institute.
+      =================================================================== */
+      
+      ul.genSiteMainNav li {
+        position: relative;
+      }
+        ul.genSiteMainNav  li ul  {
+          display: none;
+          left: 0;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 24px;
+          z-index: 999;
+        }
+          ul.genSiteMainNav ul li {
+            display: block;
+            width: 200px;
+          }
+          ul.genSiteMainNav ul a {
+            float: none;
+          }
+      ul.genSiteMainNav  li a:hover {
+      } 
+        ul.genSiteMainNav  li:hover > a {
+        }
+        ul.genSiteMainNav  li:hover > ul {
+          display: block;
+        }   
+    #genSlotMainNav ul.genSiteAdditionalMainNav {
+      float: right;
+      margin: 0 0 0 auto;
+    }
+
+
+
+/**
+Site Navigation
+**/
+
+#genSlotMainNav {
+  background: #262727 url('/site/library/images/bground-mainnav.gif') repeat-x;
+  border-top: 1px solid #727373;
+  border-right: 1px solid #727373;
+  border-left: 1px solid #727373;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 -2px 5px #888;
+  color: red;
+  font-weight: 900;
+  margin: 10px 10px 0 10px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-box-shadow: 0 -2px 5px #888;
+  padding: 0 11px 0 11px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-box-shadow: 0 -2px 5px #888;
+  height: 49px;
+}
+#genSlotMainNav a {
+  color: #fff;
+  padding: 14px 0; /* Needs the extra padding for IE7 and correct placement of the Flyout Menu */
+  text-decoration: none;
+}
+/* Fly Out Menu */
+#genSlotMainNav ul.genSiteMainNav li ul {
+  background-color: #262727;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -moz-border-radius-bottomright: 8px;
+  padding: 0 9px 7px 9px;
+  top: 44px; /* Correctly Positions the Fly Out Menu */
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+#genSlotMainNav ul.genSiteMainNav li ul a {
+  color: #b9b9b9;
+  padding: 4px 0;
+}
+
+#genSlotMainNav ul.genSiteMainNav li ul li {
+  border-bottom: 1px solid #b9b9b9;
+  color: #b9b9b9;
+}
+#genSlotMainNav ul.genSiteMainNav li ul li.last, #genSlotMainNav ul.genSiteMainNav li ul li.only {
+  border-bottom: 0;
+}
+#genSlotMainNav ul.genSiteMainNav li:hover > a {
+  color: #fff;
+}
+#genSlotMainNav ul.genSiteMainNav li ul li:hover > a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Highlight Box */
+#genSlotMainNav ul li a span {
+  background-color: transparent; /* Needed for IE 7 */
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding: 4px 9px;
+  -webkit-border-radius: 4px;
+}
+
+/* Tertiary Menu */
+#genSlotMainNav ul.genSiteMainNav li ul li.tertiary {
+  background-color: #404040;
+  padding: 4px 0 4px 20px;
+  width: 180px;
+}
+
+#genSlotMainNav ul.genSiteMainNav li a:hover span,
+#genSlotMainNav ul.genSiteAdditionalMainNav li a:hover span,
+#genSlotMainNav ul.genSiteMainNav li.current-menu-item>a>span {
+  background-color: #fff;
+  color: #000;
+}
+/* Removes Highlight Box from Fly Out Menus */
+  #genSlotMainNav ul.genSiteMainNav li ul a span {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  -webkit-border-radius: 0;
+}
+#genSlotMainNav ul.genSiteMainNav li ul a:hover span {
+  background-color: transparent;
+  color: #fff;
+}
+/* Current State on Fly Out Menus */
+  #genSlotMainNav ul.genSiteMainNav li ul li a.current span {
+  background-color: transparent;
+  color: #fff;
+}
+/* Additional Link Section 0c70a8 */
+#genSlotMainNav ul.genSiteAdditionalMainNav li a span {
+  background-color: #0c70a8;
+  color: #fff;
+}
+
+#genSlotMainNav {
+  z-index: 1;
+}
+
+.page .main a[href].btn,
+.page .main-content a[href].btn {
+  padding-right: 12px;
+  background: transparent;
+}
+
+/**
+Site Footer
+**/
+
+#genSlotSiteFooter {
+  background-color: #262727;
+  border-right: 1px solid #727373;
+  border-bottom: 1px solid #727373;
+  border-left: 1px solid #727373;
+  color: #fff;
+  font-size: 11px;
+  margin: 0 11px 39px 11px;
+  padding: 18px 0 10px 0;
+  box-shadow: 0 2px 5px #888;
+  -moz-box-shadow: 0 2px 5px #888;
+  -webkit-box-shadow: 0 2px 5px #888;
+}
+#genSlotSiteFooter .slot-item {
+  padding-top: 0;
+}
+#genSlotSiteFooter ul {
+  list-style: none;
+  padding-bottom: 8px;
+}
+#genSlotSiteFooter ul li {
+  display: inline;
+}
+#genSlotSiteFooter a {
+  color: #fff;
+}
+#genSlotSiteFooter a:hover {
+  color: #fff;
+}
+/* Footer Links */
+
+ul.genSiteFooterLinks li {
+  border-right: 1px solid #fff;
+  margin-right: 6px;
+  padding-right: 6px;
+}
+ul.genSiteFooterLinks li.last {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+ul.genSiteFooterLinks li.genSiteRssLink a {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* ///////////////////////////////////////////////// */
+
+/* Tables */
+.table {
+  width: 98%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.dataTables_wrapper tbody tr,
+#browse_table .sorting,
+#browse_table .sorting_asc {
+  background-color: #ffffff;
+}
+
+.pagination ul {
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+#browse_table_length,
+#browse_table_info {
+  margin-left: 10px;
+}
+
+#browse_table_length {
+  margin-top: 9px;
+  float: right;
+  margin-right: 12px;
+}
+
+#browse_table_info {
+  padding-top: 15px;
+}
+
+#browse_table_filter input {
+  width: 130px;
+}
+
+#browse_table tbody tr td.group {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+#browse_table tbody tr td.group {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.dataTables_wrapper tbody tr td.no_row_click {
+  cursor: pointer;
+}
+
+table.table thead .sorting_desc,
+table.table thead .sorting_asc,
+table.table thead .sorting {
+  background: transparent;
+}
+
+table.table thead .sorting, 
+table.table thead .sorting_asc, 
+table.table thead .sorting_desc, 
+table.table thead .sorting_asc_disabled, 
+table.table thead .sorting_desc_disabled {
+  cursor: text;
+}
+
+div.dataTables_filter label {
+  float: left;
+  margin-left: 10px;
+}
+
+
+/* Form */
+.field-group{
+  clear:both;
+}
+.field-group label{
+  float:left;
+  width: 120px;
+}
+
+/* General */
+#footer-links{
+  height:45px;
+  clear:both;
+  margin-bottom:0px;
+}
+#footer-links li{
+  float:right;
+  margin:0 10px 0 10px;
+}
+#footer-links a{
+  color:white;
+}
+#footer-images{
+  clear:both;
+  height:50px;
+}
+#footer-images li{
+  float:right;
+  margin:0 50px 0 10px;
+}
+#contentHeader h1 {
+  width:500px;
+}
+.header_buttons{
+  float:right;
+  margin:-15px 10px 0 0;
+  width:200px;
+}
+#advanced_search_link_wrapper{
+  width:120px;
+}
+ul li{
+  list-style-type:none;
+}
+
+p {
+  word-wrap: break-word;
+}

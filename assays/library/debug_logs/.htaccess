@@ -1,0 +1,6 @@
+# Deny access to .htaccess
+<Files .htaccess>
+    Order allow, deny
+    Allow from localhost
+    Deny from all
+</Files>

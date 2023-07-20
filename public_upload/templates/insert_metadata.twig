@@ -1,0 +1,1194 @@
+{% extends layout_template_name %}
+{% block styles_head %}
+    {{ parent() }}
+    <link href="/assays/library/css/jquery.tagit.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ path_to_this_module }}/library/css/styles.css" rel="stylesheet" type="text/css" />
+
+
+
+{% endblock %}
+{% block content %}
+    <div class="d-flex flex-row" >
+        <div class="page-title">
+            <h1>Assay Portal</h1>
+        </div>
+    </div>
+    <div class="row-fluid">
+        {% if errors %}
+            <div class="alert alert-block">
+                <h4>Form Errors</h4>
+                {% for single_error in errors %}
+                    <p>{{ single_error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="d-flex flex-row">
+
+            <div style="flex:2"></div>
+            <div style="flex:8">
+                <div class="steps-form-2">
+                    <div class="steps-row-2 setup-panel-2 d-flex justify-content-between stepper-horizontal" >
+                        <div class="steps-step-2 first-step">
+                            <span  class="button active_step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-file-text active_step_icon"  aria-hidden="true"></i></span>
+                            <p class="step_label" >Step 1: <br> Enter Metadata</p>
+                        </div>
+                        <div class="steps-step-2">
+                            <a  class="button step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-file-zip-o step_icon"  aria-hidden="true"></i></a>
+                            <p class="step_label" >Step 2: <br> Upload Skyline Files</p>
+                        </div>
+                        <div class="steps-step-2">
+                            <a class="button step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-check step_icon" aria-hidden="true"></i></a>
+                            <p class="step_label" >Step 3: <br> Submission Complete</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="flex:2"></div>
+        </div>
+        <br>
+
+        <div class="container">
+            <h2>Upload Metadata</h2>
+
+           <a href="/public_upload/download_file/metadata" target="_blank">Download the Metadata Template</a> <span class="muted">(Word Document)</span>
+           <br><br>
+            <br><br>
+            <form method="POST" id="mainform" enctype="multipart/form-data" class="form-horizontal">
+
+
+                <h4>Primary Investigators</h4>
+
+
+                <div class="d-flex flex-row">
+                    <div class="p-3" style="flex:6" >
+                    </div>
+
+                    <ul id="add_name" class="p-2" style="flex:3">
+                        {% for investigator in data.primary_investigators %}
+                            <li> {{ investigator.primary_investigator_full_name }} <a title="delete" class="remove_investigator" name="{{investigator.assay_parameters_primary_investigators_id }}" ><i class='fa fa-trash-o' aria-hidden='true'></i> delete</a></li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="p-2" style="flex:3">
+                    </div>
+
+                </div>
+
+
+                <div id="pcc_form">
+                    <div class="d-flex flex-row">
+
+
+                        <label class="p-3" style="flex:6" >
+                            <div class="float-right">First Name</div>
+                        </label>
+                        <div class="p-2" style="flex:3">
+                            <input id="first_name" name="primary_investigators_first_name" class="form-control ui-widget-content ui-autocomplete-input" type="text" value="" id="primary_investigators" required="true">
+                        </div>
+                        <div class="p-2" style="flex:3">
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <label class="p-3" style="flex:6" >
+                            <div class="float-right">Middle Initial</div>
+                        </label>
+                        <div class="p-2" style="flex:0.5">
+                            <input type="text" id="middle_initial" width="10px" name="primary_investigators_middle_initial" class="form-control ui-widget-content ui-autocomplete-input" type="text" value="" id="primary_investigators" >
+                        </div>
+                        <div class="p-2" style="flex:5.5">
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <label class="p-3" style="flex:6" >
+                            <div class="float-right">Last Name</div>
+                        </label>
+                        <div class="p-2" style="flex:3">
+                            <input id="last_name" name="primary_investigators_last_name" class="form-control" type="text" value="" id="primary_investigators" required="true">
+                        </div>
+                        <div class="p-2" style="flex:3">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-3" style="flex:6" >
+                        </div>
+                        <div class="p-2" style="flex:3">
+                            <a type="button" id="add_pcc" value="Add Investigator" class="float-right" name="Add Investigator">Save</a>
+
+                        </div>
+                        <div  class="p-2" style="flex:3">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr/>
+                <h4>Assay Details</h4>
+
+
+                <div class="d-flex flex-row control-group">
+                    <label for="instrument" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Instrument</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="instrument" id="instrument" type="text" value="{{ data.instrument|e }}"
+                               required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="matrix" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Matrix</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="matrix" id="matrix" type="text" value="{{ data.matrix|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="matrix_amount_and_units" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Matrix Amount (include units)</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="matrix_amount_and_units" id="matrix_amount_and_units" type="text"
+                               value="{{ data.matrix_amount_and_units|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="quantification_units" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Quantification Units (e.g. fmol/ug)</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="quantification_units" id="quantification_units" type="text"
+                               value="{{ data.quantification_units|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+
+                <div class="d-flex flex-row control-group">
+                    <label for="internal_standard" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Internal Standard</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="internal_standard" id="internal_standard" type="text"
+                               value="{{ data.internal_standard|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="peptide_standard_purity" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Peptide Standard Purity</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <select name="peptide_standard_purity_types_id" class="form-control p-2">
+                            <option value="">Select</option>
+                            {% for value in data.peptide_standard_purity_options %}
+                                <option value="{{ value.peptide_standard_purity_types_id }}" {{ (value.peptide_standard_purity_types_id == data.peptide_standard_purity_types_id) ? 'selected="selected"' : '' }}>{{ value.type }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+
+                <div class="d-flex flex-row control-group">
+                    <label for="protein_species_label" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Target Organism</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="protein_species_label" id="protein_species_label" type="text"
+                               value="{{ data.protein_species_label|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="data_type" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Data Type (e.g. MRM, PRM, SRM)</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="data_type" id="data_type" type="text" value="{{ data.data_type|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <hr/>
+
+                <h4>Assay Parameters</h4>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="lc" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">LC</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="lc" id="lc" type="text" value="{{ data.lc|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="column_packing" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Column Packing</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="column_packing" id="column_packing" type="text" value="{{ data.column_packing|e }}"
+                               required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="column_dimensions" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Column Dimensions</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="column_dimensions" id="column_dimensions" type="text"
+                               value="{{ data.column_dimensions|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="column_temperature" class="p-3" style="flex:6">
+                        <div class="float-right">Column Temperature</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="column_temperature" id="column_temperature" type="text"
+                               value="{{ data.column_temperature|e }}" required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="flow_rate" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Flow Rate</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="flow_rate" id="flow_rate" type="text" value="{{ data.flow_rate|e }}"
+                               required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="mobile_phase_a" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Mobile Phase A</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="mobile_phase_a" id="mobile_phase_a" type="text" value="{{ data.mobile_phase_a|e }}"
+                               required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="mobile_phase_b" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Mobile Phase B</div>
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <input name="mobile_phase_b" id="mobile_phase_b" type="text" value="{{ data.mobile_phase_b|e }}"
+                               required="true">
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row control-group">
+                    <label for="example-color-input" class="p-3 control-label" style="flex:6">
+                        <div class="float-right">Gradient Description</div>
+                        <br>
+                        <div class="muted float-right">Example:<br>
+                            Time, %A, %B<br>
+                            0, 95, 5<br>
+                            1, 95, 5<br>
+                            15, 60, 40
+                        </div>
+
+
+                    </label>
+                    <div class="p-2 controls" style="flex:3">
+                        <textarea name="gradient_description" id="gradient_description"
+                                  required="true">{{ data.gradient_description|e }}</textarea>
+                    </div>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+
+                <hr/>
+
+                <h4>Assay Type</h4>
+                <div class="d-flex flex-row">
+                    <label for="example-color-input" class="p-3" style="flex:6">
+                        <div class="float-right">Assay Type</div>
+                    </label>
+                    <select name="assay_types_id" id="assay_type" class="form-control p-2" style="flex:3">
+                        <option value="3">Select</option>
+                        {% for single_assay_type in data.assay_types %}
+                            {% set selected = '' %}
+                            {% if data.assay_types_id == single_assay_type.assay_types_id %}
+                                {% set selected = ' selected' %}
+                            {% endif %}
+                            <option value="{{ single_assay_type.assay_types_id }}"{{ selected }}>{{ single_assay_type.label }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="p-2" style="flex:3">
+                    </div>
+                </div>
+                <div id="assay_types_controls p2">
+
+                    <div id="assay_type_1" class="enrichment_mrm"
+                         style="display:{{ data.assay_types_id == 1 ? 'block' : 'none' }};">
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="enrichment_method">
+                                <div class="float-right">Enrichment Method</div>
+                                <i class="icon-question-sign"
+                                   title="Example: peptide immunoaffinity, protein immunoprecipitation, IMAC, depletion"></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="enrichment_method" id="enrichment_method" type="text"
+                                       value="{{ data.enrichment_method|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="affinity_reagent_type">
+                                <div class="float-right">Affinity Reagent Type</div>
+                                <i class="icon-question-sign" title="Example: monoclonal Ab"></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="affinity_reagent_type" id="affinity_reagent_type" type="text"
+                                       value="{{ data.affinity_reagent_type|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="antibody_vendor">
+                                <div class="float-right">Vendor</div>
+                                <i class="icon-question-sign" title="Example: specific make/model"></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="antibody_vendor" id="antibody_vendor" type="text"
+                                       value="{{ data.antibody_vendor|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="media">
+                                <div class="float-right">Media or Bead Type<br>(include vendor)
+                                    <i class="icon-question-sign"
+                                       title="Example: make/model of magnetic beads, chromatography packing, etc. "></i><br>
+
+                                </div>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="media" id="media" type="text" value="{{ data.media|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="antibody_portal_url">
+                                <div class="float-right">Link to Antibody Portal</div>
+                                <i class="icon-question-sign"
+                                   title="Example: identifier of affinity reagent on antibody portal (if applicable)"></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="antibody_portal_url" id="antibody_portal_url" type="text"
+                                       value="{{ data.antibody_portal_url|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="assay_type_2" class="fraction_mrm"
+                         style="display:{{ data.assay_types_id == 2 ? 'block' : 'none' }};">
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="fractionation_approach">
+                                <div class="float-right">Fractionation Approach</div>
+                                <i class="icon-question-sign" title="Example: bRP, SCX, etc."></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="fractionation_approach" id="fractionation_approach" type="text"
+                                       value="{{ data.fractionation_approach|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="column_material">
+                                <div class="float-right">Column Material</div>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="column_material" id="column_material" type="text"
+                                       value="{{ data.column_material|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="conditions">
+                                <div class="float-right">Conditions</div>
+                                <br>
+                                <div class="float-right"><span class="muted">(e.g. Mobile Phases, Column Dimensions, Flow Rates, Gradient)</span>
+                                </div>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="conditions" id="conditions" type="text" value="{{ data.conditions|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="number_of_fractions_collected">
+                                <div class="float-right">Number of Fractions Collected
+                                </div>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="number_of_fractions_collected" id="number_of_fractions_collected"
+                                       type="text" value="{{ data.number_of_fractions_collected|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="control-label p-3" style="flex:6" for="number_of_fractions_analyzed">
+                                <div class="float-right">Number of Fractions Analyzed
+                                </div>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="number_of_fractions_analyzed" id="number_of_fractions_analyzed" type="text"
+                                       value="{{ data.number_of_fractions_analyzed|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <label class="p-3 control-label " style="flex:6" for="fraction_combination_strategy">
+                                <div class="float-right">Fraction Combination Strategy
+                                </div>
+                                <i class="icon-question-sign" title="Example: serial, concatenated, etc."></i>
+                            </label>
+                            <div class="controls p2 p-2" style="flex:3">
+                                <input name="fraction_combination_strategy" id="fraction_combination_strategy"
+                                       type="text" value="{{ data.fraction_combination_strategy|e }}">
+                            </div>
+                            <div class="p-2" style="flex:3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- </div> -->
+                <!--</div>-->
+
+                {% if data.sop_files %}
+                    <hr>
+                    <h4>Existing SOP Files</h4>
+                    {% for single_sop_file in data.sop_files %}
+                        <div id="sop_file_div_{{ single_sop_file.sop_files_id }}" class="sop_single_file_container">
+                            <span class="icon-eye-open"></span> <strong>{{ single_sop_file.label }}:</strong> <a href="{{ path_to_this_module }}/download_sop_file/{{ single_sop_file.sop_files_id }}" title="Download {{ single_sop_file.file_name }}" class="download-file">{{ single_sop_file.file_name }}</a><a href="javascript:void(0);" data-sop-id="{{ i }}" data-sop-file-id="{{ single_sop_file.sop_files_id }}" class="sop_delete_link" title="Remove {{ single_sop_file.file_name }}"><i class="fa fa-trash-o p-2" style="color:black;" aria-hidden="true"></i></a>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+
+                <hr/>
+
+                <h4>Upload SOP Files</h4>
+                <p><a href="/public_upload/download_file/sop" target="_blank">Download the SOP Template</a> <span class="muted">(Word Document)</span>
+
+
+                    <div id="sop_files_container" >
+
+                        <input
+                                type="file"
+                                name="file"
+                                id="fileupload"
+                                class="form-control-file"
+                                data-url="/public_upload/process_file_upload"
+                                multiple="multiple" style="line-height:30px !important">
+
+
+
+                        <div id="uploading_notification_container" style="flex:6">
+                            <div class="uploading d-none">
+                <p class="uploading-text">Uploading&hellip;</p>
+                <div id="progress" class="progress progress-success d-none">
+                    <div class="bar" style="width: 0%;"></div>
+                </div>
+
+
+
+        </div>
+    </div>
+
+    {% if data.uploaded_files %}
+        {% for single_uploaded_file in data.uploaded_files %}
+            <div class="row-fluid file-controls-wrapper">
+                <div id="sop_file_type_menu_div_{{ single_uploaded_file.sop_files_id }}"
+                     class="sop-file-type-menu span6">
+                    <div class="sop_types_menu_template">
+
+                        <a href="javascript:void(0);" data-sop-file-id="{{ single_uploaded_file.sop_files_id }}"
+                           class="delete_file_pre_post_link" title="Remove this SOP file"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                        <select
+                                id="sop_file_type_{{ single_uploaded_file.sop_files_id }}"
+                                name="sop_file_types[]"
+                                class="sop_type_menu"
+                                data-sop-file-id="{{ single_uploaded_file.sop_files_id }}"
+                                required="true">
+                            <option value="">Select SOP Category</option>
+                            {% for single in data.sop_file_types %}
+                                {% if single_uploaded_file.sop_file_type_id == single.sop_file_type_id %}
+                                    {% set selected = " selected" %}
+                                {% else %}
+                                    {% set selected = "" %}
+                                {% endif %}
+                                <option value="{{ single.sop_file_type_id }}"{{ selected }}>{{ single.label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="single-file-wrapper span6">
+                    <span class="icon-check"></span>
+                    <a href="{{ path_to_this_module }}/download_file?file_id={{ single_uploaded_file.sop_files_id }}"
+                       class="single-file download-file"
+                       title="View/download {{ single_uploaded_file.file_name }}"
+                       target="_blank">{{ single_uploaded_file.file_name }}</a>
+                    <input type="hidden" name="uploaded_files[]" value="{{ single_uploaded_file.sop_files_id }}">
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+
+    {% if data.publications %}
+        <hr>
+        <h4>Existing Publications</h4>
+        {% for single_publication in data.publications %}
+            <div id="publication_div_{{ single_publication.publications_id }}" class="publication_single_container">
+                <p>{{ single_publication.publication_citation | raw }}</p>
+                <p>
+                    <span class="icon-eye-open"></span>
+                    <a href="{{ single_publication.publication_url | raw }}"
+                       title="View URL"
+                       target="_blank">View URL</a>
+                    <span class="icon-trash" style="margin-left:12px;"></span>
+                    <a href="javascript:void(0);"
+                       data-publication-id="{{ single_publication.publications_id }}"
+                       class="publication_delete_link"
+                       title="Remove this publication">Remove</a>
+                </p>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <hr>
+
+    <h4>Add Publications</h4>
+
+    <div id="publications_container" class="row-fluid">
+        <div id=pubication_div></div>
+        <button
+                type="button"
+                name="add"
+                class="btn btn-primary publication_button add_publication"
+                title="Add a Publication"
+                style="background-color:grey;border-color: transparent;"
+                id="add_publication_button"><i class="icon-plus-sign"></i> Add a Publication
+        </button>
+    </div>
+
+
+
+    <hr>
+
+    <div class="d-flex flex-row">
+        <div style="flex:10">
+        </div>
+        <div style="flex:2" class="p-3">
+            <button type="submit" class="btn btn-primary"   style="background-color:grey;border-color: transparent;"        class="float-right" >Save & Continue-></button>
+        </div>
+    </div>
+    </div>
+
+    </form>
+    </div>
+    <div class="d-flex flex-row">
+        <div style="flex:12" class="text-center">
+           page 1 of 2
+        </div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
+{% block js_bottom %}
+    {{ parent() }}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="/site/library/js/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="/site/library/js/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+    <script src="/site/library/js/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+
+
+    <script src="/assays/library/js/tag-it.js"></script>
+
+
+
+    <script id="single_publication_template" type="text/template">
+
+
+        <div class="single_publication_template">
+            <div class="d-flex flex-row">
+                <label class="control-label p-3" style="flex:6" for="publication_citation">
+                    <div class="float-right"><span class="color-red">*</span>Publication Citation</div>
+                </label>
+                <div class="controls p2" style="flex:6">
+          <textarea
+                  name="publication_citation[]"
+                  id="publication_citation_<%- publication_id %>"
+                  required="true"
+                  class="editor"></textarea>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <label class="control-label p-3" style="flex:6" for="publication_url">
+                    <div class="float-right"><span class="color-red">*</span>Publication URL<br><span class="muted">(include http://)</span>
+                    </div>
+                </label>
+                <div class="controls p2" style="flex:6">
+                    <input
+                            type="text"
+                            name="publication_url[]"
+                            id="publication_url_<%- publication_id %>"
+                            class="publication-url"
+                            required="true"
+                            value="<%- publication_url %>"
+                    >
+                </div>
+
+            </div>
+            <div class="d-flex flex-row">
+                <div style="flex:6">
+                    <button
+                            type="button"
+                            id="remove"
+                            name="remove"
+                            class="btn btn-small remove_publication_block mb-4 float-right"
+                            style="background-color:grey;border-color: transparent;"
+                            title="Remove Publication" id="remove"><i class="icon-remove"></i>Remove
+                    </button>
+                </div>
+                <div style="flex:6">
+                </div>
+
+
+            </div>
+        </div>
+    </script>
+
+    <script id="sop_types_menu_template" type="text/template">
+        <div class="sop_types_menu_template" style="flex:6">
+            <a href="javascript:void(0);" data-sop-file-id="<%- sop_file_id %>" class="delete_file_pre_post_link"
+               title="Remove this SOP file" > <i class="fa fa-trash-o" aria-hidden="true" style="color:black;"></i></a>
+            <select id="sop_file_type_<%- sop_file_id %>" name="sop_file_types[]" class="sop_type_menu ml-4"
+                    data-sop-file-id="<%- sop_file_id %>" required="true"  style="width:300px">
+                <option value="">Select SOP Category</option>
+                <% if (typeof(sop_file_types) === 'object') { %>
+                <% sop_file_types.forEach(function(single) { %>
+                <option value="<%- single.sop_file_type_id %>"><%- single.label %></option>
+                <% }); %>
+                <% } %>
+            </select>
+        </div>
+    </script>
+
+
+     <!--
+     <script id="sop_types_menu_template" type="text/template">
+        <div class="sop_types_menu_template">
+            <a href="javascript:void(0);" data-sop-file-id="<%- sop_file_id %>" class="delete_file_pre_post_link"
+               title="Remove this SOP file">remove<span class="icon-trash" style="margin-right:10px;"></span></a>
+            <select id="sop_file_type_<%- sop_file_id %>" name="sop_file_types[]" class="sop_type_menu"
+                    data-sop-file-id="<%- sop_file_id %>" required="true">
+                <option value="">Select SOP Category</option>
+                <% if (typeof(sop_file_types) === 'object') { %>
+                <% sop_file_types.forEach(function(single) { %>
+                <option value="<%- single.sop_file_type_id %>"><%- single.label %></option>
+                <% }); %>
+                <% } %>
+            </select>
+        </div>
+    </script>
+    -->
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            /*
+             * Primary Investigators
+             */
+            $("form").bind("keypress", function (e) {
+                if (e.keyCode == 13) {
+                    return false;
+                }
+            });
+
+            //@@@CAP-49
+            $("#assay_type").change(function(){
+               if($("#assay_type option:selected").text() == "enrichment"){
+                  $(".enrichment_mrm input").prop('required',true);
+                  $(".fraction_mrm input").val('');
+                  $(".fraction_mrm input").prop('required',false);
+               }
+               if($("#assay_type option:selected").text() == "fractionation"){
+                  $(".enrichment_mrm input").prop('required',false);
+                  $(".enrichment_mrm input").val('');
+                  $(".fraction_mrm input").prop('required',true);
+               }
+               if($("#assay_type option:selected").text() == "Select"){
+                  $(".enrichment_mrm input").val('');
+                  $(".fraction_mrm input").val('');
+                  $(".enrichment_mrm input").prop('required',false);
+                  $(".fraction_mrm input").prop('required',false);
+               }
+            });
+
+
+
+            var name_count = $('#add_name li').length;
+
+            if (name_count > 0) {
+                $("#first_name").removeAttr('required');
+                $("#last_name").removeAttr('required');
+
+            }
+
+
+            $("#add_pcc").click(function(){
+               var first_name = $("#first_name").val();
+               var last_name = $("#last_name").val();
+               var middle_initial = $("#middle_initial").val();
+
+
+
+               if(first_name && last_name) {
+                   if(name_count < 3) {
+                       if (confirm('Are you sure you want to add this investigator?')) {
+                           name_count += 1;
+                           $("#add_name").append("<li id='" + first_name + " " + middle_initial + " " + last_name + "'>" + first_name + " " + middle_initial + " " + last_name + " " + "<a style='padding-left:20px;padding-top:0px;' class='remove_investigator' id='" + first_name + " " + last_name + "' name='' ><i class='fa fa-trash-o' aria-hidden='true'></i> delete</a></li>");
+                           //$("#add_name").append("<li id='" + first_name + " " + middle_initial + " " + last_name + "'>" + first_name + " " + middle_initial + " " + last_name + " " + "<a class='remove_investigator' id='" + first_name + " " + last_name + "' name='' >x</a></li>");
+                           $('<input />').attr('type', 'hidden')
+                                   .attr('name', "primary_investigators[]")
+                                   .attr('value', first_name + " " + middle_initial + " " + last_name)
+                                   .appendTo('form');
+
+                           $("#first_name").val("").removeAttr('required');
+                           $("#middle_initial").val("");
+                           $("#last_name").val("").removeAttr('required');
+
+                       }
+                   }
+               }
+
+            });
+
+
+
+            $(document).on("click", ".remove_investigator",function(){
+
+
+                if (confirm('Are you sure you want to remove this investigator?')) {
+                    name_count -= 1;
+                    var investigator_id = $(this).attr('name');
+
+                    var id = $(this).attr('id');
+
+                    if(name_count == 0){
+                        $("#first_name").prop('required',true);
+                        $("#last_name").prop('required',true);
+                    }
+
+
+
+                    $.ajax({
+                        type: "POST"
+                        , dataType: "json"
+                        , url: "{{ path_to_this_module }}/delete_investigator"
+                        , data: ( {investigator_id: investigator_id })
+                        , success: function (ajax_return) {
+                            console.log(ajax_return);
+
+
+
+                        }
+                    });
+                    $("input[type='hidden'][value='"+id+"']").remove();
+                    $(this).parent().remove();
+
+                }
+
+            });
+
+
+            $("#select_primary_investigators").tagit({
+                removeConfirmation: true,
+                maxLength: 6,
+                allowSpaces: true
+                // ,
+                // afterTagAdded: function(event, ui) {
+                //   $('#browse_table').dataTable().fnDraw();
+                // },
+                // afterTagRemoved: function(event, ui) {
+                //   $('#browse_table').dataTable().fnDraw();
+                // }
+            });
+
+            /*
+             * Publications
+             */
+
+            var submitted_publications = JSON.parse('{{ data.submitted_publications|json_encode|raw }}');
+
+            // Add a new publication record block.
+
+
+            /*
+            $("#add_publication_button").on("click",function(event){
+                  //alert("clicked");
+                  add_publication_block();
+
+            });
+            */
+
+
+            $("#add_publication_button").click(function (e) {
+                //alert("clicked");
+                add_publication_block(e);
+            });
+
+
+            $('body').on('click', '#remove', function (event) {
+                if (confirm('Are you sure you want to remove this Publication?')) {
+
+                    $(this).parent().parent().parent('.single_publication_template').remove();
+
+                }
+            });
+
+
+            // Return submitted publications on failed validations.
+            if (submitted_publications) {
+                $.each(submitted_publications, function (index, publication_data) {
+                    add_publication_block(
+                        publication_data.publication_citation
+                        , publication_data.publication_url
+                    );
+                });
+            }
+
+            // Remove existing publication record block.
+
+
+            // Remove submitted publication record block.
+            $("body").on("click", ".remove_submitted_publication_block", function (event) {
+                if (confirm('Are you sure you want to remove this Publication?')) {
+
+
+                    $(this).parent('.publication_single_container').remove(300);
+                    //$("input [id='"+id+"']").remove();
+                    //$(this).parent().remove();
+                }
+            });
+
+
+            // Delete one publication.
+            $("form").on("click", ".publication_delete_link", function (event) {
+                var publication_id = $(this).attr('data-publication-id');
+                if (confirm('Are you sure you want to remove this publication?')) {
+                    $.ajax({
+                        type: "POST"
+                        , dataType: "json"
+                        , url: "{{ path_to_this_module }}/delete_publication/"
+                        , data: ( {publication_id: publication_id} )
+                        , success: function (ajax_return) {
+                            $('#publication_div_' + publication_id).fadeOut(300);
+
+
+                        }
+                    });
+                }
+            });
+
+            /*
+             * Assay Types
+             */
+
+            var assay_types_id = "{{ data.assay_types_id }}";
+
+            // Toggle the visibility of assay type form field containers.
+            $('#assay_type').on('change', function (element) {
+                var this_assay_type_id = $(this).val();
+                if (this_assay_type_id.length) {
+                    $('#assay_types_controls p2').css('height', '360px');
+                } else {
+                    $('#assay_types_controls p2').removeAttr('style');
+                }
+                $('div[id^="assay_type_"]').fadeOut('fast');
+                setTimeout(function () {
+                    $('#assay_type_' + this_assay_type_id).fadeIn();
+                }, 500);
+            });
+
+            /*
+             * SOP File uploads using the jQuery-File-Upload plugin.
+             */
+
+            var file_count = 0;
+            var sop_file_types = JSON.parse('{{ data.sop_file_types|json_encode|raw }}');
+            var existing_sop_files = JSON.parse('{{ data.sop_files|json_encode|raw }}');
+
+
+
+
+
+            $('#fileupload').fileupload({
+
+
+                dataType: 'json',
+
+                progressall: function (e, data) {
+                    //alert(JSON.stringify(data));
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    $('.uploading').fadeIn(100);
+                    $('#progress .bar').css('width', progress + '%');
+                    $('#progress').fadeIn(100);
+                    //alert("end of progress");
+                },
+                done: function (e, data) {
+                    //alert(JSON.stringify(data.result));
+
+                    $.each(data.result, function (index, file) {
+                        console.log(index);
+                        $.ajax({
+                            type: "POST"
+                            , dataType: "json"
+                            , url: "{{ path_to_this_module }}/insert_sop_file"
+                            , data: ( {file_data: file} )
+                            , success: function (ajax_return) {
+                                console.log("ajax"+ajax_return);
+                                var row_fluid = $('<div />').attr('class', 'd-flex flex-row file-controls');
+
+                                if (ajax_return) {
+                                    console.log(ajax_return);
+                                    var hidden_input = $('<input />').attr('type', 'hidden').attr('name', 'uploaded_files[]').attr('value', ajax_return);
+                                    var sop_file_type_menu_div = $('<div />').attr('id', 'sop_file_type_menu_div_' + ajax_return).attr('class', 'sop-file-type-menu span6');
+                                    $(row_fluid).append(sop_file_type_menu_div);
+                                    $(row_fluid).append('<div class="single-file-wrapper ml-4"><i class="fa fa-eye m-2" aria-hidden="true"></i><a href="{{ sop_file_upload_directory }}' + file.internal_file_name + '" class="single-file download-file" title="View/download ' + file.name + '" target="_blank">' + file.name + '</a></div>');
+                                    $(row_fluid).append(hidden_input);
+                                    $('#uploading_notification_container').after(row_fluid);
+
+                                    add_sop_file_type_menu_block(ajax_return, sop_file_types)
+
+                                } else {
+
+                                    $('#fileupload').after('<div class="single-file-wrapper"><span class="icon-exclamation-sign"></span> An error occurred. If this error persits, please <a href="/support/">contact the administrator.</div>');
+                                }
+
+                            }
+                        });
+
+                    });
+                    $('.uploading-text').text('Upload completed');
+                    setTimeout(function () {
+                        $('.uploading').fadeOut(1000);
+                        $('#progress').fadeOut(1000);
+                    }, 2000);
+                    file_count = (file_count + 1);
+                }
+
+            });
+
+
+            // Delete one SOP file.
+            $("form").on("click", ".sop_delete_link", function (event) {
+                var file_id = $(this).attr('data-sop-file-id');
+                if (confirm('Are you sure you want to remove this SOP file?')) {
+                    $.ajax({
+                        type: "POST"
+                        , dataType: "json"
+                        , url: "{{ path_to_this_module }}/delete_file"
+                        , data: ( {file_id: file_id} )
+                        , success: function (ajax_return) {
+                            $('#sop_file_div_' + file_id).fadeOut(300);
+                        }
+                    });
+                }
+            });
+
+            // Delete one SOP file pre-post.
+            $("form").on("click", ".delete_file_pre_post_link", function (event) {
+                var this_link = $(this);
+                var file_id = $(this).attr('data-sop-file-id');
+                if (confirm('Are you sure you want to remove this SOP file?')) {
+                    $.ajax({
+                        type: "POST"
+                        , dataType: "json"
+                        , url: "{{ path_to_this_module }}/delete_file_pre_post"
+                        , data: ( {file_id: file_id} )
+                        , success: function (ajax_return) {
+                            $(this_link).parent().parent().parent().fadeOut(300);
+                            $(this_link).parent().parent().parent().remove();
+                        }
+                    });
+                }
+            });
+
+            /*
+             * Update SOP File Type IDs in the sop_files table.
+             */
+
+            $("body").on("change", ".sop_type_menu", function (event) {
+                var all_selected_ids = [];
+                //alert("inside sop_menu_change");
+                var sop_file_id = $(this).attr('data-sop-file-id');
+                var sop_file_type_id = $(this).val();
+                //alert(sop_file_type_id);
+                //var all_selects = $('#sop_files_container .file-controls p2-wrapper .sop-file-type-menu .sop_types_menu_template').find('select');
+                var all_selects = $('#sop_files_container .file-controls .sop-file-type-menu .sop_types_menu_template').find('select');
+                // Place all of the selected sop_file_type_ids into an array.
+                if (all_selects.length > 0) {
+                    console.log("all selects "+all_selects);
+                    $.each(all_selects, function (index, single_select) {
+                        if ($(single_select).val().length > 0) {
+                            all_selected_ids.push($(single_select).val());
+                        }
+                    });
+                }
+                // Place all sop_file_type_ids which have been associated to existing uploaded files into an array.
+                if (existing_sop_files) {
+
+                    $.each(existing_sop_files, function (index, single_sop_file) {
+                        if (single_sop_file.sop_file_type_id.length) {
+                            all_selected_ids.push(single_sop_file.sop_file_type_id);
+                            console.log(all_selected_ids);
+                        }
+                    });
+                }
+                // Check the array for duplicates, and throw an alert if a duplicate sop_file_type_id is found.
+                var duplicates_found = contains_duplicates(all_selected_ids);
+                console.log("selected ids "+all_selected_ids);
+                if (duplicates_found) {
+                    alert("Duplicate SOP type. Please select another type for this file.");
+                    $('#duplicateSopFileTypeAlert').modal();
+                    $(this).val('');
+                } else {
+                    console.log("no duplicates");
+                    $.ajax({
+                        type: "POST"
+                        , dataType: "json"
+                        , url: "/public_upload/update_sop_file_type_id"
+                        , data: ( {sop_file_id: sop_file_id, sop_file_type_id: sop_file_type_id} )
+                        , success: function (ajax_return) {
+                            // Do nothing.
+                        }
+                    });
+                }
+            });
+
+            /*
+             * Tooltips
+             */
+
+            $(".icon-question-sign").tooltip();
+            $(".delete_file_pre_post_link").tooltip();
+
+        });
+
+        /*
+         * Functions
+         */
+
+        // Underscore-based add Publication block function.
+        function add_publication_block(publication_citation, publication_url) {
+
+            var publication_container_id = _.uniqueId();
+            var publication_template = _.template($("#single_publication_template").html());
+            var publication_markup = publication_template({
+                "publication_id": publication_container_id
+                , "publication_citation": publication_citation
+                , "publication_url": publication_url
+            });
+            $("#publications_container").append(publication_markup);
+
+
+        }
+
+        // Underscore-based add SOP File Type Menu block function.
+        function add_sop_file_type_menu_block(sop_file_id, sop_file_types) {
+            var sop_file_type_menu_container_id = _.uniqueId();
+            var sop_file_type_menu_template = _.template($("#sop_types_menu_template").html());
+            var sop_file_type_menu_markup = sop_file_type_menu_template({
+                "sop_file_type_menu_id": sop_file_type_menu_container_id
+                , "sop_file_id": sop_file_id
+                , "sop_file_types": sop_file_types
+            });
+            $("#sop_file_type_menu_div_" + sop_file_id).append(sop_file_type_menu_markup);
+        }
+
+        // Check an array for duplicate values.
+        function contains_duplicates(a) {
+            var i = a.length;
+            console.log(i);
+            var a2, o, j;
+            while (i--) {
+                a2 = a.slice(0, i).concat(a.slice(i + 1, a.length));
+                o = {};
+                j = a2.length;
+                while (j--) {
+                    o[a2[j]] = '';
+                }
+                if (a[i] in o) {
+                    return true;
+                }
+            }
+            return false;
+        };
+
+    </script>
+{% endblock %}

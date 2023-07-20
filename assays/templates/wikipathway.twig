@@ -1,0 +1,58 @@
+{% extends public_layout_template_name %}
+{% block meta_tags %}
+{{ parent() }}
+<meta name="description"
+      content="A community web-based repository for well-characterized quantitative targeted proteomics assays."/>
+<meta name="keywords"
+      content="cancer, assay, protein, gene, peptide, sequence, characterized, tumor, normal tissue, biospecimens, genomic, proteomic, data, analysis, discovery, biomarker, testing, verification, uniprot, panorama, entrez"/>
+<meta name="author"
+      content="ABCC's Scientific Web Programming Group, Frederick National Laboratory for Cancer Research (FNLCR)"/>
+{% endblock %}
+{% block styles_head %}
+{{ parent() }}
+<link href="/{{ core_type }}/javascripts/DataTables-SWPG/css/bootstrap_datatables.css" rel="stylesheet"
+      type="text/css"/>
+<link href="/{{ core_type }}/javascripts/DataTables-1.9.0/extras/ColVis/media/css/ColVis.css" rel="stylesheet"
+      type="text/css"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/assays/library/css/public_browse.css"/>
+{% endblock %}
+{% block content %}
+
+<div>
+    <div class="row-fluid">
+        <div class="page-title span6">
+            <h1>Assay Portal</h1>
+            <p class="genSitePrintButton" style="margin-top:20px;margin-right:25px"><i class="fa fa-print"
+                                                                                       aria-hidden="true"></i><a
+                        href="javascript:window.print()"> PRINT</a></p>
+        </div>
+
+        <div class="page-title span3">
+        </div>
+        <div class="page-title span3 pull-right" style="text-align:right;">
+            <img src="{{ site_logo }}" width="101" height="101" alt="CPTAC logo">
+        </div>
+    </div>
+
+
+    <div id="wiki_wrapper" class="wiki_table">
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "POST"
+            , dateType: "xml"
+            , url: "{{ path_to_this_module }}/get_wiki_svg"
+            , success: function(svg_return) {
+                d3.select("#wiki_wrapper").html(svg_return);
+            }
+        });
+
+    });
+</script>
+{% endblock %}

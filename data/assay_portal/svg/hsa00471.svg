@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="kegg_svg" viewbox="0 0 765 391" width="965" version="1.1">
+  <defs id="svg_defs">
+    <filter id="matrix-black">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0                     0  1  0  0 0                     0  1  1  0 0                     0  0  0  0 1"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0                     0  0  0  0 0                     0  0  0  0 0                     -1  -1  -1  1 0"/>
+    </filter>
+    <filter id="saturate">
+      <feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+    </filter>
+    <filter id="hueRotate">
+      <feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+    </filter>
+    <filter id="L2A">
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+    </filter>
+    <filter id="grayscale">
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="matrix-greyscale">
+      <feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0                       .33 .33 .33 0 0                      .33 .33 .33 0 0                    0 0 0 1 0"/>
+    </filter>
+    <filter id="matrix-invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1                                                               0 -1 0 0 1                                                               0 0 -1 0 1                                                              0 0 0 1 0"/>
+    </filter>
+    <mask id="name_inverter">
+      <rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"/>
+    </mask>
+  </defs>
+  <!-- Creation date: Mar 14, 2011 14:31:59 +0900 (GMT+09:00) -->
+  <g id="image">
+    <image x="0" y="0" render-order="1" width="765px" height="391px" name="path:hsa00471" org="hsa" number="00471" title="D-Glutamine and D-glutamate metabolism" xlink:href="/assays/library/images/kegg-png/hsa00471.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00471"/>
+  </g>
+  <g id="areas"/>
+  <g id="labels">
+    <image x="0" y="0" render-order="1" width="765px" height="391px" name="path:hsa00471" org="hsa" number="00471" title="D-Glutamine and D-glutamate metabolism" xlink:href="/assays/library/images/kegg-png/hsa00471.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00471" mask="url(#name_inverter)"/>
+  </g>
+  <g id="links"/>
+  <g id="alls">
+    <a id="12" name="path:hsa00471" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00471" target="_blank">
+      <rect name="TITLE:D-Glutamine and D-glutamate metabolism" fgcolor="#000000" fill="#FFFFFF" x="32" y="37" width="384" height="41" rx="10" fill-opacity="1"/>
+    </a>
+    <a id="13" name="path:map00550" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?map00550" target="_blank">
+      <rect name="Peptidoglycan biosynthesis" fgcolor="#000000" fill="#FFFFFF" x="644.5" y="195" width="87" height="34" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="14" name="path:hsa00520" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00520" target="_blank">
+      <rect name="Amino sugar and nucleotide sugar metabolism" fgcolor="#000000" fill="#FFFFFF" x="495" y="287" width="154" height="34" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="15" name="path:hsa00020" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00020" target="_blank">
+      <rect name="Citrate cycle (TCA cycle)" fgcolor="#000000" fill="#FFFFFF" x="62" y="291.5" width="80" height="25" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="16" name="path:map00251" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?map00251" target="_blank">
+      <rect name="Glutamate metabolism" fgcolor="#000000" fill="#FFFFFF" x="62" y="251" width="74" height="34" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="17" name="path:map00460" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?map00460" target="_blank">
+      <rect name="Cyanoamino acid metabolism" fgcolor="#000000" fill="#FFFFFF" x="52.5" y="116" width="101" height="34" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="19" name="ko:K01924" type="ortholog" reaction="rn:R03193" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K01924" target="_blank">
+      <rect name="K01924" fgcolor="#000000" fill="#FFFFFF" x="415" y="268.5" width="46" height="17" fill-opacity="0.0"/>
+    </a>
+    <a id="20" name="ko:K01925" type="ortholog" reaction="rn:R02783" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K01925" target="_blank">
+      <rect name="K01925" fgcolor="#000000" fill="#FFFFFF" x="481" y="203.5" width="46" height="17" fill-opacity="0.0"/>
+    </a>
+    <a id="23" name="hsa:2746 hsa:2747" type="gene" reaction="rn:R00243 rn:R00248" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2746+hsa:2747" target="_blank">
+      <rect name="GLUD1, GDH, GDH1, GLUD..." fgcolor="#000000" fill="#FFFFFF" x="164" y="247.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GLUD1, GDH, GDH1, GLUD..." fgcolor="#000000" fill="#0083FF" x="164" y="247.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="187" y="255" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GLUD1</text>
+    </a>
+    <a id="24" name="ko:K01776" type="ortholog" reaction="rn:R00260" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K01776" target="_blank">
+      <rect name="K01776" fgcolor="#000000" fill="#FFFFFF" x="247" y="194.5" width="46" height="17" fill-opacity="0.0"/>
+    </a>
+    <a id="25" name="ko:K05597" type="ortholog" reaction="rn:R01579" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K05597" target="_blank">
+      <rect name="K05597" fgcolor="#000000" fill="#FFFFFF" x="370" y="161.5" width="46" height="17" fill-opacity="0.0"/>
+    </a>
+    <a id="27" name="hsa:27165 hsa:2744" type="gene" reaction="rn:R01579" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;GLS&quot;);">
+      <rect name="GLS2, GA, GLS, LGA, hLGA..." fgcolor="#000000" fill="#FFFFFF" x="274" y="161.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GLS2, GA, GLS, LGA, hLGA..." fgcolor="#000000" fill="#00FF00" x="274" y="161.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="297" y="169" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GLS</text>
+    </a>
+    <a id="28" name="hsa:27165 hsa:2744" type="gene" reaction="rn:R00256" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:27165+hsa:2744" target="_blank">
+      <rect name="GLS2, GA, GLS, LGA, hLGA..." fgcolor="#000000" fill="#FFFFFF" x="148" y="161.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GLS2, GA, GLS, LGA, hLGA..." fgcolor="#000000" fill="#0083FF" x="148" y="161.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="171" y="169" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GLS2</text>
+    </a>
+    <a id="29" name="cpd:C00064" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00064" target="_blank">
+      <circle name="C00064" fgcolor="#000000" fill="#FFFFFF" cx="196" cy="132" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="30" name="cpd:C00819" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00819" target="_blank">
+      <circle name="C00819" fgcolor="#000000" fill="#FFFFFF" cx="345" cy="132" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="31" name="cpd:C03933" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C03933" target="_blank">
+      <circle name="C03933" fgcolor="#000000" fill="#FFFFFF" cx="559" cy="128" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="32" name="cpd:C05723" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C05723" target="_blank">
+      <circle name="C05723" fgcolor="#000000" fill="#FFFFFF" cx="74" cy="209" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="33" name="cpd:C00025" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00025" target="_blank">
+      <circle name="C00025" fgcolor="#000000" fill="#FFFFFF" cx="196" cy="209" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="34" name="cpd:C00217" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00217" target="_blank">
+      <circle name="C00217" fgcolor="#000000" fill="#FFFFFF" cx="345" cy="209" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="35" name="cpd:C02671" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C02671" target="_blank">
+      <circle name="C02671" fgcolor="#000000" fill="#FFFFFF" cx="438" cy="170" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="36" name="cpd:C00692" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00692" target="_blank">
+      <circle name="C00692" fgcolor="#000000" fill="#FFFFFF" cx="559" cy="212" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="37" name="cpd:C01212" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C01212" target="_blank">
+      <circle name="C01212" fgcolor="#000000" fill="#FFFFFF" cx="438" cy="238" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="38" name="cpd:C01050" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C01050" target="_blank">
+      <circle name="C01050" fgcolor="#000000" fill="#FFFFFF" cx="438" cy="304" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="39" name="cpd:C02237" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C02237" target="_blank">
+      <circle name="C02237" fgcolor="#000000" fill="#FFFFFF" cx="345" cy="304" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="40" name="cpd:C00026" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00026" target="_blank">
+      <circle name="C00026" fgcolor="#000000" fill="#FFFFFF" cx="196" cy="304" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="47" name="ko:K05597" type="ortholog" reaction="rn:R00256" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K05597" target="_blank">
+      <rect name="K05597" fgcolor="#000000" fill="#FFFFFF" x="198" y="161.5" width="46" height="17" fill-opacity="0.0"/>
+    </a>
+  </g>
+</svg>

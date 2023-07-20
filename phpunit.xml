@@ -1,0 +1,35 @@
+<phpunit
+    bootstrap="tests/bootstrap.php"
+    defaultTestSuite="read_only_tests"
+    verbose="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd">
+    <logging>
+        <log type="coverage-html" target="tests_output/coverage.html"/>
+        <log type="coverage-text" target="tests_output/coverage.txt"/>
+        <log type="coverage-xml" target="tests_output/coverage.xml"/>
+        <log type="junit" target="tests_output/junit.xml"/>
+        <log type="testdox-html" target="tests_output/testdox.html"/>
+        <log type="testdox-text" target="tests_output/testdox.txt"/>
+        <log type="testdox-xml" target="tests_output/testdox.xml"/>
+    </logging>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="false">
+            <directory>tests</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="read_only_tests">
+            <file>tests/assay_detail_test.php</file>
+            <file>tests/assay_model_test.php</file>
+            <file>tests/fork_test.php</file>
+            <file>tests/parallel_curl_test.php</file>
+            <file>tests/RouteTest.php</file>
+            <file>tests/simple_xml_test.php</file>
+        </testsuite>
+        <testsuite name="all_tests">
+            <directory>tests/*_test.php</directory>
+            <directory>tests/*Test.php</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

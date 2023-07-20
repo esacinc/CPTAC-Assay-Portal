@@ -1,0 +1,103 @@
+{% extends demo_home_page_layout_template_name %}
+{% block meta_tags %}
+    {{ parent() }}
+    <meta name="description"
+          content="A community web-based repository for well-characterized quantitative targeted proteomics assays."/>
+    <meta name="keywords"
+          content="cancer, assay, protein, gene, peptide, sequence, characterized, tumor, normal tissue, biospecimens, genomic, proteomic, data, analysis, discovery, biomarker, testing, verification, uniprot, panorama, entrez"/>
+    <meta name="author"
+          content="ABCC's Scientific Web Programming Group, Frederick National Laboratory for Cancer Research (FNLCR)"/>
+{% endblock %}
+{% block styles_head %}
+    {{ parent() }}
+    <link href="/{{ core_type }}/javascripts/DataTables-SWPG/css/bootstrap_datatables.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="/{{ core_type }}/javascripts/DataTables-1.9.0/extras/ColVis/media/css/ColVis.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/assays/library/css/public_browse.css"/>
+{% endblock %}
+{% block content %}
+    <main role="main" class="row l-main">
+
+        <div class="large-9 main columns main-content-wrapper">
+
+            <div class="main-content">
+
+
+                <a id="main-content" aria-hidden="true"></a>
+
+
+                <div class="page-title-wrapper arrow_box">
+                    <h1 id="page-title" class="title">Assay Portal</h1>
+                </div>
+
+
+
+
+                <div id="block-system-main" class="block block-system block-system-main">
+                    <div class="content">
+                        <article id="node-11" class="node node-page view-mode-full" about="/assay-portal" typeof="foaf:Document">
+
+                            <span property="dc:title" content="Assay Portal" class="rdf-meta element-hidden" aria-hidden="true"></span>
+
+                            <div class="field field-name-body field-type-text-with-summary field-label-hidden field-wrapper body field"><p>The CPTAC Assay Portal serves as a centralized <span style="color:#555555;"><strong>public repository&nbsp;of "fit-for-purpose," multiplexed quantitative mass spectrometry-based proteomic targeted assays</strong></span>. Targeted proteomic assays eliminate issues that are commonly observed using conventional protein detection systems.</p>
+                                <p>The goal of the portal is to widely disseminate highly characterized proteomic assays to the global research community, with&nbsp;access to SOPs, reagents, and assay characterization/validation data in support of the National Institutes of Health’s <a href="https://www.nih.gov/research-training/rigor-reproducibility/principles-guidelines-reporting-preclinical-research">Rigor and Reproducibility Principles and Guidelines</a>. &nbsp;Targeted mass spectrometry assays are characterized according to the CPTAC assay characterization guidelines. The portal is also designed to bring together biologists seeking to ask hypothesis-driven questions about the proteome they study with analytical chemists equipped to perform targeted proteomic assays.</p>
+                                <p>&nbsp;</p>
+                                <div id="portal-wrapper">
+                                    <button class="assay-portal portal-button pad10 margin20" onclick="location.href='/available_assays';">Available Assays</button>
+                                    <button class="assay-portal portal-button pad10 margin20" onclick="location.href='https://assays.cancer.gov/assay-portal/about/assay-characterization-guidance-documents';">Assay Characterization Guidelines</button>
+                                    <button class="assay-portal portal-button pad10 margin20" onclick="location.href='/authenticate';">Submit Assays</button>
+                                </div>
+                            </div>
+
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <!--/.main-content -->
+
+        </div>
+        <!--/.main region -->
+
+
+        <aside role="complementary" class="large-3 sidebar-second columns sidebar">
+            <div id="block-block-56" class="block block-block block-block-56 block-odd clearfix">
+                <div class="content">
+                    <script aria-hidden="true">
+                        jQuery(document).ready(function ($) {
+                            // assay portal stats
+                            $.ajax({
+                                type: "GET",
+                                url: "https://assays.cancer.gov/assays/statistics",
+                                dataType: "json"
+                            }).done(function (result) {
+                                $("#total_assays").html(result.total_assays);
+                                $("#unique_peptides").html(result.unique_peptides);
+                                $("#unique_proteins").html(result.unique_proteins);
+                            });
+                        });
+                    </script>
+
+                    <p><span style="font-size:1.6em;">Assay Portal Stats</span></p>
+
+                    <p><strong aria-hidden="true"><span id="total_assays" aria-hidden="true">1582</span></strong> Assays<br aria-hidden="true">
+                        <strong aria-hidden="true"><span id="unique_peptides" aria-hidden="true">1503</span></strong> Unique Peptides<br aria-hidden="true">
+                        <strong aria-hidden="true"><span id="unique_proteins" aria-hidden="true">830</span></strong> Unique Proteins</p>
+                </div>
+            </div>
+            <div id="block-block-20" class="block block-block block-block-20 block-even clearfix">
+                <div class="content">
+                    <hr><p><a href="/assay-portal/collaboration-opportunities"><img alt="Collaboration Opportunities" src="/site/library/images/cabazon_works_images/collaboration-sidebar.jpg"></a> <a href="/assay-portal/video-tutorial"><img alt="Video Tutorial" src="/site/library/images/cabazon_works_images/video-sidebar.jpg"></a></p>
+                </div>
+            </div>
+            <div id="block-menu-menu-sidebar-static-menu" class="block block-menu side-sub-menu block-menu-menu-sidebar-static-menu block-odd clearfix">
+                <div class="content">
+                    <ul class="menu"><li class="first leaf fa fa-envelope-o"><a href="/contact-us">Contact Us</a></li>
+                        <li class="last leaf fa fa-check-square-o"><a href="/sign-email-updates">Sign Up for Email Updates</a></li>
+                    </ul>  </div>
+            </div>
+        </aside>
+    </main>
+{% endblock %}

@@ -1,0 +1,531 @@
+{% extends preview_layout_template_name %}
+{% block styles_head %}
+    {{ parent() }}
+    <link href="/{{ core_type }}/javascripts/DataTables-SWPG/css/bootstrap_datatables.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="/{{ core_type }}/javascripts/DataTables-1.9.0/extras/ColVis/media/css/ColVis.css" rel="stylesheet"
+          type="text/css"/>
+{% endblock %}
+{% block content %}
+
+    <div class="row-outer">
+
+        <div class="row-fluid" style="clear:both;">
+            {% if flash['success'] %}
+                <div class="alert alert-success">
+                    {{ flash['success'] }}
+                </div>
+            {% endif %}
+
+            <div class="row-fluid" style="clear:both;">
+                <div class="span6">
+                    <label for="submission"><i class="icon-hand-right"></i> Choose a Submission</label>
+                    <select id="submission" name="submission" class="labs_select_menu">
+                        <option value="">Select</option>
+                        {% for submission in submission_ids %}
+                            <option value="{{ submission.import_log_id }}">
+                                {{ submission.submission_id }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div id="additional_filters" class="row-fluid" style="clear:both;">
+                <div class="span4">
+                    <label for="status_filter"><i class="icon-eye-open"></i> Toggle Approved/Disapproved</label>
+                    <select id="status_filter" name="status_filter" class="status_filter_select_menu">
+                        <option value="">Display All</option>
+                        <option value="0">Display Disapproved</option>
+                        <option value="1">Display Approved</option>
+                        <option value="2">Display Pending</option>
+                        <option value="2">Display Withdraw</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <table id="browse_table" cellpadding="0" cellspacing="0" border="0"
+                   class="table table-striped table-bordered">
+                {% for single_datatable in datatables %}
+
+                    <thead>
+                    <tr>
+                        {% for key, field in single_datatable.fields %}
+                            <th>
+                                <div class="th_header_text">{{ field.label }}</div>
+                                {% if field.filter %}
+                                    <div class="filter_wrapper {% if field.filter_type == 'select' %} filter_wrapper_select {% endif %}">
+                                        {% if field.filter_type == 'select' %}
+                                            <select name="{{ key }}_value" class="filter_value">
+                                                <option value="">Select</option>
+                                                {% for single_option in field.filter_type_options %}
+                                                    <option value="{{ single_option.reagent_types_id }}">{{ single_option.label }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        {% else %}
+                                            <input type="text" name="{{ key }}_value" class="filter_value">
+                                        {% endif %}
+                                        <div class="filter_image" data-data_type="{{ field.data_type }}"
+                                             id="{{ key }}"></div>
+                                        <input type="hidden" class="comparison_value" id="{{ key }}_filter_value"
+                                               value="{{ field.comparison_default }}">
+                                    </div>
+                                {% endif %}
+                            </th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                {% endfor %}
+            </table>
+
+
+        </div>
+    </div>
+
+{% endblock %}
+{% block js_bottom %}
+    {{ parent() }}
+    <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+    <script type="text/javascript"
+            src="/{{ core_type }}/javascripts/DataTables-SWPG/js/datatables_bootstrap.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/javascripts/DataTables-SWPG/js/context_menu.js"></script>
+    <script type="text/javascript"
+            src="/{{ core_type }}/javascripts/DataTables-1.9.0/extras/ColVis-1.0.8/media/js/ColVis.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/javascripts/DataTables-SWPG/js/fnGetTds.js"></script>
+    <script type="text/javascript"
+            src="/{{ core_type }}/javascripts/DataTables-SWPG/js/jquery.dataTables.rowGrouping.js"></script>
+    <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.7.3/js/bootstrap-tour.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var this_user_account_id = "{{ session[session_key].account_id }}";
+            var datatables_data = JSON.parse('{{ datatables|json_encode|raw }}');
+
+            $.each(datatables_data, function (index, single_datatable) {
+
+                var sortable_fields = single_datatable.fields;
+                var total_columns = new Array();
+                var hidden_columns = new Array();
+                var exclude_columns_for_hiding = new Array();
+
+                var user_updated_visible_columns = $.cookie("browse_table_column_cookie");
+                if (typeof user_updated_visible_columns === "undefined" || user_updated_visible_columns === null) {
+                    user_updated_visible_columns = {};
+                } else {
+                    user_updated_visible_columns = JSON.parse(user_updated_visible_columns);
+                }
+                var counter = 0;
+                $.each(sortable_fields, function (index, field_data) {
+
+                    total_columns.push({"mDataProp": index});
+                    if (field_data.initially_hidden == true) {
+                        if (user_updated_visible_columns[counter] !== true) {
+                            hidden_columns.push(counter);
+                        }
+                    } else {
+                        if (user_updated_visible_columns[counter] === false) {
+                            hidden_columns.push(counter);
+                        }
+                    }
+                    if (field_data.show_column_toggle == false) {
+                        exclude_columns_for_hiding.push(counter);
+                    }
+                    counter++;
+
+                });
+
+                $('.filter_value, .filter_image').bind('click', function (event) {
+                    event.stopPropagation();
+                });
+
+                $('#browse_table th .filter_value').bind('keyup change', function (event) {
+                    page_datatable.fnDraw();
+                });
+
+                $('.filter_image').each(function () {
+                    var filter_options = [
+                        //{text: '> greater than', value: 'gt'}
+                        //,{text: '>= (greater than OR equal to)', value: 'gt_or_eq'}
+                        //,{text: '< less than', value: 'lt'}
+                        //,{text: '<= (less than OR equal to)', value: 'lt_or_eq'}
+                        {text: '= (equal to)', value: 'equals'}
+                        , {text: 'Contains', value: 'contains'}
+                        , {text: 'Does not contain', value: 'not_contain'}
+                        , {text: 'Starts with', value: 'start_with'}
+                        , {text: 'Ends With', value: 'end_with'}
+                    ];
+                    var column_data_type = $(this).data("data_type");
+                    switch (column_data_type) {
+                        case "text":
+                            filter_options = [
+                                {text: '= (equal to)', value: 'equals'}
+                                , {text: 'Contains', value: 'contains'}
+                                , {text: 'Does not contain', value: 'not_contain'}
+                                , {text: 'Starts with', value: 'start_with'}
+                                , {text: 'Ends With', value: 'end_with'}
+                            ];
+                            break;
+                    }
+
+                    $(this).dynamicContextMenu({
+                        id: this.id
+                        , style: {
+                            containerCssClass: "DynamicContextMenuContainer",
+                            subLevelHolderItemCssClass: "DynamicContextMenuSubLevelHolderItem",
+                            itemIconCssClass: "DynamicContextMenuItemIcon"
+                        }
+                        , items: filter_options
+                        , openMode: "click"
+                        , onItemClick: function (sender, item) {
+                            $('#' + sender._id + '_filter_value').attr('value', item.value);
+                            page_datatable.fnDraw();
+                        }
+                        , waitTime: 1
+                    });
+                });
+
+                var page_datatable = $('#' + single_datatable.dom_table_id).dataTable({
+
+                    // Groups genes begins
+                    "fnDrawCallback": function (oSettings) {
+                        var trs = $("#" + single_datatable.dom_table_id + " tbody tr");
+                        $.each(trs, function (index, tr) {
+                            var td = $(tr).find('td.group');
+                            if (td.length) {
+                                $(td).addClass('no_row_click');
+                            }
+                        });
+                    }
+                    // Groups genes ends
+
+                    // Remember the user's settings
+                    ,
+                    "bStateSave": true
+                    //show processing throbber
+                    ,
+                    "bProcessing": true
+                    //move the info to the top instead of the bottom
+                    //,"sDom":'C<"clear"><"top"flip>rt<"bottom"p<"clear">>'
+                    ,
+                    "sDom": "<'row'C><<'span4'l><'span4'i><'span4'f>><<'span3 datatables_bulk_actions'><'span3'r><'span5 pull-right'p>>t<'row'<'span6 pull-right'p>>"
+                    //all data management will be done on the server side
+                    ,
+                    "bServerSide": true
+                    //path to the file that is going to handle the queries
+                    ,
+                    "sAjaxSource": "{{ path_to_this_module }}/datatables_browse_assays_manage"
+                    //method type
+                    ,
+                    "sServerMethod": "POST"
+                    //match the html table columns with the fields returned from the query
+                    ,
+                    "aoColumns": total_columns
+                    ,
+                    "aLengthMenu": [[10, 25, 50, 100, 1000000], [10, 25, 50, 100, "All"]]
+                    //default length
+                    ,
+                    "iDisplayLength": 50
+                    //default sort
+                    ,
+                    "aaSorting": [[1, "asc"]]
+                    //needed for bootstrap
+                    ,
+                    "sWrapper": "dataTables_wrapper form-inline"
+                    ,
+                    "sPaginationType": "bootstrap"
+                    ,
+                    "bAutoWidth": false
+                    //set some widths
+                    ,
+                    "aoColumnDefs": [
+                        {"sWidth": "50px", "aTargets": [1]}
+                        , {"bSortable": false, "aTargets": [0]}
+                        , {"bVisible": false, "aTargets": hidden_columns}
+                    ]
+                    ,
+                    "fnCookieCallback": function (sName, oData, sExpires, sPath) {
+                        // Customise oData or sName or whatever else here
+                        sNameNew = sName + 'new_';
+                        return sNameNew + "=" + JSON.stringify(oData) + "; expires=" + sExpires + "; path=" + sPath;
+                    }
+                    ,
+                    "fnServerParams": function (aoData) {
+
+                        var filter_array = $.map($("#" + single_datatable.dom_table_id + " th"), function (e, i) {
+                            var single_filter = {};
+                            single_filter.column = $(e).find('div.filter_image').attr('id');
+                            single_filter.value = $(e).find('.filter_value').val();
+                            single_filter.comparison = $(e).find('input.comparison_value').val();
+                            return single_filter;
+                        });
+                        var newObj = {name: "column_filter", value: JSON.stringify(filter_array)};
+                        aoData.push(newObj);
+
+                        var sidebar_filter = {};
+
+                        // Submission
+                        var submission_filter = [];
+                        //if($("#submission").val() != 0) {
+                        submission_filter.push($("#submission").val());
+                        //}
+
+                        sidebar_filter['submission_filter'] = submission_filter;
+
+                        // Status (approved / disapproved / pending / display all)
+                        if ($("#status_filter").val() != '') {
+                            var status_filter = [];
+                            status_filter.push($("#status_filter").val());
+                            sidebar_filter['status_filter'] = status_filter;
+                        }
+
+                        var sidebar_filter_obj = {name: "sidebar_filter", value: JSON.stringify(sidebar_filter)};
+                        aoData.push(sidebar_filter_obj);
+
+                    }
+                    ,
+                    "fnRowCallback": function (nRow, aData, iDisplayIndex) {
+
+                        // Highlight <td>s accordingly
+                        var table_datas = $(nRow).find('td');
+
+                        $(table_datas).each(function (index, single) {
+
+                            var this_record_id = $(this).parent().prop('id');
+                            var this_cptac_id = aData['cptac_id'];
+
+                            if (aData['approval_status'] == 0) {
+                                $(this).next('td:nth-child(2)').append('<p><i class="icon-eye-open"></i> <a href="/' + this_cptac_id + '" title="View on the portal" target="_blank">View on the Portal</a></p>');
+                                $(this).addClass('gray-background');
+                            }
+                            if (aData['approval_status'] == 1) {
+                                $(this).next('td:nth-child(2)').append('<p><i class="icon-eye-open"></i> <a href="/' + this_cptac_id + '" title="View on the portal" target="_blank">View on the Portal</a></p>');
+                                $(this).addClass('green-background');
+                                $(this).next('td:nth-child(2)').append('<div class="alert alert-warning" style="margin-top:20px;">Public</div>');
+                            }
+                            if (aData['approval_status'] == 2) {
+                                $(this).next('td:nth-child(2)').append('<p><i class="icon-eye-open"></i> <a href="/' + this_cptac_id + '" title="View on the portal" target="_blank">View on the Portal</a></p>');
+                                $(this).next('td:nth-child(2)').append('<div class="alert alert-warning" style="margin-top:20px;">Awaiting Approval</div>');
+                            }
+                            if (aData['approval_status'] == 4) {
+                                $(this).next('td:nth-child(2)').append('<p><i class="icon-eye-open"></i> <a href="/' + this_cptac_id + '" title="View on the portal" target="_blank">View on the Portal</a></p>');
+                                $(this).addClass('green-background');
+                                $(this).next('td:nth-child(2)').append('<div class="alert alert-warning" style="margin-top:20px;">Approved</div>');
+                            }
+                        });
+
+                        // Create Submit checkbox
+                        if (aData['approval_status'] == 2) {
+                            $(nRow).find('td:eq(0)').html(
+                                "<div class='checkbox-input-wrapper'>" +
+                                "<i class='icon-thumbs-up'></i>" +
+                                "<label><input type='checkbox' name='submit_checkbox' class='submit_checkbox' value='" + aData['manage'] + "' /> " +
+                                "<span>Submit</span>" +
+                                "</label>" +
+                                "</div>"
+                            ).addClass("manage_column");
+                        } else if (aData['approval_status'] == 1) {
+                            $(nRow).find('td:eq(0)').html(
+                                "<div class='checkbox-input-wrapper'>" +
+                                "<i class='icon-thumbs-up'></i>" +
+                                "<label><input type='checkbox' name='submit_checkbox' class='submit_checkbox' value='" + aData['manage'] + "' /> " +
+                                "<span>Withdraw</span>" +
+                                "</label>" +
+                                "</div>"
+                            ).addClass("manage_column");
+                        }
+
+                    }
+                    ,
+                    "oColVis": {
+                        "fnLabel": function (index, title, th) {
+                            return $(th).find(".th_header_text").text();
+                        }
+                        , "aiExclude": exclude_columns_for_hiding
+                        , "fnStateChange": function (iColumn, bVisible) {
+                            var previous_values = $.cookie("browse_table_column_cookie");
+                            if (typeof previous_values === "undefined" || previous_values === null) {
+                                previous_values = {};
+                            } else {
+                                previous_values = JSON.parse(previous_values);
+                            }
+                            previous_values[iColumn] = bVisible;
+                            $.cookie('browse_table_column_cookie', JSON.stringify(previous_values), {expires: 365});
+                        }
+                    }
+
+                }).rowGrouping({
+                    iGroupingColumnIndex: 1
+                    , bHideGroupingColumn: true
+                    , bExpandableGrouping: true
+                });
+
+                // Submit checkbox
+                $('#' + single_datatable.dom_table_id + ' tbody').on('click', 'td div label input.submit_checkbox', function (event) {
+                    event.stopPropagation();
+                    var parent_row_id = $(this).parent().parent().parent().parent().attr('id');
+                    $("#" + parent_row_id + " td").removeClass('withdraw-background');
+                    $("#" + parent_row_id + " td").addClass('submit-background');
+
+                    var checked = $("#" + parent_row_id + " td div label input").is(':checked');
+                    $("#" + parent_row_id + " td div label span").text(checked ? 'Withdraw' : 'Submit');
+
+                    $("#" + parent_row_id + " td div.alert-warning").text(checked ? 'Submitted' : 'Withdrawn');
+
+                    if(checked) {
+                        $("#" + parent_row_id + " td div.checkbox-input-wrapper i").removeClass('icon-thumbs-up').addClass('icon-thumbs-down');
+                    } else {
+                        $("#" + parent_row_id + " td div.checkbox-input-wrapper i").removeClass('icon-thumbs-down').addClass('icon-thumbs-up');
+                    }
+                })
+
+                // Disapprove checkboxes
+                $('#' + single_datatable.dom_table_id + ' tbody').on('click', 'td div label input.withdraw_checkbox', function (event) {
+                    event.stopPropagation();
+                    var parent_row_id = $(this).parent().parent().parent().parent().attr('id');
+                    $("#" + parent_row_id + " td div label input.submit_checkbox:checked").removeAttr('checked');
+                    $("#" + parent_row_id + " td").removeClass('submit-background');
+                    $("#" + parent_row_id + " td").addClass('gray-background');
+                    // If nothing is checked, remove background color classes
+                    if ($("#" + parent_row_id + " td div label input.disapprove_checkbox:checked").length == 0) {
+                        $("#" + parent_row_id + " td").removeClass('gray-background');
+                        $("#" + parent_row_id + " td").removeClass('green-background');
+                    }
+                });
+
+                // Prevent propagation on labels
+                $('#' + single_datatable.dom_table_id + ' tbody').on('click', 'label', function (event) {
+                    event.stopPropagation();
+                });
+
+            });
+
+            // Email CSV of Notes and Email NCI buttons
+            var email_buttons = $('<div class="check-all-wrapper"><a href="javascript:void(0);" id="email_csv_button" class="btn btn-small email_csv"><i class="icon-cog"></i> Generate a CSV of Notes for All Records</a> <a href="#notify_nci_modal" class="btn btn-small" data-toggle="modal"><i class="icon-envelope"></i> Notify NCI to Review</a></div>');
+
+            // Create a new wrapper div for the buttons
+            var additional_bulk_actions = $("<div>").addClass("additional_bulk_actions").addClass("span12").attr("id", "additional_bulk_actions");
+            // Add buttons to the new wrapper div
+            $(additional_bulk_actions).append(email_buttons);
+            // Add the new wrapper div, populated with buttons, to the DOM
+            $(".datatables_bulk_actions").after(additional_bulk_actions);
+
+
+            $("#notify_nci_submit_button").on("click", function (event) {
+
+                var message = $("#notify_nci_comment").val();
+                var this_lab_id = $('#import_set').attr('data-lab-id');
+
+                $.ajax({
+                    type: "POST"
+                    , dataType: "json"
+                    , url: "{{ path_to_this_module }}/email_nci"
+                    , data: ({laboratory_id: this_lab_id, message: message})
+                    , success: function (ajax_return) {
+                        if (ajax_return == 'sent') {
+                            $('#email_sent_message').remove();
+                            $('#notify_nci_container').hide();
+                            $('#notify_nci_submit_button').hide();
+                            $('#cancel_close_button').text('Close');
+                            $('#notify_nci_container').parent().before('<div id="email_sent_message" class="alert alert-success">Email sent successfully.</div>');
+                        } else {
+                            $('#notify_nci_container').parent().before('<div id="email_sent_message" class="alert alert-error">Emails not sent.</div>');
+                        }
+                    }
+                });
+            });
+
+            // Always hide the browse table and reset the "Toggle Approved/Disapproved" menu on change of the "Choose a Laboratory" menu.
+            $('#submission').on('change', function () {
+                $('#additional_filters, #browse_table_wrapper').hide();
+                $('#status_filter').val('');
+                $('#browse_table').dataTable().fnDraw();
+            });
+
+            // MENU: Submission
+            $('#submission').on('change', function () {
+
+                $('#browse_table').dataTable().fnDraw();
+
+                // Since DataTables takes a split second to reload, set a timeout to prevent the old data from displaying
+                setTimeout(function () {
+                    if ($('#submission').val().length) {
+                        $('#additional_filters, #browse_table_wrapper').show();
+                        $('#notices').hide();
+                    } else {
+                        $('#additional_filters, #browse_table_wrapper').hide();
+                    }
+                }, 750);
+
+            });
+
+            // MENU: Approved / Disapproved / Display All
+            $('#status_filter').on('change', function () {
+                $('#browse_table').dataTable().fnDraw();
+            });
+
+            // Tooltips
+            $("button").tooltip();
+
+            // Remove the onclick on table headers
+            $('#browse_table thead tr th').unbind('click');
+
+            // Modify the width of the pagination container
+            $('#browse_table_wrapper').find('div.span5').removeClass('span5').addClass('span12');
+            $('#browse_table_wrapper').find('div.span3').remove();
+
+            var submission_ids = JSON.parse('{{ submission_ids|json_encode|raw }}');
+
+            if (submission_ids.length === 1) {
+                $("#submission option[value='']").remove();
+                $("#submission").val(submission_ids[0]["import_log_id"]);
+
+                $('#browse_table').dataTable().fnDraw();
+
+                // Since DataTables takes a split second to reload, set a timeout to prevent the old data from displaying
+                setTimeout(function () {
+                    if ($('#submission').val().length) {
+                        $('#additional_filters, #browse_table_wrapper').show();
+                        $('#notices').hide();
+                    } else {
+                        $('#additional_filters, #browse_table_wrapper').hide();
+                    }
+                }, 750);
+            }
+        });
+
+        function submit(id, status) {
+            jQuery.ajax({
+                type: "POST"
+                ,
+                dateType: "json"
+                ,
+                url: "{{ path_to_this_module }}/submit_process"
+                ,
+                data: ({
+                    submitted_id: id,
+                    status: status
+                })
+                ,
+                success: function (ajax_return) {
+                    // page_datatable.fnDraw();
+                    $('#success-message').remove();
+                    $('#browse_table_wrapper .row .ColVis').append('<div id="success-message">Record successfully updated</div>');
+                    setTimeout(function () {
+                        $('#success-message').fadeOut();
+                    }, 2000);
+                }
+            });
+        }
+
+        function nl2br(str, is_xhtml) {
+            var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br ' + '/>' : '<br>';
+            return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+        }
+
+    </script>
+{% endblock %}

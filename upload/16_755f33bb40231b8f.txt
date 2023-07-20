@@ -1,0 +1,1156 @@
+2016-04-25 4:22:25pm - Import Started. ID:16
+2016-04-25 4:22:25pm - Execute the Test import script
+2016-04-25 4:22:26pm - Import Panorama - all protein peptides
+2016-04-25 4:22:26pm - Import logs updated
+2016-04-25 4:23:27pm - Admin notification sent
+2016-04-25 4:23:28pm - Getting all protein peptides
+2016-04-25 4:23:29pm - Received total peptides count: 2
+2016-04-25 4:23:29pm - Preparing to pull data.
+2016-04-25 4:23:29pm - Getting Uniprot data for: GLGKGGAKR
+2016-04-25 4:23:29pm - Uniprot data: SUCCESS
+2016-04-25 4:23:29pm - Getting modification type: SUCCESS
+2016-04-25 4:23:30pm - Getting site of modification: SUCCESS
+2016-04-25 4:23:30pm - Getting Uniprot data for: VFLENVIR
+2016-04-25 4:23:30pm - Uniprot data: SUCCESS
+2016-04-25 4:23:30pm - Getting modification type: SUCCESS
+2016-04-25 4:23:31pm - Getting site of modification: SUCCESS
+2016-04-25 4:23:31pm - Creating initial local records
+2016-04-25 4:23:31pm - Saving: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:23:31pm - Saving: VFLENVIR
+2016-04-25 4:23:31pm - Initial DB write complete
+2016-04-25 4:23:31pm - Preparing to import asset data
+2016-04-25 4:23:31pm - Getting data for: GLGKGGAKR
+2016-04-25 4:23:31pm - Getting Uniprot data for: GLGKGGAKR
+2016-04-25 4:23:31pm - Getting Entrez Gene data for: <span class="import-error">GENE SYMBOL MISSING</span>
+2016-04-25 4:23:32pm - Getting data for: VFLENVIR
+2016-04-25 4:23:33pm - Getting Uniprot data for: VFLENVIR
+2016-04-25 4:23:33pm - Getting Entrez Gene data for: <span class="import-error">GENE SYMBOL MISSING</span>
+2016-04-25 4:23:34pm - Running Uniprot fix
+2016-04-25 4:24:34pm - Verified import ID
+2016-04-25 4:24:35pm - Database backed-up
+2016-04-25 4:25:35pm - Administrator email notifications sent
+2016-04-25 4:25:35pm - All sequenced retrieved from local db
+2016-04-25 4:25:36pm - API server authentication attempt: SUCCESS 
+2016-04-25 4:25:36pm - email: kristen.nyce@esacinc.com ESACINC1
+2016-04-25 4:25:36pm - cookie url: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/start.view?
+2016-04-25 4:25:36pm - Getting all missed chromatogram images
+2016-04-25 4:25:36pm - Importing: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:36pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:36pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:36pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:36pm - inside _doCall parameters: Array
+2016-04-25 4:25:36pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:36pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:36pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:36pm - inside _doCall peptide: 
+2016-04-25 4:25:36pm - inside _doCall plot_type: 
+2016-04-25 4:25:36pm - inside _doCall protein: 
+2016-04-25 4:25:36pm - inside _doCall csv: 
+2016-04-25 4:25:36pm - inside _doCall peptideType: 
+2016-04-25 4:25:36pm - _doCall:  - Query Name: Precursor - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%2FPeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&query.columns=RepresentativeDataState%2CPeptideId%2FSequence%2CPeptideId%2FPeptideModifiedSequence%2CModifiedSequence%2CIsotopeLabelId%2FName%2CPeptideId%2FId%2CPeptideId%2FPeptideGroupId%2FLabel%2CPeptideId%2FPeptideGroupId%2FId
+2016-04-25 4:25:38pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:38pm - Query Panorama for the peptide data: ChromatogramLibrary - GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:38pm - Panorama returned rows: 2
+2016-04-25 4:25:38pm - Get images: ChromatogramLibrary - PeptideId/Id: 1624566
+2016-04-25 4:25:38pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:38pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:38pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:38pm - inside _doCall parameters: Array
+2016-04-25 4:25:38pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:38pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:38pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:38pm - inside _doCall peptide: 
+2016-04-25 4:25:38pm - inside _doCall plot_type: 
+2016-04-25 4:25:38pm - inside _doCall protein: 
+2016-04-25 4:25:38pm - inside _doCall csv: 
+2016-04-25 4:25:38pm - inside _doCall peptideType: 
+2016-04-25 4:25:38pm - _doCall:  - Query Name: peptidechrominfo - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=peptidechrominfo&query.PeptideId%7Eeq=1624566
+2016-04-25 4:25:38pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:38pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:38pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:38pm - inside _doCall path: /peptideChromatogramChart.view
+2016-04-25 4:25:38pm - inside _doCall parameters: Array
+2016-04-25 4:25:38pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:38pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:38pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:38pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:38pm - inside _doCall plot_type: 
+2016-04-25 4:25:38pm - inside _doCall protein: 
+2016-04-25 4:25:38pm - inside _doCall csv: 
+2016-04-25 4:25:38pm - inside _doCall peptideType: 
+2016-04-25 4:25:38pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/peptideChromatogramChart.view?id=7041777&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:39pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:25:39pm - Image Saved: /swpg_files/cptac/panorama_test/GLGK[+42.0]GGAK[+42.0]R_peptide_chrom_id_7041777_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:39pm - Get the chromatogram image, insert into database: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:39pm - Chromatogram Image Path: /swpg_files/cptac/panorama_test/GLGK[+42.0]GGAK[+42.0]R_peptide_chrom_id_7041777_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:39pm - Saved chromatogram image filename: GLGK[+42.0]GGAK[+42.0]R_peptide_chrom_id_7041777_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:40pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:40pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:40pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:40pm - inside _doCall parameters: Array
+2016-04-25 4:25:40pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:40pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:40pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:40pm - inside _doCall peptide: 
+2016-04-25 4:25:40pm - inside _doCall plot_type: 
+2016-04-25 4:25:40pm - inside _doCall protein: 
+2016-04-25 4:25:40pm - inside _doCall csv: 
+2016-04-25 4:25:40pm - inside _doCall peptideType: 
+2016-04-25 4:25:40pm - _doCall:  - Query Name: PrecursorChromInfo - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=PrecursorChromInfo&query.PeptideChromInfoId%7Eeq=7041777
+2016-04-25 4:25:41pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:41pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:41pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:41pm - inside _doCall path: /precursorChromatogramChart.view
+2016-04-25 4:25:41pm - inside _doCall parameters: Array
+2016-04-25 4:25:41pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:41pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:41pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:41pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:41pm - inside _doCall plot_type: 
+2016-04-25 4:25:41pm - inside _doCall protein: 
+2016-04-25 4:25:41pm - inside _doCall csv: 
+2016-04-25 4:25:41pm - inside _doCall peptideType: 
+2016-04-25 4:25:41pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/precursorChromatogramChart.view?id=10739280&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:42pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:25:42pm - Image Saved: /swpg_files/cptac/panorama_test/GLGK[+42.0]GGAK[+42.0]R_precursor_chrom_id_10739280_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:42pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:42pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:42pm - inside _doCall path: /precursorChromatogramChart.view
+2016-04-25 4:25:42pm - inside _doCall parameters: Array
+2016-04-25 4:25:42pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:42pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:42pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:42pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:42pm - inside _doCall plot_type: 
+2016-04-25 4:25:42pm - inside _doCall protein: 
+2016-04-25 4:25:42pm - inside _doCall csv: 
+2016-04-25 4:25:42pm - inside _doCall peptideType: 
+2016-04-25 4:25:42pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/precursorChromatogramChart.view?id=10739288&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:43pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:25:43pm - Image Saved: /swpg_files/cptac/panorama_test/GLGK[+42.0]GGAK[+42.0]R_precursor_chrom_id_10739288_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:43pm - Importing: VFLENVIR
+2016-04-25 4:25:43pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:43pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:43pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:43pm - inside _doCall parameters: Array
+2016-04-25 4:25:43pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:43pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:43pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:43pm - inside _doCall peptide: 
+2016-04-25 4:25:43pm - inside _doCall plot_type: 
+2016-04-25 4:25:43pm - inside _doCall protein: 
+2016-04-25 4:25:43pm - inside _doCall csv: 
+2016-04-25 4:25:43pm - inside _doCall peptideType: 
+2016-04-25 4:25:43pm - _doCall:  - Query Name: Precursor - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%2FPeptideModifiedSequence%7Eeq=VFLENVIR&query.columns=RepresentativeDataState%2CPeptideId%2FSequence%2CPeptideId%2FPeptideModifiedSequence%2CModifiedSequence%2CIsotopeLabelId%2FName%2CPeptideId%2FId%2CPeptideId%2FPeptideGroupId%2FLabel%2CPeptideId%2FPeptideGroupId%2FId
+2016-04-25 4:25:44pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:44pm - Query Panorama for the peptide data: ChromatogramLibrary - VFLENVIR
+2016-04-25 4:25:44pm - Panorama returned rows: 2
+2016-04-25 4:25:44pm - Get images: ChromatogramLibrary - PeptideId/Id: 1624567
+2016-04-25 4:25:44pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:44pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:44pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:44pm - inside _doCall parameters: Array
+2016-04-25 4:25:44pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:44pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:44pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:44pm - inside _doCall peptide: 
+2016-04-25 4:25:44pm - inside _doCall plot_type: 
+2016-04-25 4:25:44pm - inside _doCall protein: 
+2016-04-25 4:25:44pm - inside _doCall csv: 
+2016-04-25 4:25:44pm - inside _doCall peptideType: 
+2016-04-25 4:25:44pm - _doCall:  - Query Name: peptidechrominfo - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=peptidechrominfo&query.PeptideId%7Eeq=1624567
+2016-04-25 4:25:45pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:45pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:45pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:45pm - inside _doCall path: /peptideChromatogramChart.view
+2016-04-25 4:25:45pm - inside _doCall parameters: Array
+2016-04-25 4:25:45pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:45pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:45pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:45pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:25:45pm - inside _doCall plot_type: 
+2016-04-25 4:25:45pm - inside _doCall protein: 
+2016-04-25 4:25:45pm - inside _doCall csv: 
+2016-04-25 4:25:45pm - inside _doCall peptideType: 
+2016-04-25 4:25:45pm - _doCall: VFLENVIR - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/peptideChromatogramChart.view?id=7041785&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:46pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:25:46pm - Image Saved: /swpg_files/cptac/panorama_test/VFLENVIR_peptide_chrom_id_7041785_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:46pm - Get the chromatogram image, insert into database: VFLENVIR
+2016-04-25 4:25:46pm - Chromatogram Image Path: /swpg_files/cptac/panorama_test/VFLENVIR_peptide_chrom_id_7041785_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:46pm - Saved chromatogram image filename: VFLENVIR_peptide_chrom_id_7041785_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:46pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:46pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:46pm - inside _doCall path: /selectRows.api
+2016-04-25 4:25:46pm - inside _doCall parameters: Array
+2016-04-25 4:25:46pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:46pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:46pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:46pm - inside _doCall peptide: 
+2016-04-25 4:25:46pm - inside _doCall plot_type: 
+2016-04-25 4:25:46pm - inside _doCall protein: 
+2016-04-25 4:25:46pm - inside _doCall csv: 
+2016-04-25 4:25:46pm - inside _doCall peptideType: 
+2016-04-25 4:25:46pm - _doCall:  - Query Name: PrecursorChromInfo - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/selectRows.api?schemaName=targetedms&query.queryName=PrecursorChromInfo&query.PeptideChromInfoId%7Eeq=7041785
+2016-04-25 4:25:47pm - _doCall Result - : SUCCESS
+2016-04-25 4:25:47pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:47pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:47pm - inside _doCall path: /precursorChromatogramChart.view
+2016-04-25 4:25:47pm - inside _doCall parameters: Array
+2016-04-25 4:25:47pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:47pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:47pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:47pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:25:47pm - inside _doCall plot_type: 
+2016-04-25 4:25:47pm - inside _doCall protein: 
+2016-04-25 4:25:47pm - inside _doCall csv: 
+2016-04-25 4:25:47pm - inside _doCall peptideType: 
+2016-04-25 4:25:47pm - _doCall: VFLENVIR - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/precursorChromatogramChart.view?id=10739296&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:48pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:25:48pm - Image Saved: /swpg_files/cptac/panorama_test/VFLENVIR_precursor_chrom_id_10739296_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:48pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:48pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:48pm - inside _doCall path: /precursorChromatogramChart.view
+2016-04-25 4:25:48pm - inside _doCall parameters: Array
+2016-04-25 4:25:48pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:48pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:48pm - inside _doCall library: ChromatogramLibrary
+2016-04-25 4:25:48pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:25:48pm - inside _doCall plot_type: 
+2016-04-25 4:25:48pm - inside _doCall protein: 
+2016-04-25 4:25:48pm - inside _doCall csv: 
+2016-04-25 4:25:48pm - inside _doCall peptideType: 
+2016-04-25 4:25:48pm - _doCall: VFLENVIR - Query Name: Image - Library: ChromatogramLibrary
+URL: https://panoramaweb.org/labkey/targetedms/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ChromatogramLibrary/precursorChromatogramChart.view?id=10739304&chartWidth=600&chartHeight=600&syncY=false&syncX=false
+2016-04-25 4:25:49pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:25:49pm - Image Saved: /swpg_files/cptac/panorama_test/VFLENVIR_precursor_chrom_id_10739304_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:25:49pm - Getting chromatogram images complete
+2016-04-25 4:25:49pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:25:49pm - inside _doCall httpMethod: GET
+2016-04-25 4:25:49pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:25:49pm - inside _doCall parameters: Array
+2016-04-25 4:25:49pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:25:49pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:25:49pm - inside _doCall library: ResponseCurve
+2016-04-25 4:25:49pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:25:49pm - inside _doCall plot_type: linear
+2016-04-25 4:25:49pm - inside _doCall protein: 
+2016-04-25 4:25:49pm - inside _doCall csv: 
+2016-04-25 4:25:49pm - inside _doCall peptideType: purified
+2016-04-25 4:25:49pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:25:49pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&peptideType=purified&plotType=linear&showSection=response_curve_png
+2016-04-25 4:25:57pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:25:57pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:26:07pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:26:07pm - inside _doCall httpMethod: GET
+2016-04-25 4:26:07pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:26:07pm - inside _doCall parameters: Array
+2016-04-25 4:26:07pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:26:07pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:26:07pm - inside _doCall library: ResponseCurve
+2016-04-25 4:26:07pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:26:07pm - inside _doCall plot_type: log
+2016-04-25 4:26:07pm - inside _doCall protein: 
+2016-04-25 4:26:07pm - inside _doCall csv: 
+2016-04-25 4:26:07pm - inside _doCall peptideType: purified
+2016-04-25 4:26:07pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:26:07pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&peptideType=purified&plotType=log&showSection=response_curve_png
+2016-04-25 4:26:09pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:26:09pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:26:19pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:26:19pm - inside _doCall httpMethod: GET
+2016-04-25 4:26:19pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:26:19pm - inside _doCall parameters: Array
+2016-04-25 4:26:19pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:26:19pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:26:19pm - inside _doCall library: ResponseCurve
+2016-04-25 4:26:19pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:26:19pm - inside _doCall plot_type: residual
+2016-04-25 4:26:19pm - inside _doCall protein: 
+2016-04-25 4:26:19pm - inside _doCall csv: 
+2016-04-25 4:26:19pm - inside _doCall peptideType: purified
+2016-04-25 4:26:19pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:26:19pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&peptideType=purified&plotType=residual&showSection=response_curve_png
+2016-04-25 4:26:22pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:26:22pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:26:32pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:26:32pm - inside _doCall httpMethod: GET
+2016-04-25 4:26:32pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:26:32pm - inside _doCall parameters: Array
+2016-04-25 4:26:32pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:26:32pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:26:32pm - inside _doCall library: ResponseCurve
+2016-04-25 4:26:32pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:26:32pm - inside _doCall plot_type: linear
+2016-04-25 4:26:32pm - inside _doCall protein: 
+2016-04-25 4:26:32pm - inside _doCall csv: 
+2016-04-25 4:26:32pm - inside _doCall peptideType: purified
+2016-04-25 4:26:32pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:26:32pm - _doCall: VFLENVIR - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=VFLENVIR&peptideType=purified&plotType=linear&showSection=response_curve_png
+2016-04-25 4:26:35pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:26:35pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:26:45pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:26:45pm - inside _doCall httpMethod: GET
+2016-04-25 4:26:45pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:26:45pm - inside _doCall parameters: Array
+2016-04-25 4:26:45pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:26:45pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:26:45pm - inside _doCall library: ResponseCurve
+2016-04-25 4:26:45pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:26:45pm - inside _doCall plot_type: log
+2016-04-25 4:26:45pm - inside _doCall protein: 
+2016-04-25 4:26:45pm - inside _doCall csv: 
+2016-04-25 4:26:45pm - inside _doCall peptideType: purified
+2016-04-25 4:26:45pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:26:45pm - _doCall: VFLENVIR - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=VFLENVIR&peptideType=purified&plotType=log&showSection=response_curve_png
+2016-04-25 4:26:47pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:26:47pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:26:57pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:26:57pm - inside _doCall httpMethod: GET
+2016-04-25 4:26:57pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:26:57pm - inside _doCall parameters: Array
+2016-04-25 4:26:57pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:26:57pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:26:57pm - inside _doCall library: ResponseCurve
+2016-04-25 4:26:57pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:26:57pm - inside _doCall plot_type: residual
+2016-04-25 4:26:57pm - inside _doCall protein: 
+2016-04-25 4:26:57pm - inside _doCall csv: 
+2016-04-25 4:26:57pm - inside _doCall peptideType: purified
+2016-04-25 4:26:57pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:26:57pm - _doCall: VFLENVIR - Query Name: ResponseCurveQuery - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveQuery&reportName=ResponseCurve&query.PeptideModifiedSequence%7Eeq=VFLENVIR&peptideType=purified&plotType=residual&showSection=response_curve_png
+2016-04-25 4:27:00pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:27:00pm - <span class="import-error">Image Error</span>: ResponseCurve - 
+<br/>
+<br/>
+<br/>
+<br/>
+
+2016-04-25 4:27:10pm - response_curve_images import
+2016-04-25 4:27:10pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:10pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:10pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:10pm - inside _doCall parameters: Array
+2016-04-25 4:27:10pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:10pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:10pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:10pm - inside _doCall peptide: 
+2016-04-25 4:27:10pm - inside _doCall plot_type: 
+2016-04-25 4:27:10pm - inside _doCall protein: 
+2016-04-25 4:27:10pm - inside _doCall csv: 
+2016-04-25 4:27:10pm - inside _doCall peptideType: 
+2016-04-25 4:27:10pm - _doCall:  - Query Name: Peptide - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR
+2016-04-25 4:27:10pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:10pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:10pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:10pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:10pm - inside _doCall parameters: Array
+2016-04-25 4:27:10pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:10pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:10pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:10pm - inside _doCall peptide: 
+2016-04-25 4:27:10pm - inside _doCall plot_type: 
+2016-04-25 4:27:10pm - inside _doCall protein: 
+2016-04-25 4:27:10pm - inside _doCall csv: 
+2016-04-25 4:27:10pm - inside _doCall peptideType: 
+2016-04-25 4:27:10pm - _doCall:  - Query Name: Precursor - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=1618518
+2016-04-25 4:27:11pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:11pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:11pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:11pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:11pm - inside _doCall parameters: Array
+2016-04-25 4:27:11pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:11pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:11pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:11pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:11pm - inside _doCall plot_type: 
+2016-04-25 4:27:11pm - inside _doCall protein: sp|P62805|H4_HUMAN
+2016-04-25 4:27:11pm - inside _doCall csv: 
+2016-04-25 4:27:11pm - inside _doCall peptideType: 
+2016-04-25 4:27:11pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view
+2016-04-25 4:27:11pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: QCAnalysisQuery - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP62805%7CH4_HUMAN&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=web_portal_QC&showSection=QC_plot_png
+2016-04-25 4:27:16pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:27:16pm - Image Saved: /swpg_files/cptac/panorama_test/GLGK[+42.0]GGAK[+42.0]R_validation_sample_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:27:17pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:17pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:17pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:17pm - inside _doCall parameters: Array
+2016-04-25 4:27:17pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:17pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:17pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:17pm - inside _doCall peptide: 
+2016-04-25 4:27:17pm - inside _doCall plot_type: 
+2016-04-25 4:27:17pm - inside _doCall protein: 
+2016-04-25 4:27:17pm - inside _doCall csv: 
+2016-04-25 4:27:17pm - inside _doCall peptideType: 
+2016-04-25 4:27:17pm - _doCall:  - Query Name: Peptide - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=VFLENVIR
+2016-04-25 4:27:18pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:18pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:18pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:18pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:18pm - inside _doCall parameters: Array
+2016-04-25 4:27:18pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:18pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:18pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:18pm - inside _doCall peptide: 
+2016-04-25 4:27:18pm - inside _doCall plot_type: 
+2016-04-25 4:27:18pm - inside _doCall protein: 
+2016-04-25 4:27:18pm - inside _doCall csv: 
+2016-04-25 4:27:18pm - inside _doCall peptideType: 
+2016-04-25 4:27:18pm - _doCall:  - Query Name: Precursor - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=1618519
+2016-04-25 4:27:18pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:18pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:18pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:18pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:18pm - inside _doCall parameters: Array
+2016-04-25 4:27:18pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:18pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:18pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:18pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:27:18pm - inside _doCall plot_type: 
+2016-04-25 4:27:18pm - inside _doCall protein: sp|P62805|H4_HUMAN
+2016-04-25 4:27:18pm - inside _doCall csv: 
+2016-04-25 4:27:18pm - inside _doCall peptideType: 
+2016-04-25 4:27:18pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view
+2016-04-25 4:27:18pm - _doCall: VFLENVIR - Query Name: QCAnalysisQuery - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP62805%7CH4_HUMAN&query.PeptideModifiedSequence%7Eeq=VFLENVIR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=web_portal_QC&showSection=QC_plot_png
+2016-04-25 4:27:22pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:27:23pm - Image Saved: /swpg_files/cptac/panorama_test/VFLENVIR_validation_sample_JHU_DChan_HZhang_ZZhang.png
+2016-04-25 4:27:23pm - validation_sample_images import
+2016-04-25 4:27:23pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:23pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:23pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:23pm - inside _doCall parameters: Array
+2016-04-25 4:27:23pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:23pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:23pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:23pm - inside _doCall peptide: 
+2016-04-25 4:27:23pm - inside _doCall plot_type: 
+2016-04-25 4:27:23pm - inside _doCall protein: 
+2016-04-25 4:27:23pm - inside _doCall csv: 
+2016-04-25 4:27:23pm - inside _doCall peptideType: 
+2016-04-25 4:27:23pm - _doCall:  - Query Name: Peptide - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR
+2016-04-25 4:27:24pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:24pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:24pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:24pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:24pm - inside _doCall parameters: Array
+2016-04-25 4:27:24pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:24pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:24pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:24pm - inside _doCall peptide: 
+2016-04-25 4:27:24pm - inside _doCall plot_type: 
+2016-04-25 4:27:24pm - inside _doCall protein: 
+2016-04-25 4:27:24pm - inside _doCall csv: 
+2016-04-25 4:27:24pm - inside _doCall peptideType: 
+2016-04-25 4:27:24pm - _doCall:  - Query Name: Precursor - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=1618518
+2016-04-25 4:27:25pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:25pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:25pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:25pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:25pm - inside _doCall parameters: Array
+2016-04-25 4:27:25pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:25pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:25pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:25pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:25pm - inside _doCall plot_type: 
+2016-04-25 4:27:25pm - inside _doCall protein: sp|P62805|H4_HUMAN
+2016-04-25 4:27:25pm - inside _doCall csv: 1
+2016-04-25 4:27:25pm - inside _doCall peptideType: 
+2016-04-25 4:27:25pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view
+2016-04-25 4:27:25pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: QCAnalysisQuery - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP62805%7CH4_HUMAN&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=web_portal_QC&showSection=CV_results.csv
+2016-04-25 4:27:29pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:27:29pm - Image Saved: web_portal_QC
+2016-04-25 4:27:30pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:30pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:30pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:30pm - inside _doCall parameters: Array
+2016-04-25 4:27:30pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:30pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:30pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:30pm - inside _doCall peptide: 
+2016-04-25 4:27:30pm - inside _doCall plot_type: 
+2016-04-25 4:27:30pm - inside _doCall protein: 
+2016-04-25 4:27:30pm - inside _doCall csv: 
+2016-04-25 4:27:30pm - inside _doCall peptideType: 
+2016-04-25 4:27:30pm - _doCall:  - Query Name: Peptide - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=VFLENVIR
+2016-04-25 4:27:30pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:30pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:30pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:30pm - inside _doCall path: /selectRows.api
+2016-04-25 4:27:30pm - inside _doCall parameters: Array
+2016-04-25 4:27:30pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:30pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:30pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:30pm - inside _doCall peptide: 
+2016-04-25 4:27:30pm - inside _doCall plot_type: 
+2016-04-25 4:27:30pm - inside _doCall protein: 
+2016-04-25 4:27:30pm - inside _doCall csv: 
+2016-04-25 4:27:30pm - inside _doCall peptideType: 
+2016-04-25 4:27:30pm - _doCall:  - Query Name: Precursor - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/query/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=1618519
+2016-04-25 4:27:31pm - _doCall Result - : SUCCESS
+2016-04-25 4:27:31pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:31pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:31pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:31pm - inside _doCall parameters: Array
+2016-04-25 4:27:31pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:31pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:31pm - inside _doCall library: ValidationSamples
+2016-04-25 4:27:31pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:27:31pm - inside _doCall plot_type: 
+2016-04-25 4:27:31pm - inside _doCall protein: sp|P62805|H4_HUMAN
+2016-04-25 4:27:31pm - inside _doCall csv: 1
+2016-04-25 4:27:31pm - inside _doCall peptideType: 
+2016-04-25 4:27:31pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view
+2016-04-25 4:27:31pm - _doCall: VFLENVIR - Query Name: QCAnalysisQuery - Library: ValidationSamples
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ValidationSamples/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP62805%7CH4_HUMAN&query.PeptideModifiedSequence%7Eeq=VFLENVIR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=web_portal_QC&showSection=CV_results.csv
+2016-04-25 4:27:35pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:27:35pm - Image Saved: web_portal_QC
+2016-04-25 4:27:36pm - validation_sample_data import
+2016-04-25 4:27:36pm - inside controller lod_loq_data before run_import
+2016-04-25 4:27:36pm - LOD/LOQ Data Import
+2016-04-25 4:27:36pm - inside getLodLoqData cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:36pm - inside getLodLoqData celllysate: Tissue_QExactive_directPRM
+2016-04-25 4:27:36pm - inside getLodLoqData library ResponseCurve
+2016-04-25 4:27:36pm - inside getLodLoqData peptide sequenceGLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:36pm - inside getLodLoqData lab_abbreviation JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:36pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:36pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:36pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:36pm - inside _doCall parameters: Array
+2016-04-25 4:27:36pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:36pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:36pm - inside _doCall library: ResponseCurve
+2016-04-25 4:27:36pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:36pm - inside _doCall plot_type: 
+2016-04-25 4:27:36pm - inside _doCall protein: 
+2016-04-25 4:27:36pm - inside _doCall csv: 1
+2016-04-25 4:27:36pm - inside _doCall peptideType: 
+2016-04-25 4:27:36pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:27:36pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: ResponseCurveAnalysis - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveAnalysis&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&reportName=ResponseCurveAnalysis&showSection=LODCTable.csv
+2016-04-25 4:27:38pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:27:38pm - LOD/LOQ and Curve Fit data reportname parameters set
+2016-04-25 4:27:38pm - LOD/LOQ and Curve Fit data result {
+  "html" : "\n<br/>\n",
+  "requiredJsScripts" : [ ],
+  "implicitJsIncludes" : [ ],
+  "requiredCssScripts" : [ ],
+  "implicitCssIncludes" : [ ],
+  "moduleContext" : {
+    "pipeline" : { },
+    "core" : { },
+    "assayportal" : { },
+    "experiment" : { },
+    "filecontent" : { },
+    "wiki" : { },
+    "query" : { },
+    "ms2" : { },
+    "announcements" : { },
+    "issues" : { },
+    "targetedms" : {
+      "TargetedMS Folder Type" : "Experiment"
+    }
+  }
+}
+2016-04-25 4:27:38pm - inside getLodLoqData data after doCall before waiting
+2016-04-25 4:27:48pm - inside getLodLoqData data after doCall after waiting
+2016-04-25 4:27:48pm - LOD/LOQ data:
+2016-04-25 4:27:48pm - LodLoq record sequence: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - LodLoq record lab_abbreviation: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:48pm - LodLoq record celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:48pm - LodLoq record panorama_authentication_cookie: Tissue_QExactive_directPRM
+2016-04-25 4:27:48pm - file_value: {
+2016-04-25 4:27:48pm - file_value:   "html" : "\n<br/>\n",
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   "requiredJsScripts" : [ ],
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   "implicitJsIncludes" : [ ],
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   "requiredCssScripts" : [ ],
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   "implicitCssIncludes" : [ ],
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   "moduleContext" : {
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "pipeline" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "core" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "assayportal" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "experiment" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "filecontent" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "wiki" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "query" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "ms2" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "announcements" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "issues" : { },
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     "targetedms" : {
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:       "TargetedMS Folder Type" : "Experiment"
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:     }
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_value:   }
+2016-04-25 4:27:48pm - file_array: 1
+2016-04-25 4:27:48pm - sequence[peptide_sequence]:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:27:48pm - sequence[analyte_peptide_id]:1055
+2016-04-25 4:27:48pm - sequence[lab_id]:10
+2016-04-25 4:27:48pm - lab_data[import_log_id]:
+2016-04-25 4:27:48pm - lab_data[quantification_units]:fmol
+2016-04-25 4:27:48pm - file_arrays[]:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - file_arrays for insert into database:1
+2016-04-25 4:27:48pm - inside getLodLoqData cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:48pm - inside getLodLoqData celllysate: Tissue_QExactive_directPRM
+2016-04-25 4:27:48pm - inside getLodLoqData library ResponseCurve
+2016-04-25 4:27:48pm - inside getLodLoqData peptide sequenceVFLENVIR
+2016-04-25 4:27:48pm - inside getLodLoqData lab_abbreviation JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:48pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:27:48pm - inside _doCall httpMethod: GET
+2016-04-25 4:27:48pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:27:48pm - inside _doCall parameters: Array
+2016-04-25 4:27:48pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:27:48pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:27:48pm - inside _doCall library: ResponseCurve
+2016-04-25 4:27:48pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:27:48pm - inside _doCall plot_type: 
+2016-04-25 4:27:48pm - inside _doCall protein: 
+2016-04-25 4:27:48pm - inside _doCall csv: 1
+2016-04-25 4:27:48pm - inside _doCall peptideType: 
+2016-04-25 4:27:48pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:27:48pm - _doCall: VFLENVIR - Query Name: ResponseCurveAnalysis - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveAnalysis&query.PeptideModifiedSequence%7Eeq=VFLENVIR&reportName=ResponseCurveAnalysis&showSection=LODCTable.csv
+2016-04-25 4:27:51pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:27:51pm - LOD/LOQ and Curve Fit data reportname parameters set
+2016-04-25 4:27:51pm - LOD/LOQ and Curve Fit data result {
+  "html" : "\n<br/>\n",
+  "requiredJsScripts" : [ ],
+  "implicitJsIncludes" : [ ],
+  "requiredCssScripts" : [ ],
+  "implicitCssIncludes" : [ ],
+  "moduleContext" : {
+    "pipeline" : { },
+    "core" : { },
+    "assayportal" : { },
+    "experiment" : { },
+    "filecontent" : { },
+    "wiki" : { },
+    "query" : { },
+    "ms2" : { },
+    "announcements" : { },
+    "issues" : { },
+    "targetedms" : {
+      "TargetedMS Folder Type" : "Experiment"
+    }
+  }
+}
+2016-04-25 4:27:51pm - inside getLodLoqData data after doCall before waiting
+2016-04-25 4:28:01pm - inside getLodLoqData data after doCall after waiting
+2016-04-25 4:28:01pm - LOD/LOQ data:
+2016-04-25 4:28:01pm - LodLoq record sequence: VFLENVIR
+2016-04-25 4:28:01pm - LodLoq record lab_abbreviation: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:28:01pm - LodLoq record celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:28:01pm - LodLoq record panorama_authentication_cookie: Tissue_QExactive_directPRM
+2016-04-25 4:28:01pm - file_value: {
+2016-04-25 4:28:01pm - file_value:   "html" : "\n<br/>\n",
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   "requiredJsScripts" : [ ],
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   "implicitJsIncludes" : [ ],
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   "requiredCssScripts" : [ ],
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   "implicitCssIncludes" : [ ],
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   "moduleContext" : {
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "pipeline" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "core" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "assayportal" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "experiment" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "filecontent" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "wiki" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "query" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "ms2" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "announcements" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "issues" : { },
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     "targetedms" : {
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:       "TargetedMS Folder Type" : "Experiment"
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:     }
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_value:   }
+2016-04-25 4:28:01pm - file_array: 1
+2016-04-25 4:28:01pm - sequence[peptide_sequence]:VFLENVIR
+2016-04-25 4:28:01pm - sequence[analyte_peptide_id]:1056
+2016-04-25 4:28:01pm - sequence[lab_id]:10
+2016-04-25 4:28:01pm - lab_data[import_log_id]:
+2016-04-25 4:28:01pm - lab_data[quantification_units]:fmol
+2016-04-25 4:28:01pm - file_arrays[]:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - file_arrays for insert into database:1
+2016-04-25 4:28:01pm - controller after lod_loq_data run_import
+2016-04-25 4:28:01pm - controller curve fit import
+2016-04-25 4:28:01pm - Running Curve Fit Data Import
+2016-04-25 4:28:01pm - Curve Fit record:GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:01pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:28:01pm - inside _doCall httpMethod: GET
+2016-04-25 4:28:01pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:28:01pm - inside _doCall parameters: Array
+2016-04-25 4:28:01pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:28:01pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:28:01pm - inside _doCall library: ResponseCurve
+2016-04-25 4:28:01pm - inside _doCall peptide: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:01pm - inside _doCall plot_type: 
+2016-04-25 4:28:01pm - inside _doCall protein: 
+2016-04-25 4:28:01pm - inside _doCall csv: 1
+2016-04-25 4:28:01pm - inside _doCall peptideType: 
+2016-04-25 4:28:01pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:28:01pm - _doCall: GLGK[+42.0]GGAK[+42.0]R - Query Name: ResponseCurveAnalysis - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveAnalysis&query.PeptideModifiedSequence%7Eeq=GLGK%5B%2B42.0%5DGGAK%5B%2B42.0%5DR&reportName=ResponseCurveAnalysis&showSection=fitTable.csv
+2016-04-25 4:28:03pm - _doCall Result - GLGK[+42.0]GGAK[+42.0]R: SUCCESS
+2016-04-25 4:28:03pm - LOD/LOQ and Curve Fit data reportname parameters set
+2016-04-25 4:28:03pm - LOD/LOQ and Curve Fit data result {
+  "html" : "\n<br/>\n",
+  "requiredJsScripts" : [ ],
+  "implicitJsIncludes" : [ ],
+  "requiredCssScripts" : [ ],
+  "implicitCssIncludes" : [ ],
+  "moduleContext" : {
+    "pipeline" : { },
+    "core" : { },
+    "assayportal" : { },
+    "experiment" : { },
+    "filecontent" : { },
+    "wiki" : { },
+    "query" : { },
+    "ms2" : { },
+    "announcements" : { },
+    "issues" : { },
+    "targetedms" : {
+      "TargetedMS Folder Type" : "Experiment"
+    }
+  }
+}
+2016-04-25 4:28:08pm - Result of curve fit query:
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Saving data: GLGK[+42.0]GGAK[+42.0]R
+2016-04-25 4:28:08pm - Curve Fit record:VFLENVIR
+2016-04-25 4:28:08pm - inside _doCall cookie: /var/www/staging.cptac-assay.org/CPTAC-ESAC/swpg_files/cptac/panorama_test/cookie20160425162535_571e44ffc240e.txt
+2016-04-25 4:28:08pm - inside _doCall httpMethod: GET
+2016-04-25 4:28:08pm - inside _doCall path: /getWebPart.view
+2016-04-25 4:28:08pm - inside _doCall parameters: Array
+2016-04-25 4:28:08pm - inside _doCall lab: JHU_DChan_HZhang_ZZhang
+2016-04-25 4:28:08pm - inside _doCall celllysate_path: Tissue_QExactive_directPRM
+2016-04-25 4:28:08pm - inside _doCall library: ResponseCurve
+2016-04-25 4:28:08pm - inside _doCall peptide: VFLENVIR
+2016-04-25 4:28:08pm - inside _doCall plot_type: 
+2016-04-25 4:28:08pm - inside _doCall protein: 
+2016-04-25 4:28:08pm - inside _doCall csv: 1
+2016-04-25 4:28:08pm - inside _doCall peptideType: 
+2016-04-25 4:28:08pm - inside query switch(queryname) https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view
+2016-04-25 4:28:08pm - _doCall: VFLENVIR - Query Name: ResponseCurveAnalysis - Library: ResponseCurve
+URL: https://panoramaweb.org/labkey/project/CPTAC%20Assay%20Portal/JHU_DChan_HZhang_ZZhang/Tissue_QExactive_directPRM/ResponseCurve/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=ResponseCurveAnalysis&query.PeptideModifiedSequence%7Eeq=VFLENVIR&reportName=ResponseCurveAnalysis&showSection=fitTable.csv
+2016-04-25 4:28:11pm - _doCall Result - VFLENVIR: SUCCESS
+2016-04-25 4:28:11pm - LOD/LOQ and Curve Fit data reportname parameters set
+2016-04-25 4:28:11pm - LOD/LOQ and Curve Fit data result {
+  "html" : "\n<br/>\n",
+  "requiredJsScripts" : [ ],
+  "implicitJsIncludes" : [ ],
+  "requiredCssScripts" : [ ],
+  "implicitCssIncludes" : [ ],
+  "moduleContext" : {
+    "pipeline" : { },
+    "core" : { },
+    "assayportal" : { },
+    "experiment" : { },
+    "filecontent" : { },
+    "wiki" : { },
+    "query" : { },
+    "ms2" : { },
+    "announcements" : { },
+    "issues" : { },
+    "targetedms" : {
+      "TargetedMS Folder Type" : "Experiment"
+    }
+  }
+}
+2016-04-25 4:28:16pm - Result of curve fit query:
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - Saving data: VFLENVIR
+2016-04-25 4:28:16pm - End Curve Fit Data Import
+2016-04-25 4:28:16pm - End Test Mode Import
+2016-04-25 4:28:16pm - Update import set new enddate
+2016-04-25 4:29:16pm - Administrator completed email sent
+2016-04-25 4:29:16pm - IMPORT COMPLETE - Johns Hopkins University Monday, April 25th, 2016 at 04:29:16 PM

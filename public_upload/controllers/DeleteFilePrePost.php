@@ -1,0 +1,33 @@
+<?php
+namespace public_upload\controllers;
+
+use Slim\Http\Request;
+use Slim\Http\Response;
+
+
+use public_upload\models\PublicUpload;
+use assays\models\Assay;
+
+use core\controllers\Controller;
+
+class DeleteFilePrePost extends Controller
+{
+
+  function delete_file_pre_post(Request $request, Response $response, $args = [])
+  {
+
+    global $final_global_template_vars;
+
+    $db_conn = new \swpg\models\db($final_global_template_vars["public_upload_db_connection"]);
+    $db_resource = $db_conn->get_resource();
+    $import = new PublicUpload($db_resource, $final_global_template_vars["session_key"]);
+    $data = $request->getParsedBody();
+    
+    $file_id = $data['file_id'];
+
+    $data = $import->delete_file_pre_post($file_id);
+
+    return $response->withJson($data);
+  }
+}
+?>

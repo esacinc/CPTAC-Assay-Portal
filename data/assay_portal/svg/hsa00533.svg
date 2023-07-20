@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="kegg_svg" viewbox="0 0 1131 578" width="965" version="1.1">
+  <defs id="svg_defs">
+    <filter id="matrix-black">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0                     0  1  0  0 0                     0  1  1  0 0                     0  0  0  0 1"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0                     0  0  0  0 0                     0  0  0  0 0                     -1  -1  -1  1 0"/>
+    </filter>
+    <filter id="saturate">
+      <feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+    </filter>
+    <filter id="hueRotate">
+      <feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+    </filter>
+    <filter id="L2A">
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+    </filter>
+    <filter id="grayscale">
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="matrix-greyscale">
+      <feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0                       .33 .33 .33 0 0                      .33 .33 .33 0 0                    0 0 0 1 0"/>
+    </filter>
+    <filter id="matrix-invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1                                                               0 -1 0 0 1                                                               0 0 -1 0 1                                                              0 0 0 1 0"/>
+    </filter>
+    <mask id="name_inverter">
+      <rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"/>
+    </mask>
+  </defs>
+  <!-- Creation date: Nov 29, 2016 15:32:37 +0900 (GMT+9) -->
+  <g id="image">
+    <image x="0" y="0" render-order="1" width="1131px" height="578px" name="path:hsa00533" org="hsa" number="00533" title="Glycosaminoglycan biosynthesis - keratan sulfate" xlink:href="/assays/library/images/kegg-png/hsa00533.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00533"/>
+  </g>
+  <g id="areas"/>
+  <g id="labels">
+    <image x="0" y="0" render-order="1" width="1131px" height="578px" name="path:hsa00533" org="hsa" number="00533" title="Glycosaminoglycan biosynthesis - keratan sulfate" xlink:href="/assays/library/images/kegg-png/hsa00533.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00533" mask="url(#name_inverter)"/>
+  </g>
+  <g id="links"/>
+  <g id="alls">
+    <a id="1" name="path:hsa00512" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00512" target="_blank">
+      <rect name="Mucin type O-glycan biosynthesis" fgcolor="#000000" fill="#FFFFFF" x="488.5" y="344.5" width="127" height="25" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="2" name="path:hsa00533" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00533" target="_blank">
+      <rect name="TITLE:Glycosaminoglycan biosynthesis - keratan sulfate" fgcolor="#000000" fill="#FFFFFF" x="32" y="37" width="453" height="41" rx="10" fill-opacity="1"/>
+    </a>
+    <a id="3" name="hsa:10678" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10678" target="_blank">
+      <rect name="B3GNT2, 3-Gn-T1, 3-Gn-T2, B3GN-T2, B3GNT, B3GNT-2, B3GNT1, BETA3GNT, BGNT2, BGnT-2, beta-1, beta3Gn-T1, beta3Gn-T2" fgcolor="#66CC66" fill="#FFFFFF" type="line" coords="398,198,428,198"/>
+    </a>
+    <a id="5" name="hsa:2683 hsa:8703 hsa:8704" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="651,264,681,264"/>
+    </a>
+    <a id="6" name="hsa:6487" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6487" target="_blank">
+      <graphics name="ST3GAL3, EIEE15, MRT12, SIAT6, ST3GALII, ST3GalIII, ST3N" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="578,265,608,265"/>
+    </a>
+    <a id="10" name="hsa:2683 hsa:8703 hsa:8704" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="648,198,678,198"/>
+    </a>
+    <a id="11" name="hsa:10678" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10678" target="_blank">
+      <graphics name="B3GNT2, 3-Gn-T1, 3-Gn-T2, B3GN-T2, B3GNT, B3GNT-2, B3GNT1, BETA3GNT, BGNT2, BGnT-2, beta-1, beta3Gn-T1, beta3Gn-T2" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="574,198,604,198"/>
+    </a>
+    <a id="12" name="hsa:2683 hsa:8703 hsa:8704" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="476,198,506,198"/>
+    </a>
+    <a id="13" name="hsa:8702" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8702" target="_blank">
+      <graphics name="B4GALT4, B4Gal-T4, beta4Gal-T4" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="276,198,306,198"/>
+    </a>
+    <a id="14" name="hsa:93010" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:93010" target="_blank">
+      <graphics name="B3GNT7, beta3GnT7" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="197,198,227,198"/>
+    </a>
+    <a id="15" name="hsa:8702" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8702" target="_blank">
+      <graphics name="B4GALT4, B4Gal-T4, beta4Gal-T4" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="78,198,108,198"/>
+    </a>
+    <a id="16" name="hsa:2530" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2530" target="_blank">
+      <graphics name="FUT8" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="1029,179,1029,209"/>
+    </a>
+    <a id="20" name="hsa:8534" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8534" target="_blank">
+      <graphics name="CHST1, C6ST, GST-1, KS6ST, KSGal6ST, KSST" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="251,148,251,178"/>
+    </a>
+    <a id="21" name="hsa:4166" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:4166" target="_blank">
+      <graphics name="CHST6, MCDC1" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="137,148,137,178"/>
+    </a>
+    <a id="22" name="hsa:8534" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8534" target="_blank">
+      <graphics name="CHST1, C6ST, GST-1, KS6ST, KSGal6ST, KSST" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="61,148,61,178"/>
+    </a>
+    <a id="23" name="path:hsa00510" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00510" target="_blank">
+      <graphics name="N-Glycan biosynthesis" fgcolor="#000000" bgcolor="#FFFFFF" x="490.5" y="82.5" width="127" height="25" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="24" name="hsa:10678" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10678" target="_blank">
+      <graphics name="B3GNT2, 3-Gn-T1, 3-Gn-T2, B3GN-T2, B3GNT, B3GNT-2, B3GNT1, BETA3GNT, BGNT2, BGnT-2, beta-1, beta3Gn-T1, beta3Gn-T2" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="473,443,503,443"/>
+    </a>
+    <a id="25" name="hsa:6482 hsa:6483" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6482+hsa:6483" target="_blank">
+      <graphics name="ST3GAL1, Gal-NAc6S, SIAT4A, SIATFL, ST3GalA, ST3GalA.1, ST3GalIA, ST3GalIA,1, ST3O..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="745,508,775,508"/>
+    </a>
+    <a id="28" name="hsa:2683 hsa:8703 hsa:8704" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="723,443,753,443"/>
+    </a>
+    <a id="29" name="hsa:10678" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10678" target="_blank">
+      <graphics name="B3GNT2, 3-Gn-T1, 3-Gn-T2, B3GN-T2, B3GNT, B3GNT-2, B3GNT1, BETA3GNT, BGNT2, BGnT-2, beta-1, beta3Gn-T1, beta3Gn-T2" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="649,443,679,443"/>
+    </a>
+    <a id="30" name="hsa:2683 hsa:8703 hsa:8704" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="551,443,581,443"/>
+    </a>
+    <a id="31" name="hsa:8702" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8702" target="_blank">
+      <graphics name="B4GALT4, B4Gal-T4, beta4Gal-T4" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="365,443,395,443"/>
+    </a>
+    <a id="32" name="hsa:93010" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:93010" target="_blank">
+      <graphics name="B3GNT7, beta3GnT7" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="286,443,316,443"/>
+    </a>
+    <a id="33" name="hsa:8702" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8702" target="_blank">
+      <graphics name="B4GALT4, B4Gal-T4, beta4Gal-T4" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="172,443,202,443"/>
+    </a>
+    <a id="35" name="hsa:10164 hsa:9435" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10164+hsa:9435" target="_blank">
+      <graphics name="CHST4, GST3, GlcNAc6ST2, HECGLCNAC6ST, LSST..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="425,393,425,423"/>
+    </a>
+    <a id="36" name="hsa:10164 hsa:9435" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10164+hsa:9435" target="_blank">
+      <graphics name="CHST4, GST3, GlcNAc6ST2, HECGLCNAC6ST, LSST..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="231,393,231,423"/>
+    </a>
+    <a id="37" name="hsa:8534" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8534" target="_blank">
+      <graphics name="CHST1, C6ST, GST-1, KS6ST, KSGal6ST, KSST" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="155,393,155,423"/>
+    </a>
+  </g>
+</svg>

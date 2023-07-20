@@ -1,0 +1,27 @@
+{% extends base_template_file_name %}
+{% block content %}
+    To confirm CPTAC Assay Portal registration, please click the link below. This link will expire in {{ confirmation_expiration_interval_formatted }}.
+    <br/>
+    <br/>
+    Here is the confirmation link: <a href="{{ confirmation_url }}">{{ confirmation_url }}</a><br/>
+    <br/>
+    Thank you,<br/>
+    CPTAC Assay Portal team
+{% endblock %}
+{% block footer %}
+
+    <p>
+        <em>
+            For security purposes, if this registration was NOT requested by you, disregard this message and contact the
+            CPTAC Assay Portal
+            administrator at: <a href="mailto:{{ admin_email_address }}">{{ admin_email_address }}</a><br/>
+        </em>
+    </p>
+    <p>
+        <em>
+            This is an operational email from the CPTAC Assay Portal sent by the <a href="{{ site_url }}">CPTAC Assay
+                Portal web server</a>.
+            Please do not reply to this email.
+        </em>
+    </p>
+{% endblock %}

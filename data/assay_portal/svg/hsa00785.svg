@@ -1,0 +1,92 @@
+<svg id="kegg_svg" viewbox="0 0 620 509" width="685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs id="svg_defs">
+		<filter id="matrix-black">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0
+																	   0  1  0  0 0
+																	   0  1  1  0 0
+																	   0  0  0  0 1"/>
+			<feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0
+																	   0  0  0  0 0
+																	   0  0  0  0 0
+																	   -1  -1  -1  1 0"/>
+		</filter>
+		<filter id="saturate">
+			<feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+		</filter>
+		<filter id="hueRotate">
+			<feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+		</filter>
+		<filter id="L2A">
+			<feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+		</filter>
+		<filter id="grayscale">
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+		<filter id="matrix-greyscale">
+			<feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0 
+														  		   .33 .33 .33 0 0 
+			 													   .33 .33 .33 0 0
+																   0 0 0 1 0"/>
+		</filter>
+		<filter id="matrix-invert">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1 
+		                                                           0 -1 0 0 1 
+		                                                           0 0 -1 0 1
+		                                                           0 0 0 1 0"/>
+		</filter>
+		<mask id="name_inverter">
+			<rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"></rect>
+		</mask>
+	</defs>
+<!-- Creation date: May 18, 2016 16:29:28 +0900 (GMT+9) -->
+	
+<g id="image">
+<image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="620px" height="509px"  name="path:hsa00785" org="hsa" number="00785" title="Lipoic acid metabolism" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa00785.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00785"></image></g>
+<g id="areas"></g>
+<g id="labels" filter="url(#matrix-invert)"><image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="620px" height="509px"  name="path:hsa00785" org="hsa" number="00785" title="Lipoic acid metabolism" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa00785.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00785" mask="url(#name_inverter)"></image></g>
+<g id="links"></g>
+<g id="alls">
+
+ 	<a id="5" name="hsa:11019" type="gene" reaction="rn:R07768" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:11019">
+ 		<rect    name="LIAS, HGCLAS, HUSSY-01, LAS, LIP1, LS, PDHLD" fgcolor="#000000"  fill="#BFFFBF"    x="157"  y="196.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="6" name="hsa:387787" type="gene" reaction="rn:R07769" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:387787">
+ 		<rect    name="LIPT2" fgcolor="#000000"  fill="#BFFFBF"    x="157"  y="296.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="7" name="cpd:C16239" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C16239">
+ 		<circle  name="C16239" fgcolor="#000000"  fill="#FFFFFF"   cx="179" cy="257" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="8" name="path:hsa00785" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00785">
+ 		<rect    name="TITLE:Lipoic acid metabolism" fgcolor="#000000"  fill="#FFFFFF"    x="40"  y="45.5" width="200" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="9" name="path:hsa00061" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00061">
+ 		<rect    name="Fatty acid biosynthesis" fgcolor="#000000"  fill="#FFFFFF"    x="42"  y="145" width="86" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="10" name="hsa:11019" type="gene" reaction="rn:R07767" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:11019">
+ 		<rect    name="LIAS, HGCLAS, HUSSY-01, LAS, LIP1, LS, PDHLD" fgcolor="#000000"  fill="#BFFFBF"    x="257"  y="296.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="11" name="hsa:387787" type="gene" reaction="rn:R07766" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:387787">
+ 		<rect    name="LIPT2" fgcolor="#000000"  fill="#BFFFBF"    x="257"  y="196.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="12" name="cpd:C05752" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C05752">
+ 		<circle  name="C05752" fgcolor="#000000"  fill="#FFFFFF"   cx="179" cy="162" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="13" name="cpd:C16241" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C16241">
+ 		<circle  name="C16241" fgcolor="#000000"  fill="#FFFFFF"   cx="421" cy="162" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="14" name="cpd:C16238" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C16238">
+ 		<circle  name="C16238" fgcolor="#000000"  fill="#FFFFFF"   cx="421" cy="257" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="15" name="cpd:C16236" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C16236">
+ 		<circle  name="C16236" fgcolor="#000000"  fill="#FFFFFF"   cx="279" cy="257" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="16" name="cpd:C16237" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C16237">
+ 		<circle  name="C16237" fgcolor="#000000"  fill="#FFFFFF"   cx="279" cy="353" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="20" name="hsa:51601" type="gene" reaction="rn:R07771" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:51601">
+ 		<rect    name="LIPT1, LIPT1D" fgcolor="#000000"  fill="#BFFFBF"    x="399"  y="296.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="22" name="ko:K03800" type="ortholog" reaction="rn:R11143" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K03800">
+ 		<rect    name="K03800" fgcolor="#000000"  fill="#FFFFFF"    x="499"  y="248.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a></g>
+</svg>

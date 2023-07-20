@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>{{ title }}</title>
+        <style type="text/css">
+        {{ style_data }}
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div id="contentHeader">
+                    <div id="logo">
+                        <a href="{{ site_url }}">
+                            <img src="{{ site_url }}{{ logo_image_url }}" alt="CPTAC Qualified Assay seal"/>
+                        </a>
+                    </div>
+                    <h1>{{ heading }}</h1>
+                </div>
+                <div class="container">
+                    <div class="grid-24">
+                        {% block content %}{% endblock %}
+                    </div>
+                    <div id="footer">
+                        {% block footer %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

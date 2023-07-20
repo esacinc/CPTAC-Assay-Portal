@@ -1,0 +1,152 @@
+<svg id="kegg_svg" viewbox="0 0 1381 618" width="685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs id="svg_defs">
+		<filter id="matrix-black">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0
+																	   0  1  0  0 0
+																	   0  1  1  0 0
+																	   0  0  0  0 1"/>
+			<feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0
+																	   0  0  0  0 0
+																	   0  0  0  0 0
+																	   -1  -1  -1  1 0"/>
+		</filter>
+		<filter id="saturate">
+			<feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+		</filter>
+		<filter id="hueRotate">
+			<feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+		</filter>
+		<filter id="L2A">
+			<feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+		</filter>
+		<filter id="grayscale">
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+		<filter id="matrix-greyscale">
+			<feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0 
+														  		   .33 .33 .33 0 0 
+			 													   .33 .33 .33 0 0
+																   0 0 0 1 0"/>
+		</filter>
+		<filter id="matrix-invert">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1 
+		                                                           0 -1 0 0 1 
+		                                                           0 0 -1 0 1
+		                                                           0 0 0 1 0"/>
+		</filter>
+		<mask id="name_inverter">
+			<rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"></rect>
+		</mask>
+	</defs>
+<!-- Creation date: Apr 7, 2011 09:25:09 +0900 (GMT+09:00) -->
+	
+<g id="image">
+<image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="1381px" height="618px"  name="path:hsa05332" org="hsa" number="05332" title="Graft-versus-host disease" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa05332.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa05332"></image></g>
+<g id="areas"></g>
+<g id="labels" filter="url(#matrix-invert)"><image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="1381px" height="618px"  name="path:hsa05332" org="hsa" number="05332" title="Graft-versus-host disease" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa05332.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa05332" mask="url(#name_inverter)"></image></g>
+<g id="links"></g>
+<g id="alls">
+
+ 	<a id="1" name="path:hsa04060" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04060">
+ 		<rect    name="Cytokine-cytokine receptor interaction" fgcolor="#000000"  fill="#FFFFFF"    x="515.5"  y="417" width="113" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="2" name="path:hsa04660" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04660">
+ 		<rect    name="T cell receptor signaling pathway" fgcolor="#000000"  fill="#FFFFFF"    x="512.5"  y="106" width="113" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="3" name="hsa:3108 hsa:3109 hsa:3111 hsa:3112 hsa:3113 hsa:3115 hsa:3117 hsa:3118 hsa:3119 hsa:3122 hsa:3123 hsa:3125 hsa:3126 hsa:3127" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3108+hsa:3109+hsa:3111+hsa:3112+hsa:3113+hsa:3115+hsa:3117+hsa:3118+hsa:3119+hsa:3122+hsa:3123+hsa:3125+hsa:3126+hsa:3127">
+ 		<rect    name="HLA-DMA, D6S222E, DMA, HLADM, RING6..." fgcolor="#000000"  fill="#BFFFBF"    x="418"  y="184.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="4" name="ko:K10784 ko:K10785" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10784+K10785">
+ 		<rect    name="K10784..." fgcolor="#000000"  fill="#FFFFFF"    x="498"  y="184.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="5" name="path:hsa04612" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04612">
+ 		<rect    name="Antigen processing and presentation" fgcolor="#000000"  fill="#FFFFFF"    x="337"  y="106" width="112" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="6" name="path:hsa04514" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04514">
+ 		<rect    name="Cell adhesion molecules (CAMs)" fgcolor="#000000"  fill="#FFFFFF"    x="420.5"  y="288" width="113" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="7" name="path:hsa05332" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa05332">
+ 		<rect    name="TITLE:Graft-versus-host disease" fgcolor="#000000"  fill="#FFFFFF"    x="40.5"  y="45.5" width="233" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="8" name="hsa:355" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:355">
+ 		<rect    name="FAS, ALPS1A, APO-1, APT1, CD95, FAS1, FASTM, TNFRSF6" fgcolor="#000000"  fill="#BFFFBF"    x="1000"  y="114.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="9" name="hsa:356" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:356">
+ 		<rect    name="FASLG, ALPS1B, APT1LG1, APTL, CD178, CD95-L, CD95L, FASL, TNFSF6, TNLG1A" fgcolor="#000000"  fill="#BFFFBF"    x="923"  y="114.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="10" name="ko:K10784 ko:K10785" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10784+K10785">
+ 		<rect    name="K10784..." fgcolor="#000000"  fill="#FFFFFF"    x="923"  y="86.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="11" name="hsa:3105 hsa:3106 hsa:3107 hsa:3133 hsa:3134 hsa:3135" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3105+hsa:3106+hsa:3107+hsa:3133+hsa:3134+hsa:3135">
+ 		<rect    name="HLA-A, Aw-33, Aw-74, HLA-A11, HLA-A33, HLA-DQB1, HLA-DRB1, HLAA..." fgcolor="#000000"  fill="#BFFFBF"    x="1000"  y="86.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="12" name="hsa:3002" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3002">
+ 		<rect    name="GZMB, CCPI, CGL-1, CGL1, CSP-B, CSPB, CTLA1, CTSGL1, HLP, SECT" fgcolor="#000000"  fill="#BFFFBF"    x="960"  y="181.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="13" name="hsa:5551" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5551">
+ 		<rect    name="PRF1, FLH2, HPLH2, P1, PFN1, PFP" fgcolor="#000000"  fill="#BFFFBF"    x="960"  y="156.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="14" name="path:hsa04210" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04210">
+ 		<rect    name="Apoptosis" fgcolor="#000000"  fill="#FFFFFF"    x="1020"  y="187.5" width="112" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="15" name="path:hsa04650" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04650">
+ 		<rect    name="Natural killer cell mediated cytotoxicity" fgcolor="#000000"  fill="#FFFFFF"    x="836"  y="350" width="112" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="16" name="hsa:940" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:940">
+ 		<rect    name="CD28, Tp44" fgcolor="#000000"  fill="#BFFFBF"    x="498"  y="207.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="17" name="hsa:3458" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3458">
+ 		<rect    name="IFNG, IFG, IFI" fgcolor="#000000"  fill="#BFFFBF"    x="771"  y="256.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="18" name="hsa:7124" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:7124">
+ 		<rect    name="TNF, DIF, TNF-alpha, TNFA, TNFSF2, TNLG1F" fgcolor="#000000"  fill="#BFFFBF"    x="956"  y="462.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="19" name="cpd:C00533" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00533">
+ 		<circle  name="C00533" fgcolor="#000000"  fill="#FFFFFF"   cx="978" cy="517" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="20" name="hsa:941 hsa:942" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:941+hsa:942">
+ 		<rect    name="CD80, B7, B7-1, B7.1, BB1, CD28LG, CD28LG1, LAB7..." fgcolor="#000000"  fill="#BFFFBF"    x="417"  y="207.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="21" name="hsa:355" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:355">
+ 		<rect    name="FAS, ALPS1A, APO-1, APT1, CD95, FAS1, FASTM, TNFRSF6" fgcolor="#000000"  fill="#BFFFBF"    x="1000"  y="278.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="22" name="hsa:356" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:356">
+ 		<rect    name="FASLG, ALPS1B, APT1LG1, APTL, CD178, CD95-L, CD95L, FASL, TNFSF6, TNLG1A" fgcolor="#000000"  fill="#BFFFBF"    x="923"  y="278.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="23" name="hsa:3002" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3002">
+ 		<rect    name="GZMB, CCPI, CGL-1, CGL1, CSP-B, CSPB, CTLA1, CTSGL1, HLP, SECT" fgcolor="#000000"  fill="#BFFFBF"    x="960"  y="343.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="24" name="hsa:5551" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5551">
+ 		<rect    name="PRF1, FLH2, HPLH2, P1, PFN1, PFP" fgcolor="#000000"  fill="#BFFFBF"    x="960"  y="316.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="25" name="hsa:3558" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3558">
+ 		<rect    name="IL2, IL-2, TCGF, lymphokine" fgcolor="#000000"  fill="#BFFFBF"    x="770"  y="135.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="26" name="hsa:3458" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3458">
+ 		<rect    name="IFNG, IFG, IFI" fgcolor="#000000"  fill="#BFFFBF"    x="735"  y="389.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="27" name="hsa:3569" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3569">
+ 		<rect    name="IL6, BSF-2, BSF2, CDF, HGF, HSF, IFN-beta-2, IFNB2, IL-6" fgcolor="#000000"  fill="#BFFFBF"    x="326"  y="304.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="28" name="hsa:3552 hsa:3553" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3552+hsa:3553">
+ 		<rect    name="IL1A, IL-1A, IL1, IL1-ALPHA, IL1F1..." fgcolor="#000000"  fill="#BFFFBF"    x="326"  y="325.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="29" name="hsa:3552 hsa:3553" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3552+hsa:3553">
+ 		<rect    name="IL1A, IL-1A, IL1, IL1-ALPHA, IL1F1..." fgcolor="#000000"  fill="#BFFFBF"    x="956"  y="485.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="30" name="hsa:7124" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:7124">
+ 		<rect    name="TNF, DIF, TNF-alpha, TNFA, TNFSF2, TNLG1F" fgcolor="#000000"  fill="#BFFFBF"    x="326"  y="348.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="31" name="path:hsa04620" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04620">
+ 		<rect    name="Toll-like receptor signaling pathway" fgcolor="#000000"  fill="#FFFFFF"    x="712.5"  y="541" width="113" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="32" name="hsa:3105 hsa:3106 hsa:3107 hsa:3133 hsa:3134 hsa:3135" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3105+hsa:3106+hsa:3107+hsa:3133+hsa:3134+hsa:3135">
+ 		<rect    name="HLA-A, Aw-33, Aw-74, HLA-A11, HLA-A33, HLA-DQB1, HLA-DRB1, HLAA..." fgcolor="#000000"  fill="#BFFFBF"    x="1000"  y="249.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="33" name="hsa:3802 hsa:3803 hsa:3804 hsa:3811 hsa:3812 hsa:3821 hsa:3824 hsa:57292" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3802+hsa:3803+hsa:3804+hsa:3811+hsa:3812+hsa:3821+hsa:3824+hsa:57292">
+ 		<rect    name="KIR2DL1, CD158A, KIR-K64, KIR221, KIR2DS1, NKAT, NKAT-1, NKAT1, p58.1..." fgcolor="#000000"  fill="#BFFFBF"    x="923"  y="249.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="34" name="cpd:C00338" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00338">
+ 		<circle  name="C00338" fgcolor="#000000"  fill="#FFFFFF"   cx="558" cy="538" r="4"                           fill-opacity="0.0"/>
+ 	</a></g>
+</svg>

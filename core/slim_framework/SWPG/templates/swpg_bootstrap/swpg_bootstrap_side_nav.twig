@@ -1,0 +1,66 @@
+{% block styles_head %}
+	<style type="text/css">
+		#main_side_nav{
+			clear:both;
+		}
+		#main_side_nav li.nav-header{
+			cursor:pointer;
+		}
+		#main_side_nav li.nav-header i{
+			margin-top:-1px;
+		}
+	</style>
+{% endblock %}
+{% block side_nav %}
+	{% if visible_module_count > 0 %}
+		<div class="{% if hide_side_nav is not empty %}{% else %}span3{% endif %} well sidebar-nav" style="{% if hide_side_nav == true %}display:none;{% endif %}">
+		  	<a id="hide_side_nav" href="javascript:void(0);" class="pull-right" style="margin-right:7px;">&larr; Hide Nav</a>
+		    <ul class="nav nav-list" id="main_side_nav">
+				{% for module in swpg_module_list if module.menu_hidden != true %}
+			      	{% if module.pages %}
+			      		{% set icon_image = 'icon-chevron-right' %}
+			      		{% set is_module_active = false %}
+			    		{% if module.handle == active_module %}
+			    			{% set is_module_active = true %}
+			    			{% set icon_image = 'icon-chevron-down' %}
+			    		{% endif %}
+			    		<li class="nav-header {{ display_active }}"><i class="{{ icon_image }}"></i>{{ module.module_name }}</li>
+			      		{% for page in module.pages if page.display == true %}
+			      			<li style="{% if is_module_active == false %}display:none;{% endif %}"><a href="{{ module.path_to_this_module }}{{ page.path }}">{{ page.label }}</a></li>
+			      		{% endfor %}
+			      	{% endif %}
+		      	{% endfor %}
+		    </ul>
+		 </div><!--/.well -->
+	{% endif %}
+{% endblock %}
+{% block show_side_nav %}
+	<a id="show_side_nav" href="javascript:void(0);" style="{% if hide_side_nav == true %}{% else %}display:none;{% endif %}">Show Nav &rarr;</a>
+{% endblock %}
+{% block written_js_bottom %}
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#main_side_nav li.nav-header").on("click",function(){
+				$(this).nextUntil("li.nav-header").slideToggle('fast');
+				$(this).find("i").toggleClass("icon-chevron-down");
+				$(this).find("i").toggleClass("icon-chevron-right");
+			});
+			$("#hide_side_nav").on('click',function(){
+				var nav_bar = $(this).closest(".sidebar-nav");
+				nav_bar.removeClass("span3").hide();
+				var content_bar = nav_bar.next("div");
+				var original_content_span_number = content_bar.data("span_number");
+				content_bar.removeClass("span" + original_content_span_number);
+				$("#show_side_nav").show();
+			});
+			$("#show_side_nav").on('click',function(){
+				var nav_bar = $("#hide_side_nav").closest(".sidebar-nav");
+				nav_bar.addClass("span3").show();
+				var content_bar = nav_bar.next("div");
+				var original_content_span_number = content_bar.data("span_number");
+				content_bar.addClass("span" + original_content_span_number);
+				$("#show_side_nav").hide();
+			});
+		});
+	</script>
+{% endblock %}

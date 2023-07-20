@@ -1,0 +1,38 @@
+{% extends layout_template_name %}
+{% block content %}
+
+    <div class="row-fluid" id="public_dashboard" >
+        <div class="d-flex flex-row" id="public_dashboard_title" >
+            <div class="page-title">
+                <h1>Assay Portal</h1>
+            </div>
+        </div>
+        <!--@@@CAP-109 - limit function public upload dashboard -->
+        <div class="card-deck mb-400" style="width:50% !important;">
+
+            <!-- Card 1 -->
+            <div class="card" >
+
+                <div class="card-body">
+                    <a href="/public_upload/insert_metadata" class="card-link"><h2>Upload Assays</h2></a>
+                    <p class="card-text">Upload new metadata and skyline files.</p>
+
+                </div>
+            </div>
+
+{#            <!-- Card 2 -->
+            <div class="card">
+
+                <div class="card-body">
+                    <a href="/public_upload/preview_assays" class="card-link"><h2>Preview Assays</h2></a>
+                    <p class="card-text">Review imported assays.</p>
+
+                </div>
+            </div>#}
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

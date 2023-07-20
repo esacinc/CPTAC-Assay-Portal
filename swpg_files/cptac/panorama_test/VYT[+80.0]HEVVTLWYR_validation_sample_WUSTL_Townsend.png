@@ -1,0 +1,518 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    
+    <title></title>
+    <!-- https://panoramaweb.org/labkey/reports/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/streamFile.view?deleteFile=true&amp;sessionKey=temp%3A34ad9c0b-16e6-1034-901d-3013bb9bd5e6&amp;cacheFile=true -->
+    <meta name="authenticatedUser" content="guest">
+    <meta name="impersonatedUser" content="-">
+
+    <link rel="shortcut icon" href="/labkey/favicon.image?revision=296">
+    <link rel="icon" href="/labkey/favicon.image?revision=296">
+    <script src="/labkey/labkey.js?733428687" type="text/javascript"></script>
+    <script type="text/javascript">
+        LABKEY.init({"container":{"parentPath":"/CPTAC Assay Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2","type":"folder","title":"ValidationSamples","folderType":"Targeted MS","parentId":"1fd0bd0d-4b46-1033-b6e2-3013bb9bbdbe","path":"/CPTAC Assay Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples","isWorkbook":false,"sortOrder":1,"hasRestrictedActiveModule":false,"name":"ValidationSamples","isContainerTab":false,"id":"1fd0bd19-4b46-1033-b6e2-3013bb9bbdbe","activeModules":["FileContent","TargetedMS","MS2","Query","AssayPortal","Announcements","Experiment","Pipeline","Issues","Wiki","Core"]},"extThemeName_42":"seattle","versionString":"16.10","imagePath":"/labkey/_images","useMDYDateParsing":true,"contextPath":"/labkey","project":{"path":"/CPTAC Assay Portal","name":"CPTAC Assay Portal","id":"ebf8fed7-f0ff-1032-b818-3013bb9befed"},"serverName":"panoramaweb.org","experimental":{"containerRelativeURL":false},"demoMode":false,"homeContainer":"home","login":{"registrationEnabled":false,"requiresTermsOfUse":false,"hasOtherLoginMechanisms":false},"extJsRoot":"ext-3.4.1","extDefaultDateTimeFormat":"Y-m-d H:i","tours":{},"devMode":false,"sharedContainer":"Shared","extDateInputFormat":"Y-m-d","CSRF":"bb158db65abed3800392a1dc514f89a4","user":{"canUpdateOwn":false,"canUpdate":false,"isGuest":true,"canInsert":false,"displayName":"guest","isSignedIn":false,"isAdmin":false,"isSystemAdmin":false,"canDeleteOwn":false,"phone":null,"canDelete":false,"id":0,"email":"guest"},"hash":"733428687","moduleContext":{"pipeline":{},"core":{},"assayportal":{},"experiment":{},"filecontent":{},"query":{},"wiki":{},"announcements":{},"issues":{},"ms2":{},"targetedms":{"TargetedMS Folder Type":"Experiment"}},"extDefaultDateFormat":"Y-m-d","uuids":["34ad9c0e-16e6-1034-901d-3013bb9bd5e6","34ad9c0f-16e6-1034-901d-3013bb9bd5e6","34ad9c10-16e6-1034-901d-3013bb9bd5e6"]});
+    </script>
+    <link href="/labkey/ext-3.4.1/resources/css/ext-all.css" type="text/css" rel="stylesheet">
+    <link href="/labkey/ext-theme/seattle/ext-all.css" type="text/css" rel="stylesheet">
+    <link href="/labkey/internal/font-awesome-4.4.0/css/font-awesome.min.css?revision=296" type="text/css" rel="stylesheet">
+    <link href="/labkey/stylesheet.css?revision=296" type="text/css" rel="stylesheet">
+    <link href="/labkey/core/CPTAC%20Assay%20Portal/themeStylesheet.view?revision=296" type="text/css" rel="stylesheet">
+    <link href="/labkey/core/customStylesheet.view?revision=296" type="text/css" rel="stylesheet">
+    <link href="/labkey/printStyle.css?revision=296" type="text/css" rel="stylesheet" media="print">
+<link href="/labkey/groupTabPanel/groupTab.min.css" type="text/css" rel="stylesheet"><link href="/labkey/GuidedTip.css" type="text/css" rel="stylesheet">    <script type="text/javascript">
+        LABKEY.requestedCssFiles('ext-3.4.1/resources/css/ext-all.css','ext-theme/seattle/ext-all.css','groupTabPanel/groupTab.min.css','GuidedTip.css');
+    </script>
+    <script type="text/javascript">
+        LABKEY.loadedScripts('ext-3.4.1/adapter/ext/ext-base-debug.js','ext-3.4.1/ext-all-debug.js','ext-3.4.1/ext-patches.js','groupTabPanel/GroupTabPanel.js','groupTabPanel/GroupTab.js','GuidedTip.js','clientapi/ext3/DataRegion.js','clientapi/ext3/EditorGridPanel.js','clientapi/ext3/ExtendedJsonReader.js','clientapi/ext3/FieldKey.js','clientapi/ext3/FileSystem.js','clientapi/ext3/FilterDialog.js','clientapi/ext3/FormPanel.js','clientapi/ext3/GridView.js','clientapi/ext3/HoverPopup.js','clientapi/ext3/LongTextEditor.js','clientapi/ext3/PersistentToolTip.js','clientapi/ext3/QueryWebPart.js','clientapi/ext3/SecurityPolicy.js','clientapi/ext3/Store.js','clientapi/ext3/Utils.js','ext-3.4.1/adapter/ext/ext-base.js','ext-3.4.1/ext-all.js','groupTabPanel/groupTab.min.js','clientapi/ext3.min.js','clientapi/core/Utils.js','clientapi/core/ActionURL.js','clientapi/core/Ajax.js','clientapi/core/Assay.js','clientapi/core/Domain.js','clientapi/core/Experiment.js','clientapi/core/FieldKey.js','clientapi/core/Filter.js','clientapi/core/List.js','clientapi/core/Message.js','clientapi/core/MultiRequest.js','clientapi/core/ParticipantGroup.js','clientapi/core/Pipeline.js','clientapi/core/Specimen.js','clientapi/core/Query.js','clientapi/core/GetData.js','clientapi/core/Report.js','clientapi/core/Security.js','clientapi/core/Visualization.js','internal/jQuery/jquery-1.11.2.js','internal/jQuery/jquery-dateFormat.js','clientapi/dom/Utils.js','clientapi/dom/Tour.js','clientapi/dom/Chart.js','clientapi/dom/Form.js','clientapi/dom/NavTrail.js','clientapi/dom/Portal.js','clientapi/dom/Query.js','clientapi/dom/Security.js','clientapi/dom/GetData.js','clientapi/dom/WebPart.js','clientapi/dom/DataRegion.js','clientapi_core.min.js','internal/jQuery/jquery-1.11.2.min.js','internal/jQuery/jquery-dateFormat.min.js','clientapi.min.js','ext-4.2.1/ext-all-sandbox-debug.js','ext-4.2.1/ext-patches.js','util.js','ext-4.2.1/ext-all-sandbox.js','internal.min.js');
+    </script>
+    <script src="/labkey/ext-3.4.1/adapter/ext/ext-base.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/ext-3.4.1/ext-all.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/ext-3.4.1/ext-patches.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/groupTabPanel/groupTab.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/GuidedTip.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/clientapi/ext3.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/clientapi_core.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/internal/jQuery/jquery-1.11.2.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/internal/jQuery/jquery-dateFormat.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/clientapi.min.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/ext-4.2.1/ext-all-sandbox.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/ext-4.2.1/ext-patches.js?733428687" type="text/javascript"></script>
+    <script src="/labkey/internal.min.js?733428687" type="text/javascript"></script>
+
+    
+    
+    <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36857435-2']);
+_gaq.push(['_setDetectTitle', false]);
+_gaq.push(['_trackPageview', '/labkey/reports/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/streamFile.view?deleteFile=true&sessionKey=temp%3A34ad9c0b-16e6-1034-901d-3013bb9bd5e6&cacheFile=true&serverGUID=ab4dea20.4e28.1030.8928.134f01698911']);
+</script>
+<script async="async" type="text/javascript" src="https://ssl.google-analytics.com/ga.js"></script>
+
+    
+</head>
+
+<body id="bodyElement" onload="" class="labkey-main labkey-theme-font-medium">
+
+<div class="labkey-main labkey-theme-font-medium">
+    <div class='header-block'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+<div id="headerDiv">
+    <form id="headerSearchForm" method="GET" action="/labkey/search/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/search.view?" style="margin:0;">
+        <div id="hdr-search" class="lk-input">
+            <span class="fa fa-search lk-fa-search-icon"></span>
+            <input placeholder="Search PanoramaWeb" id="search-input" type="text" name="q" class="hdr-search-input" value="">
+            <input type="submit" tabindex="-1" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+        </div>
+    </form>
+</div>
+
+
+<table id="header">
+    <tr>
+      <td class="labkey-main-icon">
+          <a href="/labkey/project/home/start.view?"><img src="/labkey/logo.image?revision=296" alt="PanoramaWeb"></a>
+      </td>
+      <td class="labkey-main-title-area">
+          <span>
+              <a class="labkey-main-title" href="/labkey/project/home/start.view?">PanoramaWeb</a>
+          </span>
+      </td>
+
+
+    </tr>
+</table>
+
+<!-- /HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOPMENU -->
+<div id="topmenu" class="labkey-header-panel">
+<div id="menubar" class="labkey-main-menu">
+    <div class="labkey-menu-constraint">
+        <ul>
+
+        <li id="projectBar" class="menu-projects"></li>
+
+        <li id="folderBar" class="menu-folders">CPTAC Assay Portal</li>
+
+        
+    </ul>
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="headermenu">
+    <a class="labkey-menu-text-link" style="" href="javascript:void(0)" onClick="if (this.className.indexOf('labkey-disabled-button') != -1) return false; showMenu(this, &#039;lk-menu-564433&#039;,&#039;tr-br?&#039;);" id="helpMenuPopupLink"><span id="helpMenuPopupText">Help</span>&nbsp;<span class="fa fa-caret-down" style="position:relative;color:lightgray"></span></a><script type="text/javascript">
+if (typeof(Ext4) != 'undefined') { Ext4.onReady(function() {    var oldMenu = Ext4.menu.Manager.get('lk-menu-564433');
+    if(oldMenu)
+    {
+        oldMenu.removeAll();
+        Ext4.menu.Manager.unregister(oldMenu);
+    }
+ var m = Ext4.create('Ext.menu.Menu',{showSeparator: false, id:'lk-menu-564433',
+items:[{text:'LabKey Documentation', showSeparator: false,href:'http://www.labkey.org/wiki/home/documentation/16.1/page.view?name=default',hrefTarget:'labkeyHelp',leaf:true}]}); }); } else { console.error('Unable to render menu. Ext4 is not available.'); }
+</script> &nbsp; 
+    <a class="labkey-nomenu-text-link" href="/labkey/login/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/login.view?returnUrl=%2Flabkey%2Freports%2FCPTAC%2520Assay%2520Portal%2FWUSTL_Townsend%2FCellLysate_5600TripleTOF_directPRM2%2FValidationSamples%2FstreamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A34ad9c0b-16e6-1034-901d-3013bb9bd5e6%26cacheFile%3Dtrue">Sign&nbsp;In</a>
+    
+</div></div>
+    </div>
+</div>
+<div class="labkey-main-menu main-menu-replicate"></div>
+<script type="text/javascript">
+    Ext4.onReady(function() {
+
+        Ext4.define('HoverNavigation', {
+            mixins : {
+                observable : 'Ext.util.Observable'
+            },
+
+            statics : {
+                Parts : {},
+                visiblePopup : false,
+                clickClose : false,
+                _click : function(e) {
+                    if (HoverNavigation.visiblePopup) {
+                        if (!HoverNavigation.visiblePopup.focused(e)) {
+                            HoverNavigation.visiblePopup.hide();
+                        }
+                    }
+                }
+            },
+
+            showDelay : 500,
+
+            hideDelay : 500,
+
+            hoverCls : 'selected',
+
+            constructor : function(config) {
+
+                // will apply config to this
+                this.mixins.observable.constructor.call(this, config);
+
+                this.hoverEl = Ext4.get(config.hoverElem);
+                if (!this.hoverEl) {
+                    return;
+                }
+
+                var loader = Ext4.DomHelper.insertAfter('menubar', {
+                    id  : config.hoverElem + '_menu',
+                    tag : 'div',
+                    cls : 'labkey-webpart-menu',
+                    children : [{
+                        tag : 'div',
+                        cls : 'loading-indicator',
+                        style : 'width: 100px; height: 100px;'
+                    }]
+                });
+
+                this.addEvents('beforehide');
+
+                this.popup = new Ext4.Layer({zindex : 1000, constrain : false }, loader);
+                this.popup.alignTo(this.hoverEl);
+                this.popup.hide();
+
+                // Configure hover element list
+                this.hoverEl.hover(this.onTargetOver, this.delayCheck, this);
+                this.popup.hover(this.cancelHide, this.delayCheck, this);
+
+                // Configure click element list
+                this.hoverEl.on('click', this.onTargetOver, this);
+
+                // Initialize global click
+                if (!HoverNavigation.clickClose) {
+                    HoverNavigation.clickClose = true;
+                    Ext4.getDoc().on('click', HoverNavigation._click);
+                }
+            },
+
+            cancelShow : function() {
+                if (this.showTimeout) {
+                    clearTimeout(this.showTimeout);
+                    this.showTimeout = false;
+                }
+            },
+
+            cancelHide : function() {
+                if (this.hideTimeout) {
+                    clearTimeout(this.hideTimeout);
+                    this.hideTimeout = false;
+                }
+            },
+
+            onTargetOver : function(e) {
+                this.cancelHide();
+                this.render();
+
+                // show immediately if we already have a menu up
+                // Otherwise, make sure that someone hovers for a while
+                (e && e.type == 'click' ? this.show() : (HoverNavigation.visiblePopup ? this.show() : this.delayShow()));
+            },
+
+            notFocused : function(e) { return !this.hRegion(e) || !this.pRegion(e); },
+
+            focused : function(e) { return this.hRegion(e) || this.pRegion(e); },
+
+            hRegion : function(e) { return this.hoverEl.getRegion().contains(e.getPoint()); },
+
+            pRegion : function(e) { return this.popup.getRegion().contains(e.getPoint()); },
+
+            delayCheck : function(e) {
+                if (this.notFocused(e)) {
+                    this.delayHide();
+                }
+            },
+
+            delayShow : function() {
+                if (!this.showTimeout) {
+                    this.showTimeout = Ext4.defer(this.show, this.showDelay, this);
+                }
+            },
+
+            delayHide : function() {
+                this.cancelHide();
+                this.cancelShow();
+                this.hideTimeout = Ext4.defer(this.hide, this.hideDelay, this);
+            },
+
+            render : function() {
+                if (!this.rendered) {
+                    var targetId = this.popup.id;
+                    var partConfig = {
+                        renderTo : targetId,
+                        partName : this.webPartName,
+                        frame    : 'none',
+                        partConfig : this.partConfig,
+                        failure  : function(response) {
+                            if (response.status == 401) {
+                                document.getElementById(targetId).innerHTML = 'You have likely been logged out automatically. Please <a href="' + '/labkey/login/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/login.view?returnUrl=%2Flabkey%2Freports%2FCPTAC%2520Assay%2520Portal%2FWUSTL_Townsend%2FCellLysate_5600TripleTOF_directPRM2%2FValidationSamples%2FstreamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A34ad9c0b-16e6-1034-901d-3013bb9bd5e6%26cacheFile%3Dtrue' + '">log in</a> again.';
+                            }
+                            else {
+                                if (window.console && window.console.log) {
+                                    window.console.log(err);
+                                }
+                            }
+                        },
+                        scope    : this
+                    };
+
+                    if (this.webPartUrl) {
+                        partConfig.partUrl = this.webPartUrl;
+                    }
+
+                    var p = new LABKEY.WebPart(partConfig);
+                    p.render();
+                    this.rendered = true;
+                }
+            },
+
+            show : function() {
+
+                if (HoverNavigation.visiblePopup) {
+                    if (HoverNavigation.visiblePopup == this) {
+                        return;
+                    }
+                    HoverNavigation.visiblePopup.hide();
+                }
+
+                this.hoverEl.addCls(this.hoverCls);
+
+                this.render();
+
+                this.popup.show();
+                this.popup.alignTo(this.hoverEl); // default: tl-bl
+                HoverNavigation.visiblePopup = this;
+            },
+
+            hide : function() {
+                if (this.fireEvent('beforehide', this) !== false) {
+                    this.hoverEl.removeCls(this.hoverCls);
+                    this.popup.hide();
+                    if (HoverNavigation.visiblePopup == this) {
+                        HoverNavigation.visiblePopup = false;
+                    }
+                }
+            }
+        });
+
+        HoverNavigation._project = new HoverNavigation({hoverElem : 'projectBar', webPartName : 'projectnav', webPartUrl: LABKEY.ActionURL.buildURL('project', 'getNavigationPart')});
+
+        HoverNavigation._folder = new HoverNavigation({hoverElem : 'folderBar',  webPartName : 'foldernav', webPartUrl: LABKEY.ActionURL.buildURL('project', 'getNavigationPart')});
+
+    });
+</script>
+</div>
+<!-- /TOPMENU --><div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="labkey-app-bar">
+    <div class="labkey-app-menu-constraint">
+        <div class="labkey-folder-header">
+            <div class="labkey-folder-title"><a href="/labkey/project/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/begin.view?">ValidationSamples</a></div>
+            <div class="button-bar tab-edit-mode-disabled">
+                <ul class="tab-nav">
+                    
+                            <li class="tab-nav-active tab-nav-no-menu">
+                                <a href="/labkey/project/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/begin.view?" id="PanoramaDashboardTab">Panorama Dashboard</a>
+                                
+                            </li>
+                    
+                            <li class="tab-nav-inactive tab-nav-no-menu">
+                                <a href="/labkey/project/CPTAC%20Assay%20Portal/WUSTL_Townsend/CellLysate_5600TripleTOF_directPRM2/ValidationSamples/begin.view?pageId=Data%20Pipeline" id="DataPipelineTab">Data Pipeline</a>
+                                
+                            </li>
+                    
+                </ul>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>
+<div class="labkey-app-bar labkey-app-bar-replicate"></div>
+
+
+    
+    <div class="labkey-nav-trail">
+        
+            <div class="labkey-nav-page-header-container">
+                <span class="labkey-nav-page-header" id="labkey-nav-trail-current-page" style="visibility:hidden"></span>
+            </div>
+    </div>
+
+<script type="text/javascript">
+    Ext4.onReady(function() {
+
+        var fatBars = function() {
+            var topBar = Ext4.get('topmenu');
+            if (topBar) {
+                var contentTable = Ext4.get(Ext4.DomQuery.select('table.labkey-proj')[0]).getBox();
+                var width = contentTable.width-5;
+                var menuBarRep = Ext4.get(Ext4.DomQuery.select('.main-menu-replicate')[0]);
+                menuBarRep.setWidth(width);
+                menuBarRep.setStyle('top', '' + topBar.getBox().top + 'px');
+            }
+
+            var appBar = Ext4.get(Ext4.DomQuery.select('.labkey-app-bar')[0]);
+            var appBarRep = Ext4.get(Ext4.DomQuery.select('.labkey-app-bar-replicate')[0]);
+            if (appBar && appBarRep) {
+                appBarRep.setSize(width, 32);
+                appBarRep.setStyle('top', '' + appBar.getBox().top + 'px');
+            }
+        };
+
+        var addTabListeners = function() {
+            var tabs = Ext4.query('.tab-nav li');
+            var tab, i=0;
+            for(; i < tabs.length; i++){
+                tab = Ext4.get(tabs[i]);
+                tab.on('mouseover', function(){
+                    // only show menu if tab edit mode is enabled.
+                    if (Ext4.query('.tab-edit-mode-enabled').length > 0) {
+                        var tabMenu =  Ext4.get(this.query('span[class=labkey-tab-menu]')[0]);
+                        if(tabMenu){
+                            tabMenu.show();
+                        }
+                    }
+                });
+
+                tab.on('mouseout', function(){
+                    var tabMenu =  Ext4.get(this.query('span[class=labkey-tab-menu]')[0]);
+                    if(tabMenu){
+                        tabMenu.hide();
+                    }
+                });
+            }
+        };
+
+        fatBars();
+        addTabListeners();
+        Ext4.EventManager.onWindowResize(fatBars);
+    });
+</script>
+</div></div>
+
+     <!--content area-->
+    <div class="body-block push-block">
+        <table class="labkey-proj">
+            <tr>
+                
+                <td id="bodypanel" class="labkey-body-panel" style="min-width:400px;">
+                    <img height=1 width=400 src="/labkey/_.gif">
+                    <br />
+                    <!-- BODY -->
+                    <div>Requested Resource not found</div>
+                    <!-- /BODY -->
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+    <!--/content area-->
+        <div class='footer-block'>
+<div id="ModuleHtmlView_564432"><div style="text-align: center; padding:6px;">
+    <a href="http://labkey.com">Powered by LabKey Software</a>
+</div>
+</div></div>
+
+</div>
+
+
+<script type="text/javascript">LABKEY.loadScripts(); LABKEY.showNavTrail();</script>
+<!--
+-->
+
+<a href="/labkey/reports/__r1490/streamFile.view?deleteFile=true&sessionKey=temp%3A34ad9c0b-16e6-1034-901d-3013bb9bd5e6&cacheFile=true" id="permalink" style="display: none;"></a>
+</body>
+</html>

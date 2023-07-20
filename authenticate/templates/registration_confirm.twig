@@ -1,0 +1,38 @@
+{% extends layout_template_name %}
+{% block styles_head %}
+    {{ parent() }}
+    <link href="{{ path_to_this_module }}/library/css/password_recovery_form.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block js_bottom %}
+    {{ parent() }}
+    <script src="{{ path_to_this_module }}/library/js/password_recovery_form.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+    <div id="row-outer-password-recovery-form" class="row-outer">
+        <div class="row-fluid">
+            <h2>{{ page_title }}</h2>
+            <hr/>
+            <div class="columns small-12 large-12">
+                {% if registration_confirmed and registration_confirmed == true %}
+                    <div class="alert alert-block alert-success">
+                        <p>
+                            Your CPTAC Assay Portal user registration has been confirmed.<br/>
+                            Please <a href="javascript:void(0);" onclick="$.cookie('{{ redirect_cookie_key }}', '', { expires: 7, path: '/' }); window.location.href='{{ login_url }}'">login</a> to continue.
+                        </p>
+                    </div>
+                {% else %}
+                        {% if errors %}
+                            <div class="alert alert-block alert-danger">
+                                <h4>Unable to Register CPTAC Assay Portal User</h4>
+                                <p>
+                                    {% for error in errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,2157 @@
+VirtualBox VM 5.0.10 r104061 darwin.amd64 (Nov 10 2015 18:29:44) release log
+00:00:00.021131 Log opened 2015-12-17T20:52:30.714059000Z
+00:00:00.021132 Build Type: release
+00:00:00.021143 OS Product: Darwin
+00:00:00.021148 OS Release: 15.2.0
+00:00:00.021153 OS Version: Darwin Kernel Version 15.2.0: Fri Nov 13 19:56:56 PST 2015; root:xnu-3248.20.55~2/RELEASE_X86_64
+00:00:00.021237 DMI Product Name: MacBookPro11,4
+00:00:00.021281 DMI Product Version: 1.0
+00:00:00.021288 Host RAM: 16384MB total, 4972MB available
+00:00:00.021290 Executable: /Applications/VirtualBox.app/Contents/MacOS/VBoxHeadless
+00:00:00.021290 Process ID: 7398
+00:00:00.021291 Package type: DARWIN_64BITS_GENERIC
+00:00:00.022669 Installed Extension Packs:
+00:00:00.022676   None installed!
+00:00:00.023540 Console: Machine state changed to 'Starting'
+00:00:00.036845 SUP: Loaded VMMR0.r0 (/Applications/VirtualBox.app/Contents/MacOS/VMMR0.r0) at 0xffffff91f6cf5020 - ModuleInit at ffffff91f6d16470 and ModuleTerm at ffffff91f6d16440
+00:00:00.036858 SUP: VMMR0EntryEx located at ffffff91f6d16370 and VMMR0EntryFast at ffffff91f6d16af0
+00:00:00.039291 Guest OS type: 'Linux26_64'
+00:00:00.043889 fHMForced=true - No raw-mode support in this build!
+00:00:00.051416 File system of '/Users/kristennice/.docker/machine/machines/default/boot2docker.iso' (DVD) is hfs
+00:00:00.054752 File system of '/Users/kristennice/.docker/machine/machines/default/default/Snapshots' (snapshots) is unknown
+00:00:00.054762 File system of '/Users/kristennice/.docker/machine/machines/default/disk.vmdk' is hfs
+00:00:00.096164 Shared clipboard service loaded
+00:00:00.096177 Shared clipboard mode: Off
+00:00:00.096956 Drag and drop service loaded
+00:00:00.096965 Drag and drop mode: Off
+00:00:00.098476 Guest Control service loaded
+00:00:00.100196 Per-VM extradata API settings:
+00:00:00.100202   VBoxInternal2/SharedFoldersEnableSymlinksCreate/Users="1"
+00:00:00.100491 ************************* CFGM dump *************************
+00:00:00.100495 [/] (level 0)
+00:00:00.100499   CpuExecutionCap   <integer> = 0x0000000000000064 (100)
+00:00:00.100501   EnablePAE         <integer> = 0x0000000000000001 (1)
+00:00:00.100502   HMEnabled         <integer> = 0x0000000000000001 (1)
+00:00:00.100502   MemBalloonSize    <integer> = 0x0000000000000000 (0)
+00:00:00.100503   Name              <string>  = "default" (cb=8)
+00:00:00.100504   NumCPUs           <integer> = 0x0000000000000001 (1)
+00:00:00.100505   PageFusionAllowed <integer> = 0x0000000000000000 (0)
+00:00:00.100506   RamHoleSize       <integer> = 0x0000000020000000 (536 870 912, 512 MB)
+00:00:00.100508   RamSize           <integer> = 0x0000000080000000 (2 147 483 648, 2 048 MB)
+00:00:00.100509   TimerMillies      <integer> = 0x000000000000000a (10)
+00:00:00.100510   UUID              <bytes>   = "9a f2 a3 a8 74 7a 47 41 86 c2 1f b7 db e5 66 62" (cb=16)
+00:00:00.100514 
+00:00:00.100515 [/CPUM/] (level 1)
+00:00:00.100516   PortableCpuIdLevel <integer> = 0x0000000000000000 (0)
+00:00:00.100517 
+00:00:00.100517 [/DBGF/] (level 1)
+00:00:00.100518   Path <string>  = "/Users/kristennice/.docker/machine/machines/default/default/debug/;/Users/kristennice/.docker/machine/machines/default/default/;/Users/kristennice/" (cb=148)
+00:00:00.100519 
+00:00:00.100519 [/Devices/] (level 1)
+00:00:00.100520 
+00:00:00.100520 [/Devices/8237A/] (level 2)
+00:00:00.100521 
+00:00:00.100521 [/Devices/8237A/0/] (level 3)
+00:00:00.100522   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100523 
+00:00:00.100523 [/Devices/GIMDev/] (level 2)
+00:00:00.100524 
+00:00:00.100524 [/Devices/GIMDev/0/] (level 3)
+00:00:00.100525   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100526 
+00:00:00.100526 [/Devices/VMMDev/] (level 2)
+00:00:00.100527 
+00:00:00.100527 [/Devices/VMMDev/0/] (level 3)
+00:00:00.100529   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100529   PCIDeviceNo   <integer> = 0x0000000000000004 (4)
+00:00:00.100530   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100530   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100531 
+00:00:00.100532 [/Devices/VMMDev/0/Config/] (level 4)
+00:00:00.100533   GuestCoreDumpDir <string>  = "/Users/kristennice/.docker/machine/machines/default/default/Snapshots" (cb=70)
+00:00:00.100533   RamSize          <integer> = 0x0000000080000000 (2 147 483 648, 2 048 MB)
+00:00:00.100535 
+00:00:00.100535 [/Devices/VMMDev/0/LUN#0/] (level 4)
+00:00:00.100536   Driver <string>  = "HGCM" (cb=5)
+00:00:00.100537 
+00:00:00.100537 [/Devices/VMMDev/0/LUN#0/Config/] (level 5)
+00:00:00.100538   Object <integer> = 0x00007fe6d3703250 (140 629 366 551 120)
+00:00:00.100539 
+00:00:00.100540 [/Devices/VMMDev/0/LUN#999/] (level 4)
+00:00:00.100541   Driver <string>  = "MainStatus" (cb=11)
+00:00:00.100541 
+00:00:00.100542 [/Devices/VMMDev/0/LUN#999/Config/] (level 5)
+00:00:00.100543   First   <integer> = 0x0000000000000000 (0)
+00:00:00.100543   Last    <integer> = 0x0000000000000000 (0)
+00:00:00.100544   papLeds <integer> = 0x00007fe6d480a458 (140 629 384 406 104)
+00:00:00.100545 
+00:00:00.100546 [/Devices/acpi/] (level 2)
+00:00:00.100547 
+00:00:00.100547 [/Devices/acpi/0/] (level 3)
+00:00:00.100548   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100548   PCIDeviceNo   <integer> = 0x0000000000000007 (7)
+00:00:00.100549   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100550   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100550 
+00:00:00.100551 [/Devices/acpi/0/Config/] (level 4)
+00:00:00.100552   CpuHotPlug          <integer> = 0x0000000000000000 (0)
+00:00:00.100553   FdcEnabled          <integer> = 0x0000000000000000 (0)
+00:00:00.100553   HostBusPciAddress   <integer> = 0x0000000000000000 (0)
+00:00:00.100554   HpetEnabled         <integer> = 0x0000000000000001 (1)
+00:00:00.100555   IOAPIC              <integer> = 0x0000000000000001 (1)
+00:00:00.100556   IocPciAddress       <integer> = 0x0000000000010000 (65 536)
+00:00:00.100557   NumCPUs             <integer> = 0x0000000000000001 (1)
+00:00:00.100557   Parallel0IoPortBase <integer> = 0x0000000000000000 (0)
+00:00:00.100558   Parallel0Irq        <integer> = 0x0000000000000000 (0)
+00:00:00.100559   Parallel1IoPortBase <integer> = 0x0000000000000000 (0)
+00:00:00.100559   Parallel1Irq        <integer> = 0x0000000000000000 (0)
+00:00:00.100560   RamHoleSize         <integer> = 0x0000000020000000 (536 870 912, 512 MB)
+00:00:00.100561   RamSize             <integer> = 0x0000000080000000 (2 147 483 648, 2 048 MB)
+00:00:00.100563   Serial0IoPortBase   <integer> = 0x0000000000000000 (0)
+00:00:00.100563   Serial0Irq          <integer> = 0x0000000000000000 (0)
+00:00:00.100564   Serial1IoPortBase   <integer> = 0x0000000000000000 (0)
+00:00:00.100565   Serial1Irq          <integer> = 0x0000000000000000 (0)
+00:00:00.100565   ShowCpu             <integer> = 0x0000000000000001 (1)
+00:00:00.100566   ShowRtc             <integer> = 0x0000000000000000 (0)
+00:00:00.100567   SmcEnabled          <integer> = 0x0000000000000000 (0)
+00:00:00.100567 
+00:00:00.100568 [/Devices/acpi/0/LUN#0/] (level 4)
+00:00:00.100569   Driver <string>  = "ACPIHost" (cb=9)
+00:00:00.100569 
+00:00:00.100570 [/Devices/acpi/0/LUN#0/Config/] (level 5)
+00:00:00.100571 
+00:00:00.100571 [/Devices/ahci/] (level 2)
+00:00:00.100572 
+00:00:00.100572 [/Devices/ahci/0/] (level 3)
+00:00:00.100573   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100574   PCIDeviceNo   <integer> = 0x000000000000000d (13)
+00:00:00.100574   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100575   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100576 
+00:00:00.100576 [/Devices/ahci/0/Config/] (level 4)
+00:00:00.100577   Bootable  <integer> = 0x0000000000000001 (1)
+00:00:00.100578   PortCount <integer> = 0x000000000000001e (30)
+00:00:00.100578 
+00:00:00.100579 [/Devices/ahci/0/Config/Port0/] (level 5)
+00:00:00.100580   Hotpluggable        <integer> = 0x0000000000000000 (0)
+00:00:00.100581   NonRotationalMedium <integer> = 0x0000000000000000 (0)
+00:00:00.100581 
+00:00:00.100582 [/Devices/ahci/0/Config/Port1/] (level 5)
+00:00:00.100583   Hotpluggable        <integer> = 0x0000000000000000 (0)
+00:00:00.100584   NonRotationalMedium <integer> = 0x0000000000000000 (0)
+00:00:00.100584 
+00:00:00.100585 [/Devices/ahci/0/LUN#0/] (level 4)
+00:00:00.100586   Driver <string>  = "Block" (cb=6)
+00:00:00.100586 
+00:00:00.100587 [/Devices/ahci/0/LUN#0/AttachedDriver/] (level 5)
+00:00:00.100588   Driver <string>  = "VD" (cb=3)
+00:00:00.100588 
+00:00:00.100589 [/Devices/ahci/0/LUN#0/AttachedDriver/Config/] (level 6)
+00:00:00.100590   Format   <string>  = "RAW" (cb=4)
+00:00:00.100591   Path     <string>  = "/Users/kristennice/.docker/machine/machines/default/boot2docker.iso" (cb=68)
+00:00:00.100592   ReadOnly <integer> = 0x0000000000000001 (1)
+00:00:00.100592   Type     <string>  = "DVD" (cb=4)
+00:00:00.100593 
+00:00:00.100593 [/Devices/ahci/0/LUN#0/Config/] (level 5)
+00:00:00.100595   Mountable <integer> = 0x0000000000000001 (1)
+00:00:00.100595   Type      <string>  = "DVD" (cb=4)
+00:00:00.100596 
+00:00:00.100596 [/Devices/ahci/0/LUN#1/] (level 4)
+00:00:00.100597   Driver <string>  = "Block" (cb=6)
+00:00:00.100598 
+00:00:00.100598 [/Devices/ahci/0/LUN#1/AttachedDriver/] (level 5)
+00:00:00.100599   Driver <string>  = "VD" (cb=3)
+00:00:00.100600 
+00:00:00.100600 [/Devices/ahci/0/LUN#1/AttachedDriver/Config/] (level 6)
+00:00:00.100601   Format <string>  = "VMDK" (cb=5)
+00:00:00.100602   Path   <string>  = "/Users/kristennice/.docker/machine/machines/default/disk.vmdk" (cb=62)
+00:00:00.100602   Type   <string>  = "HardDisk" (cb=9)
+00:00:00.100603 
+00:00:00.100603 [/Devices/ahci/0/LUN#1/Config/] (level 5)
+00:00:00.100604   Mountable <integer> = 0x0000000000000000 (0)
+00:00:00.100605   Type      <string>  = "HardDisk" (cb=9)
+00:00:00.100606 
+00:00:00.100606 [/Devices/ahci/0/LUN#999/] (level 4)
+00:00:00.100607   Driver <string>  = "MainStatus" (cb=11)
+00:00:00.100608 
+00:00:00.100608 [/Devices/ahci/0/LUN#999/Config/] (level 5)
+00:00:00.100609   DeviceInstance        <string>  = "ahci/0" (cb=7)
+00:00:00.100610   First                 <integer> = 0x0000000000000000 (0)
+00:00:00.100611   Last                  <integer> = 0x000000000000001d (29)
+00:00:00.100612   pConsole              <integer> = 0x00007fe6d4809e00 (140 629 384 404 480)
+00:00:00.100613   papLeds               <integer> = 0x00007fe6d480a148 (140 629 384 405 320)
+00:00:00.100614   pmapMediumAttachments <integer> = 0x00007fe6d480a478 (140 629 384 406 136)
+00:00:00.100615 
+00:00:00.100616 [/Devices/apic/] (level 2)
+00:00:00.100617 
+00:00:00.100617 [/Devices/apic/0/] (level 3)
+00:00:00.100618   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100619 
+00:00:00.100619 [/Devices/apic/0/Config/] (level 4)
+00:00:00.100620   IOAPIC  <integer> = 0x0000000000000001 (1)
+00:00:00.100621   NumCPUs <integer> = 0x0000000000000001 (1)
+00:00:00.100621 
+00:00:00.100622 [/Devices/e1000/] (level 2)
+00:00:00.100622 
+00:00:00.100623 [/Devices/e1000/0/] (level 3)
+00:00:00.100624   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100624   PCIDeviceNo   <integer> = 0x0000000000000003 (3)
+00:00:00.100625   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100626   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100626 
+00:00:00.100627 [/Devices/e1000/0/Config/] (level 4)
+00:00:00.100628   AdapterType    <integer> = 0x0000000000000000 (0)
+00:00:00.100628   CableConnected <integer> = 0x0000000000000001 (1)
+00:00:00.100629   LineSpeed      <integer> = 0x0000000000000000 (0)
+00:00:00.100630   MAC            <bytes>   = "08 00 27 b9 46 f7" (cb=6)
+00:00:00.100631 
+00:00:00.100632 [/Devices/e1000/0/LUN#0/] (level 4)
+00:00:00.100632   Driver <string>  = "NAT" (cb=4)
+00:00:00.100633 
+00:00:00.100633 [/Devices/e1000/0/LUN#0/Config/] (level 5)
+00:00:00.100635   AliasMode       <integer> = 0x0000000000000000 (0)
+00:00:00.100635   BootFile        <string>  = "default.pxe" (cb=12)
+00:00:00.100636   DNSProxy        <integer> = 0x0000000000000000 (0)
+00:00:00.100637   Network         <string>  = "10.0.2.0/24" (cb=12)
+00:00:00.100637   PassDomain      <integer> = 0x0000000000000001 (1)
+00:00:00.100638   TFTPPrefix      <string>  = "/Users/kristennice/Library/VirtualBox/TFTP" (cb=43)
+00:00:00.100639   UseHostResolver <integer> = 0x0000000000000000 (0)
+00:00:00.100639 
+00:00:00.100640 [/Devices/e1000/0/LUN#0/Config/ssh/] (level 6)
+00:00:00.100641   BindIP    <string>  = "127.0.0.1" (cb=10)
+00:00:00.100642   GuestPort <integer> = 0x0000000000000016 (22)
+00:00:00.100642   HostPort  <integer> = 0x000000000000cd3e (52 542)
+00:00:00.100643   Protocol  <string>  = "TCP" (cb=4)
+00:00:00.100644 
+00:00:00.100644 [/Devices/e1000/0/LUN#999/] (level 4)
+00:00:00.100645   Driver <string>  = "MainStatus" (cb=11)
+00:00:00.100645 
+00:00:00.100646 [/Devices/e1000/0/LUN#999/Config/] (level 5)
+00:00:00.100647   First   <integer> = 0x0000000000000000 (0)
+00:00:00.100648   Last    <integer> = 0x0000000000000000 (0)
+00:00:00.100648   papLeds <integer> = 0x00007fe6d480a338 (140 629 384 405 816)
+00:00:00.100649 
+00:00:00.100650 [/Devices/e1000/1/] (level 3)
+00:00:00.100650   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100651   PCIDeviceNo   <integer> = 0x0000000000000008 (8)
+00:00:00.100652   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100652   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100653 
+00:00:00.100653 [/Devices/e1000/1/Config/] (level 4)
+00:00:00.100655   AdapterType    <integer> = 0x0000000000000000 (0)
+00:00:00.100655   CableConnected <integer> = 0x0000000000000001 (1)
+00:00:00.100656   LineSpeed      <integer> = 0x0000000000000000 (0)
+00:00:00.100657   MAC            <bytes>   = "08 00 27 43 4e 2d" (cb=6)
+00:00:00.100658 
+00:00:00.100658 [/Devices/e1000/1/LUN#0/] (level 4)
+00:00:00.100659   Driver <string>  = "IntNet" (cb=7)
+00:00:00.100660 
+00:00:00.100660 [/Devices/e1000/1/LUN#0/Config/] (level 5)
+00:00:00.100661   IfPolicyPromisc <string>  = "deny" (cb=5)
+00:00:00.100662   Network         <string>  = "HostInterfaceNetworking-vboxnet0" (cb=33)
+00:00:00.100663   Trunk           <string>  = "vboxnet0" (cb=9)
+00:00:00.100663   TrunkType       <integer> = 0x0000000000000004 (4)
+00:00:00.100664 
+00:00:00.100664 [/Devices/e1000/1/LUN#999/] (level 4)
+00:00:00.100665   Driver <string>  = "MainStatus" (cb=11)
+00:00:00.100666 
+00:00:00.100666 [/Devices/e1000/1/LUN#999/Config/] (level 5)
+00:00:00.100667   First   <integer> = 0x0000000000000000 (0)
+00:00:00.100668   Last    <integer> = 0x0000000000000000 (0)
+00:00:00.100669   papLeds <integer> = 0x00007fe6d480a340 (140 629 384 405 824)
+00:00:00.100670 
+00:00:00.100670 [/Devices/hpet/] (level 2)
+00:00:00.100671 
+00:00:00.100671 [/Devices/hpet/0/] (level 3)
+00:00:00.100672   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100673 
+00:00:00.100673 [/Devices/hpet/0/Config/] (level 4)
+00:00:00.100674   ICH9 <integer> = 0x0000000000000000 (0)
+00:00:00.100675 
+00:00:00.100675 [/Devices/i8254/] (level 2)
+00:00:00.100676 
+00:00:00.100676 [/Devices/i8254/0/] (level 3)
+00:00:00.100677 
+00:00:00.100677 [/Devices/i8254/0/Config/] (level 4)
+00:00:00.100678 
+00:00:00.100679 [/Devices/i8259/] (level 2)
+00:00:00.100679 
+00:00:00.100680 [/Devices/i8259/0/] (level 3)
+00:00:00.100681   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100681 
+00:00:00.100682 [/Devices/i8259/0/Config/] (level 4)
+00:00:00.100683 
+00:00:00.100683 [/Devices/ioapic/] (level 2)
+00:00:00.100684 
+00:00:00.100684 [/Devices/ioapic/0/] (level 3)
+00:00:00.100685   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100685 
+00:00:00.100686 [/Devices/ioapic/0/Config/] (level 4)
+00:00:00.100687   NumCPUs <integer> = 0x0000000000000001 (1)
+00:00:00.100687 
+00:00:00.100688 [/Devices/mc146818/] (level 2)
+00:00:00.100688 
+00:00:00.100689 [/Devices/mc146818/0/] (level 3)
+00:00:00.100690 
+00:00:00.100690 [/Devices/mc146818/0/Config/] (level 4)
+00:00:00.100691   UseUTC <integer> = 0x0000000000000001 (1)
+00:00:00.100692 
+00:00:00.100692 [/Devices/parallel/] (level 2)
+00:00:00.100693 
+00:00:00.100693 [/Devices/pcarch/] (level 2)
+00:00:00.100694 
+00:00:00.100694 [/Devices/pcarch/0/] (level 3)
+00:00:00.100695   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100696 
+00:00:00.100696 [/Devices/pcarch/0/Config/] (level 4)
+00:00:00.100697 
+00:00:00.100697 [/Devices/pcbios/] (level 2)
+00:00:00.100698 
+00:00:00.100698 [/Devices/pcbios/0/] (level 3)
+00:00:00.100699   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100700 
+00:00:00.100700 [/Devices/pcbios/0/Config/] (level 4)
+00:00:00.100701   BootDevice0        <string>  = "DVD" (cb=4)
+00:00:00.100702   BootDevice1        <string>  = "DVD" (cb=4)
+00:00:00.100703   BootDevice2        <string>  = "IDE" (cb=4)
+00:00:00.100703   BootDevice3        <string>  = "NONE" (cb=5)
+00:00:00.100704   FloppyDevice       <string>  = "i82078" (cb=7)
+00:00:00.100705   HardDiskDevice     <string>  = "piix3ide" (cb=9)
+00:00:00.100705   IOAPIC             <integer> = 0x0000000000000001 (1)
+00:00:00.100706   McfgBase           <integer> = 0x0000000000000000 (0)
+00:00:00.100707   McfgLength         <integer> = 0x0000000000000000 (0)
+00:00:00.100707   NumCPUs            <integer> = 0x0000000000000001 (1)
+00:00:00.100708   PXEDebug           <integer> = 0x0000000000000000 (0)
+00:00:00.100709   RamHoleSize        <integer> = 0x0000000020000000 (536 870 912, 512 MB)
+00:00:00.100710   RamSize            <integer> = 0x0000000080000000 (2 147 483 648, 2 048 MB)
+00:00:00.100711   SataHardDiskDevice <string>  = "ahci" (cb=5)
+00:00:00.100712   SataLUN1           <integer> = 0x0000000000000001 (1)
+00:00:00.100713   UUID               <bytes>   = "9a f2 a3 a8 74 7a 47 41 86 c2 1f b7 db e5 66 62" (cb=16)
+00:00:00.100715 
+00:00:00.100715 [/Devices/pcbios/0/Config/NetBoot/] (level 5)
+00:00:00.100716 
+00:00:00.100717 [/Devices/pcbios/0/Config/NetBoot/0/] (level 6)
+00:00:00.100718   NIC           <integer> = 0x0000000000000000 (0)
+00:00:00.100719   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100719   PCIDeviceNo   <integer> = 0x0000000000000003 (3)
+00:00:00.100720   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100721 
+00:00:00.100721 [/Devices/pci/] (level 2)
+00:00:00.100722 
+00:00:00.100723 [/Devices/pci/0/] (level 3)
+00:00:00.100723   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100724 
+00:00:00.100724 [/Devices/pci/0/Config/] (level 4)
+00:00:00.100725   IOAPIC <integer> = 0x0000000000000001 (1)
+00:00:00.100726 
+00:00:00.100726 [/Devices/pckbd/] (level 2)
+00:00:00.100727 
+00:00:00.100727 [/Devices/pckbd/0/] (level 3)
+00:00:00.100728   Trusted <integer> = 0x0000000000000001 (1)
+00:00:00.100729 
+00:00:00.100729 [/Devices/pckbd/0/Config/] (level 4)
+00:00:00.100730 
+00:00:00.100730 [/Devices/pckbd/0/LUN#0/] (level 4)
+00:00:00.100731   Driver <string>  = "KeyboardQueue" (cb=14)
+00:00:00.100732 
+00:00:00.100732 [/Devices/pckbd/0/LUN#0/AttachedDriver/] (level 5)
+00:00:00.100733   Driver <string>  = "MainKeyboard" (cb=13)
+00:00:00.100734 
+00:00:00.100734 [/Devices/pckbd/0/LUN#0/AttachedDriver/Config/] (level 6)
+00:00:00.100735   Object <integer> = 0x00007fe6d351e2f0 (140 629 364 564 720)
+00:00:00.100737 
+00:00:00.100737 [/Devices/pckbd/0/LUN#0/Config/] (level 5)
+00:00:00.100738   QueueSize <integer> = 0x0000000000000040 (64)
+00:00:00.100739 
+00:00:00.100739 [/Devices/pckbd/0/LUN#1/] (level 4)
+00:00:00.100740   Driver <string>  = "MouseQueue" (cb=11)
+00:00:00.100741 
+00:00:00.100741 [/Devices/pckbd/0/LUN#1/AttachedDriver/] (level 5)
+00:00:00.100742   Driver <string>  = "MainMouse" (cb=10)
+00:00:00.100743 
+00:00:00.100743 [/Devices/pckbd/0/LUN#1/AttachedDriver/Config/] (level 6)
+00:00:00.100744   Object <integer> = 0x00007fe6d351e650 (140 629 364 565 584)
+00:00:00.100745 
+00:00:00.100746 [/Devices/pckbd/0/LUN#1/Config/] (level 5)
+00:00:00.100747   QueueSize <integer> = 0x0000000000000080 (128)
+00:00:00.100748 
+00:00:00.100748 [/Devices/pcnet/] (level 2)
+00:00:00.100749 
+00:00:00.100749 [/Devices/serial/] (level 2)
+00:00:00.100750 
+00:00:00.100750 [/Devices/vga/] (level 2)
+00:00:00.100751 
+00:00:00.100751 [/Devices/vga/0/] (level 3)
+00:00:00.100752   PCIBusNo      <integer> = 0x0000000000000000 (0)
+00:00:00.100753   PCIDeviceNo   <integer> = 0x0000000000000002 (2)
+00:00:00.100753   PCIFunctionNo <integer> = 0x0000000000000000 (0)
+00:00:00.100754   Trusted       <integer> = 0x0000000000000001 (1)
+00:00:00.100755 
+00:00:00.100755 [/Devices/vga/0/Config/] (level 4)
+00:00:00.100756   CustomVideoModes <integer> = 0x0000000000000000 (0)
+00:00:00.100757   FadeIn           <integer> = 0x0000000000000000 (0)
+00:00:00.100757   FadeOut          <integer> = 0x0000000000000000 (0)
+00:00:00.100758   HeightReduction  <integer> = 0x0000000000000000 (0)
+00:00:00.100759   LogoFile         <string>  = "" (cb=1)
+00:00:00.100759   LogoTime         <integer> = 0x0000000000000000 (0)
+00:00:00.100760   MonitorCount     <integer> = 0x0000000000000001 (1)
+00:00:00.100761   ShowBootMenu     <integer> = 0x0000000000000000 (0)
+00:00:00.100761   VRamSize         <integer> = 0x0000000000800000 (8 388 608, 8 MB)
+00:00:00.100763 
+00:00:00.100763 [/Devices/vga/0/LUN#0/] (level 4)
+00:00:00.100764   Driver <string>  = "MainDisplay" (cb=12)
+00:00:00.100764 
+00:00:00.100765 [/Devices/vga/0/LUN#0/Config/] (level 5)
+00:00:00.100766   Object <integer> = 0x00007fe6d383e000 (140 629 367 840 768)
+00:00:00.100767 
+00:00:00.100767 [/Devices/vga/0/LUN#999/] (level 4)
+00:00:00.100768   Driver <string>  = "MainStatus" (cb=11)
+00:00:00.100769 
+00:00:00.100769 [/Devices/vga/0/LUN#999/Config/] (level 5)
+00:00:00.100770   First   <integer> = 0x0000000000000000 (0)
+00:00:00.100771   Last    <integer> = 0x0000000000000000 (0)
+00:00:00.100772   papLeds <integer> = 0x00007fe6d480a470 (140 629 384 406 128)
+00:00:00.100773 
+00:00:00.100773 [/Devices/virtio-net/] (level 2)
+00:00:00.100774 
+00:00:00.100774 [/EM/] (level 1)
+00:00:00.100775   TripleFaultReset <integer> = 0x0000000000000000 (0)
+00:00:00.100775 
+00:00:00.100776 [/GIM/] (level 1)
+00:00:00.100777   Provider <string>  = "KVM" (cb=4)
+00:00:00.100777 
+00:00:00.100778 [/HM/] (level 1)
+00:00:00.100779   64bitEnabled       <integer> = 0x0000000000000001 (1)
+00:00:00.100779   EnableLargePages   <integer> = 0x0000000000000001 (1)
+00:00:00.100780   EnableNestedPaging <integer> = 0x0000000000000001 (1)
+00:00:00.100781   EnableUX           <integer> = 0x0000000000000001 (1)
+00:00:00.100781   EnableVPID         <integer> = 0x0000000000000001 (1)
+00:00:00.100782   Exclusive          <integer> = 0x0000000000000000 (0)
+00:00:00.100783   HMForced           <integer> = 0x0000000000000001 (1)
+00:00:00.100783 
+00:00:00.100784 [/MM/] (level 1)
+00:00:00.100784   CanUseLargerHeap <integer> = 0x0000000000000000 (0)
+00:00:00.100785 
+00:00:00.100785 [/PDM/] (level 1)
+00:00:00.100786 
+00:00:00.100786 [/PDM/AsyncCompletion/] (level 2)
+00:00:00.100787 
+00:00:00.100788 [/PDM/AsyncCompletion/File/] (level 3)
+00:00:00.100789 
+00:00:00.100789 [/PDM/AsyncCompletion/File/BwGroups/] (level 4)
+00:00:00.100790 
+00:00:00.100790 [/PDM/BlkCache/] (level 2)
+00:00:00.100791   CacheSize <integer> = 0x0000000000500000 (5 242 880, 5 MB)
+00:00:00.100792 
+00:00:00.100792 [/PDM/Devices/] (level 2)
+00:00:00.100793 
+00:00:00.100794 [/PDM/Drivers/] (level 2)
+00:00:00.100794 
+00:00:00.100795 [/PDM/Drivers/VBoxC/] (level 3)
+00:00:00.100796   Path <string>  = "/Applications/VirtualBox.app/Contents/MacOS/components/VBoxC" (cb=61)
+00:00:00.100797 
+00:00:00.100797 [/PDM/NetworkShaper/] (level 2)
+00:00:00.100798 
+00:00:00.100798 [/PDM/NetworkShaper/BwGroups/] (level 3)
+00:00:00.100799 
+00:00:00.100799 [/TM/] (level 1)
+00:00:00.100800   UTCOffset <integer> = 0x0000000000000000 (0)
+00:00:00.100801 
+00:00:00.100801 ********************* End of CFGM dump **********************
+00:00:00.100804 VM: fHMEnabled=true  (configured) fRecompileUser=false fRecompileSupervisor=false
+00:00:00.100806 VM: fRawRing1Enabled=false CSAM=false PATM=false
+00:00:00.100869 HM: HMR3Init: VT-x w/ nested paging and unrestricted guest execution hw support
+00:00:00.100908 MM: cbHyperHeap=0x100000 (1048576)
+00:00:00.101322 CPUM: fXStateHostMask=0x7; initial: 0x7; host XCR0=0x7
+00:00:00.102016 CPUM: Matched host CPU INTEL 0x6/0x46/0x1 Intel_Core7_Haswell with CPU DB entry 'Intel Core i7-5600U' (INTEL 0x6/0x3d/0x4 Intel_Core7_Broadwell)
+00:00:00.102120 CPUM: SetGuestCpuIdFeature: Enabled PAE
+00:00:00.102939 PGM: HCPhysInterPD=000000000cf3c000 HCPhysInterPaePDPT=000000000cf39000 HCPhysInterPaePML4=000000000cf37000
+00:00:00.102947 PGM: apInterPTs={000000000cf3b000,000000000cf3a000} apInterPaePTs={00000002d339a000,000000023d59b000} apInterPaePDs={00000002d091c000,000000018421d000,000000021601e000,00000002a081f000} pInterPaePDPT64=000000000cf38000
+00:00:00.102964 PGM: Host paging mode: AMD64+PGE+NX
+00:00:00.102970 PGM: PGMPool: cMaxPages=1072 (u64MaxPages=1058)
+00:00:00.102973 PGM: pgmR3PoolInit: cMaxPages=0x430 cMaxUsers=0x860 cMaxPhysExts=0x860 fCacheEnable=true 
+00:00:00.118542 TM: GIP - u32Mode=3 (Invariant) u32UpdateHz=100 u32UpdateIntervalNS=10000000 enmUseTscDelta=2 (Pratically Zero) fGetGipCpu=0x5 cCpus=8
+00:00:00.118555 TM: GIP - u64CpuHz=2 194 919 168 (0x82d3cf00)  SUPGetCpuHzFromGip => 2 194 919 168
+00:00:00.118559 TM: GIP - CPU: iCpuSet=0x0 idCpu=0x0 idApic=0x0 iGipCpu=0x4 i64TSCDelta=0 enmState=3 u64CpuHz=2194919177(*) cErrors=0
+00:00:00.118562 TM: GIP - CPU: iCpuSet=0x1 idCpu=0x1 idApic=0x1 iGipCpu=0x3 i64TSCDelta=0 enmState=3 u64CpuHz=2194919202(*) cErrors=0
+00:00:00.118565 TM: GIP - CPU: iCpuSet=0x2 idCpu=0x2 idApic=0x2 iGipCpu=0x5 i64TSCDelta=0 enmState=3 u64CpuHz=2194919176(*) cErrors=0
+00:00:00.118567 TM: GIP - CPU: iCpuSet=0x3 idCpu=0x3 idApic=0x3 iGipCpu=0x7 i64TSCDelta=0 enmState=3 u64CpuHz=2194919172(*) cErrors=0
+00:00:00.118570 TM: GIP - CPU: iCpuSet=0x4 idCpu=0x4 idApic=0x4 iGipCpu=0x1 i64TSCDelta=0 enmState=3 u64CpuHz=2194907237(*) cErrors=0
+00:00:00.118572 TM: GIP - CPU: iCpuSet=0x5 idCpu=0x5 idApic=0x5 iGipCpu=0x0 i64TSCDelta=0 enmState=3 u64CpuHz=2194919168(*) cErrors=0
+00:00:00.118575 TM: GIP - CPU: iCpuSet=0x6 idCpu=0x6 idApic=0x6 iGipCpu=0x6 i64TSCDelta=0 enmState=3 u64CpuHz=2194919174(*) cErrors=0
+00:00:00.118577 TM: GIP - CPU: iCpuSet=0x7 idCpu=0x7 idApic=0x7 iGipCpu=0x2 i64TSCDelta=0 enmState=3 u64CpuHz=2194919197(*) cErrors=0
+00:00:00.118615 TM: cTSCTicksPerSecond=2 194 919 168 (0x82d3cf00) enmTSCMode=3 (Dynamic)
+00:00:00.118617 TM: TSCTiedToExecution=false TSCNotTiedToHalt=false
+00:00:00.118901 GIM: Using provider 'KVM' (Implementation version: 0)
+00:00:00.118909 CPUM: SetGuestCpuIdFeature: Enabled Hypervisor Present bit
+00:00:00.118962 AIOMgr: Default manager type is 'Async'
+00:00:00.118965 AIOMgr: Default file backend is 'NonBuffered'
+00:00:00.119022 BlkCache: Cache successfully initialized. Cache size is 5242880 bytes
+00:00:00.119026 BlkCache: Cache commit interval is 10000 ms
+00:00:00.119028 BlkCache: Cache commit threshold is 2621440 bytes
+00:00:00.120390 PcBios: [SMP] BIOS with 1 CPUs
+00:00:00.120511 PcBios: MPS table at 000e1300
+00:00:00.122550 SUP: Loaded VBoxDDR0.r0 (/Applications/VirtualBox.app/Contents/MacOS/VBoxDDR0.r0) at 0xffffff91fc8e1020 - ModuleInit at 0000000000000000 and ModuleTerm at 0000000000000000
+00:00:00.122915 SUP: Loaded VBoxDD2R0.r0 (/Applications/VirtualBox.app/Contents/MacOS/VBoxDD2R0.r0) at 0xffffff91f82d0020 - ModuleInit at 0000000000000000 and ModuleTerm at 0000000000000000
+00:00:00.122954 APIC: Activating Local APIC
+00:00:00.122960 CPUM: SetGuestCpuIdFeature: Enabled APIC
+00:00:00.123263 PIT: mode=3 count=0x10000 (65536) - 18.20 Hz (ch=0)
+00:00:00.126287 Shared Folders service loaded
+00:00:00.132322 DrvBlock: Flushes will be ignored
+00:00:00.132335 DrvBlock: Async flushes will be passed to the disk
+00:00:00.132454 VD: VDInit finished
+00:00:00.132489 VD: Opening the disk took 133635 ns
+00:00:00.132501 AHCI LUN#0: CD/DVD, total number of sectors 15360, passthrough disabled
+00:00:00.132506 AHCI: LUN#0: using normal I/O
+00:00:00.132578 DrvBlock: Flushes will be ignored
+00:00:00.132582 DrvBlock: Async flushes will be passed to the disk
+00:00:00.139923 VD: Opening the disk took 7333310 ns
+00:00:00.139943 AHCI: LUN#1: disk, PCHS=16383/16/63, total number of sectors 419430400
+00:00:00.139950 AHCI: LUN#1: using normal I/O
+00:00:00.140028 AHCI: Port2: No driver attached
+00:00:00.140033 AHCI: Port3: No driver attached
+00:00:00.140036 AHCI: Port4: No driver attached
+00:00:00.140039 AHCI: Port5: No driver attached
+00:00:00.140041 AHCI: Port6: No driver attached
+00:00:00.140044 AHCI: Port7: No driver attached
+00:00:00.140046 AHCI: Port8: No driver attached
+00:00:00.140048 AHCI: Port9: No driver attached
+00:00:00.140051 AHCI: Port10: No driver attached
+00:00:00.140054 AHCI: Port11: No driver attached
+00:00:00.140066 AHCI: Port12: No driver attached
+00:00:00.140069 AHCI: Port13: No driver attached
+00:00:00.140071 AHCI: Port14: No driver attached
+00:00:00.140074 AHCI: Port15: No driver attached
+00:00:00.140076 AHCI: Port16: No driver attached
+00:00:00.140078 AHCI: Port17: No driver attached
+00:00:00.140081 AHCI: Port18: No driver attached
+00:00:00.140083 AHCI: Port19: No driver attached
+00:00:00.140086 AHCI: Port20: No driver attached
+00:00:00.140088 AHCI: Port21: No driver attached
+00:00:00.140090 AHCI: Port22: No driver attached
+00:00:00.140093 AHCI: Port23: No driver attached
+00:00:00.140095 AHCI: Port24: No driver attached
+00:00:00.140098 AHCI: Port25: No driver attached
+00:00:00.140100 AHCI: Port26: No driver attached
+00:00:00.140103 AHCI: Port27: No driver attached
+00:00:00.140105 AHCI: Port28: No driver attached
+00:00:00.140107 AHCI: Port29: No driver attached
+00:00:00.140125 AHCI#0: Reset the HBA
+00:00:00.147679 NAT: DNS#0: 192.168.1.1
+00:00:00.148726 IntNet#0: szNetwork={HostInterfaceNetworking-vboxnet0} enmTrunkType=4 szTrunk={vboxnet0} fFlags=0x8000 cbRecv=325632 cbSend=196608 fIgnoreConnectFailure=false
+00:00:00.149854 PcBios: SATA LUN#0 LCHS=1024/255/63
+00:00:00.149862 PcBios: SATA LUN#1 LCHS=1024/255/63
+00:00:00.149918 PGM: The CPU physical address width is 39 bits
+00:00:00.149922 PGM: PGMR3InitFinalize: 4 MB PSE mask 0000007fffffffff
+00:00:00.149961 TM: TMR3InitFinalize: fTSCModeSwitchAllowed=true 
+00:00:00.154220 VMM: Thread-context hooks unavailable
+00:00:00.154295 HM: Using VT-x implementation 2.0!
+00:00:00.154296 HM: Host CR4                        = 0x1627e0
+00:00:00.154297 HM: Host EFER                       = 0xd01
+00:00:00.154298 HM: MSR_IA32_FEATURE_CONTROL        = 0x5
+00:00:00.154299 HM: MSR_IA32_VMX_BASIC_INFO         = 0xda040000000012
+00:00:00.154299 HM:   VMCS id                             = 0x12
+00:00:00.154300 HM:   VMCS size                           = 1024 bytes
+00:00:00.154301 HM:   VMCS physical address limit         = None
+00:00:00.154302 HM:   VMCS memory type                    = 0x6
+00:00:00.154302 HM:   Dual-monitor treatment support      = true 
+00:00:00.154303 HM:   OUTS & INS instruction-info         = true 
+00:00:00.154304 HM: Max resume loops                = 8192
+00:00:00.154304 HM: MSR_IA32_VMX_PINBASED_CTLS      = 0x7f00000016
+00:00:00.154305 HM:   VMX_VMCS_CTRL_PIN_EXEC_EXT_INT_EXIT
+00:00:00.154309 HM:   VMX_VMCS_CTRL_PIN_EXEC_NMI_EXIT
+00:00:00.154310 HM:   VMX_VMCS_CTRL_PIN_EXEC_VIRTUAL_NMI
+00:00:00.154312 HM:   VMX_VMCS_CTRL_PIN_EXEC_PREEMPT_TIMER
+00:00:00.154312 HM: MSR_IA32_VMX_PROCBASED_CTLS     = 0xfff9fffe0401e172
+00:00:00.154313 HM:   VMX_VMCS_CTRL_PROC_EXEC_INT_WINDOW_EXIT
+00:00:00.154314 HM:   VMX_VMCS_CTRL_PROC_EXEC_USE_TSC_OFFSETTING
+00:00:00.154314 HM:   VMX_VMCS_CTRL_PROC_EXEC_HLT_EXIT
+00:00:00.154315 HM:   VMX_VMCS_CTRL_PROC_EXEC_INVLPG_EXIT
+00:00:00.154315 HM:   VMX_VMCS_CTRL_PROC_EXEC_MWAIT_EXIT
+00:00:00.154316 HM:   VMX_VMCS_CTRL_PROC_EXEC_RDPMC_EXIT
+00:00:00.154316 HM:   VMX_VMCS_CTRL_PROC_EXEC_RDTSC_EXIT
+00:00:00.154318 HM:   VMX_VMCS_CTRL_PROC_EXEC_CR3_LOAD_EXIT (must be set)
+00:00:00.154319 HM:   VMX_VMCS_CTRL_PROC_EXEC_CR3_STORE_EXIT (must be set)
+00:00:00.154319 HM:   VMX_VMCS_CTRL_PROC_EXEC_CR8_LOAD_EXIT
+00:00:00.154320 HM:   VMX_VMCS_CTRL_PROC_EXEC_CR8_STORE_EXIT
+00:00:00.154320 HM:   VMX_VMCS_CTRL_PROC_EXEC_USE_TPR_SHADOW
+00:00:00.154320 HM:   VMX_VMCS_CTRL_PROC_EXEC_NMI_WINDOW_EXIT
+00:00:00.154321 HM:   VMX_VMCS_CTRL_PROC_EXEC_MOV_DR_EXIT
+00:00:00.154321 HM:   VMX_VMCS_CTRL_PROC_EXEC_UNCOND_IO_EXIT
+00:00:00.154322 HM:   VMX_VMCS_CTRL_PROC_EXEC_USE_IO_BITMAPS
+00:00:00.154322 HM:   VMX_VMCS_CTRL_PROC_EXEC_MONITOR_TRAP_FLAG
+00:00:00.154323 HM:   VMX_VMCS_CTRL_PROC_EXEC_USE_MSR_BITMAPS
+00:00:00.154323 HM:   VMX_VMCS_CTRL_PROC_EXEC_MONITOR_EXIT
+00:00:00.154324 HM:   VMX_VMCS_CTRL_PROC_EXEC_PAUSE_EXIT
+00:00:00.154324 HM:   VMX_VMCS_CTRL_PROC_EXEC_USE_SECONDARY_EXEC_CTRL
+00:00:00.154324 HM: MSR_IA32_VMX_PROCBASED_CTLS2    = 0x3cff00000000
+00:00:00.154325 HM:   VMX_VMCS_CTRL_PROC_EXEC2_VIRT_APIC
+00:00:00.154327 HM:   VMX_VMCS_CTRL_PROC_EXEC2_EPT
+00:00:00.154328 HM:   VMX_VMCS_CTRL_PROC_EXEC2_DESCRIPTOR_TABLE_EXIT
+00:00:00.154328 HM:   VMX_VMCS_CTRL_PROC_EXEC2_RDTSCP
+00:00:00.154329 HM:   VMX_VMCS_CTRL_PROC_EXEC2_VIRT_X2APIC
+00:00:00.154329 HM:   VMX_VMCS_CTRL_PROC_EXEC2_VPID
+00:00:00.154329 HM:   VMX_VMCS_CTRL_PROC_EXEC2_WBINVD_EXIT
+00:00:00.154330 HM:   VMX_VMCS_CTRL_PROC_EXEC2_UNRESTRICTED_GUEST
+00:00:00.154332 HM:   VMX_VMCS_CTRL_PROC_EXEC2_PAUSE_LOOP_EXIT
+00:00:00.154332 HM:   VMX_VMCS_CTRL_PROC_EXEC2_RDRAND_EXIT
+00:00:00.154333 HM:   VMX_VMCS_CTRL_PROC_EXEC2_INVPCID
+00:00:00.154333 HM:   VMX_VMCS_CTRL_PROC_EXEC2_VMFUNC
+00:00:00.154334 HM:   VMX_VMCS_CTRL_PROC_EXEC2_VMCS_SHADOWING (must be cleared)
+00:00:00.154334 HM:   VMX_VMCS_CTRL_PROC_EXEC2_RDSEED_EXIT (must be cleared)
+00:00:00.154334 HM:   VMX_VMCS_CTRL_PROC_EXEC2_EPT_VE (must be cleared)
+00:00:00.154335 HM:   VMX_VMCS_CTRL_PROC_EXEC2_XSAVES (must be cleared)
+00:00:00.154335 HM: MSR_IA32_VMX_ENTRY_CTLS         = 0xffff000011ff
+00:00:00.154336 HM:   VMX_VMCS_CTRL_ENTRY_LOAD_DEBUG (must be set)
+00:00:00.154336 HM:   VMX_VMCS_CTRL_ENTRY_IA32E_MODE_GUEST
+00:00:00.154337 HM:   VMX_VMCS_CTRL_ENTRY_ENTRY_SMM
+00:00:00.154337 HM:   VMX_VMCS_CTRL_ENTRY_DEACTIVATE_DUALMON
+00:00:00.154337 HM:   VMX_VMCS_CTRL_ENTRY_LOAD_GUEST_PERF_MSR
+00:00:00.154338 HM:   VMX_VMCS_CTRL_ENTRY_LOAD_GUEST_PAT_MSR
+00:00:00.154338 HM:   VMX_VMCS_CTRL_ENTRY_LOAD_GUEST_EFER_MSR
+00:00:00.154339 HM: MSR_IA32_VMX_EXIT_CTLS          = 0x7fffff00036dff
+00:00:00.154339 HM:   VMX_VMCS_CTRL_EXIT_SAVE_DEBUG (must be set)
+00:00:00.154340 HM:   VMX_VMCS_CTRL_EXIT_HOST_ADDR_SPACE_SIZE
+00:00:00.154340 HM:   VMX_VMCS_CTRL_EXIT_LOAD_PERF_MSR
+00:00:00.154341 HM:   VMX_VMCS_CTRL_EXIT_ACK_EXT_INT
+00:00:00.154341 HM:   VMX_VMCS_CTRL_EXIT_SAVE_GUEST_PAT_MSR
+00:00:00.154341 HM:   VMX_VMCS_CTRL_EXIT_LOAD_HOST_PAT_MSR
+00:00:00.154342 HM:   VMX_VMCS_CTRL_EXIT_SAVE_GUEST_EFER_MSR
+00:00:00.154342 HM:   VMX_VMCS_CTRL_EXIT_LOAD_HOST_EFER_MSR
+00:00:00.154342 HM:   VMX_VMCS_CTRL_EXIT_SAVE_VMX_PREEMPT_TIMER
+00:00:00.154344 HM: MSR_IA32_VMX_EPT_VPID_CAP       = 0xf0106334141
+00:00:00.154345 HM:   MSR_IA32_VMX_EPT_VPID_CAP_RWX_X_ONLY
+00:00:00.154345 HM:   MSR_IA32_VMX_EPT_VPID_CAP_GAW_48_BITS
+00:00:00.154346 HM:   MSR_IA32_VMX_EPT_VPID_CAP_EMT_UC
+00:00:00.154346 HM:   MSR_IA32_VMX_EPT_VPID_CAP_EMT_WB
+00:00:00.154347 HM:   MSR_IA32_VMX_EPT_VPID_CAP_SP_21_BITS
+00:00:00.154347 HM:   MSR_IA32_VMX_EPT_VPID_CAP_SP_30_BITS
+00:00:00.154348 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVEPT
+00:00:00.154348 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVEPT_SINGLE_CONTEXT
+00:00:00.154348 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVEPT_ALL_CONTEXTS
+00:00:00.154349 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVVPID
+00:00:00.154349 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVVPID_INDIV_ADDR
+00:00:00.154350 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVVPID_SINGLE_CONTEXT
+00:00:00.154350 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVVPID_ALL_CONTEXTS
+00:00:00.154350 HM:   MSR_IA32_VMX_EPT_VPID_CAP_INVVPID_SINGLE_CONTEXT_RETAIN_GLOBALS
+00:00:00.154351 HM: MSR_IA32_VMX_MISC               = 0x300481e5
+00:00:00.154351 HM:   MSR_IA32_VMX_MISC_PREEMPT_TSC_BIT      = 0x5
+00:00:00.154352 HM:   MSR_IA32_VMX_MISC_STORE_EFERLMA_VMEXIT = true 
+00:00:00.154352 HM:   MSR_IA32_VMX_MISC_ACTIVITY_STATES      = 0x7
+00:00:00.154353 HM:   MSR_IA32_VMX_MISC_CR3_TARGET           = 0x4
+00:00:00.154353 HM:   MSR_IA32_VMX_MISC_MAX_MSR              = 512
+00:00:00.154354 HM:   MSR_IA32_VMX_MISC_RDMSR_SMBASE_MSR_SMM = true 
+00:00:00.154355 HM:   MSR_IA32_VMX_MISC_SMM_MONITOR_CTL_B2   = true 
+00:00:00.154355 HM:   MSR_IA32_VMX_MISC_VMWRITE_VMEXIT_INFO  = true 
+00:00:00.154356 HM:   MSR_IA32_VMX_MISC_MSEG_ID              = 0x0
+00:00:00.154356 HM: MSR_IA32_VMX_CR0_FIXED0         = 0x80000021
+00:00:00.154357 HM: MSR_IA32_VMX_CR0_FIXED1         = 0xffffffff
+00:00:00.154357 HM: MSR_IA32_VMX_CR4_FIXED0         = 0x2000
+00:00:00.154358 HM: MSR_IA32_VMX_CR4_FIXED1         = 0x1727ff
+00:00:00.154359 HM: MSR_IA32_VMX_VMCS_ENUM          = 0x2a
+00:00:00.154359 HM:   MSR_IA32_VMX_VMCS_ENUM_HIGHEST_INDEX   = 0x15
+00:00:00.154360 HM: MSR_A32_VMX_VMFUNC              = 0x1
+00:00:00.154360 HM:   VMX_VMCS_CTRL_VMFUNC_EPTP_SWITCHING
+00:00:00.154361 HM: APIC-access page physaddr       = 0x000000001611e000
+00:00:00.154362 HM: VCPU  0: MSR bitmap physaddr    = 0x0000000016140000
+00:00:00.154363 HM: VCPU  0: VMCS physaddr          = 0x0000000016120000
+00:00:00.154364 HM: Guest support: 32-bit and 64-bit
+00:00:00.154370 HM: Supports VMCS EFER fields       = true 
+00:00:00.154371 HM: VMX enabled!
+00:00:00.154372 CPUM: SetGuestCpuIdFeature: Enabled SYSENTER/EXIT
+00:00:00.154373 CPUM: SetGuestCpuIdFeature: Enabled PAE
+00:00:00.154374 CPUM: SetGuestCpuIdFeature: Enabled LONG MODE
+00:00:00.154375 CPUM: SetGuestCpuIdFeature: Enabled SYSCALL/RET
+00:00:00.154375 CPUM: SetGuestCpuIdFeature: Enabled LAHF/SAHF
+00:00:00.154376 CPUM: SetGuestCpuIdFeature: Enabled NX
+00:00:00.154376 HM: Nested paging enabled!
+00:00:00.154376 HM:   EPT flush type                = VMXFLUSHEPT_SINGLE_CONTEXT
+00:00:00.154377 HM: Unrestricted guest execution enabled!
+00:00:00.154377 HM: Large page support enabled
+00:00:00.154377 HM: VPID enabled!
+00:00:00.154378 HM:   VPID flush type               = VMXFLUSHVPID_SINGLE_CONTEXT
+00:00:00.154378 HM: VMX-preemption timer enabled (cPreemptTimerShift=5)
+00:00:00.154379 HM: VT-x/AMD-V init method: GLOBAL
+00:00:00.154380 VMM: fUsePeriodicPreemptionTimers=false
+00:00:00.154593 CPUM: Logical host processors: 8 present, 8 max, 8 online, online mask: 00000000000000ff
+00:00:00.154597 CPUM: Physical host cores: 4
+00:00:00.154597 ************************* CPUID dump ************************
+00:00:00.154602          Raw Standard CPUID Leaves
+00:00:00.154602      Leaf/sub-leaf  eax      ebx      ecx      edx
+00:00:00.154603 Gst: 00000000/0000  0000000d 756e6547 6c65746e 49656e69
+00:00:00.154605 Hst:                0000000d 756e6547 6c65746e 49656e69
+00:00:00.154606 Gst: 00000001/0000  00040661 00000800 d6d8220b 078bfbff
+00:00:00.154608 Hst:                00040661 06100800 7ffafbbf bfebfbff
+00:00:00.154609 Gst: 00000002/0000  76036301 00f0b5ff 00000000 00c10000
+00:00:00.154610 Hst:                76036301 00f0b5ff 00000000 00c10000
+00:00:00.154611 Gst: 00000003/0000  00000000 00000000 00000000 00000000
+00:00:00.154612 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154613 Gst: 00000004/0000  00000121 01c0003f 0000003f 00000000
+00:00:00.154614 Hst:                1c004121 01c0003f 0000003f 00000000
+00:00:00.154615 Gst: 00000004/0001  00000122 01c0003f 0000003f 00000000
+00:00:00.154616 Hst:                1c004122 01c0003f 0000003f 00000000
+00:00:00.154617 Gst: 00000004/0002  00000143 01c0003f 000001ff 00000000
+00:00:00.154617 Hst:                1c004143 01c0003f 000001ff 00000000
+00:00:00.154618 Gst: 00000004/0003  00000163 02c0003f 00001fff 00000006
+00:00:00.154619 Hst:                1c03c163 02c0003f 00001fff 00000006
+00:00:00.154620 Gst: 00000004/0004  00000183 03c0f03f 00001fff 00000004
+00:00:00.154621 Hst:                1c03c183 03c0f03f 00001fff 00000004
+00:00:00.154622 Gst: 00000004/0005  00000000 00000000 00000000 00000000
+00:00:00.154623 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154624 Gst: 00000005/0000  00000040 00000040 00000000 00000000
+00:00:00.154624 Hst:                00000040 00000040 00000003 00042120
+00:00:00.154625 Gst: 00000006/0000  00000000 00000000 00000000 00000000
+00:00:00.154626 Hst:                00000077 00000002 00000009 00000000
+00:00:00.154627 Gst: 00000007/0000  00000000 00002000 00000000 00000000
+00:00:00.154628 Hst:                00000000 000027ab 00000000 00000000
+00:00:00.154628 Gst: 00000007/0001  00000000 00000000 00000000 00000000
+00:00:00.154629 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154630 Gst: 00000008/0000  00000000 00000000 00000000 00000000
+00:00:00.154631 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154631 Gst: 00000009/0000  00000000 00000000 00000000 00000000
+00:00:00.154632 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154633 Gst: 0000000a/0000  00000000 00000000 00000000 00000000
+00:00:00.154633 Hst:                07300403 00000000 00000000 00000603
+00:00:00.154634 Gst: 0000000b/0000  00000000 00000001 00000100 00000000
+00:00:00.154635 Hst:                00000001 00000002 00000100 00000006
+00:00:00.154636 Gst: 0000000b/0001  00000001 00000001 00000201 00000000
+00:00:00.154637 Hst:                00000004 00000008 00000201 00000006
+00:00:00.154637 Gst: 0000000b/0002  00000000 00000000 00000002 00000000
+00:00:00.154638 Hst:                00000000 00000000 00000002 00000006
+00:00:00.154639 Gst: 0000000c/0000  00000000 00000000 00000000 00000000
+00:00:00.154639 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154640 Gst: 0000000d/0000  00000007 00000340 00000340 00000000
+00:00:00.154641 Hst:                00000007 00000340 00000340 00000000
+00:00:00.154642 Gst: 0000000d/0001  00000000 00000000 00000000 00000000
+00:00:00.154642 Hst:                00000001 00000000 00000000 00000000
+00:00:00.154643 Gst: 0000000d/0002  00000100 00000240 00000000 00000000
+00:00:00.154644 Hst:                00000100 00000240 00000000 00000000
+00:00:00.154645 Gst: 0000000d/0003  00000000 00000000 00000000 00000000
+00:00:00.154645 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154659                                Name: GenuineIntel
+00:00:00.154660                            Supports: 0x00000000-0x0000000d
+00:00:00.154662                              Family:  6 	Extended: 0 	Effective: 6
+00:00:00.154663                               Model:  6 	Extended: 4 	Effective: 70
+00:00:00.154664                            Stepping: 1
+00:00:00.154665                                Type: 0 (primary)
+00:00:00.154666                             APIC ID: 0x00
+00:00:00.154667                        Logical CPUs: 0
+00:00:00.154668                        CLFLUSH Size: 8
+00:00:00.154668                            Brand ID: 0x00
+00:00:00.154669 Features
+00:00:00.154670   Mnemonic - Description                                  = guest (host)
+00:00:00.154672   FPU - x87 FPU on Chip                                   = 1 (1)
+00:00:00.154673   VME - Virtual 8086 Mode Enhancements                    = 1 (1)
+00:00:00.154675   DE - Debugging extensions                               = 1 (1)
+00:00:00.154676   PSE - Page Size Extension                               = 1 (1)
+00:00:00.154677   TSC - Time Stamp Counter                                = 1 (1)
+00:00:00.154678   MSR - Model Specific Registers                          = 1 (1)
+00:00:00.154679   PAE - Physical Address Extension                        = 1 (1)
+00:00:00.154680   MCE - Machine Check Exception                           = 1 (1)
+00:00:00.154681   CX8 - CMPXCHG8B instruction                             = 1 (1)
+00:00:00.154682   APIC - APIC On-Chip                                     = 1 (1)
+00:00:00.154683   SEP - SYSENTER and SYSEXIT Present                      = 1 (1)
+00:00:00.154684   MTRR - Memory Type Range Registers                      = 1 (1)
+00:00:00.154685   PGE - PTE Global Bit                                    = 1 (1)
+00:00:00.154686   MCA - Machine Check Architecture                        = 1 (1)
+00:00:00.154687   CMOV - Conditional Move instructions                    = 1 (1)
+00:00:00.154688   PAT - Page Attribute Table                              = 1 (1)
+00:00:00.154689   PSE-36 - 36-bit Page Size Extension                     = 1 (1)
+00:00:00.154690   PSN - Processor Serial Number                           = 0 (0)
+00:00:00.154691   CLFSH - CLFLUSH instruction                             = 1 (1)
+00:00:00.154692   DS - Debug Store                                        = 0 (1)
+00:00:00.154693   ACPI - Thermal Mon. & Soft. Clock Ctrl.                 = 0 (1)
+00:00:00.154694   MMX - Intel MMX Technology                              = 1 (1)
+00:00:00.154695   FXSR - FXSAVE and FXRSTOR instructions                  = 1 (1)
+00:00:00.154696   SSE - SSE support                                       = 1 (1)
+00:00:00.154697   SSE2 - SSE2 support                                     = 1 (1)
+00:00:00.154698   SS - Self Snoop                                         = 0 (1)
+00:00:00.154699   HTT - Hyper-Threading Technology                        = 0 (1)
+00:00:00.154700   TM - Therm. Monitor                                     = 0 (1)
+00:00:00.154701   PBE - Pending Break Enabled                             = 0 (1)
+00:00:00.154703   SSE3 - SSE3 support                                     = 1 (1)
+00:00:00.154704   PCLMUL - PCLMULQDQ support (for AES-GCM)                = 1 (1)
+00:00:00.154704   DTES64 - DS Area 64-bit Layout                          = 0 (1)
+00:00:00.154705   MONITOR - MONITOR/MWAIT instructions                    = 1 (1)
+00:00:00.154706   CPL-DS - CPL Qualified Debug Store                      = 0 (1)
+00:00:00.154707   VMX - Virtual Machine Extensions                        = 0 (1)
+00:00:00.154708   SMX - Safer Mode Extensions                             = 0 (0)
+00:00:00.154709   EST - Enhanced SpeedStep Technology                     = 0 (1)
+00:00:00.154710   TM2 - Terminal Monitor 2                                = 0 (1)
+00:00:00.154711   SSSE3 - Supplemental Streaming SIMD Extensions 3        = 1 (1)
+00:00:00.154712   CNTX-ID - L1 Context ID                                 = 0 (0)
+00:00:00.154713   SDBG - Silicon Debug interface                          = 0 (1)
+00:00:00.154714   FMA - Fused Multiply Add extensions                     = 0 (1)
+00:00:00.154715   CX16 - CMPXCHG16B instruction                           = 1 (1)
+00:00:00.154716   TPRUPDATE - xTPR Update Control                         = 0 (1)
+00:00:00.154717   PDCM - Perf/Debug Capability MSR                        = 0 (1)
+00:00:00.154718   PCID - Process Context Identifiers                      = 0 (1)
+00:00:00.154719   DCA - Direct Cache Access                               = 0 (0)
+00:00:00.154720   SSE4_1 - SSE4_1 support                                 = 1 (1)
+00:00:00.154721   SSE4_2 - SSE4_2 support                                 = 1 (1)
+00:00:00.154722   X2APIC - x2APIC support                                 = 0 (1)
+00:00:00.154723   MOVBE - MOVBE instruction                               = 1 (1)
+00:00:00.154724   POPCNT - POPCNT instruction                             = 1 (1)
+00:00:00.154725   TSCDEADL - Time Stamp Counter Deadline                  = 0 (1)
+00:00:00.154726   AES - AES instructions                                  = 1 (1)
+00:00:00.154727   XSAVE - XSAVE instruction                               = 1 (1)
+00:00:00.154728   OSXSAVE - OSXSAVE instruction                           = 0 (1)
+00:00:00.154729   AVX - AVX support                                       = 1 (1)
+00:00:00.154730   F16C - 16-bit floating point conversion instructions    = 0 (1)
+00:00:00.154731   RDRAND - RDRAND instruction                             = 1 (1)
+00:00:00.154732   HVP - Hypervisor Present (we're a guest)                = 1 (0)
+00:00:00.154733 Structured Extended Feature Flags Enumeration (leaf 7):
+00:00:00.154733   Mnemonic - Description                                  = guest (host)
+00:00:00.154734   FSGSBASE - RDFSBASE/RDGSBASE/WRFSBASE/WRGSBASE instr.   = 0 (1)
+00:00:00.154735   TSCADJUST - Supports MSR_IA32_TSC_ADJUST                = 0 (1)
+00:00:00.154735   BMI1 - Advanced Bit Manipulation extension 1            = 0 (1)
+00:00:00.154736   HLE - Hardware Lock Elision                             = 0 (0)
+00:00:00.154737   AVX2 - Advanced Vector Extensions 2                     = 0 (1)
+00:00:00.154738   SMEP - Supervisor Mode Execution Prevention             = 0 (1)
+00:00:00.154739   BMI2 - Advanced Bit Manipulation extension 2            = 0 (1)
+00:00:00.154740   ERMS - Enhanced REP MOVSB/STOSB instructions            = 0 (1)
+00:00:00.154740   INVPCID - INVPCID instruction                           = 0 (1)
+00:00:00.154741   RTM - Restricted Transactional Memory                   = 0 (0)
+00:00:00.154742   PQM - Platform Quality of Service Monitoring            = 0 (0)
+00:00:00.154743   DEPFPU_CS_DS - Deprecates FPU CS, FPU DS values if set  = 1 (1)
+00:00:00.154744   MPE - Intel Memory Protection Extensions                = 0 (0)
+00:00:00.154745   PQE - Platform Quality of Service Enforcement           = 0 (0)
+00:00:00.154745   AVX512F - AVX512 Foundation instructions                = 0 (0)
+00:00:00.154746   RDSEED - RDSEED instruction                             = 0 (0)
+00:00:00.154747   ADX - ADCX/ADOX instructions                            = 0 (0)
+00:00:00.154748   SMAP - Supervisor Mode Access Prevention                = 0 (0)
+00:00:00.154749   CLFLUSHOPT - CLFLUSHOPT (Cache Line Flush) instruction  = 0 (0)
+00:00:00.154750   INTEL_PT - Intel Processor Trace                        = 0 (0)
+00:00:00.154751   AVX512PF - AVX512 Prefetch instructions                 = 0 (0)
+00:00:00.154752   AVX512ER - AVX512 Exponential & Reciprocal instructions = 0 (0)
+00:00:00.154752   AVX512CD - AVX512 Conflict Detection instructions       = 0 (0)
+00:00:00.154753   SHA - Secure Hash Algorithm extensions                  = 0 (0)
+00:00:00.154754   PREFETCHWT1 - PREFETCHWT1 instruction                   = 0 (0)
+00:00:00.154755   PKU - Protection Key for Usermode pages                 = 0 (0)
+00:00:00.154756   OSPKU - CR4.PKU mirror                                  = 0 (0)
+00:00:00.154757 Processor Extended State Enumeration (leaf 0xd):
+00:00:00.154758    XSAVE area cur/max size by XCR0, guest: 0x340/0x340
+00:00:00.154759     XSAVE area cur/max size by XCR0, host: 0x340/0x340
+00:00:00.154760                    Valid XCR0 bits, guest: 0x00000000`00000007 ( x87 SSE YMM_Hi128 )
+00:00:00.154762                     Valid XCR0 bits, host: 0x00000000`00000007 ( x87 SSE YMM_Hi128 )
+00:00:00.154763                     XSAVE features, guest:
+00:00:00.154764                      XSAVE features, host: XSAVEOPT
+00:00:00.154765       XSAVE area cur size XCR0|XSS, guest: 0x0
+00:00:00.154766        XSAVE area cur size XCR0|XSS, host: 0x0
+00:00:00.154767                Valid IA32_XSS bits, guest: 0x00000000`00000000
+00:00:00.154767                 Valid IA32_XSS bits, host: 0x00000000`00000000
+00:00:00.154768   State #2, guest: off=0x0240, cb=0x0100 IA32_XSS-bit -- YMM_Hi128
+00:00:00.154770   State #2, host:  off=0x0240, cb=0x0100 IA32_XSS-bit -- YMM_Hi128
+00:00:00.154777          Raw Hypervisor CPUID Leaves
+00:00:00.154778      Leaf/sub-leaf  eax      ebx      ecx      edx
+00:00:00.154778 Gst: 40000000/0000  40000001 4b4d564b 564b4d56 0000004d
+00:00:00.154780 Hst:                00000007 00000340 00000340 00000000
+00:00:00.154781 Gst: 40000001/0000  01000089 00000000 00000000 00000000
+00:00:00.154782 Hst:                00000007 00000340 00000340 00000000
+00:00:00.154783          Raw Extended CPUID Leaves
+00:00:00.154783      Leaf/sub-leaf  eax      ebx      ecx      edx
+00:00:00.154784 Gst: 80000000/0000  80000008 00000000 00000000 00000000
+00:00:00.154785 Hst:                80000008 00000000 00000000 00000000
+00:00:00.154786 Gst: 80000001/0000  00000000 00000000 00000021 28100800
+00:00:00.154787 Hst:                00000000 00000000 00000021 2c100800
+00:00:00.154788 Gst: 80000002/0000  65746e49 2952286c 726f4320 4d542865
+00:00:00.154789 Hst:                65746e49 2952286c 726f4320 4d542865
+00:00:00.154791 Gst: 80000003/0000  37692029 3737342d 20514830 20555043
+00:00:00.154792 Hst:                37692029 3737342d 20514830 20555043
+00:00:00.154794 Gst: 80000004/0000  2e322040 48473032 0000007a 00000000
+00:00:00.154795 Hst:                2e322040 48473032 0000007a 00000000
+00:00:00.154796 Gst: 80000005/0000  00000000 00000000 00000000 00000000
+00:00:00.154797 Hst:                00000000 00000000 00000000 00000000
+00:00:00.154798 Gst: 80000006/0000  00000000 00000000 01006040 00000000
+00:00:00.154799 Hst:                00000000 00000000 01006040 00000000
+00:00:00.154799 Gst: 80000007/0000  00000000 00000000 00000000 00000100
+00:00:00.154800 Hst:                00000000 00000000 00000000 00000100
+00:00:00.154801 Gst: 80000008/0000  00003027 00000000 00000000 00000000
+00:00:00.154802 Hst:                00003027 00000000 00000000 00000000
+00:00:00.154803 Ext Name:                        
+00:00:00.154803 Ext Supports:                    0x80000000-0x80000008
+00:00:00.154804 Family:                          0  	Extended: 0 	Effective: 0
+00:00:00.154805 Model:                           0  	Extended: 0 	Effective: 0
+00:00:00.154805 Stepping:                        0
+00:00:00.154806 Brand ID:                        0x000
+00:00:00.154807 Ext Features
+00:00:00.154807   Mnemonic - Description                                  = guest (host)
+00:00:00.154807   FPU - x87 FPU on Chip                                   = 0 (0)
+00:00:00.154809   VME - Virtual 8086 Mode Enhancements                    = 0 (0)
+00:00:00.154809   DE - Debugging extensions                               = 0 (0)
+00:00:00.154811   PSE - Page Size Extension                               = 0 (0)
+00:00:00.154812   TSC - Time Stamp Counter                                = 0 (0)
+00:00:00.154813   MSR - K86 Model Specific Registers                      = 0 (0)
+00:00:00.154813   PAE - Physical Address Extension                        = 0 (0)
+00:00:00.154814   MCE - Machine Check Exception                           = 0 (0)
+00:00:00.154815   CX8 - CMPXCHG8B instruction                             = 0 (0)
+00:00:00.154816   APIC - APIC On-Chip                                     = 0 (0)
+00:00:00.154818   SEP - SYSCALL/SYSRET                                    = 1 (1)
+00:00:00.154819   MTRR - Memory Type Range Registers                      = 0 (0)
+00:00:00.154819   PGE - PTE Global Bit                                    = 0 (0)
+00:00:00.154821   MCA - Machine Check Architecture                        = 0 (0)
+00:00:00.154821   CMOV - Conditional Move instructions                    = 0 (0)
+00:00:00.154822   PAT - Page Attribute Table                              = 0 (0)
+00:00:00.154823   PSE-36 - 36-bit Page Size Extension                     = 0 (0)
+00:00:00.154824   NX - No-Execute/Execute-Disable                         = 1 (1)
+00:00:00.154825   AXMMX - AMD Extensions to MMX instructions              = 0 (0)
+00:00:00.154826   MMX - Intel MMX Technology                              = 0 (0)
+00:00:00.154827   FXSR - FXSAVE and FXRSTOR Instructions                  = 0 (0)
+00:00:00.154828   FFXSR - AMD fast FXSAVE and FXRSTOR instructions        = 0 (0)
+00:00:00.154829   Page1GB - 1 GB large page                               = 0 (1)
+00:00:00.154830   RDTSCP - RDTSCP instruction                             = 1 (1)
+00:00:00.154831   LM - AMD64 Long Mode                                    = 1 (1)
+00:00:00.154832   3DNOWEXT - AMD Extensions to 3DNow                      = 0 (0)
+00:00:00.154833   3DNOW - AMD 3DNow                                       = 0 (0)
+00:00:00.154834   LahfSahf - LAHF/SAHF support in 64-bit mode             = 1 (1)
+00:00:00.154835   CmpLegacy - Core multi-processing legacy mode           = 0 (0)
+00:00:00.154835   SVM - AMD VM extensions                                 = 0 (0)
+00:00:00.154836   EXTAPIC - AMD Extended APIC registers                   = 0 (0)
+00:00:00.154837   CR8L - AMD LOCK MOV CR0 means MOV CR8                   = 0 (0)
+00:00:00.154838   ABM - AMD Advanced Bit Manipulation                     = 1 (1)
+00:00:00.154839   SSE4A - SSE4A instructions                              = 0 (0)
+00:00:00.154840   MISALIGNSSE - AMD Misaligned SSE mode                   = 0 (0)
+00:00:00.154841   3DNOWPRF - AMD PREFETCH and PREFETCHW instructions      = 0 (0)
+00:00:00.154842   OSVW - AMD OS Visible Workaround                        = 0 (0)
+00:00:00.154843   IBS - Instruct Based Sampling                           = 0 (0)
+00:00:00.154844   XOP - Extended Operation support                        = 0 (0)
+00:00:00.154845   SKINIT - SKINIT, STGI, and DEV support                  = 0 (0)
+00:00:00.154846   WDT - AMD Watchdog Timer support                        = 0 (0)
+00:00:00.154847   LWP - Lightweight Profiling support                     = 0 (0)
+00:00:00.154847   FMA4 - Four operand FMA instruction support             = 0 (0)
+00:00:00.154848   NodeId - NodeId in MSR C001_100C                        = 0 (0)
+00:00:00.154849   TBM - Trailing Bit Manipulation instructions            = 0 (0)
+00:00:00.154850   TOPOEXT - Topology Extensions                           = 0 (0)
+00:00:00.154851 Full Name:                       "Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz"
+00:00:00.154852 TLB 2/4M Instr/Uni:              res0     0 entries
+00:00:00.154852 TLB 2/4M Data:                   res0     0 entries
+00:00:00.154853 TLB 4K Instr/Uni:                res0     0 entries
+00:00:00.154854 TLB 4K Data:                     res0     0 entries
+00:00:00.154854 L1 Instr Cache Line Size:        0 bytes
+00:00:00.154855 L1 Instr Cache Lines Per Tag:    0
+00:00:00.154855 L1 Instr Cache Associativity:    res0  
+00:00:00.154856 L1 Instr Cache Size:             0 KB
+00:00:00.154856 L1 Data Cache Line Size:         0 bytes
+00:00:00.154856 L1 Data Cache Lines Per Tag:     0
+00:00:00.154857 L1 Data Cache Associativity:     res0  
+00:00:00.154857 L1 Data Cache Size:              0 KB
+00:00:00.154858 L2 TLB 2/4M Instr/Uni:           off       0 entries
+00:00:00.154859 L2 TLB 2/4M Data:                off       0 entries
+00:00:00.154859 L2 TLB 4K Instr/Uni:             off       0 entries
+00:00:00.154860 L2 TLB 4K Data:                  off       0 entries
+00:00:00.154860 L2 Cache Line Size:              0 bytes
+00:00:00.154861 L2 Cache Lines Per Tag:          0
+00:00:00.154861 L2 Cache Associativity:          off   
+00:00:00.154861 L2 Cache Size:                   0 KB
+00:00:00.154862 APM Features:                    TscInvariant
+00:00:00.154863 Host Invariant-TSC support:      true 
+00:00:00.154863 Physical Address Width:          39 bits
+00:00:00.154864 Virtual Address Width:           48 bits
+00:00:00.154864 Guest Physical Address Width:    0 bits
+00:00:00.154865 Physical Core Count:             0
+00:00:00.154866 
+00:00:00.154866 ******************** End of CPUID dump **********************
+00:00:00.158424 VMEmt: Halt method global1 (5)
+00:00:00.158433 VMEmt: HaltedGlobal1 config: cNsSpinBlockThresholdCfg=2000
+00:00:00.158436 Changing the VM state from 'CREATING' to 'CREATED'
+00:00:00.161743 SharedFolders host service: Adding host mapping
+00:00:00.161752     Host path '/Users', map name 'Users', writable, automount=true, create_symlinks=true, missing=false
+00:00:00.161800 Changing the VM state from 'CREATED' to 'POWERING_ON'
+00:00:00.161817 NAT: set redirect TCP host 127.0.0.1:52542 => guest 10.0.2.15:22
+00:00:00.161954 Changing the VM state from 'POWERING_ON' to 'RUNNING'
+00:00:00.161961 Console: Machine state changed to 'Running'
+00:00:00.165030 VMMDev: Guest Log: BIOS: VirtualBox 5.0.10
+00:00:00.166437 PIT: mode=2 count=0x10000 (65536) - 18.20 Hz (ch=0)
+00:00:00.184756 AHCI#0: Reset the HBA
+00:00:00.184821 AHCI#0: Port 0 reset
+00:00:00.185901 AHCI#0: Port 1 reset
+00:00:00.186444 VMMDev: Guest Log: BIOS: AHCI 1-P#1: PCHS=16383/16/63 LCHS=1024/255/63 419430400 sectors
+00:00:00.186503 AHCI#0: Port 2 reset
+00:00:00.186569 AHCI#0: Port 3 reset
+00:00:00.186633 AHCI#0: Port 4 reset
+00:00:00.186698 AHCI#0: Port 5 reset
+00:00:00.186763 AHCI#0: Port 6 reset
+00:00:00.186828 AHCI#0: Port 7 reset
+00:00:00.186900 AHCI#0: Port 8 reset
+00:00:00.186961 AHCI#0: Port 9 reset
+00:00:00.187021 AHCI#0: Port 10 reset
+00:00:00.187090 AHCI#0: Port 11 reset
+00:00:00.187151 AHCI#0: Port 12 reset
+00:00:00.187216 AHCI#0: Port 13 reset
+00:00:00.187277 AHCI#0: Port 14 reset
+00:00:00.187337 AHCI#0: Port 15 reset
+00:00:00.187398 AHCI#0: Port 16 reset
+00:00:00.187468 AHCI#0: Port 17 reset
+00:00:00.187538 AHCI#0: Port 18 reset
+00:00:00.187604 AHCI#0: Port 19 reset
+00:00:00.187668 AHCI#0: Port 20 reset
+00:00:00.187732 AHCI#0: Port 21 reset
+00:00:00.187773 NAT: old socket rcv size: 334KB
+00:00:00.187785 NAT: old socket snd size: 79KB
+00:00:00.187835 AHCI#0: Port 22 reset
+00:00:00.187899 AHCI#0: Port 23 reset
+00:00:00.187961 AHCI#0: Port 24 reset
+00:00:00.188021 AHCI#0: Port 25 reset
+00:00:00.188082 AHCI#0: Port 26 reset
+00:00:00.188142 AHCI#0: Port 27 reset
+00:00:00.188202 AHCI#0: Port 28 reset
+00:00:00.188263 AHCI#0: Port 29 reset
+00:00:00.188693 Display::handleDisplayResize: uScreenId=0 pvVRAM=0000000000000000 w=720 h=400 bpp=0 cbLine=0x0 flags=0x1
+00:00:00.188890 PIT: mode=2 count=0x48d3 (18643) - 64.00 Hz (ch=0)
+00:00:00.197599 PIT: mode=2 count=0x10000 (65536) - 18.20 Hz (ch=0)
+00:00:00.197868 VMMDev: Guest Log: BIOS: Boot : bseqnr=1, bootseq=0233
+00:00:00.198474 VMMDev: Guest Log: BIOS: Booting from CD-ROM...
+00:00:00.353038 VMMDev: Guest Log: BIOS: KBD: unsupported int 16h function 03
+00:00:00.353325 VMMDev: Guest Log: BIOS: AX=0305 BX=0000 CX=0000 DX=0000 
+00:00:00.786691 GIM: KVM: VCPU  0: Enabled system-time struct. at 0x000000007ffef000 - u32TscScale=0xe9441823 i8TscShift=-1 uVersion=2 fFlags=0x1 uTsc=0x51a54261 uVirtNanoTS=0x2539ae1b
+00:00:00.786712 TM: Switching TSC mode from 'Dynamic' to 'RealTscOffset'
+00:00:00.858652 GIM: KVM: Enabled wall-clock struct. at 0x0000000001c79c08 - u32Sec=1450385551 u32Nano=551396263 uVersion=2
+00:00:05.688502 AHCI#0: Reset the HBA
+00:00:05.696093 AHCI#0: Port 0 reset
+00:00:06.040319 AHCI#0: Port 1 reset
+00:00:17.340679 VMMDev: Guest Additions information report: Version 5.0.10 r104061 '5.0.10'
+00:00:17.340717 VMMDev: Guest Additions information report: Interface = 0x00010004 osType = 0x00053100 (Linux >= 2.6, 64-bit)
+00:00:17.340784 VMMDev: Guest Additions capability report: (0x0 -> 0x0) seamless: no, hostWindowMapping: no, graphics: no
+00:00:17.340827 VMMDev: vmmDevReqHandler_HeartbeatConfigure: No change (fHeartbeatActive=false).
+00:00:17.340841 VMMDev: Heartbeat flatline timer set to trigger after 4 000 000 000 ns
+00:00:17.340866 VMMDev: Guest Log: vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+00:00:17.340994 VMMDev: Guest Log: vboxguest: misc device minor 56, IRQ 20, I/O port d020, MMIO at 00000000f0400000 (size 0x400000)
+00:00:22.338984 NAT: Link up
+00:00:25.247820 VMMDev: Guest Log: VBoxService 5.0.10 r104061 (verbosity: 0) linux.amd64 (Nov 10 2015 17:56:08) release log
+00:00:25.247835 VMMDev: Guest Log: 00:00:00.000059 main     Log opened 2015-12-17T20:52:53.560790000Z
+00:00:25.249281 VMMDev: Guest Log: 00:00:00.001532 main     OS Product: Linux
+00:00:25.249308 VMMDev: Guest Log: 00:00:00.001561 main     OS Release: 4.1.13-boot2docker
+00:00:25.249327 VMMDev: Guest Log: 00:00:00.001582 main     OS Version: #1 SMP Fri Nov 20 19:05:50 UTC 2015
+00:00:25.249346 VMMDev: Guest Log: 00:00:00.001600 main     Executable: /sbin/VBoxService
+00:00:25.249350 VMMDev: Guest Log: 00:00:00.001601 main     Process ID: 928
+00:00:25.249352 VMMDev: Guest Log: 00:00:00.001601 main     Package type: LINUX_64BITS_GENERIC
+00:00:25.254040 VMMDev: Guest Log: 00:00:00.006290 main     5.0.10 r104061 started. Verbose level = 0
+00:00:25.257172 VMMDev: Guest Log: 00:00:00.009408 vminfo   rtldrNativeLoad: dlopen('libdbus-1.so.3', RTLD_NOW | RTLD_LOCAL) failed: libdbus-1.so.3: cannot open shared object file: No such file or directory
+00:00:25.257239 VMMDev: Guest Log: 00:00:00.009481 vminfo   Error: Unable to connect to system D-Bus (1/3): D-Bus not installed
+00:00:25.288437 NAT: IPv6 not supported
+00:00:26.196560 NAT: DHCP offered IP address 10.0.2.15
+00:00:26.196894 NAT: DHCP offered IP address 10.0.2.15
+00:00:30.255765 VMMDev: Guest Log: 00:00:05.010169 vminfo   Error: Unable to connect to system D-Bus (2/3): D-Bus not installed
+00:00:35.255210 VMMDev: Guest Log: 00:00:10.012134 vminfo   Error: Unable to connect to system D-Bus (3/3): D-Bus not installed
+00:56:54.936340 Pausing VM execution, reason 'host suspend'
+00:56:54.936448 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+00:56:54.947526 PDMR3Suspend: 11 067 193 ns run time
+00:56:54.947535 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+00:56:54.947543 Console: Machine state changed to 'Paused'
+00:57:15.719861 NAT: DNS servers changed, triggering reconnect
+00:57:39.105448 NAT: DNS servers changed, triggering reconnect
+00:57:39.111499 NAT: DNS servers changed, triggering reconnect
+00:58:38.333743 NAT: DNS servers changed, triggering reconnect
+00:58:41.903592 NAT: DNS servers changed, triggering reconnect
+00:58:41.908959 NAT: DNS servers changed, triggering reconnect
+00:58:42.126545 Resuming VM execution, reason 'host resume'
+00:58:42.127347 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+00:58:42.157657 NAT: Link down
+00:58:42.157723 Changing the VM state from 'RESUMING' to 'RUNNING'
+00:58:42.157931 Console: Machine state changed to 'Running'
+00:58:47.162113 NAT: Link up
+00:58:47.164383 NAT: DNS#0: 192.168.1.1
+00:58:47.164621 NAT: set redirect TCP host 127.0.0.1:52542 => guest 10.0.2.15:22
+00:58:47.164708 NAT: failed to redirect TCP 127.0.0.1:52542 => 10.0.2.15:22
+01:00:10.026399 Pausing VM execution, reason 'host suspend'
+01:00:10.026449 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+01:00:10.048045 PDMR3Suspend: 21 358 671 ns run time
+01:00:10.048060 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+01:00:10.048069 Console: Machine state changed to 'Paused'
+01:00:31.606721 Resuming VM execution, reason 'host resume'
+01:00:31.606877 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+01:00:31.615567 Changing the VM state from 'RESUMING' to 'RUNNING'
+01:00:31.615584 Console: Machine state changed to 'Running'
+02:55:45.151863 Pausing VM execution, reason 'host suspend'
+02:55:45.151930 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+02:55:45.160869 PDMR3Suspend: 8 926 937 ns run time
+02:55:45.160884 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+02:55:45.160896 Console: Machine state changed to 'Paused'
+02:56:06.413559 NAT: DNS servers changed, triggering reconnect
+02:56:06.439070 Resuming VM execution, reason 'host resume'
+02:56:06.439181 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+02:56:06.449396 NAT: Link down
+02:56:06.449420 Changing the VM state from 'RESUMING' to 'RUNNING'
+02:56:06.449433 Console: Machine state changed to 'Running'
+02:56:06.718347 NAT: DNS servers changed, triggering reconnect
+02:56:06.723338 NAT: DNS servers changed, triggering reconnect
+02:56:11.449968 NAT: Link up
+02:56:11.450073 NAT: DNS#0: 192.168.1.1
+06:14:52.322905 Pausing VM execution, reason 'host suspend'
+06:14:52.322962 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+06:14:52.401454 PDMR3Suspend: 78 477 749 ns run time
+06:14:52.401473 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+06:14:52.401485 Console: Machine state changed to 'Paused'
+06:15:12.744213 NAT: DNS servers changed, triggering reconnect
+06:15:13.844996 NAT: DNS servers changed, triggering reconnect
+06:15:13.849294 NAT: DNS servers changed, triggering reconnect
+06:15:36.829221 NAT: DNS servers changed, triggering reconnect
+06:15:36.895926 NAT: DNS servers changed, triggering reconnect
+06:15:36.900127 NAT: DNS servers changed, triggering reconnect
+06:16:34.005149 NAT: DNS servers changed, triggering reconnect
+06:16:37.444921 Resuming VM execution, reason 'host resume'
+06:16:37.446261 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+06:16:37.478007 NAT: Link down
+06:16:37.478050 Changing the VM state from 'RESUMING' to 'RUNNING'
+06:16:37.478250 Console: Machine state changed to 'Running'
+06:16:38.627500 NAT: DNS servers changed, triggering reconnect
+06:16:38.631476 NAT: DNS servers changed, triggering reconnect
+06:16:42.482170 NAT: Link up
+06:16:42.482598 NAT: Adding domain name home
+06:16:42.482610 NAT: DNS#0: 192.168.1.1
+06:41:54.510893 Pausing VM execution, reason 'host suspend'
+06:41:54.510943 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+06:41:54.606360 PDMR3Suspend: 95 165 159 ns run time
+06:41:54.606374 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+06:41:54.606382 Console: Machine state changed to 'Paused'
+06:42:15.896078 Resuming VM execution, reason 'host resume'
+06:42:15.896157 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+06:42:15.906716 Changing the VM state from 'RESUMING' to 'RUNNING'
+06:42:15.906734 Console: Machine state changed to 'Running'
+06:48:35.838906 Pausing VM execution, reason 'host suspend'
+06:48:35.839383 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+06:48:35.908137 PDMR3Suspend: 68 733 752 ns run time
+06:48:35.908163 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+06:48:35.908181 Console: Machine state changed to 'Paused'
+06:48:56.455755 Resuming VM execution, reason 'host resume'
+06:48:56.455755 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+06:48:56.760986 Changing the VM state from 'RESUMING' to 'RUNNING'
+06:48:56.761005 Console: Machine state changed to 'Running'
+07:03:32.836315 Pausing VM execution, reason 'host suspend'
+07:03:32.836402 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+07:03:32.868296 PDMR3Suspend: 31 879 880 ns run time
+07:03:32.868319 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+07:03:32.868331 Console: Machine state changed to 'Paused'
+07:03:53.744245 Resuming VM execution, reason 'host resume'
+07:03:53.744289 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+07:03:54.060665 Changing the VM state from 'RESUMING' to 'RUNNING'
+07:03:54.060689 Console: Machine state changed to 'Running'
+08:36:15.796843 Pausing VM execution, reason 'host suspend'
+08:36:15.796903 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+08:36:15.813762 PDMR3Suspend: 16 832 485 ns run time
+08:36:15.813773 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+08:36:15.813782 Console: Machine state changed to 'Paused'
+08:36:37.139627 Resuming VM execution, reason 'host resume'
+08:36:37.139671 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+08:36:37.415199 Changing the VM state from 'RESUMING' to 'RUNNING'
+08:36:37.415218 Console: Machine state changed to 'Running'
+11:12:35.518835 Pausing VM execution, reason 'host suspend'
+11:12:35.518953 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+11:12:35.624093 PDMR3Suspend: 105 122 804 ns run time
+11:12:35.624107 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+11:12:35.624117 Console: Machine state changed to 'Paused'
+11:12:56.555424 Resuming VM execution, reason 'host resume'
+11:12:56.555465 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+11:12:56.758005 Changing the VM state from 'RESUMING' to 'RUNNING'
+11:12:56.758045 Console: Machine state changed to 'Running'
+11:29:20.947958 Pausing VM execution, reason 'host suspend'
+11:29:20.948003 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+11:29:21.001483 PDMR3Suspend: 53 465 836 ns run time
+11:29:21.001504 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+11:29:21.001515 Console: Machine state changed to 'Paused'
+11:29:24.446607 Resuming VM execution, reason 'host resume'
+11:29:24.446655 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+11:29:24.456289 Changing the VM state from 'RESUMING' to 'RUNNING'
+11:29:24.456309 Console: Machine state changed to 'Running'
+11:39:23.177857 Pausing VM execution, reason 'host suspend'
+11:39:23.177917 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+11:39:23.202302 PDMR3Suspend: 24 370 937 ns run time
+11:39:23.202331 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+11:39:23.202347 Console: Machine state changed to 'Paused'
+11:39:44.357408 Resuming VM execution, reason 'host resume'
+11:39:44.357460 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+11:39:44.585769 Changing the VM state from 'RESUMING' to 'RUNNING'
+11:39:44.585793 Console: Machine state changed to 'Running'
+12:06:53.136255 NAT: DHCP offered IP address 10.0.2.15
+13:51:49.797007 Pausing VM execution, reason 'host suspend'
+13:51:49.797246 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+13:51:49.871871 PDMR3Suspend: 74 604 637 ns run time
+13:51:49.871885 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+13:51:49.871893 Console: Machine state changed to 'Paused'
+13:52:12.896265 Resuming VM execution, reason 'host resume'
+13:52:12.896566 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+13:52:12.907194 Changing the VM state from 'RESUMING' to 'RUNNING'
+13:52:12.907217 Console: Machine state changed to 'Running'
+13:53:43.803732 Pausing VM execution, reason 'host suspend'
+13:53:43.803806 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+13:53:43.849043 PDMR3Suspend: 45 192 884 ns run time
+13:53:43.849066 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+13:53:43.849081 Console: Machine state changed to 'Paused'
+13:54:05.490086 Resuming VM execution, reason 'host resume'
+13:54:05.490158 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+13:54:05.500011 Changing the VM state from 'RESUMING' to 'RUNNING'
+13:54:05.500030 Console: Machine state changed to 'Running'
+14:51:54.243299 Pausing VM execution, reason 'host suspend'
+14:51:54.244356 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+14:51:54.270786 PDMR3Suspend: 26 158 348 ns run time
+14:51:54.270810 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+14:51:54.270824 Console: Machine state changed to 'Paused'
+14:52:15.713303 Resuming VM execution, reason 'host resume'
+14:52:15.714508 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+14:52:15.725863 Changing the VM state from 'RESUMING' to 'RUNNING'
+14:52:15.725880 Console: Machine state changed to 'Running'
+14:57:12.712487 Pausing VM execution, reason 'host suspend'
+14:57:12.712539 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+14:57:12.798043 PDMR3Suspend: 85 490 928 ns run time
+14:57:12.798058 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+14:57:12.798067 Console: Machine state changed to 'Paused'
+14:57:33.718301 Resuming VM execution, reason 'host resume'
+14:57:33.718346 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+14:57:33.726804 Changing the VM state from 'RESUMING' to 'RUNNING'
+14:57:33.726820 Console: Machine state changed to 'Running'
+17:08:14.681780 Pausing VM execution, reason 'host suspend'
+17:08:14.682000 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+17:08:14.711061 PDMR3Suspend: 29 041 117 ns run time
+17:08:14.711081 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+17:08:14.711092 Console: Machine state changed to 'Paused'
+17:08:36.362555 Resuming VM execution, reason 'host resume'
+17:08:36.362786 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+17:08:36.371851 Changing the VM state from 'RESUMING' to 'RUNNING'
+17:08:36.371867 Console: Machine state changed to 'Running'
+17:10:12.224345 Pausing VM execution, reason 'host suspend'
+17:10:12.224411 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+17:10:12.239495 PDMR3Suspend: 15 068 007 ns run time
+17:10:12.239506 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+17:10:12.239515 Console: Machine state changed to 'Paused'
+17:10:33.434041 NAT: DNS servers changed, triggering reconnect
+17:10:33.864759 NAT: DNS servers changed, triggering reconnect
+17:10:33.869521 NAT: DNS servers changed, triggering reconnect
+17:11:09.813375 NAT: DNS servers changed, triggering reconnect
+17:11:09.884710 NAT: DNS servers changed, triggering reconnect
+17:11:09.889317 NAT: DNS servers changed, triggering reconnect
+17:11:11.670371 Resuming VM execution, reason 'host resume'
+17:11:11.673333 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+17:11:11.737689 NAT: Link down
+17:11:11.737752 Changing the VM state from 'RESUMING' to 'RUNNING'
+17:11:11.739291 Console: Machine state changed to 'Running'
+17:11:16.755482 NAT: Link up
+17:11:16.756211 NAT: Adding domain name home
+17:11:16.756223 NAT: DNS#0: 192.168.1.1
+20:23:53.980684 Pausing VM execution, reason 'host suspend'
+20:23:53.980765 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:23:54.042125 PDMR3Suspend: 61 079 605 ns run time
+20:23:54.042148 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:23:54.042158 Console: Machine state changed to 'Paused'
+20:24:15.565243 Resuming VM execution, reason 'host resume'
+20:24:15.565298 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:24:15.576858 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:24:15.576896 Console: Machine state changed to 'Running'
+20:34:13.596211 Pausing VM execution, reason 'host suspend'
+20:34:13.596272 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:34:13.680762 PDMR3Suspend: 84 468 460 ns run time
+20:34:13.680775 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:34:13.680783 Console: Machine state changed to 'Paused'
+20:34:34.731139 Resuming VM execution, reason 'host resume'
+20:34:34.731304 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:34:34.742586 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:34:34.742602 Console: Machine state changed to 'Running'
+20:36:33.123012 Pausing VM execution, reason 'host suspend'
+20:36:33.123084 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:36:33.165870 PDMR3Suspend: 42 765 712 ns run time
+20:36:33.165892 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:36:33.165917 Console: Machine state changed to 'Paused'
+20:36:41.220341 Resuming VM execution, reason 'host resume'
+20:36:41.220385 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:36:41.229168 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:36:41.229185 Console: Machine state changed to 'Running'
+20:38:39.945433 Pausing VM execution, reason 'host suspend'
+20:38:39.945488 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:38:39.969097 PDMR3Suspend: 23 588 816 ns run time
+20:38:39.969112 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:38:39.969124 Console: Machine state changed to 'Paused'
+20:39:00.986639 Resuming VM execution, reason 'host resume'
+20:39:00.986684 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:39:00.996388 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:39:00.996400 Console: Machine state changed to 'Running'
+20:41:19.061444 Pausing VM execution, reason 'host suspend'
+20:41:19.061498 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:41:19.159470 PDMR3Suspend: 97 960 243 ns run time
+20:41:19.159484 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:41:19.159492 Console: Machine state changed to 'Paused'
+20:41:40.306724 Resuming VM execution, reason 'host resume'
+20:41:40.306893 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:41:40.316174 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:41:40.316196 Console: Machine state changed to 'Running'
+20:43:54.399783 Pausing VM execution, reason 'host suspend'
+20:43:54.399845 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:43:54.433855 PDMR3Suspend: 33 996 138 ns run time
+20:43:54.433870 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:43:54.433878 Console: Machine state changed to 'Paused'
+20:44:15.267057 Resuming VM execution, reason 'host resume'
+20:44:15.267117 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:44:15.645555 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:44:15.645575 Console: Machine state changed to 'Running'
+20:46:33.704697 Pausing VM execution, reason 'host suspend'
+20:46:33.704745 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:46:33.781967 PDMR3Suspend: 77 204 621 ns run time
+20:46:33.781991 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:46:33.782004 Console: Machine state changed to 'Paused'
+20:46:54.684797 Resuming VM execution, reason 'host resume'
+20:46:54.684858 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:46:54.930795 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:46:54.930816 Console: Machine state changed to 'Running'
+20:48:53.041075 Pausing VM execution, reason 'host suspend'
+20:48:53.042402 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+20:48:53.146717 PDMR3Suspend: 104 292 493 ns run time
+20:48:53.146731 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+20:48:53.146750 Console: Machine state changed to 'Paused'
+20:49:14.032985 Resuming VM execution, reason 'host resume'
+20:49:14.033033 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+20:49:14.259694 Changing the VM state from 'RESUMING' to 'RUNNING'
+20:49:14.259716 Console: Machine state changed to 'Running'
+21:55:32.310048 Pausing VM execution, reason 'host suspend'
+21:55:32.310113 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+21:55:32.346028 PDMR3Suspend: 35 897 866 ns run time
+21:55:32.346049 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+21:55:32.346062 Console: Machine state changed to 'Paused'
+21:55:53.255368 Resuming VM execution, reason 'host resume'
+21:55:53.255408 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+21:55:53.545010 Changing the VM state from 'RESUMING' to 'RUNNING'
+21:55:53.545054 Console: Machine state changed to 'Running'
+21:58:01.620210 Pausing VM execution, reason 'host suspend'
+21:58:01.620323 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+21:58:01.633744 PDMR3Suspend: 13 404 925 ns run time
+21:58:01.633758 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+21:58:01.633769 Console: Machine state changed to 'Paused'
+21:58:22.499105 Resuming VM execution, reason 'host resume'
+21:58:22.499180 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+21:58:22.822615 Changing the VM state from 'RESUMING' to 'RUNNING'
+21:58:22.822664 Console: Machine state changed to 'Running'
+21:59:31.422090 Pausing VM execution, reason 'host suspend'
+21:59:31.422181 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+21:59:31.490167 PDMR3Suspend: 67 969 806 ns run time
+21:59:31.490191 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+21:59:31.490204 Console: Machine state changed to 'Paused'
+21:59:52.344427 NAT: DNS servers changed, triggering reconnect
+22:00:27.091085 NAT: DNS servers changed, triggering reconnect
+22:00:27.097197 NAT: DNS servers changed, triggering reconnect
+22:00:30.691401 Resuming VM execution, reason 'host resume'
+22:00:30.692169 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+22:00:30.724714 NAT: Link down
+22:00:30.724764 Changing the VM state from 'RESUMING' to 'RUNNING'
+22:00:30.724955 Console: Machine state changed to 'Running'
+22:00:35.729194 NAT: Link up
+22:00:35.731673 NAT: Adding domain name home
+22:00:35.731690 NAT: DNS#0: 192.168.1.1
+23:05:30.664894 Pausing VM execution, reason 'host suspend'
+23:05:30.664946 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+23:05:30.716942 PDMR3Suspend: 51 727 999 ns run time
+23:05:30.716962 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+23:05:30.716975 Console: Machine state changed to 'Paused'
+23:05:52.204679 Resuming VM execution, reason 'host resume'
+23:05:52.204720 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+23:05:52.214374 Changing the VM state from 'RESUMING' to 'RUNNING'
+23:05:52.214393 Console: Machine state changed to 'Running'
+23:08:36.070296 Pausing VM execution, reason 'host suspend'
+23:08:36.070338 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+23:08:36.152362 PDMR3Suspend: 82 011 463 ns run time
+23:08:36.152373 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+23:08:36.152382 Console: Machine state changed to 'Paused'
+23:08:57.081018 Resuming VM execution, reason 'host resume'
+23:08:57.081064 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+23:08:57.272644 Changing the VM state from 'RESUMING' to 'RUNNING'
+23:08:57.272668 Console: Machine state changed to 'Running'
+23:11:11.431565 Pausing VM execution, reason 'host suspend'
+23:11:11.431639 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+23:11:11.459028 PDMR3Suspend: 27 372 781 ns run time
+23:11:11.459048 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+23:11:11.459061 Console: Machine state changed to 'Paused'
+23:11:32.404189 Resuming VM execution, reason 'host resume'
+23:11:32.404251 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+23:11:32.643992 Changing the VM state from 'RESUMING' to 'RUNNING'
+23:11:32.644012 Console: Machine state changed to 'Running'
+23:43:02.978321 Pausing VM execution, reason 'host suspend'
+23:43:02.978424 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+23:43:03.026737 PDMR3Suspend: 48 292 283 ns run time
+23:43:03.026761 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+23:43:03.026776 Console: Machine state changed to 'Paused'
+23:43:24.513671 Resuming VM execution, reason 'host resume'
+23:43:24.513718 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+23:43:24.532930 Changing the VM state from 'RESUMING' to 'RUNNING'
+23:43:24.532973 Console: Machine state changed to 'Running'
+24:15:22.630044 NAT: DHCP offered IP address 10.0.2.15
+24:56:26.290062 Pausing VM execution, reason 'host suspend'
+24:56:26.290122 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+24:56:26.351013 PDMR3Suspend: 60 875 193 ns run time
+24:56:26.351037 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+24:56:26.351051 Console: Machine state changed to 'Paused'
+24:56:47.531004 Resuming VM execution, reason 'host resume'
+24:56:47.531064 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+24:56:47.762840 Changing the VM state from 'RESUMING' to 'RUNNING'
+24:56:47.762902 Console: Machine state changed to 'Running'
+24:57:03.424333 Pausing VM execution, reason 'host suspend'
+24:57:03.424427 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+24:57:03.485630 PDMR3Suspend: 61 159 889 ns run time
+24:57:03.485663 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+24:57:03.485674 Console: Machine state changed to 'Paused'
+24:57:07.474070 Resuming VM execution, reason 'host resume'
+24:57:07.474119 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+24:57:07.482914 Changing the VM state from 'RESUMING' to 'RUNNING'
+24:57:07.482931 Console: Machine state changed to 'Running'
+25:01:17.223534 Pausing VM execution, reason 'host suspend'
+25:01:17.223623 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+25:01:17.275032 PDMR3Suspend: 51 365 624 ns run time
+25:01:17.275054 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+25:01:17.275066 Console: Machine state changed to 'Paused'
+25:02:27.293988 NAT: DNS servers changed, triggering reconnect
+25:02:53.081498 NAT: DNS servers changed, triggering reconnect
+25:02:53.086789 NAT: DNS servers changed, triggering reconnect
+25:03:51.689203 NAT: DNS servers changed, triggering reconnect
+25:03:52.447100 NAT: DNS servers changed, triggering reconnect
+25:03:52.452286 NAT: DNS servers changed, triggering reconnect
+25:03:54.883212 Resuming VM execution, reason 'host resume'
+25:03:54.884693 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+25:03:54.949434 NAT: Link down
+25:03:54.949505 Changing the VM state from 'RESUMING' to 'RUNNING'
+25:03:54.950542 Console: Machine state changed to 'Running'
+25:04:01.677744 NAT: Link up
+25:04:01.680303 NAT: Adding domain name home
+25:04:01.680324 NAT: DNS#0: 192.168.1.1
+25:15:29.899554 Pausing VM execution, reason 'host suspend'
+25:15:29.899621 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+25:15:29.916261 PDMR3Suspend: 16 407 896 ns run time
+25:15:29.916274 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+25:15:29.916283 Console: Machine state changed to 'Paused'
+25:15:50.974722 Resuming VM execution, reason 'host resume'
+25:15:50.974769 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+25:15:51.234012 Changing the VM state from 'RESUMING' to 'RUNNING'
+25:15:51.234028 Console: Machine state changed to 'Running'
+25:17:49.341930 Pausing VM execution, reason 'host suspend'
+25:17:49.341978 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+25:17:49.416125 PDMR3Suspend: 74 133 730 ns run time
+25:17:49.416149 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+25:17:49.416158 Console: Machine state changed to 'Paused'
+25:18:10.793673 Resuming VM execution, reason 'host resume'
+25:18:10.793722 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+25:18:10.803123 Changing the VM state from 'RESUMING' to 'RUNNING'
+25:18:10.803141 Console: Machine state changed to 'Running'
+25:20:26.712937 Pausing VM execution, reason 'host suspend'
+25:20:26.713010 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+25:20:26.774874 PDMR3Suspend: 61 819 310 ns run time
+25:20:26.774897 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+25:20:26.774910 Console: Machine state changed to 'Paused'
+25:20:47.783994 Resuming VM execution, reason 'host resume'
+25:20:47.784070 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+25:20:47.793535 Changing the VM state from 'RESUMING' to 'RUNNING'
+25:20:47.793553 Console: Machine state changed to 'Running'
+26:22:10.506240 Pausing VM execution, reason 'host suspend'
+26:22:10.506312 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+26:22:10.529544 PDMR3Suspend: 23 216 759 ns run time
+26:22:10.529564 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+26:22:10.529578 Console: Machine state changed to 'Paused'
+26:22:20.295600 Resuming VM execution, reason 'host resume'
+26:22:20.295646 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+26:22:20.303922 Changing the VM state from 'RESUMING' to 'RUNNING'
+26:22:20.303935 Console: Machine state changed to 'Running'
+26:25:59.040226 Pausing VM execution, reason 'host suspend'
+26:25:59.040283 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+26:25:59.146949 PDMR3Suspend: 106 649 529 ns run time
+26:25:59.146972 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+26:25:59.146980 Console: Machine state changed to 'Paused'
+26:26:20.446225 Resuming VM execution, reason 'host resume'
+26:26:20.446261 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+26:26:20.457840 Changing the VM state from 'RESUMING' to 'RUNNING'
+26:26:20.457959 Console: Machine state changed to 'Running'
+28:09:38.695741 Pausing VM execution, reason 'host suspend'
+28:09:38.695807 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:09:38.780796 PDMR3Suspend: 84 976 659 ns run time
+28:09:38.780810 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:09:38.780828 Console: Machine state changed to 'Paused'
+28:09:59.969616 Resuming VM execution, reason 'host resume'
+28:09:59.969672 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:10:00.176292 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:10:00.176333 Console: Machine state changed to 'Running'
+28:27:42.340829 Pausing VM execution, reason 'host suspend'
+28:27:42.340905 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:27:42.391120 PDMR3Suspend: 50 200 908 ns run time
+28:27:42.391136 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:27:42.391147 Console: Machine state changed to 'Paused'
+28:29:41.984057 NAT: DNS servers changed, triggering reconnect
+28:29:42.414978 Resuming VM execution, reason 'host resume'
+28:29:42.415063 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:29:42.760735 NAT: Link down
+28:29:42.760834 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:29:42.760862 Console: Machine state changed to 'Running'
+28:29:43.050844 NAT: DNS servers changed, triggering reconnect
+28:29:43.055584 NAT: DNS servers changed, triggering reconnect
+28:29:47.761943 NAT: Link up
+28:29:47.764157 NAT: Adding domain name home
+28:29:47.764173 NAT: DNS#0: 192.168.1.1
+28:37:29.629370 Pausing VM execution, reason 'host suspend'
+28:37:29.629459 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:37:29.731146 PDMR3Suspend: 101 672 244 ns run time
+28:37:29.731161 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:37:29.731170 Console: Machine state changed to 'Paused'
+28:37:50.850717 Resuming VM execution, reason 'host resume'
+28:37:50.850756 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:37:51.158131 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:37:51.158155 Console: Machine state changed to 'Running'
+28:40:13.212922 Pausing VM execution, reason 'host suspend'
+28:40:13.213010 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:40:13.274262 PDMR3Suspend: 61 211 646 ns run time
+28:40:13.274285 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:40:13.274299 Console: Machine state changed to 'Paused'
+28:41:08.923209 Resuming VM execution, reason 'host resume'
+28:41:08.923289 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:41:09.220197 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:41:09.220230 Console: Machine state changed to 'Running'
+28:43:12.482376 Pausing VM execution, reason 'host suspend'
+28:43:12.482443 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:43:12.562794 PDMR3Suspend: 80 335 833 ns run time
+28:43:12.562820 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:43:12.562828 Console: Machine state changed to 'Paused'
+28:43:15.405328 Resuming VM execution, reason 'host resume'
+28:43:15.405368 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:43:15.416108 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:43:15.416126 Console: Machine state changed to 'Running'
+28:43:15.460717 Pausing VM execution, reason 'host suspend'
+28:43:15.460762 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:43:15.516810 PDMR3Suspend: 56 035 062 ns run time
+28:43:15.516824 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:43:15.516832 Console: Machine state changed to 'Paused'
+28:43:35.822409 NAT: DNS servers changed, triggering reconnect
+28:43:36.616359 Resuming VM execution, reason 'host resume'
+28:43:36.616524 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:43:36.630548 NAT: Link down
+28:43:36.630570 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:43:36.630586 Console: Machine state changed to 'Running'
+28:43:36.931221 NAT: DNS servers changed, triggering reconnect
+28:43:36.936325 NAT: DNS servers changed, triggering reconnect
+28:43:41.631110 NAT: Link up
+28:43:41.631213 NAT: Adding domain name home
+28:43:41.631219 NAT: DNS#0: 192.168.1.1
+28:47:58.454516 Pausing VM execution, reason 'host suspend'
+28:47:58.454590 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:47:58.538651 PDMR3Suspend: 84 046 129 ns run time
+28:47:58.538666 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:47:58.538675 Console: Machine state changed to 'Paused'
+28:48:19.274873 Resuming VM execution, reason 'host resume'
+28:48:19.274980 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:48:19.491853 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:48:19.491870 Console: Machine state changed to 'Running'
+28:50:33.630236 Pausing VM execution, reason 'host suspend'
+28:50:33.630289 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:50:33.726831 PDMR3Suspend: 96 528 725 ns run time
+28:50:33.726846 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:50:33.726864 Console: Machine state changed to 'Paused'
+28:50:54.476683 Resuming VM execution, reason 'host resume'
+28:50:54.476846 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:50:54.672306 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:50:54.672349 Console: Machine state changed to 'Running'
+28:53:08.809689 Pausing VM execution, reason 'host suspend'
+28:53:08.809731 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:53:08.886657 PDMR3Suspend: 76 910 348 ns run time
+28:53:08.886670 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:53:08.886688 Console: Machine state changed to 'Paused'
+28:53:29.675846 Resuming VM execution, reason 'host resume'
+28:53:29.675922 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:53:29.878558 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:53:29.878633 Console: Machine state changed to 'Running'
+28:58:48.042037 Pausing VM execution, reason 'host suspend'
+28:58:48.042107 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+28:58:48.105484 PDMR3Suspend: 63 361 888 ns run time
+28:58:48.105500 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+28:58:48.105508 Console: Machine state changed to 'Paused'
+28:59:09.023649 Resuming VM execution, reason 'host resume'
+28:59:09.023736 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+28:59:09.229650 Changing the VM state from 'RESUMING' to 'RUNNING'
+28:59:09.229669 Console: Machine state changed to 'Running'
+29:01:54.389558 Pausing VM execution, reason 'host suspend'
+29:01:54.389624 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+29:01:54.463751 PDMR3Suspend: 74 112 773 ns run time
+29:01:54.463767 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+29:01:54.463776 Console: Machine state changed to 'Paused'
+29:02:55.854482 Resuming VM execution, reason 'host resume'
+29:02:55.860505 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+29:02:55.928692 Changing the VM state from 'RESUMING' to 'RUNNING'
+29:02:55.929936 Console: Machine state changed to 'Running'
+29:04:20.630932 Pausing VM execution, reason 'host suspend'
+29:04:20.630987 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+29:04:20.736069 PDMR3Suspend: 104 721 760 ns run time
+29:04:20.736093 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+29:04:20.736108 Console: Machine state changed to 'Paused'
+29:05:32.068136 NAT: DNS servers changed, triggering reconnect
+29:05:32.574701 NAT: DNS servers changed, triggering reconnect
+29:05:32.578948 NAT: DNS servers changed, triggering reconnect
+29:06:53.052994 NAT: DNS servers changed, triggering reconnect
+29:06:56.882382 Resuming VM execution, reason 'host resume'
+29:06:56.883208 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+29:06:56.915940 NAT: Link down
+29:06:56.915980 Changing the VM state from 'RESUMING' to 'RUNNING'
+29:06:56.916148 Console: Machine state changed to 'Running'
+29:06:59.546472 NAT: DNS servers changed, triggering reconnect
+29:06:59.550946 NAT: DNS servers changed, triggering reconnect
+29:07:01.920527 NAT: Link up
+29:07:01.921195 NAT: Adding domain name home
+29:07:01.921210 NAT: DNS#0: 192.168.1.1
+29:47:13.025621 Pausing VM execution, reason 'host suspend'
+29:47:13.025647 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+29:47:13.108164 PDMR3Suspend: 82 255 640 ns run time
+29:47:13.108177 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+29:47:13.108185 Console: Machine state changed to 'Paused'
+29:47:34.384797 Resuming VM execution, reason 'host resume'
+29:47:34.384845 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+29:47:34.639218 Changing the VM state from 'RESUMING' to 'RUNNING'
+29:47:34.639240 Console: Machine state changed to 'Running'
+30:17:20.759229 Pausing VM execution, reason 'host suspend'
+30:17:20.759281 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+30:17:20.852296 PDMR3Suspend: 93 003 432 ns run time
+30:17:20.852321 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+30:17:20.852330 Console: Machine state changed to 'Paused'
+30:17:42.265249 Resuming VM execution, reason 'host resume'
+30:17:42.265292 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+30:17:42.433087 Changing the VM state from 'RESUMING' to 'RUNNING'
+30:17:42.433151 Console: Machine state changed to 'Running'
+31:08:50.642571 Pausing VM execution, reason 'host suspend'
+31:08:50.642632 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+31:08:50.675443 PDMR3Suspend: 32 797 721 ns run time
+31:08:50.675460 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+31:08:50.675470 Console: Machine state changed to 'Paused'
+31:09:11.933346 Resuming VM execution, reason 'host resume'
+31:09:11.933389 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+31:09:11.942939 Changing the VM state from 'RESUMING' to 'RUNNING'
+31:09:11.942951 Console: Machine state changed to 'Running'
+32:08:26.573581 Pausing VM execution, reason 'host suspend'
+32:08:26.573649 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+32:08:26.677750 PDMR3Suspend: 104 080 159 ns run time
+32:08:26.677762 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+32:08:26.677772 Console: Machine state changed to 'Paused'
+32:08:47.899074 NAT: DNS servers changed, triggering reconnect
+32:08:48.374636 NAT: DNS servers changed, triggering reconnect
+32:08:48.379024 NAT: DNS servers changed, triggering reconnect
+32:10:11.959726 NAT: DNS servers changed, triggering reconnect
+32:10:12.852889 NAT: DNS servers changed, triggering reconnect
+32:10:12.857787 NAT: DNS servers changed, triggering reconnect
+32:10:16.361180 Resuming VM execution, reason 'host resume'
+32:10:16.361971 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+32:10:16.401948 NAT: Link down
+32:10:16.402020 Changing the VM state from 'RESUMING' to 'RUNNING'
+32:10:16.402193 Console: Machine state changed to 'Running'
+32:10:21.407529 NAT: Link up
+32:10:21.408767 NAT: Adding domain name home
+32:10:21.408787 NAT: DNS#0: 192.168.1.1
+32:10:32.495892 Pausing VM execution, reason 'host suspend'
+32:10:32.495948 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+32:10:32.520734 PDMR3Suspend: 24 459 718 ns run time
+32:10:32.520756 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+32:10:32.520770 Console: Machine state changed to 'Paused'
+32:11:06.367689 Resuming VM execution, reason 'host resume'
+32:11:06.367741 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+32:11:06.378650 Changing the VM state from 'RESUMING' to 'RUNNING'
+32:11:06.378669 Console: Machine state changed to 'Running'
+35:22:20.901121 Pausing VM execution, reason 'host suspend'
+35:22:20.901222 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+35:22:20.941289 PDMR3Suspend: 40 036 399 ns run time
+35:22:20.941311 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+35:22:20.941323 Console: Machine state changed to 'Paused'
+35:23:32.759830 Resuming VM execution, reason 'host resume'
+35:23:33.140668 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+35:23:33.151502 Changing the VM state from 'RESUMING' to 'RUNNING'
+35:23:33.151520 Console: Machine state changed to 'Running'
+36:33:43.898322 NAT: DHCP offered IP address 10.0.2.15
+40:57:45.493033 Pausing VM execution, reason 'host suspend'
+40:57:45.493233 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+40:57:45.595738 PDMR3Suspend: 102 486 030 ns run time
+40:57:45.595755 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+40:57:45.595765 Console: Machine state changed to 'Paused'
+40:58:08.066663 NAT: DNS servers changed, triggering reconnect
+40:58:08.248757 Resuming VM execution, reason 'host resume'
+40:58:08.250240 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+40:58:08.273536 NAT: Link down
+40:58:08.278274 Changing the VM state from 'RESUMING' to 'RUNNING'
+40:58:08.278293 Console: Machine state changed to 'Running'
+40:58:08.581715 NAT: DNS servers changed, triggering reconnect
+40:58:08.587990 NAT: DNS servers changed, triggering reconnect
+40:58:13.279025 NAT: Link up
+40:58:13.281273 NAT: Adding domain name home
+40:58:13.281288 NAT: DNS#0: 192.168.1.1
+41:26:09.583660 Pausing VM execution, reason 'host suspend'
+41:26:09.583864 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+41:26:09.689849 PDMR3Suspend: 105 967 928 ns run time
+41:26:09.689862 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+41:26:09.689870 Console: Machine state changed to 'Paused'
+41:26:30.989033 NAT: DNS servers changed, triggering reconnect
+41:26:31.090231 Resuming VM execution, reason 'host resume'
+41:26:31.090276 Changing the VM state from 'SUSPENDED' to 'RESUMING'
+41:26:31.100358 NAT: Link down
+41:26:31.100399 Changing the VM state from 'RESUMING' to 'RUNNING'
+41:26:31.100415 Console: Machine state changed to 'Running'
+41:26:31.370001 NAT: DNS servers changed, triggering reconnect
+41:26:31.375640 NAT: DNS servers changed, triggering reconnect
+41:26:36.100947 NAT: Link up
+41:26:36.101063 NAT: Adding domain name home
+41:26:36.101069 NAT: DNS#0: 192.168.1.1
+41:43:29.695058 Console: Machine state changed to 'Saving'
+41:43:29.700782 Saving state of VM, reason 'host battery low'
+41:43:29.702338 Changing the VM state from 'RUNNING' to 'SUSPENDING'
+41:43:29.753819 PDMR3Suspend: 51 444 414 ns run time
+41:43:29.753842 Changing the VM state from 'SUSPENDING' to 'SUSPENDED'
+41:43:29.753896 Changing the VM state from 'SUSPENDED' to 'SAVING'
+41:43:41.344880 SSM: Footer at 0x3215ad7b (840281467), 33 directory entries.
+41:43:41.348137 SSM: Successfully saved the VM state to '/Users/kristennice/.docker/machine/machines/default/default/Snapshots/2015-12-29T00-58-25-016318000Z.sav'
+41:43:41.348158 Changing the VM state from 'SAVING' to 'SUSPENDED'
+41:43:41.348207 Console::powerDown(): A request to power off the VM has been issued (mMachineState=Saving, InUninit=0)
+41:43:41.351309 Display::handleDisplayResize: uScreenId=0 pvVRAM=0000000000000000 w=720 h=400 bpp=32 cbLine=0x0 flags=0x1
+41:43:41.353101 Changing the VM state from 'SUSPENDED' to 'POWERING_OFF'
+41:43:41.353513 ****************** Guest state at power off ******************
+41:43:41.354932 Guest CPUM (VCPU 0) state: 
+41:43:41.355137 rax=0000000000000000 rbx=0000000000000000 rcx=0000000000000000 rdx=0000000000000000
+41:43:41.355142 rsi=0000000000000000 rdi=0000000000000001 r8 =0000000000000000 r9 =0000000000000000
+41:43:41.355144 r10=0000000000000000 r11=000000000000026d r12=ffffffff81be9940 r13=ffffffff81a04000
+41:43:41.355147 r14=ffffffff81a04000 r15=ffffffff81a04000
+41:43:41.355150 rip=ffffffff8101493e rsp=ffffffff81a03f18 rbp=0000000000000000 iopl=0         nv up ei pl nz na po nc
+41:43:41.355154 cs={0010 base=0000000000000000 limit=ffffffff flags=0000a09b}
+41:43:41.355157 ds={0000 base=0000000000000000 limit=ffffffff flags=0001c000}
+41:43:41.355159 es={0000 base=0000000000000000 limit=ffffffff flags=0001c000}
+41:43:41.355161 fs={0000 base=0000000000000000 limit=ffffffff flags=0001c000}
+41:43:41.355163 gs={0000 base=ffff88007e200000 limit=ffffffff flags=0001c000}
+41:43:41.355165 ss={0018 base=0000000000000000 limit=ffffffff flags=0000c093}
+41:43:41.355187 cr0=000000008005003b cr2=00007f46ef6b4000 cr3=0000000015ed1000 cr4=00000000000406f0
+41:43:41.355191 dr0=0000000000000000 dr1=0000000000000000 dr2=0000000000000000 dr3=0000000000000000
+41:43:41.355192 dr4=0000000000000000 dr5=0000000000000000 dr6=00000000ffff0ff0 dr7=0000000000000400
+41:43:41.355194 gdtr=ffff88007e209000:007f  idtr=ffffffffff57b000:0fff  eflags=00000246
+41:43:41.355198 ldtr={0000 base=00000000 limit=ffffffff flags=0001c000}
+41:43:41.355200 tr  ={0040 base=ffff88007e214580 limit=00002087 flags=0000008b}
+41:43:41.355202 SysEnter={cs=0010 eip=ffffffff81556a20 esp=0000000000000000}
+41:43:41.355205 xcr=0000000000000007 xcr1=0000000000000000 xss=0000000000000000 (fXStateMask=0000000000000007)
+41:43:41.355208 FCW=037f FSW=0000 FTW=0000 FOP=0000 MXCSR=00001fa0 MXCSR_MASK=0000ffff
+41:43:41.355210 FPUIP=00000000 CS=0000 Rsrvd1=0000  FPUDP=00000000 DS=0000 Rsvrd2=0000
+41:43:41.355213 ST(0)=FPR0={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355443 ST(1)=FPR1={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355450 ST(2)=FPR2={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355453 ST(3)=FPR3={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355456 ST(4)=FPR4={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355458 ST(5)=FPR5={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355461 ST(6)=FPR6={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355463 ST(7)=FPR7={0000'00000000'00000000} t0 +0.0000000000000000000000 ^ 0 (*)
+41:43:41.355465 YMM0 =00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355468 YMM1 =00000000'00000000'00000000'00000000'ffffffff'ffffffff'00000000'00000000
+41:43:41.355471 YMM2 =00000000'00000000'00000000'00000000'00000000'00000000'43e00000'00000000
+41:43:41.355474 YMM3 =00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355477 YMM4 =00000000'00000000'00000000'00000000'00000000'00000000'00ffffff'ffffff00
+41:43:41.355480 YMM5 =00000000'00000000'00000000'00000000'00000000'00b25ad3'00007ffe'68565290
+41:43:41.355483 YMM6 =00000000'00000000'00000000'00000000'00000000'014ee390'00000000'01004959
+41:43:41.355486 YMM7 =00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355488 YMM8 =00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355491 YMM9 =00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355493 YMM10=00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355496 YMM11=00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355498 YMM12=00000000'00000000'00000000'00000000'ffffff00'00000000'00000000'00000000
+41:43:41.355501 YMM13=00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355504 YMM14=00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355506 YMM15=00000000'00000000'00000000'00000000'00000000'00000000'00000000'00000000
+41:43:41.355509 EFER         =0000000000000d01
+41:43:41.355510 PAT          =0007010600070106
+41:43:41.355512 STAR         =0023001000000000
+41:43:41.355513 CSTAR        =ffffffff81556b90
+41:43:41.355515 LSTAR        =ffffffff81554610
+41:43:41.355517 SFMASK       =0000000000047700
+41:43:41.355518 KERNELGSBASE =0000000000000000
+41:43:41.355520 ***
+41:43:41.355785 Guest paging mode:  AMD64+NX (changed 1080 times), A20 enabled (changed 2 times)
+41:43:41.356209 Shadow paging mode: EPT
+41:43:41.356211 Host paging mode:   AMD64+G+NX
+41:43:41.356212 ***
+41:43:41.356407 Active Timers (pVM=000000010fddd000)
+41:43:41.356412 pTimerR3         offNext  offPrev  offSched Clock               Time             Expire HzHint State                     Description
+41:43:41.356419 0000000111805410 00015f20 00000000 00000000 Real           267950304          267938666      0 2-ACTIVE                  VGA Refresh Timer
+41:43:41.356623 000000011181b330 ffffff80 fffea0e0 00000000 Real           267950304          267938672      0 2-ACTIVE                  EMT Yielder
+41:43:41.356660 000000011181b2b0 00000000 00000080 00000000 Real           267950304          267939396      0 2-ACTIVE                  CPU Load Timer
+41:43:41.356667 00000001117ecfd0 00000000 00000000 00000000 Virt     148165036684299    148168755177545      0 2-ACTIVE                  Heartbeat flatlined
+41:43:41.356673 00000001117ec430 ffffec40 00000000 00000000 VrSy     148164984727413    148164985078199     18 2-ACTIVE                  i8254 Programmable Interval Timer
+41:43:41.356687 00000001117eb070 000019a0 000013c0 00000000 VrSy     148164984727413    148164985588886      8 2-ACTIVE                  APIC Timer #0
+41:43:41.356692 00000001117eca10 fffff330 ffffe660 00000000 VrSy     148164984727413    148164990000000      0 2-ACTIVE                  MC146818 RTC/CMOS - Second
+41:43:41.356698 00000001117ebd40 0002e390 00000cd0 00000000 VrSy     148164984727413    148164994371152     10 2-ACTIVE                  HPET Timer
+41:43:41.356935 000000011181a0d0 00000000 fffd1c70 00000000 VrSy     148164984727413    148183207937427      0 2-ACTIVE                  ACPI PM Timer
+41:43:41.356949 ***
+41:43:41.357239 ***
+41:43:41.357242 ************** End of Guest state at power off ***************
+41:43:41.358239 PDMR3PowerOff: 918 548 ns run time
+41:43:41.358285 Changing the VM state from 'POWERING_OFF' to 'OFF'
+41:43:41.363780 Changing the VM state from 'OFF' to 'DESTROYING'
+41:43:41.363857 ************************* Statistics *************************
+41:43:41.364212 /CPUM/MSR-Totals/Reads               1010 times
+41:43:41.364229 /CPUM/MSR-Totals/ReadsRaisingGP         0 times
+41:43:41.364234 /CPUM/MSR-Totals/ReadsUnknown           0 times
+41:43:41.364238 /CPUM/MSR-Totals/Writes                15 times
+41:43:41.364241 /CPUM/MSR-Totals/WritesRaisingGP        0 times
+41:43:41.364245 /CPUM/MSR-Totals/WritesToIgnoredBits        1 times
+41:43:41.364249 /CPUM/MSR-Totals/WritesUnknown          0 times
+41:43:41.364252 /Devices/E1k0/ReceiveBytes       125110878 bytes
+41:43:41.364257 /Devices/E1k0/TransmitBytes       3241854 bytes
+41:43:41.364261 /Devices/E1k1/ReceiveBytes       4314147536 bytes
+41:43:41.364265 /Devices/E1k1/TransmitBytes      10240987 bytes
+41:43:41.364289 /Devices/SATA0/Port0/DMA              492 times
+41:43:41.364294 /Devices/SATA0/Port0/ReadBytes   30799872 bytes
+41:43:41.364297 /Devices/SATA0/Port1/DMA           353092 times
+41:43:41.364301 /Devices/SATA0/Port1/ReadBytes   2747205120 bytes
+41:43:41.364305 /Devices/SATA0/Port1/WrittenBytes 10164375552 bytes
+41:43:41.364362 /Devices/VMMDev/BalloonChunks           0 count
+41:43:41.364380 /Drivers/IntNet-0/BadFrames             0 count
+41:43:41.364384 /Drivers/IntNet-0/Bytes/Received 4302879495 bytes
+41:43:41.364388 /Drivers/IntNet-0/Bytes/Sent     10243355 bytes
+41:43:41.364391 /Drivers/IntNet-0/Overflows/Recv        6 count
+41:43:41.364395 /Drivers/IntNet-0/Overflows/Sent        0 count
+41:43:41.364398 /Drivers/IntNet-0/Packets/Lost          6 count
+41:43:41.364402 /Drivers/IntNet-0/Packets/Received  2862057 count
+41:43:41.364406 /Drivers/IntNet-0/Packets/Received-Gso        0 count
+41:43:41.364409 /Drivers/IntNet-0/Packets/Sent     109343 count
+41:43:41.364413 /Drivers/IntNet-0/Packets/Sent-Gso        0 count
+41:43:41.364416 /Drivers/IntNet-0/Packets/Sent-R0   108757 count
+41:43:41.364420 /Drivers/IntNet-0/Recv1                 0 ticks/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.364426 /Drivers/IntNet-0/Recv2                 0 ticks/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.364430 /Drivers/IntNet-0/Reserved              0 ticks/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.364435 /Drivers/IntNet-0/Send1              6771 ticks/call (  1472870265 ticks,  217513 times, max   1054742, min      88)
+41:43:41.364441 /Drivers/IntNet-0/Send2             10242 ticks/call (  1114899004 ticks,  108852 times, max   1051668, min    1630)
+41:43:41.364446 /Drivers/IntNet-0/XmitProcessRing   108170 count
+41:43:41.364450 /Drivers/IntNet-0/XmitWakeup-R0    108860 count
+41:43:41.364454 /Drivers/IntNet-0/XmitWakeup-R3         0 count
+41:43:41.364458 /Drivers/IntNet-0/YieldNok              0 count
+41:43:41.364461 /Drivers/IntNet-0/YieldOk               0 count
+41:43:41.364484 /FT/Checkpoint/Network                  0 times
+41:43:41.364488 /FT/Checkpoint/Storage                  0 times
+41:43:41.364492 /FT/Received/Mem                        0 bytes
+41:43:41.364496 /FT/Received/State                      0 bytes
+41:43:41.364500 /FT/Sent/Mem                            0 bytes
+41:43:41.364504 /FT/Sent/State                          0 bytes
+41:43:41.364508 /FT/Sync/DeltaMem                       0 times
+41:43:41.364511 /FT/Sync/DeltaVM                        0 times
+41:43:41.364515 /FT/Sync/Full                           0 times
+41:43:41.364531 /GMM/VM/Allocated/cBasePages       524373 pages
+41:43:41.364535 /GMM/VM/Allocated/cFixedPages           0 pages
+41:43:41.364538 /GMM/VM/Allocated/cShadowPages          0 pages
+41:43:41.364542 /GMM/VM/Reserved/cBasePages        524446 pages
+41:43:41.364546 /GMM/VM/Reserved/cFixedPages         3076 pages
+41:43:41.364549 /GMM/VM/Reserved/cShadowPages           1 pages
+41:43:41.364553 /GMM/VM/cBalloonedPages                 0 pages
+41:43:41.364557 /GMM/VM/cMaxBalloonedPages              0 pages
+41:43:41.364560 /GMM/VM/cPrivatePages              524373 pages
+41:43:41.364564 /GMM/VM/cReqActuallyBalloonedPages        0 pages
+41:43:41.364567 /GMM/VM/cReqBalloonedPages              0 pages
+41:43:41.364571 /GMM/VM/cReqDeflatePages                0 pages
+41:43:41.364575 /GMM/VM/cShareableModules               0 count
+41:43:41.364578 /GMM/VM/cSharedPages                    0 pages
+41:43:41.364582 /GMM/VM/enmPolicy                       1 
+41:43:41.364586 /GMM/VM/enmPriority                     2 
+41:43:41.364590 /GMM/VM/fBallooningEnabled       false    
+41:43:41.364594 /GMM/VM/fMayAllocate             true     
+41:43:41.364598 /GMM/VM/fSharedPagingEnabled     false    
+41:43:41.364601 /GMM/cAllocatedPages               524373 pages
+41:43:41.364605 /GMM/cBalloonedPages                    0 pages
+41:43:41.364609 /GMM/cChunks                         1025 count
+41:43:41.364613 /GMM/cDuplicatePages                    0 pages
+41:43:41.364617 /GMM/cFreedChunks                       0 count
+41:43:41.364621 /GMM/cLeftBehindSharedPages             0 pages
+41:43:41.364624 /GMM/cMaxPages                   4294967295 pages
+41:43:41.364629 /GMM/cOverCommittedPages                0 pages
+41:43:41.364632 /GMM/cReservedPages                527523 pages
+41:43:41.364636 /GMM/cShareableModules                  0 count
+41:43:41.364640 /GMM/cSharedPages                       0 pages
+41:43:41.364643 /GVMM/EMTs                              1 calls
+41:43:41.364647 /GVMM/HostCPUs                          8 calls
+41:43:41.364651 /GVMM/HostCpus/0                        0 
+41:43:41.364655 /GVMM/HostCpus/0/CurTimerHz             0 Hz
+41:43:41.364659 /GVMM/HostCpus/0/DesiredHz              0 Hz
+41:43:41.364663 /GVMM/HostCpus/0/PPTChanges             0 times
+41:43:41.364666 /GVMM/HostCpus/0/PPTStarts              0 times
+41:43:41.364670 /GVMM/HostCpus/0/idxCpuSet              0 
+41:43:41.364673 /GVMM/HostCpus/1                        1 
+41:43:41.364677 /GVMM/HostCpus/1/CurTimerHz             0 Hz
+41:43:41.364681 /GVMM/HostCpus/1/DesiredHz              0 Hz
+41:43:41.364684 /GVMM/HostCpus/1/PPTChanges             0 times
+41:43:41.364688 /GVMM/HostCpus/1/PPTStarts              0 times
+41:43:41.364692 /GVMM/HostCpus/1/idxCpuSet              1 
+41:43:41.364695 /GVMM/HostCpus/2                        2 
+41:43:41.364699 /GVMM/HostCpus/2/CurTimerHz             0 Hz
+41:43:41.364703 /GVMM/HostCpus/2/DesiredHz              0 Hz
+41:43:41.364706 /GVMM/HostCpus/2/PPTChanges             0 times
+41:43:41.364710 /GVMM/HostCpus/2/PPTStarts              0 times
+41:43:41.364714 /GVMM/HostCpus/2/idxCpuSet              2 
+41:43:41.364717 /GVMM/HostCpus/3                        3 
+41:43:41.364721 /GVMM/HostCpus/3/CurTimerHz             0 Hz
+41:43:41.364724 /GVMM/HostCpus/3/DesiredHz              0 Hz
+41:43:41.364728 /GVMM/HostCpus/3/PPTChanges             0 times
+41:43:41.364732 /GVMM/HostCpus/3/PPTStarts              0 times
+41:43:41.364735 /GVMM/HostCpus/3/idxCpuSet              3 
+41:43:41.364744 /GVMM/HostCpus/4                        4 
+41:43:41.364748 /GVMM/HostCpus/4/CurTimerHz             0 Hz
+41:43:41.364751 /GVMM/HostCpus/4/DesiredHz              0 Hz
+41:43:41.364755 /GVMM/HostCpus/4/PPTChanges             0 times
+41:43:41.364758 /GVMM/HostCpus/4/PPTStarts              0 times
+41:43:41.364762 /GVMM/HostCpus/4/idxCpuSet              4 
+41:43:41.364766 /GVMM/HostCpus/5                        5 
+41:43:41.364769 /GVMM/HostCpus/5/CurTimerHz             0 Hz
+41:43:41.364773 /GVMM/HostCpus/5/DesiredHz              0 Hz
+41:43:41.364776 /GVMM/HostCpus/5/PPTChanges             0 times
+41:43:41.364780 /GVMM/HostCpus/5/PPTStarts              0 times
+41:43:41.364783 /GVMM/HostCpus/5/idxCpuSet              5 
+41:43:41.364787 /GVMM/HostCpus/6                        6 
+41:43:41.364791 /GVMM/HostCpus/6/CurTimerHz             0 Hz
+41:43:41.364794 /GVMM/HostCpus/6/DesiredHz              0 Hz
+41:43:41.364798 /GVMM/HostCpus/6/PPTChanges             0 times
+41:43:41.364801 /GVMM/HostCpus/6/PPTStarts              0 times
+41:43:41.364805 /GVMM/HostCpus/6/idxCpuSet              6 
+41:43:41.364808 /GVMM/HostCpus/7                        7 
+41:43:41.364812 /GVMM/HostCpus/7/CurTimerHz             0 Hz
+41:43:41.364816 /GVMM/HostCpus/7/DesiredHz              0 Hz
+41:43:41.364819 /GVMM/HostCpus/7/PPTChanges             0 times
+41:43:41.364823 /GVMM/HostCpus/7/PPTStarts              0 times
+41:43:41.364826 /GVMM/HostCpus/7/idxCpuSet              7 
+41:43:41.364830 /GVMM/Sum/HaltBlocking           26659214 calls
+41:43:41.364834 /GVMM/Sum/HaltCalls              26688944 calls
+41:43:41.364838 /GVMM/Sum/HaltNotBlocking           29730 calls
+41:43:41.364842 /GVMM/Sum/HaltTimeouts           19496402 calls
+41:43:41.364846 /GVMM/Sum/HaltWakeUps                   0 calls
+41:43:41.364849 /GVMM/Sum/PokeCalls                210250 calls
+41:43:41.364853 /GVMM/Sum/PokeNotBusy               31668 calls
+41:43:41.364857 /GVMM/Sum/PollCalls                   133 calls
+41:43:41.364861 /GVMM/Sum/PollHalts                     0 calls
+41:43:41.364865 /GVMM/Sum/PollWakeUps                   0 calls
+41:43:41.364868 /GVMM/Sum/WakeUpCalls             7889063 calls
+41:43:41.364872 /GVMM/Sum/WakeUpNotHalted         4876603 calls
+41:43:41.364876 /GVMM/Sum/WakeUpWakeUps                 0 calls
+41:43:41.364880 /GVMM/VM/HaltBlocking            26659214 calls
+41:43:41.364884 /GVMM/VM/HaltCalls               26688944 calls
+41:43:41.364888 /GVMM/VM/HaltNotBlocking            29730 calls
+41:43:41.364892 /GVMM/VM/HaltTimeouts            19496402 calls
+41:43:41.364896 /GVMM/VM/HaltWakeUps                    0 calls
+41:43:41.364899 /GVMM/VM/PokeCalls                 210250 calls
+41:43:41.364903 /GVMM/VM/PokeNotBusy                31668 calls
+41:43:41.364907 /GVMM/VM/PollCalls                    133 calls
+41:43:41.364911 /GVMM/VM/PollHalts                      0 calls
+41:43:41.364914 /GVMM/VM/PollWakeUps                    0 calls
+41:43:41.364918 /GVMM/VM/WakeUpCalls              7889063 calls
+41:43:41.364922 /GVMM/VM/WakeUpNotHalted          4876603 calls
+41:43:41.364926 /GVMM/VM/WakeUpWakeUps                  0 calls
+41:43:41.364929 /GVMM/VMs                               1 calls
+41:43:41.364934 /HM/CPU0/Exit/HostNmiInGC               0 times
+41:43:41.364938 /IEM/CPU0/cInstructions          33987750 count
+41:43:41.364942 /IEM/CPU0/cPendingCommit                0 bytes
+41:43:41.364946 /IEM/CPU0/cPotentialExits        34065030 count
+41:43:41.364950 /IEM/CPU0/cRetAspectNotImplemented        0 count
+41:43:41.364954 /IEM/CPU0/cRetErrStatuses               0 count
+41:43:41.364957 /IEM/CPU0/cRetInfStatuses           22255 count
+41:43:41.364961 /IEM/CPU0/cRetInstrNotImplemented        0 count
+41:43:41.364965 /IEM/CPU0/cbWritten              78144852 bytes
+41:43:41.364969 /MM/HyperHeap/cbFree               731344 bytes
+41:43:41.364973 /MM/HyperHeap/cbHeap              1048256 bytes
+41:43:41.364978 /PDM/BlkCache/cbCached                  0 bytes
+41:43:41.364981 /PDM/BlkCache/cbCachedFru               0 bytes
+41:43:41.364985 /PDM/BlkCache/cbCachedMruIn             0 bytes
+41:43:41.364993 /PDM/BlkCache/cbCachedMruOut            0 bytes
+41:43:41.364996 /PDM/BlkCache/cbMax               5242880 bytes
+41:43:41.365000 /PDM/CritSects/8237A#0Auto/ContentionR3        0 times
+41:43:41.365004 /PDM/CritSects/8237A#0Auto/ContentionRZLock        0 times
+41:43:41.365008 /PDM/CritSects/8237A#0Auto/ContentionRZUnlock        0 times
+41:43:41.365011 /PDM/CritSects/AHCI#0/ContentionR3        0 times
+41:43:41.365015 /PDM/CritSects/AHCI#0/ContentionRZLock       62 times
+41:43:41.365018 /PDM/CritSects/AHCI#0/ContentionRZUnlock        0 times
+41:43:41.365022 /PDM/CritSects/E1000#0/ContentionR3        0 times
+41:43:41.365025 /PDM/CritSects/E1000#0/ContentionRZLock      331 times
+41:43:41.365029 /PDM/CritSects/E1000#0/ContentionRZUnlock        0 times
+41:43:41.365033 /PDM/CritSects/E1000#0RX/ContentionR3        0 times
+41:43:41.365037 /PDM/CritSects/E1000#0RX/ContentionRZLock       30 times
+41:43:41.365040 /PDM/CritSects/E1000#0RX/ContentionRZUnlock        0 times
+41:43:41.365044 /PDM/CritSects/E1000#0TX/ContentionR3        0 times
+41:43:41.365048 /PDM/CritSects/E1000#0TX/ContentionRZLock        0 times
+41:43:41.365051 /PDM/CritSects/E1000#0TX/ContentionRZUnlock        0 times
+41:43:41.365055 /PDM/CritSects/E1000#1/ContentionR3        0 times
+41:43:41.365058 /PDM/CritSects/E1000#1/ContentionRZLock     1663 times
+41:43:41.365062 /PDM/CritSects/E1000#1/ContentionRZUnlock        0 times
+41:43:41.365066 /PDM/CritSects/E1000#1RX/ContentionR3        0 times
+41:43:41.365069 /PDM/CritSects/E1000#1RX/ContentionRZLock       56 times
+41:43:41.365073 /PDM/CritSects/E1000#1RX/ContentionRZUnlock        0 times
+41:43:41.365076 /PDM/CritSects/E1000#1TX/ContentionR3        0 times
+41:43:41.365079 /PDM/CritSects/E1000#1TX/ContentionRZLock        0 times
+41:43:41.365083 /PDM/CritSects/E1000#1TX/ContentionRZUnlock        0 times
+41:43:41.365086 /PDM/CritSects/EM-REM/ContentionR3        0 times
+41:43:41.365090 /PDM/CritSects/EM-REM/ContentionRZLock        0 times
+41:43:41.365093 /PDM/CritSects/EM-REM/ContentionRZUnlock        0 times
+41:43:41.365097 /PDM/CritSects/FTM/ContentionR3         0 times
+41:43:41.365101 /PDM/CritSects/FTM/ContentionRZLock        0 times
+41:43:41.365104 /PDM/CritSects/FTM/ContentionRZUnlock        0 times
+41:43:41.365108 /PDM/CritSects/GIMDev#0Auto/ContentionR3        0 times
+41:43:41.365111 /PDM/CritSects/GIMDev#0Auto/ContentionRZLock        0 times
+41:43:41.365115 /PDM/CritSects/GIMDev#0Auto/ContentionRZUnlock        0 times
+41:43:41.365119 /PDM/CritSects/HPET/ContentionR3        0 times
+41:43:41.365122 /PDM/CritSects/HPET/ContentionRZLock        0 times
+41:43:41.365126 /PDM/CritSects/HPET/ContentionRZUnlock        0 times
+41:43:41.365130 /PDM/CritSects/IntNetXmit_0/ContentionR3       30 times
+41:43:41.365133 /PDM/CritSects/IntNetXmit_0/ContentionRZLock      594 times
+41:43:41.365137 /PDM/CritSects/IntNetXmit_0/ContentionRZUnlock        0 times
+41:43:41.365140 /PDM/CritSects/MM-HYPER/ContentionR3        0 times
+41:43:41.365144 /PDM/CritSects/MM-HYPER/ContentionRZLock        0 times
+41:43:41.365148 /PDM/CritSects/MM-HYPER/ContentionRZUnlock        0 times
+41:43:41.365152 /PDM/CritSects/NOP/ContentionR3         0 times
+41:43:41.365155 /PDM/CritSects/NOP/ContentionRZLock        0 times
+41:43:41.365159 /PDM/CritSects/NOP/ContentionRZUnlock        0 times
+41:43:41.365162 /PDM/CritSects/PDM/ContentionR3         0 times
+41:43:41.365166 /PDM/CritSects/PDM/ContentionRZLock    11569 times
+41:43:41.365169 /PDM/CritSects/PDM/ContentionRZUnlock        0 times
+41:43:41.365173 /PDM/CritSects/PGM/ContentionR3         0 times
+41:43:41.365176 /PDM/CritSects/PGM/ContentionRZLock   425869 times
+41:43:41.365180 /PDM/CritSects/PGM/ContentionRZUnlock        0 times
+41:43:41.365185 /PDM/CritSects/REM-Register/ContentionR3        0 times
+41:43:41.365188 /PDM/CritSects/REM-Register/ContentionRZLock        0 times
+41:43:41.365191 /PDM/CritSects/REM-Register/ContentionRZUnlock        0 times
+41:43:41.365195 /PDM/CritSects/TM Timer Lock/ContentionR3        0 times
+41:43:41.365199 /PDM/CritSects/TM Timer Lock/ContentionRZLock        0 times
+41:43:41.365206 /PDM/CritSects/TM Timer Lock/ContentionRZUnlock        0 times
+41:43:41.365210 /PDM/CritSects/TM VirtualSync Lock/ContentionR3        0 times
+41:43:41.365214 /PDM/CritSects/TM VirtualSync Lock/ContentionRZLock        0 times
+41:43:41.365217 /PDM/CritSects/TM VirtualSync Lock/ContentionRZUnlock        0 times
+41:43:41.365221 /PDM/CritSects/VGA#0/ContentionR3        0 times
+41:43:41.365224 /PDM/CritSects/VGA#0/ContentionRZLock        0 times
+41:43:41.365228 /PDM/CritSects/VGA#0/ContentionRZUnlock        0 times
+41:43:41.365232 /PDM/CritSects/VMMDev#0/ContentionR3        0 times
+41:43:41.365235 /PDM/CritSects/VMMDev#0/ContentionRZLock        0 times
+41:43:41.365239 /PDM/CritSects/VMMDev#0/ContentionRZUnlock        0 times
+41:43:41.365242 /PDM/CritSects/acpi#0/ContentionR3        0 times
+41:43:41.365246 /PDM/CritSects/acpi#0/ContentionRZLock        0 times
+41:43:41.365250 /PDM/CritSects/acpi#0/ContentionRZUnlock        0 times
+41:43:41.365253 /PDM/CritSects/mc146818#0Auto/ContentionR3        0 times
+41:43:41.365257 /PDM/CritSects/mc146818#0Auto/ContentionRZLock        0 times
+41:43:41.365260 /PDM/CritSects/mc146818#0Auto/ContentionRZUnlock        0 times
+41:43:41.365264 /PDM/CritSects/pcarch#0Auto/ContentionR3        0 times
+41:43:41.365268 /PDM/CritSects/pcarch#0Auto/ContentionRZLock        0 times
+41:43:41.365271 /PDM/CritSects/pcarch#0Auto/ContentionRZUnlock        0 times
+41:43:41.365275 /PDM/CritSects/pcbios#0Auto/ContentionR3        0 times
+41:43:41.365292 /PDM/CritSects/pcbios#0Auto/ContentionRZLock        0 times
+41:43:41.365295 /PDM/CritSects/pcbios#0Auto/ContentionRZUnlock        0 times
+41:43:41.365299 /PDM/CritSects/pckbd#0Auto/ContentionR3        0 times
+41:43:41.365302 /PDM/CritSects/pckbd#0Auto/ContentionRZLock        0 times
+41:43:41.365306 /PDM/CritSects/pckbd#0Auto/ContentionRZUnlock        0 times
+41:43:41.365309 /PDM/CritSects/pit#0/ContentionR3        0 times
+41:43:41.365313 /PDM/CritSects/pit#0/ContentionRZLock        0 times
+41:43:41.365316 /PDM/CritSects/pit#0/ContentionRZUnlock        0 times
+41:43:41.365320 /PDM/CritSectsRw/IOM Lock/ContentionR3EnterExcl        0 times
+41:43:41.365324 /PDM/CritSectsRw/IOM Lock/ContentionR3EnterShared        0 times
+41:43:41.365328 /PDM/CritSectsRw/IOM Lock/ContentionRZEnterExcl        0 times
+41:43:41.365331 /PDM/CritSectsRw/IOM Lock/ContentionRZEnterShared        0 times
+41:43:41.365335 /PDM/CritSectsRw/IOM Lock/ContentionRZLeaveExcl        0 times
+41:43:41.365338 /PDM/CritSectsRw/IOM Lock/ContentionRZLeaveShared        0 times
+41:43:41.365341 /PDM/CritSectsRw/IOM Lock/R3EnterExcl      540 times
+41:43:41.365345 /PDM/CritSectsRw/IOM Lock/R3EnterShared  4499101 times
+41:43:41.365349 /PDM/CritSectsRw/IOM Lock/RZEnterExcl        0 times
+41:43:41.365352 /PDM/CritSectsRw/IOM Lock/RZEnterShared 91610521 times
+41:43:41.365356 /PDM/Queue/AHCI-Xmit/AllocFailures        0 times
+41:43:41.365360 /PDM/Queue/AHCI-Xmit/Flush              0 calls
+41:43:41.365363 /PDM/Queue/AHCI-Xmit/FlushLeftovers        0 times
+41:43:41.365367 /PDM/Queue/AHCI-Xmit/Insert             0 calls
+41:43:41.365370 /PDM/Queue/AHCI-Xmit/cItems            60 count
+41:43:41.365374 /PDM/Queue/AHCI-Xmit/cbItem            32 bytes
+41:43:41.365378 /PDM/Queue/DevHlp/AllocFailures         0 times
+41:43:41.365381 /PDM/Queue/DevHlp/Flush                 0 calls
+41:43:41.365385 /PDM/Queue/DevHlp/FlushLeftovers        0 times
+41:43:41.365389 /PDM/Queue/DevHlp/Insert                0 calls
+41:43:41.365393 /PDM/Queue/DevHlp/cItems                8 count
+41:43:41.365396 /PDM/Queue/DevHlp/cbItem               56 bytes
+41:43:41.365400 /PDM/Queue/E1000-Rcv/AllocFailures        0 times
+41:43:41.365404 /PDM/Queue/E1000-Rcv/Flush              0 calls
+41:43:41.365408 /PDM/Queue/E1000-Rcv/FlushLeftovers        0 times
+41:43:41.365411 /PDM/Queue/E1000-Rcv/Insert         47242 calls
+41:43:41.365415 /PDM/Queue/E1000-Rcv/cItems             1 count
+41:43:41.365419 /PDM/Queue/E1000-Rcv/cbItem            24 bytes
+41:43:41.365423 /PDM/Queue/E1000-Rcv_1/AllocFailures        0 times
+41:43:41.365431 /PDM/Queue/E1000-Rcv_1/Flush            0 calls
+41:43:41.365438 /PDM/Queue/E1000-Rcv_1/FlushLeftovers        0 times
+41:43:41.365442 /PDM/Queue/E1000-Rcv_1/Insert      228691 calls
+41:43:41.365446 /PDM/Queue/E1000-Rcv_1/cItems           1 count
+41:43:41.365449 /PDM/Queue/E1000-Rcv_1/cbItem          24 bytes
+41:43:41.365453 /PDM/Queue/E1000-Xmit/AllocFailures        0 times
+41:43:41.365457 /PDM/Queue/E1000-Xmit/Flush             0 calls
+41:43:41.365460 /PDM/Queue/E1000-Xmit/FlushLeftovers        0 times
+41:43:41.365464 /PDM/Queue/E1000-Xmit/Insert        51365 calls
+41:43:41.365467 /PDM/Queue/E1000-Xmit/cItems            1 count
+41:43:41.365471 /PDM/Queue/E1000-Xmit/cbItem           24 bytes
+41:43:41.365475 /PDM/Queue/E1000-Xmit_1/AllocFailures        0 times
+41:43:41.365478 /PDM/Queue/E1000-Xmit_1/Flush           0 calls
+41:43:41.365482 /PDM/Queue/E1000-Xmit_1/FlushLeftovers        0 times
+41:43:41.365485 /PDM/Queue/E1000-Xmit_1/Insert          0 calls
+41:43:41.365489 /PDM/Queue/E1000-Xmit_1/cItems          1 count
+41:43:41.365492 /PDM/Queue/E1000-Xmit_1/cbItem         24 bytes
+41:43:41.365496 /PDM/Queue/Keyboard/AllocFailures        0 times
+41:43:41.365500 /PDM/Queue/Keyboard/Flush               0 calls
+41:43:41.365504 /PDM/Queue/Keyboard/FlushLeftovers        0 times
+41:43:41.365507 /PDM/Queue/Keyboard/Insert              0 calls
+41:43:41.365511 /PDM/Queue/Keyboard/cItems             64 count
+41:43:41.365515 /PDM/Queue/Keyboard/cbItem             32 bytes
+41:43:41.365518 /PDM/Queue/Mouse/AllocFailures          0 times
+41:43:41.365522 /PDM/Queue/Mouse/Flush                  0 calls
+41:43:41.365526 /PDM/Queue/Mouse/FlushLeftovers         0 times
+41:43:41.365529 /PDM/Queue/Mouse/Insert                 0 calls
+41:43:41.365533 /PDM/Queue/Mouse/cItems               128 count
+41:43:41.365537 /PDM/Queue/Mouse/cbItem                48 bytes
+41:43:41.365556 /PGM/CPU0/cA20Changes                   2 times
+41:43:41.365560 /PGM/CPU0/cGuestModeChanges          1080 times
+41:43:41.365578 /PGM/ChunkR3Map/Mapped               1025 count
+41:43:41.365582 /PGM/ChunkR3Map/Unmapped                0 count
+41:43:41.365586 /PGM/ChunkR3Map/c                    1025 count
+41:43:41.365590 /PGM/ChunkR3Map/cMax             4294967295 count
+41:43:41.365594 /PGM/LargePage/Recheck                  0 times
+41:43:41.365597 /PGM/LargePage/Refused                  2 times
+41:43:41.365601 /PGM/LargePage/Reused                   0 times
+41:43:41.365606 /PGM/Page/cAllPages                527463 count
+41:43:41.365610 /PGM/Page/cBalloonedPages               0 count
+41:43:41.365613 /PGM/Page/cHandyPages                  88 count
+41:43:41.365617 /PGM/Page/cLargePages                   0 count
+41:43:41.365621 /PGM/Page/cLargePagesDisabled           0 count
+41:43:41.365624 /PGM/Page/cMonitoredPages               0 count
+41:43:41.365628 /PGM/Page/cPrivatePages            527361 count
+41:43:41.365632 /PGM/Page/cPureMmioPages               69 count
+41:43:41.365635 /PGM/Page/cReadLockedPages              0 count
+41:43:41.365639 /PGM/Page/cReusedSharedPages            0 count
+41:43:41.365643 /PGM/Page/cSharedPages                  0 count
+41:43:41.365646 /PGM/Page/cWriteLockedPages             0 count
+41:43:41.365650 /PGM/Page/cWrittenToPages               0 count
+41:43:41.365654 /PGM/Page/cZeroPages                   33 count
+41:43:41.365657 /PGM/ShMod/Check                        0 ticks/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.365662 /PGM/cRelocations                       0 times
+41:43:41.365666 /PROF/CPU0/EM/Capped                    0 ticks/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.365671 /PROF/CPU0/EM/ForcedActions       6520503 times
+41:43:41.365675 /PROF/CPU0/EM/Halted              3826184 times
+41:43:41.365679 /PROF/CPU0/EM/RAWTotal                  0 times
+41:43:41.365683 /PROF/CPU0/EM/REMTotal                  3 times
+41:43:41.365687 /PROF/CPU0/EM/Total              5331316045978 ticks/call (325210278804716 ticks,      61 times, max 44013494032572, min 220778118)
+41:43:41.365699 /PROF/CPU0/VM/Halt/Block          5492009 ns/call (146565974969771 ticks, 26687130 times, max  19584530, min       1)
+41:43:41.365706 /PROF/CPU0/VM/Halt/BlockInsomnia        0 ns/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.365710 /PROF/CPU0/VM/Halt/BlockOnTime          0 ns/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.365714 /PROF/CPU0/VM/Halt/BlockOverslept        0 ns/call (           0 ticks,       0 times, max         0, min      -1)
+41:43:41.365719 /PROF/CPU0/VM/Halt/Timers           12191 ns/call (370118981355 ticks, 30358793 times, max   5176260, min       2)
+41:43:41.365724 /PROF/CPU0/VM/Halt/Yield             9812 ns/call (     1305061 ticks,     133 times, max     46698, min       1)
+41:43:41.365730 /Public/Net/E1k0/BytesReceived   125110878 bytes
+41:43:41.365734 /Public/Net/E1k0/BytesTransmitted  3241854 bytes
+41:43:41.365738 /Public/Net/E1k1/BytesReceived   4314147536 bytes
+41:43:41.365742 /Public/Net/E1k1/BytesTransmitted 10240987 bytes
+41:43:41.365750 /REM/TbFlushCount                       0 times
+41:43:41.365754 /REM/TbPhysInvldCount                   0 times
+41:43:41.365758 /REM/TlbFlushCount                      5 times
+41:43:41.365762 /SELM/LoadHidSel/GstReadErrors          0 times
+41:43:41.365766 /SELM/LoadHidSel/NoGoodGuest            0 times
+41:43:41.365784 /TM/CPU/00/cNsExecuting          826185232829 ns
+41:43:41.365788 /TM/CPU/00/cNsHalted             146966591858006 ns
+41:43:41.365793 /TM/CPU/00/cNsOther              372259717962 ns
+41:43:41.365797 /TM/CPU/00/cNsTotal              148165036808797 ns
+41:43:41.365801 /TM/CPU/00/cPeriodsExecuting     51550769 count
+41:43:41.365805 /TM/CPU/00/cPeriodsHalted         3659154 count
+41:43:41.365809 /TM/CPU/00/pctExecuting                 0 %
+41:43:41.365813 /TM/CPU/00/pctHalted                   99 %
+41:43:41.365816 /TM/CPU/00/pctOther                     0 %
+41:43:41.365820 /TM/CPU/pctExecuting                    0 %
+41:43:41.365824 /TM/CPU/pctHalted                      99 %
+41:43:41.365828 /TM/CPU/pctOther                        0 %
+41:43:41.365832 /TM/MaxHzHint                           0 Hz
+41:43:41.365836 /TM/R0/1nsSteps                    367654 times
+41:43:41.365840 /TM/R3/1nsSteps                    634814 times
+41:43:41.365844 /TM/TSC/offCPU0                  18446421104080499765 ticks
+41:43:41.365849 /TM/VirtualSync/CurrentOffset      420907 ns
+41:43:41.365854 ********************* End of statistics **********************
+41:43:41.373747 NAT: zone(nm:mbuf_cluster, used:0)
+41:43:41.374188 NAT: zone(nm:mbuf_packet, used:0)
+41:43:41.374207 NAT: zone(nm:mbuf, used:1)
+41:43:41.374385 NAT: zone(nm:mbuf_jumbo_pagesize, used:0)
+41:43:41.375253 NAT: zone(nm:mbuf_jumbo_9k, used:0)
+41:43:41.375642 NAT: zone(nm:mbuf_jumbo_16k, used:0)
+41:43:41.376010 NAT: zone(nm:mbuf_ext_refcnt, used:0)
+41:43:41.382650 Changing the VM state from 'DESTROYING' to 'TERMINATED'
+41:43:41.394548 Console: Machine state changed to 'Saved'

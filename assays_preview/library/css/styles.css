@@ -1,0 +1,369 @@
+.page-header {
+    margin-bottom: 10px;
+}
+
+#browse_table_wrapper {
+    display: none;
+}
+
+#browse_table tbody tr td.group {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+#browse_table tbody tr td.group {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.dataTables_wrapper tbody tr td.no_row_click {
+    cursor: pointer;
+}
+
+table.table thead .sorting_desc,
+table.table thead .sorting_asc,
+table.table thead .sorting {
+    background: transparent;
+}
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: inherit;
+}
+
+div.dataTables_filter label {
+    float: left;
+    margin-left: 10px;
+}
+
+.yellow-background {
+    background-color: #F3F3D6 !important;
+    color: #333;
+}
+
+.gray-background {
+    background-color:#D8D2D2 !important;
+    color: #852C2C;
+}
+
+.green-background {
+    background-color: #B2CEB2 !important;
+    color: #005000;
+}
+
+.submit-background {
+    background-color: #B2CEB2 !important;
+    color: #005000;
+}
+
+.withdraw-background {
+    background-color: #D8D2D2 !important;
+    color: #852C2C;
+}
+
+.check-all-wrapper {
+    display: table-cell;
+    padding-right: 6px;
+}
+
+.checkbox-input-wrapper .approve_checkbox,
+.checkbox-input-wrapper .disapprove_checkbox,
+.checkbox-input-wrapper .submit_checkbox {
+    display: none;
+}
+
+.check-all-wrapper .submit_all_button {
+    display: inline-block;
+}
+
+.check-all-wrapper .withdraw_all_button {
+    display: inline-block;
+}
+
+.checkbox-input-wrapper label {
+    display: inline-block;
+}
+
+.additional_bulk_actions {
+    margin: 6px 0;
+}
+
+.icon-plus,
+.icon-thumbs-up {
+    margin-right: 8px;
+    color: #333;
+}
+
+.icon-thumbs-down {
+    margin-right: 7px;
+    color: #333;
+}
+
+.icon-list {
+    margin-right: 6px;
+    color: #333;
+}
+
+.note-link {
+    font-weight: normal;
+}
+
+#comment,
+#email_csv_comment {
+    width: 97%;
+    height: 100px;
+}
+
+.modal .modal-body .control-group label input {
+    margin-bottom: 6px;
+}
+
+.modal .modal-body .control-group label {
+    font-weight: bold;
+}
+
+#success-message {
+    display: table-cell;
+    float: left;
+    margin-left: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #005000;
+    padding: 4px 12px;
+    background-color: #ABDFAB;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ColVis {
+    width: 100%;
+}
+
+.ColVis_Button {
+    float: right;
+}
+
+button, .button {
+    color: #555555;
+}
+
+#notes_container ul {
+    list-style-type: none;
+    border: solid 1px #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 5px 10px 20px 10px;
+    font-size: .9em;
+}
+
+.note-label {
+    clear: both;
+    margin: 6px 0 0 0;
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child {
+    width: 100px;
+}
+
+.checkbox-input-wrapper label {
+    color: #08C;
+}
+
+.checkbox-input-wrapper label:hover,
+.checkbox-input-wrapper label:focus {
+    color: #005580;
+    text-decoration: underline;
+}
+
+.dataTables_wrapper tbody tr td.manage_column {
+    cursor: text;
+    width: 120px;
+}
+
+.labs_select_menu {
+    width: 100%;
+}
+
+#import_set,
+#import_set_label {
+    display: none;
+}
+
+#additional_filters {
+    display: none;
+}
+
+#notify_nci_comment {
+    width: 97%;
+    height: 100px;
+}
+
+/* Pointer on Datatable row */
+
+.dataTables_wrapper tbody tr {
+    cursor: inherit;
+}
+
+#notes_container button {
+    padding: 0 0 2px 0;
+}
+
+.email-successful-message,
+.notes-success-message {
+    float: right;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-right: 20px;
+    padding: 0 8px;
+    color: #FFFFFF;
+    background-color: #008F00;
+    border: solid 1px #008F00;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* jQuery Tour */
+
+.popover-title {
+    background-color: #0079A8;
+    color: #FFF;
+}
+
+#tour_button_container {
+    float: right;
+}
+
+button.ColVis_Button.TableTools_Button{
+  color:#222;;
+}
+
+input.submit_checkbox {
+   margin-bottom:0px;
+ }
+input.submit_all_checkbox {
+  margin-bottom:0px;
+}
+
+div.th_header_text {
+  vertical-align:text-bottom;
+  padding:0px;
+}
+
+.manage_header {
+  background-color:white;
+}
+
+.dataTables_info{
+  text-align:center;
+}
+
+.search_box {
+    padding-right:20px;
+}
+
+.list_data {
+  padding-right:200px;
+}
+
+#save_submission {
+  size: 20px;
+  background-color: #ff794d !important;
+  border: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.dt-button{
+    background-color: white !important;
+    color: #294d64;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: 2;
+    padding: 2;
+    margin: 2;
+    width:100%;
+    z-index:2;
+}
+
+
+
+.dt-button:hover {
+    background-color: white !important;
+    color: #294d64;
+}
+
+
+
+.dt-button-collection{
+
+  width:25% !important;
+}
+
+
+/* Buttons for DataTables 1.1.0 */
+
+div.dt-buttons {position: relative;float: left;font: 0.9em Arial; padding-bottom: 0.25em;}
+div.dt-buttons .dt-button {margin: 0.25em 0.333em 0.25em 0;}
+div.dt-button-collection {font: 0.9em Arial;position:relative; margin:5px !important; padding: 4px;border: 1px solid #ccc;background-color: #fff;overflow:hidden; z-index: 2002;}
+div.dt-button-collection .dt-button {text-align: center;position: relative;display: block;margin-right: 0;}
+div.dt-button-background {zoom: 1;position: fixed;top: 0; left: 0;width: 100%;height: 100%;background: #000;filter: alpha(opacity=35);opacity: .35;z-index: 2001;}
+a.dt-button.buttons-select-cells, a.dt-button.buttons-select-rows, a.dt-button.buttons-select-columns {position: relative; width: 175px;text-align: left;}
+a.dt-button.buttons-columnVisibility.ui-button-text-only {padding-left: 10px;color:red !important}
+a.dt-button.buttons-columnVisibility.ui-state-active, a.dt-button.buttons-columnVisibility {position: relative; width: auto;*width: 230px;text-align: left;color:red !important;
+*zoom: expression(this.runtimeStyle.zoom="1",this.insertBefore(document.createElement("div"),this.childNodes[0]).className="before",this.appendChild(document.createElement("div")).className="after");}
+a.dt-button.buttons-columnVisibility:before, a.dt-button.buttons-columnVisibility.ui-state-active:after {display: block;position: absolute;top: 1em;margin-top: -8px;margin-left: -6px;width: 16px;height: 16px;box-sizing: border-box;color:red !important}
+a.dt-button.buttons-columnVisibility:before {content: ' ';border: 2px solid black;border-radius:3px;}
+a.dt-button.buttons-columnVisibility.ui-state-active:after {font: 0.9em Arial;content: '\2714';text-align: center;color:red !important}
+/*
+*a.dt-button.buttons-columnVisibility .before,*a.dt-button.buttons-columnVisibility.ui-state-active .after,*a.dt-button.buttons-columnVisibility.ui-state-active:hover .after {position: absolute;margin: 6px 0px 0px -6px;width: 16px;height: 16px;background-image: url("checkbox.png");background-position: 0px 0px;}
+*a.dt-button.buttons-columnVisibility .before {background-position: 0px 0px;}
+*a.dt-button.buttons-columnVisibility.ui-state-active .before {background-position: 0px 16px;}
+*a.dt-button.buttons-columnVisibility.ui-state-active:hover .before {background-position: 16px 0px;}
+*/
+
+.dt-button.buttons-columnVisibility.active {
+  background-color: #D3D3D3 !important;
+}
+
+.dataTables_filter label {
+    margin-bottom:15px;
+    margin-left: 10px;
+    margin-right:15px;
+
+}
+.dataTables_filter input {
+    height: 25px;
+    width: 300px;
+    margin-top: 0px;
+    float:right;
+}
+
+
+.dataTables_length{
+    padding-left:0px !important;
+    margin-left:0px !important;
+    float: left !important;
+}
+
+.row_search label{
+   vertical-align: bottom;
+   margin:0px;
+
+}
+
+.dataTables_filter{
+  padding-top:10px;
+}

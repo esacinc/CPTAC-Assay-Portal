@@ -1,0 +1,778 @@
+2016-03-28 13:34:26.651 INFO   830 [ExecutorRunner-pool-3-thread-185 - G.ķ] Exception while connecting cptac_assay_local
+*** Database Properties ****************************
+Alias: cptac_assay_local
+Settings Format: Server Info
+URL: jdbc:mysql://localhost:12345/cptac_assay
+Driver: MySQL
+Userid: cptac_assay
+Preferred Database Type: mysql
+Current Database Type: mysql
+Preferred Profile: auto
+Current Profile: null (not connected?)
+--- Object Type Settings ---------------------------
+None
+--- Overridden User Properties ---------------------
+mysql.ConnectionModeMigrated = true
+mysql.SQLCommanderMostRecentCatalog = cptac_assay
+--- Overridden Driver Properties -------------------
+None
+*** End Database Properties ************************
+*** Driver Information *****************************
+Name: MySQL
+DefaultDriver: true
+DefaultClass: com.mysql.jdbc.Driver
+Paths:
+  Path: /Applications/DbVisualizer.app/Contents/java/app/jdbc/mysql/mysql.jar
+    Type: dynamic
+    Class: com.mysql.jdbc.Driver
+*** End Driver Information *************************
+*** Current Connection Message *********************
+Disconnected.
+*** End Current Connection Message *****************
+
+2016-03-28 13:34:26.651 INFO   830 [ExecutorRunner-pool-3-thread-185 - G.ķ] Exception while connecting cptac_assay_local
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.D.ā(Z:1548)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 20 more
+2016-03-29 09:06:25.311 INFO   830 [ExecutorRunner-pool-3-thread-187 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_local'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 69,522,106 milliseconds ago.  The last packet sent successfully to the server was 69,522,126 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 14 more
+2016-03-29 21:18:45.065 INFO   830 [ExecutorRunner-pool-3-thread-191 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_local'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 32,993,395 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3427)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3327)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2914)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3337)
+	... 16 more
+2016-03-30 10:30:39.473 INFO   830 [ExecutorRunner-pool-3-thread-201 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_new'
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.Util.getInstance(Util.java:360)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:870)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1232)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1225)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2417)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2401)
+	at com.onseven.dbvis.h.B.C.Ą(Z:2603)
+	at com.onseven.dbvis.h.B.C.ā(Z:2366)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 799,029,629 milliseconds ago.  The last packet sent successfully to the server was 799,029,654 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at com.mysql.jdbc.DatabaseMetaData.getCatalogs(DatabaseMetaData.java:2093)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.E.ā(Z:482)
+	... 5 more
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 15 more
+2016-03-30 10:54:11.462 INFO   830 [ExecutorRunner-pool-3-thread-202 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_new'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,407,872 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3427)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3327)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:100)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:143)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:173)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2911)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3337)
+	... 16 more
+2016-03-30 10:54:13.208 INFO   830 [ExecutorRunner-pool-3-thread-203 - G.ķ] Exception while connecting cptac_assay_new
+*** Database Properties ****************************
+Alias: cptac_assay_new
+Settings Format: Server Info
+URL: jdbc:mysql://localhost:12345/cptac_assay
+Driver: MySQL
+Userid: cptac_assay
+Preferred Database Type: auto
+Current Database Type: mysql
+Preferred Profile: auto
+Current Profile: null (not connected?)
+--- Object Type Settings ---------------------------
+None
+--- Overridden User Properties ---------------------
+mysql.ConnectionModeMigrated = true
+mysql.SQLCommanderMostRecentCatalog = cptac_assay
+--- Overridden Driver Properties -------------------
+None
+*** End Database Properties ************************
+*** Driver Information *****************************
+Name: MySQL
+DefaultDriver: true
+DefaultClass: com.mysql.jdbc.Driver
+Paths:
+  Path: /Applications/DbVisualizer.app/Contents/java/app/jdbc/mysql/mysql.jar
+    Type: dynamic
+    Class: com.mysql.jdbc.Driver
+*** End Driver Information *************************
+*** Current Connection Message *********************
+Disconnected.
+*** End Current Connection Message *****************
+
+2016-03-30 10:54:13.209 INFO   830 [ExecutorRunner-pool-3-thread-203 - G.ķ] Exception while connecting cptac_assay_new
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.D.ā(Z:1548)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 20 more
+2016-03-30 12:15:16.414 INFO   830 [ExecutorRunner-pool-3-thread-208 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_qa'
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.Util.getInstance(Util.java:360)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:924)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:870)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1232)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1225)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2417)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2401)
+	at com.onseven.dbvis.h.B.C.Ą(Z:2603)
+	at com.onseven.dbvis.h.B.C.ā(Z:2366)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 319,158,284 milliseconds ago.  The last packet sent successfully to the server was 319,158,305 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:4722)
+	at com.mysql.jdbc.DatabaseMetaData$9.forEach(DatabaseMetaData.java:4713)
+	at com.mysql.jdbc.IterateBlock.doForAll(IterateBlock.java:50)
+	at com.mysql.jdbc.DatabaseMetaData.getTables(DatabaseMetaData.java:4711)
+	at com.mysql.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2394)
+	at com.mysql.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2364)
+	at com.mysql.jdbc.IterateBlock.doForAll(IterateBlock.java:50)
+	at com.mysql.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2362)
+	at sun.reflect.GeneratedMethodAccessor68.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.E.ā(Z:482)
+	... 5 more
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 22 more
+2016-03-31 11:25:43.635 INFO   830 [ExecutorRunner-pool-3-thread-210 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_qa'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 83,263,504 milliseconds ago.  The last packet sent successfully to the server was 83,263,554 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 14 more
+2016-03-31 16:16:58.703 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-03-31 16:16:58.703 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/dbvis.xml-20160303-124343204.tmp
+2016-03-31 16:16:58.723 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 38520 bytes
+2016-03-31 16:16:58.723 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-03-31 16:16:58.724 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/dbvis.xml.bak
+2016-03-31 16:16:58.724 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-03-31 16:16:58.724 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/tablefilters.xml-20160303-124343210.tmp
+2016-03-31 16:16:58.731 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 93 bytes
+2016-03-31 16:16:58.731 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-03-31 16:16:58.732 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/tablefilters.xml.bak
+2016-03-31 16:16:58.732 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-03-31 16:16:58.732 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/favorites.xml-20160303-124343213.tmp
+2016-03-31 16:16:58.732 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 86 bytes
+2016-03-31 16:16:58.732 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-03-31 16:16:58.733 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/favorites.xml.bak
+2016-03-31 16:16:58.734 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-03-31 16:16:58.734 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/editorstyles91.xml-20160303-124343214.tmp
+2016-03-31 16:16:58.735 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 1057 bytes
+2016-03-31 16:16:58.735 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-03-31 16:16:58.735 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak
+2016-03-31 16:16:58.736 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/templates.xml
+2016-03-31 16:16:58.736 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/templates.xml-20160303-124343215.tmp
+2016-03-31 16:16:58.737 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 155 bytes
+2016-03-31 16:16:58.737 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/templates.xml
+2016-03-31 16:16:58.737 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/templates.xml.bak
+2016-03-31 16:16:58.738 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-03-31 16:16:58.738 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/workingset.xml-20160303-124343216.tmp
+2016-03-31 16:16:58.738 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 88 bytes
+2016-03-31 16:16:58.738 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-03-31 16:16:58.739 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/workingset.xml.bak
+2016-03-31 16:16:58.739 INFO   830 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/mp.xml
+2016-03-31 16:16:58.739 INFO   830 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/mp.xml-20160303-124343216.tmp
+2016-03-31 16:16:58.739 INFO   830 [AWT-EventQueue-0 - A.ā]    Temp file written: 91 bytes
+2016-03-31 16:16:58.739 INFO   830 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/mp.xml
+2016-03-31 16:16:58.740 INFO   830 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/mp.xml.bak
+2016-03-31 16:16:58.740 INFO   830 [AWT-EventQueue-0 - DbVisualizerGUI.shutdown] Shutdown time: 0.222
+2016-03-31 21:59:13.591 CONFIG 260 [AWT-EventQueue-0 - D.ā] Product: DbVisualizer 9.2.14 [Build #2495]
+2016-03-31 21:59:13.593 CONFIG 260 [AWT-EventQueue-0 - D.ā] OS: Mac OS X
+2016-03-31 21:59:13.593 CONFIG 260 [AWT-EventQueue-0 - D.ā] OS Version: 10.11.2
+2016-03-31 21:59:13.593 CONFIG 260 [AWT-EventQueue-0 - D.ā] OS Arch: x86_64
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] Java Version: 1.8.0_60
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] Java VM: Java HotSpot(TM) 64-Bit Server VM
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] Java Vendor: Oracle Corporation
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] Java Home: /Applications/DbVisualizer.app/Contents/PlugIns/jre.bundle/Contents/Home/jre
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] DbVis Home: /Applications/DbVisualizer.app/Contents/java/app
+2016-03-31 21:59:13.594 CONFIG 260 [AWT-EventQueue-0 - D.ā] User Home: /Users/kristennice
+2016-03-31 21:59:13.595 CONFIG 260 [AWT-EventQueue-0 - D.ā] PrefsDir: /Users/kristennice/.dbvis
+2016-03-31 21:59:13.595 CONFIG 260 [AWT-EventQueue-0 - D.ā] SessionId: 260
+2016-03-31 21:59:13.723 INFO   260 [AWT-EventQueue-0 - A.ā] Files in: /Users/kristennice/.dbvis/config70
+2016-03-31 21:59:13.723 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/borders (writable: true, readable: true)
+2016-03-31 21:59:13.724 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/dbvis.xml (length: 38520, writable: true, readable: true)
+2016-03-31 21:59:13.724 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/dbvis.xml.bak (length: 38520, writable: true, readable: true)
+2016-03-31 21:59:13.724 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/editorstyles91.xml (length: 1057, writable: true, readable: true)
+2016-03-31 21:59:13.724 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak (length: 1057, writable: true, readable: true)
+2016-03-31 21:59:13.724 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/favorites.xml (length: 86, writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/favorites.xml.bak (length: 86, writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/keymaps (writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/layouts (writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/mp.xml (length: 91, writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/mp.xml.bak (length: 91, writable: true, readable: true)
+2016-03-31 21:59:13.725 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/tablefilters.xml (length: 93, writable: true, readable: true)
+2016-03-31 21:59:13.726 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/tablefilters.xml.bak (length: 93, writable: true, readable: true)
+2016-03-31 21:59:13.726 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/templates.xml (length: 155, writable: true, readable: true)
+2016-03-31 21:59:13.726 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/templates.xml.bak (length: 155, writable: true, readable: true)
+2016-03-31 21:59:13.726 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/workingset.xml (length: 88, writable: true, readable: true)
+2016-03-31 21:59:13.726 INFO   260 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/workingset.xml.bak (length: 88, writable: true, readable: true)
+2016-03-31 21:59:13.739 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-03-31 21:59:13.739 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/dbvis.xml (38520 bytes)
+2016-03-31 21:59:13.827 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/dbvis.xml.bak
+2016-03-31 21:59:15.394 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-03-31 21:59:15.394 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/tablefilters.xml (93 bytes)
+2016-03-31 21:59:15.396 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/tablefilters.xml.bak
+2016-03-31 21:59:15.396 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-03-31 21:59:15.397 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/favorites.xml (86 bytes)
+2016-03-31 21:59:15.398 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/favorites.xml.bak
+2016-03-31 21:59:15.398 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-03-31 21:59:15.398 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/editorstyles91.xml (1057 bytes)
+2016-03-31 21:59:15.400 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak
+2016-03-31 21:59:15.401 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/templates.xml
+2016-03-31 21:59:15.401 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/templates.xml (155 bytes)
+2016-03-31 21:59:15.402 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/templates.xml.bak
+2016-03-31 21:59:15.405 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-03-31 21:59:15.405 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/workingset.xml (88 bytes)
+2016-03-31 21:59:15.406 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/workingset.xml.bak
+2016-03-31 21:59:15.407 INFO   260 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/mp.xml
+2016-03-31 21:59:15.407 INFO   260 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/mp.xml (91 bytes)
+2016-03-31 21:59:15.408 INFO   260 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/mp.xml.bak
+2016-03-31 21:59:18.476 INFO   260 [AWT-EventQueue-0 - DbVisualizerGUI.initialize] Startup time: 5.298
+2016-03-31 21:59:19.256 INFO   260 [AWT-EventQueue-0 - W.Ą] Workspace auto saver thread started. Interval: 30 sec
+2016-03-31 21:59:19.257 INFO   260 [AWT-EventQueue-0 - U.Ă] Connection keep-alive thread started. Interval: 10 sec
+2016-04-05 09:14:11.768 INFO   260 [ExecutorRunner-pool-2-thread-36 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_local'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 70,426,751 milliseconds ago.  The last packet sent successfully to the server was 70,426,752 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 14 more
+2016-04-05 09:14:14.575 INFO   260 [ExecutorRunner-pool-2-thread-37 - G.ķ] Exception while connecting cptac_assay_local
+*** Database Properties ****************************
+Alias: cptac_assay_local
+Settings Format: Server Info
+URL: jdbc:mysql://localhost:12345/cptac_assay
+Driver: MySQL
+Userid: cptac_assay
+Preferred Database Type: mysql
+Current Database Type: mysql
+Preferred Profile: auto
+Current Profile: null (not connected?)
+--- Object Type Settings ---------------------------
+None
+--- Overridden User Properties ---------------------
+mysql.ConnectionModeMigrated = true
+mysql.SQLCommanderMostRecentCatalog = cptac_assay
+--- Overridden Driver Properties -------------------
+None
+*** End Database Properties ************************
+*** Driver Information *****************************
+Name: MySQL
+DefaultDriver: true
+DefaultClass: com.mysql.jdbc.Driver
+Paths:
+  Path: /Applications/DbVisualizer.app/Contents/java/app/jdbc/mysql/mysql.jar
+    Type: dynamic
+    Class: com.mysql.jdbc.Driver
+*** End Driver Information *************************
+*** Current Connection Message *********************
+Disconnected.
+*** End Current Connection Message *****************
+
+2016-04-05 09:14:14.576 INFO   260 [ExecutorRunner-pool-2-thread-37 - G.ķ] Exception while connecting cptac_assay_local
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.D.ā(Z:1548)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 22 more
+2016-04-07 00:09:45.127 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-04-07 00:09:45.128 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/dbvis.xml-20160331-215913729.tmp
+2016-04-07 00:09:45.149 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 38520 bytes
+2016-04-07 00:09:45.149 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-04-07 00:09:45.150 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/dbvis.xml.bak
+2016-04-07 00:09:45.151 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-04-07 00:09:45.151 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/tablefilters.xml-20160331-215913734.tmp
+2016-04-07 00:09:45.151 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 93 bytes
+2016-04-07 00:09:45.151 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-04-07 00:09:45.152 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/tablefilters.xml.bak
+2016-04-07 00:09:45.153 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-04-07 00:09:45.153 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/favorites.xml-20160331-215913735.tmp
+2016-04-07 00:09:45.153 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 86 bytes
+2016-04-07 00:09:45.153 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-04-07 00:09:45.154 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/favorites.xml.bak
+2016-04-07 00:09:45.155 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-04-07 00:09:45.155 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/editorstyles91.xml-20160331-215913736.tmp
+2016-04-07 00:09:45.156 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 1057 bytes
+2016-04-07 00:09:45.156 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-04-07 00:09:45.156 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak
+2016-04-07 00:09:45.157 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/templates.xml
+2016-04-07 00:09:45.157 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/templates.xml-20160331-215913737.tmp
+2016-04-07 00:09:45.157 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 155 bytes
+2016-04-07 00:09:45.158 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/templates.xml
+2016-04-07 00:09:45.158 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/templates.xml.bak
+2016-04-07 00:09:45.159 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-04-07 00:09:45.159 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/workingset.xml-20160331-215913737.tmp
+2016-04-07 00:09:45.159 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 88 bytes
+2016-04-07 00:09:45.159 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-04-07 00:09:45.160 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/workingset.xml.bak
+2016-04-07 00:09:45.160 INFO   260 [AWT-EventQueue-0 - A.ā] Writing file: /Users/kristennice/.dbvis/config70/mp.xml
+2016-04-07 00:09:45.161 INFO   260 [AWT-EventQueue-0 - A.ā]    Generate/write temp file: /Users/kristennice/.dbvis/config70/mp.xml-20160331-215913738.tmp
+2016-04-07 00:09:45.161 INFO   260 [AWT-EventQueue-0 - A.ā]    Temp file written: 91 bytes
+2016-04-07 00:09:45.161 INFO   260 [AWT-EventQueue-0 - A.ā]    Copying temp file to: /Users/kristennice/.dbvis/config70/mp.xml
+2016-04-07 00:09:45.162 INFO   260 [AWT-EventQueue-0 - A.ā]    Creating backup file: /Users/kristennice/.dbvis/config70/mp.xml.bak
+2016-04-07 00:09:45.162 INFO   260 [AWT-EventQueue-0 - DbVisualizerGUI.shutdown] Shutdown time: 0.254
+2016-04-07 07:55:24.394 CONFIG  37 [AWT-EventQueue-0 - D.ā] Product: DbVisualizer 9.2.14 [Build #2495]
+2016-04-07 07:55:24.398 CONFIG  37 [AWT-EventQueue-0 - D.ā] OS: Mac OS X
+2016-04-07 07:55:24.398 CONFIG  37 [AWT-EventQueue-0 - D.ā] OS Version: 10.11.2
+2016-04-07 07:55:24.398 CONFIG  37 [AWT-EventQueue-0 - D.ā] OS Arch: x86_64
+2016-04-07 07:55:24.398 CONFIG  37 [AWT-EventQueue-0 - D.ā] Java Version: 1.8.0_60
+2016-04-07 07:55:24.398 CONFIG  37 [AWT-EventQueue-0 - D.ā] Java VM: Java HotSpot(TM) 64-Bit Server VM
+2016-04-07 07:55:24.399 CONFIG  37 [AWT-EventQueue-0 - D.ā] Java Vendor: Oracle Corporation
+2016-04-07 07:55:24.399 CONFIG  37 [AWT-EventQueue-0 - D.ā] Java Home: /Applications/DbVisualizer.app/Contents/PlugIns/jre.bundle/Contents/Home/jre
+2016-04-07 07:55:24.399 CONFIG  37 [AWT-EventQueue-0 - D.ā] DbVis Home: /Applications/DbVisualizer.app/Contents/java/app
+2016-04-07 07:55:24.399 CONFIG  37 [AWT-EventQueue-0 - D.ā] User Home: /Users/kristennice
+2016-04-07 07:55:24.400 CONFIG  37 [AWT-EventQueue-0 - D.ā] PrefsDir: /Users/kristennice/.dbvis
+2016-04-07 07:55:24.400 CONFIG  37 [AWT-EventQueue-0 - D.ā] SessionId: 37
+2016-04-07 07:55:24.583 INFO    37 [AWT-EventQueue-0 - A.ā] Files in: /Users/kristennice/.dbvis/config70
+2016-04-07 07:55:24.584 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/borders (writable: true, readable: true)
+2016-04-07 07:55:24.584 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/dbvis.xml (length: 38520, writable: true, readable: true)
+2016-04-07 07:55:24.584 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/dbvis.xml.bak (length: 38520, writable: true, readable: true)
+2016-04-07 07:55:24.584 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/editorstyles91.xml (length: 1057, writable: true, readable: true)
+2016-04-07 07:55:24.584 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak (length: 1057, writable: true, readable: true)
+2016-04-07 07:55:24.585 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/favorites.xml (length: 86, writable: true, readable: true)
+2016-04-07 07:55:24.585 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/favorites.xml.bak (length: 86, writable: true, readable: true)
+2016-04-07 07:55:24.585 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/keymaps (writable: true, readable: true)
+2016-04-07 07:55:24.586 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/layouts (writable: true, readable: true)
+2016-04-07 07:55:24.586 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/mp.xml (length: 91, writable: true, readable: true)
+2016-04-07 07:55:24.586 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/mp.xml.bak (length: 91, writable: true, readable: true)
+2016-04-07 07:55:24.586 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/tablefilters.xml (length: 93, writable: true, readable: true)
+2016-04-07 07:55:24.586 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/tablefilters.xml.bak (length: 93, writable: true, readable: true)
+2016-04-07 07:55:24.587 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/templates.xml (length: 155, writable: true, readable: true)
+2016-04-07 07:55:24.587 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/templates.xml.bak (length: 155, writable: true, readable: true)
+2016-04-07 07:55:24.590 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/workingset.xml (length: 88, writable: true, readable: true)
+2016-04-07 07:55:24.590 INFO    37 [AWT-EventQueue-0 - A.ā]    /Users/kristennice/.dbvis/config70/workingset.xml.bak (length: 88, writable: true, readable: true)
+2016-04-07 07:55:24.605 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/dbvis.xml
+2016-04-07 07:55:24.605 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/dbvis.xml (38520 bytes)
+2016-04-07 07:55:24.703 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/dbvis.xml.bak
+2016-04-07 07:55:27.273 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/tablefilters.xml
+2016-04-07 07:55:27.273 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/tablefilters.xml (93 bytes)
+2016-04-07 07:55:27.278 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/tablefilters.xml.bak
+2016-04-07 07:55:27.279 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/favorites.xml
+2016-04-07 07:55:27.279 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/favorites.xml (86 bytes)
+2016-04-07 07:55:27.280 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/favorites.xml.bak
+2016-04-07 07:55:27.281 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/editorstyles91.xml
+2016-04-07 07:55:27.281 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/editorstyles91.xml (1057 bytes)
+2016-04-07 07:55:27.283 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/editorstyles91.xml.bak
+2016-04-07 07:55:27.285 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/templates.xml
+2016-04-07 07:55:27.285 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/templates.xml (155 bytes)
+2016-04-07 07:55:27.286 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/templates.xml.bak
+2016-04-07 07:55:27.290 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/workingset.xml
+2016-04-07 07:55:27.290 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/workingset.xml (88 bytes)
+2016-04-07 07:55:27.291 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/workingset.xml.bak
+2016-04-07 07:55:27.292 INFO    37 [AWT-EventQueue-0 - A.Ć] Loading file: /Users/kristennice/.dbvis/config70/mp.xml
+2016-04-07 07:55:27.292 INFO    37 [AWT-EventQueue-0 - A.Ć]    Load/parse file: /Users/kristennice/.dbvis/config70/mp.xml (91 bytes)
+2016-04-07 07:55:27.293 INFO    37 [AWT-EventQueue-0 - A.Ć]    Creating backup file: /Users/kristennice/.dbvis/config70/mp.xml.bak
+2016-04-07 07:55:36.256 INFO    37 [AWT-EventQueue-0 - DbVisualizerGUI.initialize] Startup time: 12.708
+2016-04-07 07:55:37.854 INFO    37 [AWT-EventQueue-0 - W.Ą] Workspace auto saver thread started. Interval: 30 sec
+2016-04-07 07:55:37.856 INFO    37 [AWT-EventQueue-0 - U.Ă] Connection keep-alive thread started. Interval: 10 sec
+2016-04-08 07:03:50.992 INFO    37 [ExecutorRunner-pool-2-thread-5 - AbstractFacade.isValid] Connection validation statement 'select 1' throws an exception. Physical connection: 'RootConnection' for: 'cptac_assay_local'
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 65,173,350 milliseconds ago.  The last packet sent successfully to the server was 65,173,351 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3661)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2526)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2484)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1446)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.B.ā(Z:194)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3643)
+	... 14 more
+2016-04-08 07:03:52.625 INFO    37 [ExecutorRunner-pool-2-thread-6 - G.ķ] Exception while connecting cptac_assay_local
+*** Database Properties ****************************
+Alias: cptac_assay_local
+Settings Format: Server Info
+URL: jdbc:mysql://localhost:12345/cptac_assay
+Driver: MySQL
+Userid: cptac_assay
+Preferred Database Type: mysql
+Current Database Type: mysql
+Preferred Profile: auto
+Current Profile: null (not connected?)
+--- Object Type Settings ---------------------------
+None
+--- Overridden User Properties ---------------------
+mysql.ConnectionModeMigrated = true
+mysql.SQLCommanderMostRecentCatalog = cptac_assay
+--- Overridden Driver Properties -------------------
+None
+*** End Database Properties ************************
+*** Driver Information *****************************
+Name: MySQL
+DefaultDriver: true
+DefaultClass: com.mysql.jdbc.Driver
+Paths:
+  Path: /Applications/DbVisualizer.app/Contents/java/app/jdbc/mysql/mysql.jar
+    Type: dynamic
+    Class: com.mysql.jdbc.Driver
+*** End Driver Information *************************
+*** Current Connection Message *********************
+Disconnected.
+*** End Current Connection Message *****************
+
+2016-04-08 07:03:52.625 INFO    37 [ExecutorRunner-pool-2-thread-6 - G.ķ] Exception while connecting cptac_assay_local
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.onseven.dbvis.h.B.D.ā(Z:1548)
+	at com.onseven.dbvis.h.B.F$A.call(Z:1369)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:243)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 22 more

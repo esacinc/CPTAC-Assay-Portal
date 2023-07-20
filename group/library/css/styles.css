@@ -1,0 +1,109 @@
+#selected_groups{
+	clear: both;
+	width: 400px;
+	min-height: 100px;
+	border: 1px solid #A0A0A0;
+	padding: 0;
+	margin: 10px 0px 30px 45px;
+	overflow: visible;
+	list-style-type: none;
+	float: left;
+}
+.single_group_container{
+	clear: both;
+	min-height: 100px;
+	border-bottom: 1px dashed #999;
+	padding:5px;
+}
+#selected_groups_title{
+	clear:both;
+	margin:0 0 0 45px;
+	font-weight:bold;
+}
+
+#browse_table_test_info{
+  text-align:center;
+}
+
+.dt-button{
+    background-color: white !important;
+    color: #294d64;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: 2;
+    padding: 2;
+    margin: 2;
+    width:100%;
+    z-index:2;
+}
+
+
+
+.dt-button:hover {
+    background-color: white !important;
+    color: #294d64;
+}
+
+
+
+.dt-button-collection{
+
+  width:25% !important;
+}
+
+
+/* Buttons for DataTables 1.1.0 */
+
+div.dt-buttons {position: relative;float: left;font: 0.9em Arial; padding-bottom: 0.25em;}
+div.dt-buttons .dt-button {margin: 0.25em 0.333em 0.25em 0;}
+div.dt-button-collection {font: 0.9em Arial;position:relative; margin:5px !important; padding: 4px;border: 1px solid #ccc;background-color: #fff;overflow:hidden; z-index: 2002;}
+div.dt-button-collection .dt-button {text-align: center;position: relative;display: block;margin-right: 0;}
+div.dt-button-background {zoom: 1;position: fixed;top: 0; left: 0;width: 100%;height: 100%;background: #000;filter: alpha(opacity=35);opacity: .35;z-index: 2001;}
+a.dt-button.buttons-select-cells, a.dt-button.buttons-select-rows, a.dt-button.buttons-select-columns {position: relative; width: 175px;text-align: left;}
+a.dt-button.buttons-columnVisibility.ui-button-text-only {padding-left: 10px;color:red !important}
+a.dt-button.buttons-columnVisibility.ui-state-active, a.dt-button.buttons-columnVisibility {position: relative; width: auto;*width: 230px;text-align: left;color:red !important;
+*zoom: expression(this.runtimeStyle.zoom="1",this.insertBefore(document.createElement("div"),this.childNodes[0]).className="before",this.appendChild(document.createElement("div")).className="after");}
+a.dt-button.buttons-columnVisibility:before, a.dt-button.buttons-columnVisibility.ui-state-active:after {display: block;position: absolute;top: 1em;margin-top: -8px;margin-left: -6px;width: 16px;height: 16px;box-sizing: border-box;color:red !important}
+a.dt-button.buttons-columnVisibility:before {content: ' ';border: 2px solid black;border-radius:3px;}
+a.dt-button.buttons-columnVisibility.ui-state-active:after {font: 0.9em Arial;content: '\2714';text-align: center;color:red !important}
+/*
+*a.dt-button.buttons-columnVisibility .before,*a.dt-button.buttons-columnVisibility.ui-state-active .after,*a.dt-button.buttons-columnVisibility.ui-state-active:hover .after {position: absolute;margin: 6px 0px 0px -6px;width: 16px;height: 16px;background-image: url("checkbox.png");background-position: 0px 0px;}
+*a.dt-button.buttons-columnVisibility .before {background-position: 0px 0px;}
+*a.dt-button.buttons-columnVisibility.ui-state-active .before {background-position: 0px 16px;}
+*a.dt-button.buttons-columnVisibility.ui-state-active:hover .before {background-position: 16px 0px;}
+*/
+
+.dt-button.buttons-columnVisibility.active {
+  background-color: #D3D3D3 !important;
+}
+
+.dataTables_filter label {
+    margin-bottom:15px;
+    margin-left: 10px;
+    margin-right:15px;
+
+}
+.dataTables_filter input {
+    height: 25px;
+    width: 300px;
+    margin-top: 0px;
+    float:right;
+}
+
+
+.dataTables_length{
+    padding-left:0px !important;
+    margin-left:0px !important;
+    float: left !important;
+}
+
+.row_search label{
+   vertical-align: bottom;
+   margin:0px;
+
+}
+
+.dataTables_filter{
+  padding-top:10px;
+}

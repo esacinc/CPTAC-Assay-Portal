@@ -1,0 +1,315 @@
+<!--class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.pageTemplate_jsp-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="authenticatedUser" content="toan.le@esacinc.com">
+    <meta name="impersonatedUser" content="-">
+
+    <title></title>
+    
+    <link rel="shortcut icon" href="/labkey/CPTAC%20Assay%20Portal/favicon.image?revision=5">
+<link rel="icon" href="/labkey/CPTAC%20Assay%20Portal/favicon.image?revision=5">
+<script src="/labkey/labkey.js?1322522741" type="text/javascript"></script>
+<script type="text/javascript">
+LABKEY.init({"container":{"formats":{"dateTimeFormat":"yyyy-MM-dd HH:mm","numberFormat":null,"dateFormat":"yyyy-MM-dd"},"parentPath":"/CPTAC Assay Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2","type":"folder","title":"Selectivity","folderType":"Targeted MS","parentId":"2e4adbb4-4727-1037-b0a3-cfa8e94f81c6","path":"/CPTAC Assay Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity","startUrl":"/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?","isWorkbook":false,"sortOrder":0,"hasRestrictedActiveModule":false,"name":"Selectivity","isContainerTab":false,"iconHref":"/labkey/_icons/icon_folder2.png","id":"2e4adc5a-4727-1037-b0a3-cfa8e94f81c6","activeModules":["AssayPortal","API","FileContent","Announcements","Visualization","Study","Issues","Wiki","TargetedMS","MS2","Experiment","Query","Search","Internal","Pipeline","Core"]},"extThemeName_42":"seattle","imagePath":"/labkey/_images","useMDYDateParsing":true,"project":{"path":"/CPTAC Assay Portal","name":"CPTAC Assay Portal","id":"81fd574a-3c3e-1035-9105-13c9abcb5ae1"},"serverName":"cptac-proliant-linux.esacinc.com","experimental":{"disableGuestAccount":false,"useExperimentalCoreUI":true,"containerRelativeURL":true},"login":{"registrationEnabled":false,"requiresTermsOfUse":false,"hasOtherLoginMechanisms":false},"tours":{},"sharedContainer":"Shared","defaultHeaders":{"X-LABKEY-CSRF":"1d446e59b5b4d5cbd8c3c28513811e3c","X-ONUNAUTHORIZED":"UNAUTHORIZED"},"pageAdminMode":false,"versionString":"18.10","contextPath":"/labkey","demoMode":false,"homeContainer":"home","extJsRoot":"ext-3.4.1","extDefaultDateTimeFormat":"Y-m-d H:i","devMode":false,"extDateInputFormat":"Y-m-d","CSRF":"1d446e59b5b4d5cbd8c3c28513811e3c","analyticProviders":{"AGG_MAD":"Median Absolute Deviation","AGG_COUNT_BLANK":"Count (blank)","AGG_MIN":"Minimum","AGG_STDERR":"Standard Error (of mean)","COL_SUMMARYSTATS":"Summary Statistics...","VIS_PIE":"Pie Chart","VIS_BOX":"Box & Whisker","AGG_COUNT_DISTINCT":"Count (distinct)","AGG_COUNT":"Count (non-blank)","AGG_MEAN":"Mean","COL_QUICK_CHART":"Quick Chart","VIS_BAR":"Bar Chart","AGG_STDDEV":"Standard Deviation (of mean)","AGG_QUARTILES":"Quartiles","AGG_MAX":"Maximum","COL_REMOVE":"Remove Column","AGG_MEDIAN":"Median","AGG_IQR":"Interquartile Range","AGG_SUM":"Sum"},"user":{"canUpdateOwn":true,"isRootAdmin":true,"canUpdate":true,"isGuest":false,"canInsert":true,"displayName":"toan le","isSignedIn":true,"avatar":"/labkey/_images/defaultavatar.png","isAdmin":true,"isDeveloper":true,"isSystemAdmin":true,"canDeleteOwn":true,"phone":null,"canDelete":true,"id":1006,"email":"toan.le@esacinc.com"},"hash":"1322522741","moduleContext":{"visualization":{},"internal":{},"study":{},"wiki":{},"query":{},"issues":{},"ms2":{},"pipeline":{},"core":{},"assayportal":{},"search":{},"experiment":{},"filecontent":{},"api":{},"announcements":{},"targetedms":{"TargetedMS Folder Type":"Experiment","TargetedMS AutoQCPing Timeout":"15"}},"extDefaultDateFormat":"Y-m-d","uuids":["4a46267e-7c0e-1037-9b88-db18912898b8","4a46267f-7c0e-1037-9b88-db18912898b8","4a462680-7c0e-1037-9b88-db18912898b8"]});
+</script>
+<link href="/labkey/core/css/core.css?1322522741" type="text/css" rel="stylesheet">
+<link href="/labkey/core/css/seattle.css?1322522741" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+LABKEY.loadedScripts('internal/jQuery/jquery-1.12.4.js','internal/jQuery/jquery-dateFormat.js','internal/jQuery/jquery-1.12.4.min.js','internal/jQuery/jquery-dateFormat.min.js','core/css/core.js','clientapi/core/Utils.js','clientapi/core/ActionURL.js','clientapi/core/Ajax.js','clientapi/core/Assay.js','clientapi/core/Domain.js','clientapi/core/Experiment.js','clientapi/core/FieldKey.js','clientapi/core/Filter.js','clientapi/core/List.js','clientapi/core/Message.js','clientapi/core/MultiRequest.js','clientapi/core/ParticipantGroup.js','clientapi/core/Pipeline.js','clientapi/core/Specimen.js','clientapi/core/Query.js','clientapi/core/GetData.js','clientapi/core/Report.js','clientapi/core/Security.js','clientapi/core/Visualization.js','clientapi/dom/Utils.js','clientapi/dom/Tour.js','clientapi/dom/Chart.js','clientapi/dom/Form.js','clientapi/dom/NavTrail.js','clientapi/dom/Portal.js','clientapi/dom/Query.js','clientapi/dom/Security.js','clientapi/dom/GetData.js','clientapi/dom/WebPart.js','clientapi/dom/DataRegion.js','clientapi_core.min.js','clientapi.min.js','util.js','internal.min.js');
+</script>
+<script src="/labkey/internal/jQuery/jquery-1.12.4.min.js?1322522741" type="text/javascript"></script>
+<script src="/labkey/internal/jQuery/jquery-dateFormat.min.js?1322522741" type="text/javascript"></script>
+<script src="/labkey/core/css/core.js?1322522741" type="text/javascript"></script>
+<script src="/labkey/clientapi_core.min.js?1322522741" type="text/javascript"></script>
+<script src="/labkey/clientapi.min.js?1322522741" type="text/javascript"></script>
+<script src="/labkey/internal.min.js?1322522741" type="text/javascript"></script>
+
+    
+    
+    
+</head>
+<body onload="" class="default-template-body">
+
+<div class="lk-header-ct">
+<!--class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.header_jsp-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="labkey-page-header">
+    <div class="container clearfix">
+        <div class="hidden-xs navbar-header">
+            <a class="brand-logo" href="/labkey/home/project-start.view?">
+                <img src="/labkey/CPTAC%20Assay%20Portal/logo.image?revision=5" alt="CPTAC LabKey Server">
+            </a>
+            
+            
+                        <h4 class="brand-link"><a href="/labkey/home/project-start.view?">CPTAC LabKey Server</a></h4>
+            
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg navbar-header">
+            <a class="brand-logo-mobile" href="/labkey/home/project-start.view?">
+                <img src="/labkey/CPTAC%20Assay%20Portal/logo-mobile.image?revision=5" alt="CPTAC LabKey Server">
+            </a>
+            
+                        <h4 class="brand-link"><a href="/labkey/home/project-start.view?">CPTAC LabKey Server</a></h4>
+            
+        </div>
+        
+        
+        <ul class="navbar-nav-lk">
+
+            <li class="navbar-search hidden-xs">
+                <a class="fa fa-search" id="global-search-trigger"></a>
+                <div id="global-search" class="global-search">
+                    <form id="global-search-form" method="GET" action="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/search-search.view?">
+                        <input type="text" class="search-box" name="q" placeholder="Search CPTAC LabKey Server" value="">
+                        <input type="submit" hidden>
+                        <a href="#" onclick="document.getElementById('global-search-form').submit(); return false;" class="btn-search fa fa-search"></a>
+                    </form>
+                </div>
+            </li>
+            <li id="global-search-xs" class="dropdown visible-xs">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-search"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <form method="GET" action="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/search-search.view?">
+                            <div class="input-group">
+                                <input type="text" class="search-box" name="q" placeholder="Search CPTAC LabKey Server" value="">
+                                <input type="submit" hidden>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="dropdown dropdown-rollup" id="headerAdminDropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-cog"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">Site<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>Site</a></li><li class="divider"></li><li><a href="/labkey/admin-showAdmin.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue#info" tabindex="0" style="">Admin Console</a></li><li><a href="/labkey/security-group.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue&group=Administrators" tabindex="0" style="">Site Admins</a></li><li><a href="/labkey/security-group.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue&group=Developers" tabindex="0" style="">Site Developers</a></li><li><a href="/labkey/user-showUsers.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Site Users</a></li><li><a href="/labkey/security-permissions.view?t=sitegroups&returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Site Groups</a></li><li><a href="/labkey/security-permissions.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Site Permissions</a></li><li><a href="/labkey/admin-createFolder.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Create Project</a></li></ul></li><li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">Folder<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>Folder</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/security-permissions.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Permissions</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/admin-manageFolders.view?tabId=folderTree" tabindex="0" style="">Management</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/user-showUsers.view?" tabindex="0" style="">Project Users</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/admin-projectSettings.view?" tabindex="0" style="">Project Settings</a></li></ul></li><li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">Developer Links<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>Developer Links</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/query-begin.view?" tabindex="0" style="">Schema Browser</a></li><li><a onclick="window.open(&#039;/labkey/admin-sessionLogging.view?&#039;,&#039;javascriptconsole&#039;,&#039;width=400,height=400,location=0,menubar=0,resizable=1,status=0,alwaysRaised=yes&#039;)"  href="javascript:void(0);" tabindex="0" style="">Server JavaScript Console</a></li><li><a onclick="window.open(&#039;/labkey/admin-trackedAllocationsViewer.view?&#039;,&#039;memoryallocations&#039;,&#039;width=500,height=400,location=0,menubar=0,resizable=1,status=0,alwaysRaised=yes&#039;)"  href="javascript:void(0);" tabindex="0" style="">Memory Allocations</a></li><li><a href="https://www.labkey.org/download/clientapi_docs/javascript-api/" tabindex="0" style="">JavaScript API Reference</a></li><li><a href="https://www.labkey.org/download/schema-docs/xml-schemas" tabindex="0" style="">XML Schema Reference</a></li></ul></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-togglePageAdminMode.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">Page Admin Mode</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/reports-manageViews.view?" tabindex="0" style="">Manage Views</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/list-begin.view?" tabindex="0" style="">Manage Lists</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/assay-begin.view?" tabindex="0" style="">Manage Assays</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/study-manageStudy.view?" tabindex="0" style="">Manage Study</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/targetedms-addRawDataTab.view?" tabindex="0" style="">Add Raw Data Tab</a></li><li class="divider"></li><li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">Go To Module<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>Go To Module</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?" tabindex="0" style="">Selectivity Start Page</a></li><li class="menu-filter-input"><input type="text" placeholder="Filter" class="dropdown-menu-filter" data-filter-item="go-to-module-item"/></li><li class="divider"></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/assayportal-begin.view?" tabindex="0" style="">AssayPortal</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/experiment-begin.view?" tabindex="0" style="">Experiment</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/filecontent-begin.view?" tabindex="0" style="">FileContent</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/issues-begin.view?.lastFilter=true" tabindex="0" style="">Issues</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/announcements-begin.view?" tabindex="0" style="">Messages</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/ms2-begin.view?" tabindex="0" style="">MS2</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/pipeline-begin.view?" tabindex="0" style="">Pipeline</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?" tabindex="0" style="">Portal</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/query-begin.view?" tabindex="0" style="">Query</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/search-begin.view?" tabindex="0" style="">Search</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/study-begin.view?" tabindex="0" style="">Study</a></li><li class="go-to-module-item"><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/wiki-begin.view?" tabindex="0" style="">Wiki</a></li><li class="divider"></li><li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">More Modules<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>More Modules</a></li><li class="divider"></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/audit-begin.view?" tabindex="0" style="">Audit</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/dataintegration-begin.view?" tabindex="0" style="">DataIntegration</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/elispot-assay-begin.view?" tabindex="0" style="">ELISpotAssay</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/fcsexpress-begin.view?" tabindex="0" style="">FCSExpress</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/flow-begin.view?" tabindex="0" style="">Flow</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/list-begin.view?" tabindex="0" style="">List</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/luminex-begin.view?" tabindex="0" style="">Luminex</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/ms1-begin.view?" tabindex="0" style="">MS1</a></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/nabassay-begin.view?" tabindex="0" style="">Nab</a></li></ul></li></ul></li>
+                </ul>
+            </li>
+
+
+
+
+
+
+
+            <li class="dropdown dropdown-rollup" id="headerUserDropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                    <i class="fa fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" >
+                    <li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/user-details.view?userId=1006&returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">My Account</a></li><li><a href="/labkey/security-apiKey.view?returnUrl=%2Flabkey%2FCPTAC%2520Assay%2520Portal%2FCPTAC_TEST%2FExperiment_ALL_TEST_Version2%2FSelectivity%2Freports-streamFile.view%3FdeleteFile%3Dtrue%26sessionKey%3Dtemp%253A4a46267c-7c0e-1037-9b88-db18912898b8%26cacheFile%3Dtrue" tabindex="0" style="">API Keys</a></li><li class="dropdown-submenu"><a class="subexpand subexpand-icon" tabindex="0">Impersonate<i class="fa fa-chevron-right"></i></a><ul class="dropdown-layer-menu"><li><a class="subcollapse" tabindex="0"><i class="fa fa-chevron-left"></i>Impersonate</a></li><li class="divider"></li><li><a onclick="LABKEY.Security.Impersonation.showImpersonateUser();"  href="javascript:void(0);" tabindex="0" style="">User</a></li><li><a onclick="LABKEY.Security.Impersonation.showImpersonateGroup();"  href="javascript:void(0);" tabindex="0" style="">Group</a></li><li><a onclick="LABKEY.Security.Impersonation.showImpersonateRole();"  href="javascript:void(0);" tabindex="0" style="">Roles</a></li></ul></li><li><a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/login-logout.view?" tabindex="0" style="">Sign Out</a></li><li class="divider"></li><li><a href="/labkey/project/home/support/begin.view" tabindex="0" style="">Support</a></li><li><a href="http://www.labkey.org/wiki/home/documentation/18.1/page.view?name=default" target="labkeyHelp" tabindex="0" style="">LabKey Documentation</a></li><li><a href="https://www.labkey.org/UX Refresh Feedback/core-feedback.view?serverSessionId=4a4617a0-7c0e-1037-9b88-db18912898b8" target="_blank" tabindex="0" style="">Give UI Feedback</a></li>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-rollup">
+                <a class="hidden-xs dropdown-toggle" href="#" data-toggle="dropdown" data-target="#headerUserDropdown" style="padding-left: 8px;">toan le</a>
+            </li>
+
+
+
+
+
+        </ul>
+    </div>
+</div><!--/class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.header_jsp--><!--class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.navigation_jsp-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="labkey-page-nav">
+    <div class="container">
+        <div id="nav_dropdowns" class="navbar-header">
+            <ul class="nav">
+                
+                <li class="dropdown" data-webpart="FolderNav" data-name="FolderNav">
+                    <a data-target="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-folder-open"></i>&nbsp;CPTAC Assay Portal
+                    </a>
+                    <ul class="dropdown-menu"></ul>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="nav_tabs" class="lk-nav-tabs-ct">
+            <ul id="lk-nav-tabs-separate" class="nav lk-nav-tabs pull-right " style="opacity: 0;">
+                
+                <li role="presentation" class="active">
+                    <a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?" id="PanoramaDashboardTab">
+                        
+                        Panorama Dashboard
+                    </a>
+                    
+                </li>
+                
+                <li role="presentation" class="">
+                    <a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?pageId=Data%20Pipeline" id="DataPipelineTab">
+                        
+                        Data Pipeline
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            <ul id="lk-nav-tabs-collapsed" class="nav lk-nav-tabs pull-right" style="display: none;">
+                
+                <li role="presentation" class="dropdown active">
+                    <a data-target="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Panorama Dashboard&nbsp;
+                        <span class="fa fa-chevron-down" style="font-size: 12px;"></span>
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        
+                        <li>
+                            <a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?">
+                                <b>Panorama Dashboard</b>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?pageId=Data%20Pipeline">
+                                Data Pipeline
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--/class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.navigation_jsp-->
+</div>
+
+<div class="lk-body-ct">
+    <!--class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.body_jsp-->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <noscript><div class="alert alert-warning" role="alert">JavaScript is disabled. For the full experience enable JavaScript in your browser.</div></noscript>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 lk-body-title">
+            
+            
+            
+                <h3 style="display: inline-block;">
+                    Selectivity
+                </h3>
+                
+                
+                
+                    <span class="lk-body-title-folder-outer">
+                        <i class="fa fa-folder-o"></i>
+                        
+                        <a class="lk-body-title-folder" href="/labkey/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_Version2/Selectivity/project-begin.view?">Selectivity</a>
+                        
+                    </span>
+                
+            
+            
+            
+        </div>
+    </div>
+    <div class="row content-row">
+        <div class="content-left">
+            <div>Requested Resource not found</div>
+        </div>
+        
+    </div>
+</div><!--/class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.body_jsp-->
+</div>
+
+<footer class="footer-block">
+    <div class="footer-content">
+    <div id="ModuleHtmlView_539"><div style="text-align: center; padding:6px;">
+    <a href="http://labkey.com" target="_blank">Powered by LabKey</a>
+</div>
+</div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">LABKEY.loadScripts(); LABKEY.showNavTrail();</script>
+<!--  -->
+<a href="/labkey/__r438/reports-streamFile.view?deleteFile=true&sessionKey=temp%3A4a46267c-7c0e-1037-9b88-db18912898b8&cacheFile=true" id="permalink" style="display: none;"></a>
+</body>
+</html><!--/class org.labkey.jsp.compiled.org.labkey.core.view.template.bootstrap.pageTemplate_jsp-->

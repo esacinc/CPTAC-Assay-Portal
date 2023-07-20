@@ -1,0 +1,112 @@
+{% extends layout_template_name %}
+
+{% block styles_head %}
+    {{ parent() }}
+    <base href="/">
+    <link href="/assays/library/css/jquery.tagit.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="//fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css"/> -->
+    <link href="{{ path_to_this_module }}/library/css/styles.css" rel="stylesheet" type="text/css" />
+
+{% endblock %}
+
+{% block js_bottom %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex flex-row">
+        <div class="page-title">
+            <h1>Assay Portal</h1>
+        </div>
+    </div>
+
+    <br>
+    <div class="d-flex flex-row">
+
+        <div style="flex:2"></div>
+        <div style="flex:8">
+            <div class="steps-form-2">
+                <div class="steps-row-2 setup-panel-2 d-flex justify-content-between stepper-horizontal" >
+                    <div class="steps-step-2 first-step">
+                        <a  class="button active_step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-file-text active_step_icon"  aria-hidden="true"></i></a>
+                        <p class="step_label" >Step 1: <br> Enter Metadata</p>
+                    </div>
+                    <div class="steps-step-2">
+                        <a  class="button active_step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-file-zip-o active_step_icon"  aria-hidden="true"></i></a>
+                        <p class="step_label" >Step 2: <br> Upload Skyline Files</p>
+                    </div>
+                    <div class="steps-step-2">
+                        <a class="button step btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Basic Information"><i class="fa fa-check step_icon" aria-hidden="true"></i></a>
+                        <p class="step_label" >Step 3: <br> Submission Complete</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="flex:2"></div>
+    </div>
+    <br>
+    <div id="row-outer-login-form" class="row-outer">
+        <div class="row-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-12">
+                    <app-root></app-root>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row">
+        <div style="flex:10">
+        </div>
+        <div style="flex:2" class="p-3">
+            <button id="save-continue" type="button" class="btn btn-primary" style="background-color:grey;border-color: transparent;" class="float-right">
+                Save & Continue ->
+            </button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block written_js_bottom %}
+    {{ parent() }}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#save-continue').on('click', function () {
+                $.ajax({
+                    type: "POST"
+                    , url: "{{ path_to_this_module }}/check_upload_files"
+                    , success: function(data) {
+
+                        console.log(data);
+                        var isValid = (data.status === 'true');
+                        if (isValid) {
+                            window.location.href = "/public_upload/submit_skyline_file";
+
+                        } else {
+                            alert("Please upload 3 files");
+                        }
+                    }
+                });
+            });
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript" src="/{{ core_type }}//library/js/inline.bundle.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/library/js/polyfills.bundle.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/library/js/styles.bundle.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/library/js/vendor.bundle.js"></script>
+    <script type="text/javascript" src="/{{ core_type }}/library/js/main.bundle.js"></script>
+
+
+{#    <script type="text/javascript" src="/admin-ng-bootstrap/dist/inline.bundle.js"></script>
+    <script type="text/javascript" src="/admin-ng-bootstrap/dist/polyfills.bundle.js"></script>
+    <script type="text/javascript" src="/admin-ng-bootstrap/dist/styles.bundle.js"></script>
+    <script type="text/javascript" src="/admin-ng-bootstrap/dist/vendor.bundle.js"></script>
+    <script type="text/javascript" src="/admin-ng-bootstrap/dist/main.bundle.js"></script>#}
+{% endblock %}

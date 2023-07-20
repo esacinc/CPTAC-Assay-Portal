@@ -1,0 +1,505 @@
+2019-04-15 3:33:05pm - API server authentication attempt: SUCCESS 
+2019-04-15 3:33:05pm - email: toan.le eSac06940071
+2019-04-15 3:33:05pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 3:33:05pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153305_5cb4a4311de9e.txt
+2019-04-15 3:33:05pm - inside _doCall httpMethod: GET
+2019-04-15 3:33:05pm - inside _doCall path: /selectRows.api
+2019-04-15 3:33:05pm - inside _doCall parameters: Array
+2019-04-15 3:33:05pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:33:05pm - inside _doCall celllysate_path: test_folder
+2019-04-15 3:33:05pm - inside _doCall library: Selectivity
+2019-04-15 3:33:05pm - inside _doCall peptide: 
+2019-04-15 3:33:05pm - inside _doCall plot_type: 
+2019-04-15 3:33:05pm - inside _doCall protein: 
+2019-04-15 3:33:05pm - inside _doCall csv: 
+2019-04-15 3:33:05pm - inside _doCall peptideType: 
+2019-04-15 3:33:05pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/test_folder/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=GLQSLPTHDPSPLQR
+2019-04-15 3:33:06pm - _doCall Result - : SUCCESS
+2019-04-15 3:33:06pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153305_5cb4a4311de9e.txt
+2019-04-15 3:33:06pm - inside _doCall httpMethod: GET
+2019-04-15 3:33:06pm - inside _doCall path: /selectRows.api
+2019-04-15 3:33:06pm - inside _doCall parameters: Array
+2019-04-15 3:33:06pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:33:06pm - inside _doCall celllysate_path: test_folder
+2019-04-15 3:33:06pm - inside _doCall library: Selectivity
+2019-04-15 3:33:06pm - inside _doCall peptide: 
+2019-04-15 3:33:06pm - inside _doCall plot_type: 
+2019-04-15 3:33:06pm - inside _doCall protein: 
+2019-04-15 3:33:06pm - inside _doCall csv: 
+2019-04-15 3:33:06pm - inside _doCall peptideType: 
+2019-04-15 3:33:06pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/test_folder/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=8195
+2019-04-15 3:33:06pm - _doCall Result - : SUCCESS
+2019-04-15 3:33:06pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153305_5cb4a4311de9e.txt
+2019-04-15 3:33:06pm - inside _doCall httpMethod: GET
+2019-04-15 3:33:06pm - inside _doCall path: /getWebPart.view
+2019-04-15 3:33:06pm - inside _doCall parameters: Array
+2019-04-15 3:33:06pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:33:06pm - inside _doCall celllysate_path: test_folder
+2019-04-15 3:33:06pm - inside _doCall library: Selectivity
+2019-04-15 3:33:06pm - inside _doCall peptide: GLQSLPTHDPSPLQR
+2019-04-15 3:33:06pm - inside _doCall plot_type: 
+2019-04-15 3:33:06pm - inside _doCall protein: sp|P04626|ERBB2_HUMAN
+2019-04-15 3:33:06pm - inside _doCall csv: 1
+2019-04-15 3:33:06pm - inside _doCall peptideType: 
+2019-04-15 3:33:06pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/test_folder/Selectivity/getWebPart.view
+2019-04-15 3:33:06pm - _doCall: GLQSLPTHDPSPLQR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/test_folder/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP04626%7CERBB2_HUMAN&query.PeptideModifiedSequence%7Eeq=GLQSLPTHDPSPLQR&query.PrecursorCharge%7Eeq=3&curve_type=reverse&reportName=Selectivity&showSection=summary_table.csv
+2019-04-15 3:33:07pm - _doCall Result - GLQSLPTHDPSPLQR: SUCCESS
+2019-04-15 3:33:07pm - <span class="import-error">Image Error</span>: Selectivity - <div><font class="labkey-error">Error executing command</font><pre>javax.script.ScriptException: javax.script.ScriptException: An error occurred when running the script &#039;script.R&#039;, exit code: 1).
+Loading required package: RCurl
+Loading required package: bitops
+Loading required package: rjson
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in grouped_df_impl(data, unname(vars), drop) : 
+  Column `cell_line` is unknown
+Calls: %&gt;% ... group_by.data.frame -&gt; grouped_df -&gt; grouped_df_impl -&gt; .Call
+In addition: Warning message:
+In is.na(fragment_ion_results$calculated_area_ratio) :
+  is.na() applied to non-(list or vector) of type &#039;NULL&#039;
+Execution halted
+</pre></div>
+2019-04-15 3:35:41pm - API server authentication attempt: SUCCESS 
+2019-04-15 3:35:41pm - email: toan.le eSac06940071
+2019-04-15 3:35:41pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 3:35:41pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153540_5cb4a4cc5352e.txt
+2019-04-15 3:35:41pm - inside _doCall httpMethod: GET
+2019-04-15 3:35:41pm - inside _doCall path: /selectRows.api
+2019-04-15 3:35:41pm - inside _doCall parameters: Array
+2019-04-15 3:35:41pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:35:41pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:35:41pm - inside _doCall library: Selectivity
+2019-04-15 3:35:41pm - inside _doCall peptide: 
+2019-04-15 3:35:41pm - inside _doCall plot_type: 
+2019-04-15 3:35:41pm - inside _doCall protein: 
+2019-04-15 3:35:41pm - inside _doCall csv: 
+2019-04-15 3:35:41pm - inside _doCall peptideType: 
+2019-04-15 3:35:41pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 3:35:41pm - _doCall Result - : SUCCESS
+2019-04-15 3:35:41pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153540_5cb4a4cc5352e.txt
+2019-04-15 3:35:41pm - inside _doCall httpMethod: GET
+2019-04-15 3:35:41pm - inside _doCall path: /selectRows.api
+2019-04-15 3:35:41pm - inside _doCall parameters: Array
+2019-04-15 3:35:41pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:35:41pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:35:41pm - inside _doCall library: Selectivity
+2019-04-15 3:35:41pm - inside _doCall peptide: 
+2019-04-15 3:35:41pm - inside _doCall plot_type: 
+2019-04-15 3:35:41pm - inside _doCall protein: 
+2019-04-15 3:35:41pm - inside _doCall csv: 
+2019-04-15 3:35:41pm - inside _doCall peptideType: 
+2019-04-15 3:35:41pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 3:35:41pm - _doCall Result - : SUCCESS
+2019-04-15 3:35:41pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415153540_5cb4a4cc5352e.txt
+2019-04-15 3:35:41pm - inside _doCall httpMethod: GET
+2019-04-15 3:35:41pm - inside _doCall path: /getWebPart.view
+2019-04-15 3:35:41pm - inside _doCall parameters: Array
+2019-04-15 3:35:41pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:35:41pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:35:41pm - inside _doCall library: Selectivity
+2019-04-15 3:35:41pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 3:35:41pm - inside _doCall plot_type: 
+2019-04-15 3:35:41pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 3:35:41pm - inside _doCall csv: 1
+2019-04-15 3:35:41pm - inside _doCall peptideType: 
+2019-04-15 3:35:41pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 3:35:41pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table.csv
+2019-04-15 3:35:46pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 3:35:46pm - Image Saved: Selectivity
+2019-04-15 3:40:43pm - API server authentication attempt: SUCCESS 
+2019-04-15 3:40:43pm - email: toan.le eSac06940071
+2019-04-15 3:40:43pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 3:40:43pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154043_5cb4a5fb0b742.txt
+2019-04-15 3:40:43pm - inside _doCall httpMethod: GET
+2019-04-15 3:40:43pm - inside _doCall path: /selectRows.api
+2019-04-15 3:40:43pm - inside _doCall parameters: Array
+2019-04-15 3:40:43pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:40:43pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:40:43pm - inside _doCall library: Selectivity
+2019-04-15 3:40:43pm - inside _doCall peptide: 
+2019-04-15 3:40:43pm - inside _doCall plot_type: 
+2019-04-15 3:40:43pm - inside _doCall protein: 
+2019-04-15 3:40:43pm - inside _doCall csv: 
+2019-04-15 3:40:43pm - inside _doCall peptideType: 
+2019-04-15 3:40:43pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 3:40:43pm - _doCall Result - : SUCCESS
+2019-04-15 3:40:43pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154043_5cb4a5fb0b742.txt
+2019-04-15 3:40:43pm - inside _doCall httpMethod: GET
+2019-04-15 3:40:43pm - inside _doCall path: /selectRows.api
+2019-04-15 3:40:43pm - inside _doCall parameters: Array
+2019-04-15 3:40:43pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:40:43pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:40:43pm - inside _doCall library: Selectivity
+2019-04-15 3:40:43pm - inside _doCall peptide: 
+2019-04-15 3:40:43pm - inside _doCall plot_type: 
+2019-04-15 3:40:43pm - inside _doCall protein: 
+2019-04-15 3:40:43pm - inside _doCall csv: 
+2019-04-15 3:40:43pm - inside _doCall peptideType: 
+2019-04-15 3:40:43pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 3:40:44pm - _doCall Result - : SUCCESS
+2019-04-15 3:40:44pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154043_5cb4a5fb0b742.txt
+2019-04-15 3:40:44pm - inside _doCall httpMethod: GET
+2019-04-15 3:40:44pm - inside _doCall path: /getWebPart.view
+2019-04-15 3:40:44pm - inside _doCall parameters: Array
+2019-04-15 3:40:44pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:40:44pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:40:44pm - inside _doCall library: Selectivity
+2019-04-15 3:40:44pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 3:40:44pm - inside _doCall plot_type: 
+2019-04-15 3:40:44pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 3:40:44pm - inside _doCall csv: 1
+2019-04-15 3:40:44pm - inside _doCall peptideType: 
+2019-04-15 3:40:44pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 3:40:44pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table.csv
+2019-04-15 3:40:48pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 3:40:48pm - Image Saved: Selectivity
+2019-04-15 3:41:46pm - API server authentication attempt: SUCCESS 
+2019-04-15 3:41:46pm - email: toan.le eSac06940071
+2019-04-15 3:41:46pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 3:41:46pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154145_5cb4a639df0dc.txt
+2019-04-15 3:41:46pm - inside _doCall httpMethod: GET
+2019-04-15 3:41:46pm - inside _doCall path: /selectRows.api
+2019-04-15 3:41:46pm - inside _doCall parameters: Array
+2019-04-15 3:41:46pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:41:46pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:41:46pm - inside _doCall library: Selectivity
+2019-04-15 3:41:46pm - inside _doCall peptide: 
+2019-04-15 3:41:46pm - inside _doCall plot_type: 
+2019-04-15 3:41:46pm - inside _doCall protein: 
+2019-04-15 3:41:46pm - inside _doCall csv: 
+2019-04-15 3:41:46pm - inside _doCall peptideType: 
+2019-04-15 3:41:46pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 3:41:46pm - _doCall Result - : SUCCESS
+2019-04-15 3:41:46pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154145_5cb4a639df0dc.txt
+2019-04-15 3:41:46pm - inside _doCall httpMethod: GET
+2019-04-15 3:41:46pm - inside _doCall path: /selectRows.api
+2019-04-15 3:41:46pm - inside _doCall parameters: Array
+2019-04-15 3:41:46pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:41:46pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:41:46pm - inside _doCall library: Selectivity
+2019-04-15 3:41:46pm - inside _doCall peptide: 
+2019-04-15 3:41:46pm - inside _doCall plot_type: 
+2019-04-15 3:41:46pm - inside _doCall protein: 
+2019-04-15 3:41:46pm - inside _doCall csv: 
+2019-04-15 3:41:46pm - inside _doCall peptideType: 
+2019-04-15 3:41:46pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 3:41:46pm - _doCall Result - : SUCCESS
+2019-04-15 3:41:46pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154145_5cb4a639df0dc.txt
+2019-04-15 3:41:46pm - inside _doCall httpMethod: GET
+2019-04-15 3:41:46pm - inside _doCall path: /getWebPart.view
+2019-04-15 3:41:46pm - inside _doCall parameters: Array
+2019-04-15 3:41:46pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:41:46pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:41:46pm - inside _doCall library: Selectivity
+2019-04-15 3:41:46pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 3:41:46pm - inside _doCall plot_type: 
+2019-04-15 3:41:46pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 3:41:46pm - inside _doCall csv: 1
+2019-04-15 3:41:46pm - inside _doCall peptideType: 
+2019-04-15 3:41:46pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 3:41:46pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table.csv
+2019-04-15 3:41:51pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 3:41:51pm - Image Saved: Selectivity
+2019-04-15 3:41:51pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415154145_5cb4a639df0dc.txt
+2019-04-15 3:41:51pm - inside _doCall httpMethod: GET
+2019-04-15 3:41:51pm - inside _doCall path: /getWebPart.view
+2019-04-15 3:41:51pm - inside _doCall parameters: Array
+2019-04-15 3:41:51pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 3:41:51pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 3:41:51pm - inside _doCall library: Selectivity
+2019-04-15 3:41:51pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 3:41:51pm - inside _doCall plot_type: 
+2019-04-15 3:41:51pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 3:41:51pm - inside _doCall csv: 1
+2019-04-15 3:41:51pm - inside _doCall peptideType: 
+2019-04-15 3:41:51pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 3:41:51pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=values_for_spike_levels.csv
+2019-04-15 3:41:56pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 3:41:56pm - Image Saved: Selectivity
+2019-04-15 10:28:18pm - API server authentication attempt: SUCCESS 
+2019-04-15 10:28:18pm - email: toan.le eSac06940071
+2019-04-15 10:28:18pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 10:28:18pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415222808_5cb50578352c2.txt
+2019-04-15 10:28:18pm - inside _doCall httpMethod: GET
+2019-04-15 10:28:18pm - inside _doCall path: /selectRows.api
+2019-04-15 10:28:18pm - inside _doCall parameters: Array
+2019-04-15 10:28:18pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:28:18pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:28:18pm - inside _doCall library: Selectivity
+2019-04-15 10:28:18pm - inside _doCall peptide: 
+2019-04-15 10:28:18pm - inside _doCall plot_type: 
+2019-04-15 10:28:18pm - inside _doCall protein: 
+2019-04-15 10:28:18pm - inside _doCall csv: 
+2019-04-15 10:28:18pm - inside _doCall peptideType: 
+2019-04-15 10:28:18pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 10:28:18pm - _doCall Result - : SUCCESS
+2019-04-15 10:28:18pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415222808_5cb50578352c2.txt
+2019-04-15 10:28:18pm - inside _doCall httpMethod: GET
+2019-04-15 10:28:18pm - inside _doCall path: /selectRows.api
+2019-04-15 10:28:18pm - inside _doCall parameters: Array
+2019-04-15 10:28:18pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:28:18pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:28:18pm - inside _doCall library: Selectivity
+2019-04-15 10:28:18pm - inside _doCall peptide: 
+2019-04-15 10:28:18pm - inside _doCall plot_type: 
+2019-04-15 10:28:18pm - inside _doCall protein: 
+2019-04-15 10:28:18pm - inside _doCall csv: 
+2019-04-15 10:28:18pm - inside _doCall peptideType: 
+2019-04-15 10:28:18pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 10:28:18pm - _doCall Result - : SUCCESS
+2019-04-15 10:28:18pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415222808_5cb50578352c2.txt
+2019-04-15 10:28:18pm - inside _doCall httpMethod: GET
+2019-04-15 10:28:18pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:28:18pm - inside _doCall parameters: Array
+2019-04-15 10:28:18pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:28:18pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:28:18pm - inside _doCall library: Selectivity
+2019-04-15 10:28:18pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:28:18pm - inside _doCall plot_type: 
+2019-04-15 10:28:18pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:28:18pm - inside _doCall csv: 1
+2019-04-15 10:28:18pm - inside _doCall peptideType: 
+2019-04-15 10:28:18pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:28:18pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table2.csv
+2019-04-15 10:28:23pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:28:23pm - Image Saved: Selectivity
+2019-04-15 10:28:23pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415222808_5cb50578352c2.txt
+2019-04-15 10:28:23pm - inside _doCall httpMethod: GET
+2019-04-15 10:28:23pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:28:23pm - inside _doCall parameters: Array
+2019-04-15 10:28:23pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:28:23pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:28:23pm - inside _doCall library: Selectivity
+2019-04-15 10:28:23pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:28:23pm - inside _doCall plot_type: 
+2019-04-15 10:28:23pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:28:23pm - inside _doCall csv: 1
+2019-04-15 10:28:23pm - inside _doCall peptideType: 
+2019-04-15 10:28:23pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:28:23pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=values_for_spike_levels.csv
+2019-04-15 10:30:28pm - API server authentication attempt: SUCCESS 
+2019-04-15 10:30:28pm - email: toan.le eSac06940071
+2019-04-15 10:30:28pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 10:30:28pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223008_5cb505f04776d.txt
+2019-04-15 10:30:28pm - inside _doCall httpMethod: GET
+2019-04-15 10:30:28pm - inside _doCall path: /selectRows.api
+2019-04-15 10:30:28pm - inside _doCall parameters: Array
+2019-04-15 10:30:28pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:30:28pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:30:28pm - inside _doCall library: Selectivity
+2019-04-15 10:30:28pm - inside _doCall peptide: 
+2019-04-15 10:30:28pm - inside _doCall plot_type: 
+2019-04-15 10:30:28pm - inside _doCall protein: 
+2019-04-15 10:30:28pm - inside _doCall csv: 
+2019-04-15 10:30:28pm - inside _doCall peptideType: 
+2019-04-15 10:30:28pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 10:30:28pm - _doCall Result - : SUCCESS
+2019-04-15 10:30:28pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223008_5cb505f04776d.txt
+2019-04-15 10:30:28pm - inside _doCall httpMethod: GET
+2019-04-15 10:30:28pm - inside _doCall path: /selectRows.api
+2019-04-15 10:30:28pm - inside _doCall parameters: Array
+2019-04-15 10:30:28pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:30:28pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:30:28pm - inside _doCall library: Selectivity
+2019-04-15 10:30:28pm - inside _doCall peptide: 
+2019-04-15 10:30:28pm - inside _doCall plot_type: 
+2019-04-15 10:30:28pm - inside _doCall protein: 
+2019-04-15 10:30:28pm - inside _doCall csv: 
+2019-04-15 10:30:28pm - inside _doCall peptideType: 
+2019-04-15 10:30:28pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 10:30:28pm - _doCall Result - : SUCCESS
+2019-04-15 10:30:28pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223008_5cb505f04776d.txt
+2019-04-15 10:30:28pm - inside _doCall httpMethod: GET
+2019-04-15 10:30:28pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:30:28pm - inside _doCall parameters: Array
+2019-04-15 10:30:28pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:30:28pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:30:28pm - inside _doCall library: Selectivity
+2019-04-15 10:30:28pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:30:28pm - inside _doCall plot_type: 
+2019-04-15 10:30:28pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:30:28pm - inside _doCall csv: 1
+2019-04-15 10:30:28pm - inside _doCall peptideType: 
+2019-04-15 10:30:28pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:30:28pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table2.csv
+2019-04-15 10:30:33pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:30:33pm - Image Saved: Selectivity
+2019-04-15 10:30:33pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223008_5cb505f04776d.txt
+2019-04-15 10:30:33pm - inside _doCall httpMethod: GET
+2019-04-15 10:30:33pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:30:33pm - inside _doCall parameters: Array
+2019-04-15 10:30:33pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:30:33pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:30:33pm - inside _doCall library: Selectivity
+2019-04-15 10:30:33pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:30:33pm - inside _doCall plot_type: 
+2019-04-15 10:30:33pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:30:33pm - inside _doCall csv: 1
+2019-04-15 10:30:33pm - inside _doCall peptideType: 
+2019-04-15 10:30:33pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:30:33pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=values_for_spike_levels.csv
+2019-04-15 10:30:38pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:30:38pm - Image Saved: Selectivity
+2019-04-15 10:36:26pm - API server authentication attempt: SUCCESS 
+2019-04-15 10:36:26pm - email: toan.le eSac06940071
+2019-04-15 10:36:26pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 10:36:26pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223605_5cb50755e0a7a.txt
+2019-04-15 10:36:26pm - inside _doCall httpMethod: GET
+2019-04-15 10:36:26pm - inside _doCall path: /selectRows.api
+2019-04-15 10:36:26pm - inside _doCall parameters: Array
+2019-04-15 10:36:26pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:36:26pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:36:26pm - inside _doCall library: Selectivity
+2019-04-15 10:36:26pm - inside _doCall peptide: 
+2019-04-15 10:36:26pm - inside _doCall plot_type: 
+2019-04-15 10:36:26pm - inside _doCall protein: 
+2019-04-15 10:36:26pm - inside _doCall csv: 
+2019-04-15 10:36:26pm - inside _doCall peptideType: 
+2019-04-15 10:36:26pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 10:36:26pm - _doCall Result - : SUCCESS
+2019-04-15 10:36:26pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223605_5cb50755e0a7a.txt
+2019-04-15 10:36:26pm - inside _doCall httpMethod: GET
+2019-04-15 10:36:26pm - inside _doCall path: /selectRows.api
+2019-04-15 10:36:26pm - inside _doCall parameters: Array
+2019-04-15 10:36:26pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:36:26pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:36:26pm - inside _doCall library: Selectivity
+2019-04-15 10:36:26pm - inside _doCall peptide: 
+2019-04-15 10:36:26pm - inside _doCall plot_type: 
+2019-04-15 10:36:26pm - inside _doCall protein: 
+2019-04-15 10:36:26pm - inside _doCall csv: 
+2019-04-15 10:36:26pm - inside _doCall peptideType: 
+2019-04-15 10:36:26pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 10:36:26pm - _doCall Result - : SUCCESS
+2019-04-15 10:36:26pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223605_5cb50755e0a7a.txt
+2019-04-15 10:36:26pm - inside _doCall httpMethod: GET
+2019-04-15 10:36:26pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:36:26pm - inside _doCall parameters: Array
+2019-04-15 10:36:26pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:36:26pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:36:26pm - inside _doCall library: Selectivity
+2019-04-15 10:36:26pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:36:26pm - inside _doCall plot_type: 
+2019-04-15 10:36:26pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:36:26pm - inside _doCall csv: 1
+2019-04-15 10:36:26pm - inside _doCall peptideType: 
+2019-04-15 10:36:26pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:36:26pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table2.csv
+2019-04-15 10:36:31pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:36:31pm - Image Saved: Selectivity
+2019-04-15 10:36:31pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223605_5cb50755e0a7a.txt
+2019-04-15 10:36:31pm - inside _doCall httpMethod: GET
+2019-04-15 10:36:31pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:36:31pm - inside _doCall parameters: Array
+2019-04-15 10:36:31pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:36:31pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:36:31pm - inside _doCall library: Selectivity
+2019-04-15 10:36:31pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:36:31pm - inside _doCall plot_type: 
+2019-04-15 10:36:31pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:36:31pm - inside _doCall csv: 1
+2019-04-15 10:36:31pm - inside _doCall peptideType: 
+2019-04-15 10:36:31pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:36:31pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=values_for_spike_levels.csv
+2019-04-15 10:36:36pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:36:36pm - Image Saved: Selectivity
+2019-04-15 10:39:35pm - API server authentication attempt: SUCCESS 
+2019-04-15 10:39:35pm - email: toan.le eSac06940071
+2019-04-15 10:39:35pm - cookie url: http://cptac-proliant-linux.esacinc.com/labkey/home/login-login.view
+2019-04-15 10:39:35pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223915_5cb5081325788.txt
+2019-04-15 10:39:35pm - inside _doCall httpMethod: GET
+2019-04-15 10:39:35pm - inside _doCall path: /selectRows.api
+2019-04-15 10:39:35pm - inside _doCall parameters: Array
+2019-04-15 10:39:35pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:39:35pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:39:35pm - inside _doCall library: Selectivity
+2019-04-15 10:39:35pm - inside _doCall peptide: 
+2019-04-15 10:39:35pm - inside _doCall plot_type: 
+2019-04-15 10:39:35pm - inside _doCall protein: 
+2019-04-15 10:39:35pm - inside _doCall csv: 
+2019-04-15 10:39:35pm - inside _doCall peptideType: 
+2019-04-15 10:39:35pm - _doCall:  - Query Name: Peptide - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Peptide&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR
+2019-04-15 10:39:35pm - _doCall Result - : SUCCESS
+2019-04-15 10:39:35pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223915_5cb5081325788.txt
+2019-04-15 10:39:35pm - inside _doCall httpMethod: GET
+2019-04-15 10:39:35pm - inside _doCall path: /selectRows.api
+2019-04-15 10:39:35pm - inside _doCall parameters: Array
+2019-04-15 10:39:35pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:39:35pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:39:35pm - inside _doCall library: Selectivity
+2019-04-15 10:39:35pm - inside _doCall peptide: 
+2019-04-15 10:39:35pm - inside _doCall plot_type: 
+2019-04-15 10:39:35pm - inside _doCall protein: 
+2019-04-15 10:39:35pm - inside _doCall csv: 
+2019-04-15 10:39:35pm - inside _doCall peptideType: 
+2019-04-15 10:39:35pm - _doCall:  - Query Name: Precursor - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//query/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/selectRows.api?schemaName=targetedms&query.queryName=Precursor&query.PeptideId%7Eeq=15469
+2019-04-15 10:39:35pm - _doCall Result - : SUCCESS
+2019-04-15 10:39:35pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223915_5cb5081325788.txt
+2019-04-15 10:39:35pm - inside _doCall httpMethod: GET
+2019-04-15 10:39:35pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:39:35pm - inside _doCall parameters: Array
+2019-04-15 10:39:35pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:39:35pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:39:35pm - inside _doCall library: Selectivity
+2019-04-15 10:39:35pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:39:35pm - inside _doCall plot_type: 
+2019-04-15 10:39:35pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:39:35pm - inside _doCall csv: 1
+2019-04-15 10:39:35pm - inside _doCall peptideType: 
+2019-04-15 10:39:35pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:39:35pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=summary_table2.csv
+2019-04-15 10:39:40pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:39:40pm - Image Saved: Selectivity
+2019-04-15 10:39:40pm - inside _doCall cookie: /Users/toanle/Documents/workspace/code_trunk//swpg_files/cptac/panorama/94cookie20190415223915_5cb5081325788.txt
+2019-04-15 10:39:40pm - inside _doCall httpMethod: GET
+2019-04-15 10:39:40pm - inside _doCall path: /getWebPart.view
+2019-04-15 10:39:40pm - inside _doCall parameters: Array
+2019-04-15 10:39:40pm - inside _doCall lab: CPTAC_TEST
+2019-04-15 10:39:40pm - inside _doCall celllysate_path: Experiment_ALL_TEST_old_template_fixed
+2019-04-15 10:39:40pm - inside _doCall library: Selectivity
+2019-04-15 10:39:40pm - inside _doCall peptide: LDQPGNLPGSNR
+2019-04-15 10:39:40pm - inside _doCall plot_type: 
+2019-04-15 10:39:40pm - inside _doCall protein: sp|P46013|KI67_HUMAN
+2019-04-15 10:39:40pm - inside _doCall csv: 1
+2019-04-15 10:39:40pm - inside _doCall peptideType: 
+2019-04-15 10:39:40pm - inside query switch(queryname) http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view
+2019-04-15 10:39:40pm - _doCall: LDQPGNLPGSNR - Query Name: QCAnalysisQuery - Library: Selectivity
+URL: http://cptac-proliant-linux.esacinc.com/labkey//project/CPTAC%20Assay%20Portal/CPTAC_TEST/Experiment_ALL_TEST_old_template_fixed/Selectivity/getWebPart.view?webpart.name=Report&webpart.frame=none&schemaName=targetedms&queryName=QCAnalysisQuery&query.Protein%7Eeq=sp%7CP46013%7CKI67_HUMAN&query.PeptideModifiedSequence%7Eeq=LDQPGNLPGSNR&query.PrecursorCharge%7Eeq=2&curve_type=reverse&reportName=Selectivity&showSection=values_for_spike_levels.csv
+2019-04-15 10:39:45pm - _doCall Result - LDQPGNLPGSNR: SUCCESS
+2019-04-15 10:39:45pm - Image Saved: Selectivity

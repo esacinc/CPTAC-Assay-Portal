@@ -1,0 +1,144 @@
+{
+	"name" : "esacinc/cptac-assay.portal",
+	"description" : "The CPTAC Assay Portal web application.",
+	"type" : "project",
+	"homepage" : "https://assays.cancer.gov",
+	"license" : "proprietary",
+	"authors" : [{
+			"name" : "Toan Le",
+			"email" : "toan.le@esacinc.com",
+			"homepage" : "http://www.esacinc.com/",
+			"role" : "Developer"
+		}, {
+			"name" : "Kristen Nyce",
+			"email" : "kristen.nyce@esacinc.com",
+			"homepage" : "http://www.esacinc.com/",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php": "^8",
+		"ext-curl": "*",
+		"ext-ftp": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+		"ext-pdo": "*",
+		"ext-pdo_mysql": "*",
+		"ext-soap": "*",
+		"components/bootstrap": "2.3.2",
+		"components/font-awesome": "4.7.0",
+		"components/jquery": "3.2.1",
+		"components/jqueryui": "1.12.1",
+
+		"fig/http-message-util": "1.1.5",
+		"google/apiclient": "2.12.1",
+		"google/auth": "1.18.0",
+		"guzzlehttp/guzzle": "6.3.0",
+		"guzzlehttp/psr7": "^1.7",
+		"illuminate/database": "5.5.44",
+		"league/flysystem-webdav": "^1.0",
+		"marc-mabe/php-enum": "2.3.1",
+		"monolog/monolog": "1.23.0",
+		"paragonie/constant_time_encoding": "2.5.0",
+		"php-ds/php-ds": "1.2.0",
+		"phpmailer/phpmailer": "^6.4",
+		"psr/http-message": "1.0.1",
+		"psr/log": "1.0.2",
+
+		"sabre/dav": "^3.2",
+		"slim/php-view": "^2.2",
+		"slim/slim": "^3.8",
+		"slim/twig-view": "^2.2",
+		"symfony/polyfill-php71": "1.5.0",
+		"symfony/polyfill-php72": "1.5.0",
+		"symfony/polyfill-util": "1.5.0",
+		"twig/twig": "^2.0",
+		"wixel/gump": "1.5.6",
+		"ext-mysqli": "*",
+		"npm-asset/js-cookie": "v1.3.1",
+		"npm-asset/datatables": "1.9.4"
+    },
+	"require-dev" : {
+		"php-webdriver/webdriver": "^1.12.0",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"phpunit/php-invoker": "1.1.4",
+		"phpunit/phpunit": "^8",
+		"squizlabs/php_codesniffer": "3.*",
+		"symfony/var-dumper": "3.3.9"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"authenticate\\models\\" : "authenticate/models/",
+			"assays\\models\\" : "assays/models/",
+			"assays_import\\models\\" : "assays_import/models/",
+			"assays_manage\\models\\" : "assays_manage/models/",
+			"assays_preview\\models\\" : "assays_preview/models/",
+			"core\\models\\" : "core/models/",
+			"group\\models\\" : "group/models/",
+			"support\\models\\" : "support/models/",
+			"swpg\\models\\" : "core/slim_framework/SWPG/models/",
+			"tutorials\\models\\" : "tutorials/models/",
+			"user_account\\models\\" : "user_account/models/",
+			"public_upload\\models\\" : "public_upload/models/",
+			"core\\controllers\\" : "core/controllers/",
+			"site\\controllers\\" : "site/controllers/",
+			"assays\\controllers\\" : "assays/controllers/",
+			"assays_import\\controllers\\" : "assays_import/controllers/",
+			"assays_manage\\controllers\\" : "assays_manage/controllers/",
+			"assays_preview\\controllers\\" : "assays_preview/controllers/",
+			"authenticate\\controllers\\" : "authenticate/controllers/",
+			"public_upload\\controllers\\" : "public_upload/controllers/",
+			"modules\\controllers\\" : "modules/controllers/",
+			"admin\\controllers\\" : "admin/controllers/",
+			"support\\controllers\\" : "support/controllers/",
+			"user_account\\controllers\\" : "user_account/controllers/",
+			"group\\controllers\\" : "group/controllers/",
+			"panorama\\" : "tests",
+			"" : [
+				"assays/models/",
+				"assays_import/models/",
+				"assays_manage/models/",
+				"assays_preview/models/",
+				"authenticate/models/",
+				"support/models/",
+				"tutorials/models/",
+				"core/controllers/",
+				"site/controllers/",
+				"assays/controllers/",
+				"assays_import/controllers/",
+				"assays_manage/controllers/",
+				"assays_preview/controllers/",
+				"authenticate/controllers/",
+				"public_upload/controllers/",
+				"public_upload/models/",
+				"user_account/models/",
+				"user_account/controllers/",
+				"group/models/",
+				"group/controllers/"
+
+			]
+		},
+		"files" : [
+			"core/slim_framework/SWPG/functions/swpg_functions.php"
+		]
+	},
+	"prefer-stable" : true,
+	"repositories" : [{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	],
+	"config" : {
+		"discard-changes" : true,
+		"github-expose-hostname" : false,
+		"notify-on-install" : false,
+		"preferred-install" : {
+			"*" : "dist"
+		},
+		"sort-packages" : true,
+		"allow-plugins": {
+			"kylekatarnls/update-helper": true,
+			"robloach/component-installer": true
+		}
+	}
+}

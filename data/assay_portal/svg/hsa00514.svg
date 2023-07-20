@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="kegg_svg" viewbox="0 0 941 580" width="965" version="1.1">
+  <defs id="svg_defs">
+    <filter id="matrix-black">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0                     0  1  0  0 0                     0  1  1  0 0                     0  0  0  0 1"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0                     0  0  0  0 0                     0  0  0  0 0                     -1  -1  -1  1 0"/>
+    </filter>
+    <filter id="saturate">
+      <feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+    </filter>
+    <filter id="hueRotate">
+      <feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+    </filter>
+    <filter id="L2A">
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+    </filter>
+    <filter id="grayscale">
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="matrix-greyscale">
+      <feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0                       .33 .33 .33 0 0                      .33 .33 .33 0 0                    0 0 0 1 0"/>
+    </filter>
+    <filter id="matrix-invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1                                                               0 -1 0 0 1                                                               0 0 -1 0 1                                                              0 0 0 1 0"/>
+    </filter>
+    <mask id="name_inverter">
+      <rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"/>
+    </mask>
+  </defs>
+  <!-- Creation date: Dec 5, 2016 17:07:24 +0900 (GMT+9) -->
+  <g id="image">
+    <image x="0" y="0" render-order="1" width="941px" height="580px" name="path:hsa00514" org="hsa" number="00514" title="Other types of O-glycan biosynthesis" xlink:href="/assays/library/images/kegg-png/hsa00514.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00514"/>
+  </g>
+  <g id="areas"/>
+  <g id="labels">
+    <image x="0" y="0" render-order="1" width="941px" height="580px" name="path:hsa00514" org="hsa" number="00514" title="Other types of O-glycan biosynthesis" xlink:href="/assays/library/images/kegg-png/hsa00514.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00514" mask="url(#name_inverter)"/>
+  </g>
+  <g id="links"/>
+  <g id="alls">
+    <a id="1" name="path:hsa00514" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00514" target="_blank">
+      <rect name="TITLE:Other types of O-glycan biosynthesis" fgcolor="#000000" fill="#FFFFFF" x="32" y="37" width="349" height="41" rx="10" fill-opacity="1"/>
+    </a>
+    <a id="2" name="hsa:23127 hsa:79709 hsa:8985" type="gene" reaction="rn:R03380" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:23127+hsa:79709+hsa:8985" target="_blank">
+      <graphics name="COLGALT2, C1orf17, GLT25D2..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="163,464,193,464"/>
+    </a>
+    <a id="3" name="hsa:145173" type="gene" reaction="rn:R09316" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:145173" target="_blank">
+      <graphics name="B3GLCT, B3GALTL, B3GTL, B3Glc-T, Gal-T, beta3Glc-T" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="283,287,298,272"/>
+    </a>
+    <a id="4" name="hsa:8985" type="gene" reaction="rn:R04491" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8985" target="_blank">
+      <graphics name="PLOD3, LH3" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="92,464,122,464"/>
+    </a>
+    <a id="5" name="hsa:6480 hsa:6487 hsa:84620" type="gene" reaction="rn:R09297 rn:R09298" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6480+hsa:6487+hsa:84620" target="_blank">
+      <graphics name="ST6GAL1, SIAT1, ST6GalI, ST6N..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="114,243,144,243"/>
+    </a>
+    <a id="6" name="hsa:3955 hsa:4242 hsa:5986" type="gene" reaction="rn:R09296" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3955+hsa:4242+hsa:5986" target="_blank">
+      <graphics name="LFNG, SCDO3..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="285,243,300,258"/>
+    </a>
+    <a id="7" name="hsa:2683 hsa:8703 hsa:8704" type="gene" reaction="rn:R09299" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2683+hsa:8703+hsa:8704" target="_blank">
+      <graphics name="B4GALT1, B4GAL-T1, CDG2D, GGTB2, GT1, GTB, beta4Gal-T1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="195,243,225,243"/>
+    </a>
+    <a id="8" name="hsa:23275 hsa:23509" type="gene" reaction="rn:R09295" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:23275+hsa:23509" target="_blank">
+      <graphics name="POFUT2, C21orf80, FUT13..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="349,266,379,266"/>
+    </a>
+    <a id="10" name="hsa:56983" type="gene" reaction="rn:R09315" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:56983" target="_blank">
+      <graphics name="POGLUT1, C3orf9, CLP46, KDELCL1, KTELC1, MDS010, MDSRP, Rumi, hCLP46" fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="221,367,251,367"/>
+    </a>
+    <a id="11" name="hsa:283464 hsa:727936" type="gene" reaction="rn:R09290" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:283464+hsa:727936" target="_blank">
+      <graphics name="GXYLT1, GLT8D3..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="153,367,183,367"/>
+    </a>
+    <a id="12" name="hsa:285203 hsa:8473" type="gene" reaction="rn:R09304" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:285203+hsa:8473" target="_blank">
+      <graphics name="EOGT, AER61, AOS4, C3orf64, EOGT1..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="113,147,143,147"/>
+    </a>
+    <a id="13" name="ko:K05538 ko:K10968 ko:K10969" type="ortholog" reaction="rn:R09303" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K05538+K10968+K10969" target="_blank">
+      <graphics name="K05538..." fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="550,151,580,151"/>
+    </a>
+    <a id="14" name="ko:K05538 ko:K10968 ko:K10969" type="ortholog" reaction="rn:R09302" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K05538+K10968+K10969" target="_blank">
+      <graphics name="K05538..." fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="623,151,653,151"/>
+    </a>
+    <a id="15" name="ko:K10967" type="ortholog" reaction="rn:R09301" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="695,151,725,151"/>
+    </a>
+    <a id="16" name="ko:K10967" type="ortholog" reaction="rn:R09300" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="769,151,799,151"/>
+    </a>
+    <a id="17" name="hsa:10585 hsa:29954" type="gene" reaction="rn:R07620" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10585+hsa:29954" target="_blank">
+      <graphics name="POMT1, LGMD2K, MDDGA1, MDDGB1, MDDGC1, RT..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="841,151,871,151"/>
+    </a>
+    <a id="18" name="ko:K10970" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10970" target="_blank">
+      <graphics name="K10970" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="550,175,580,175"/>
+    </a>
+    <a id="19" name="ko:K10970" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10970" target="_blank">
+      <graphics name="K10970" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="623,175,653,175"/>
+    </a>
+    <a id="20" name="ko:K10967" type="ortholog" reaction="rn:R09301" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="695,175,725,175"/>
+    </a>
+    <a id="21" name="ko:K10967" type="ortholog" reaction="rn:R09300" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="769,175,799,175"/>
+    </a>
+    <a id="22" name="hsa:10585 hsa:29954" type="gene" reaction="rn:R07620" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10585+hsa:29954" target="_blank">
+      <graphics name="POMT1, LGMD2K, MDDGA1, MDDGB1, MDDGC1, RT..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="841,175,871,175"/>
+    </a>
+    <a id="25" name="ko:K10967" type="ortholog" reaction="rn:R09301" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="695,200,725,200"/>
+    </a>
+    <a id="26" name="ko:K10967" type="ortholog" reaction="rn:R09300" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="769,200,799,200"/>
+    </a>
+    <a id="27" name="hsa:10585 hsa:29954" type="gene" reaction="rn:R07620" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10585+hsa:29954" target="_blank">
+      <graphics name="POMT1, LGMD2K, MDDGA1, MDDGB1, MDDGC1, RT..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="841,200,871,200"/>
+    </a>
+    <a id="29" name="ko:K10971" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10971" target="_blank">
+      <graphics name="K10971" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="548,274,564,258"/>
+    </a>
+    <a id="30" name="ko:K10967" type="ortholog" reaction="rn:R09301" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="611,251,641,251"/>
+    </a>
+    <a id="31" name="ko:K10967" type="ortholog" reaction="rn:R09300" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K10967" target="_blank">
+      <graphics name="K10967" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="685,251,715,251"/>
+    </a>
+    <a id="32" name="hsa:10585 hsa:29954" type="gene" reaction="rn:R07620" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10585+hsa:29954" target="_blank">
+      <graphics name="POMT1, LGMD2K, MDDGA1, MDDGB1, MDDGC1, RT..." fgcolor="#66CC66" bgcolor="#FFFFFF" type="line" coords="757,251,787,251"/>
+    </a>
+    <a id="33" name="ko:K20781" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20781" target="_blank">
+      <graphics name="K20781" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="754,356,784,356"/>
+    </a>
+    <a id="34" name="ko:K20782" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20782" target="_blank">
+      <graphics name="K20782" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="754,499,784,499"/>
+    </a>
+    <a id="35" name="ko:K20782" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20782" target="_blank">
+      <graphics name="K20782" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="754,462,784,462"/>
+    </a>
+    <a id="36" name="ko:K20783" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20783" target="_blank">
+      <graphics name="K20783" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="683,499,713,499"/>
+    </a>
+    <a id="37" name="ko:K20783" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20783" target="_blank">
+      <graphics name="K20783" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="683,462,713,462"/>
+    </a>
+    <a id="38" name="ko:K20784" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20784" target="_blank">
+      <graphics name="K20784" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="614,499,644,499"/>
+    </a>
+    <a id="39" name="ko:K20784" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20784" target="_blank">
+      <graphics name="K20784" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="614,462,644,462"/>
+    </a>
+    <a id="41" name="ko:K20782" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20782" target="_blank">
+      <graphics name="K20782" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="754,428,784,428"/>
+    </a>
+    <a id="42" name="ko:K20783" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20783" target="_blank">
+      <graphics name="K20783" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="683,428,713,428"/>
+    </a>
+    <a id="43" name="ko:K20782" type="ortholog" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K20782" target="_blank">
+      <graphics name="K20782" fgcolor="#000000" bgcolor="#FFFFFF" type="line" coords="754,391,784,391"/>
+    </a>
+  </g>
+</svg>

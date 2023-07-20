@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="kegg_svg" viewbox="0 0 1316 696" width="965" version="1.1">
+  <defs id="svg_defs">
+    <filter id="matrix-black">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0                     0  1  0  0 0                     0  1  1  0 0                     0  0  0  0 1"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0                     0  0  0  0 0                     0  0  0  0 0                     -1  -1  -1  1 0"/>
+    </filter>
+    <filter id="saturate">
+      <feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+    </filter>
+    <filter id="hueRotate">
+      <feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+    </filter>
+    <filter id="L2A">
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+    </filter>
+    <filter id="grayscale">
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="matrix-greyscale">
+      <feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0                       .33 .33 .33 0 0                      .33 .33 .33 0 0                    0 0 0 1 0"/>
+    </filter>
+    <filter id="matrix-invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1                                                               0 -1 0 0 1                                                               0 0 -1 0 1                                                              0 0 0 1 0"/>
+    </filter>
+    <mask id="name_inverter">
+      <rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"/>
+    </mask>
+  </defs>
+  <!-- Creation date: Jul 4, 2016 09:16:33 +0900 (GMT+9) -->
+  <g id="image">
+    <image x="0" y="0" render-order="1" width="1316px" height="696px" name="path:hsa04150" org="hsa" number="04150" title="mTOR signaling pathway" xlink:href="/assays/library/images/kegg-png/hsa04150.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa04150"/>
+  </g>
+  <g id="areas"/>
+  <g id="labels">
+    <image x="0" y="0" render-order="1" width="1316px" height="696px" name="path:hsa04150" org="hsa" number="04150" title="mTOR signaling pathway" xlink:href="/assays/library/images/kegg-png/hsa04150.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa04150" mask="url(#name_inverter)"/>
+  </g>
+  <g id="links"/>
+  <g id="alls">
+    <a id="1" name="path:hsa04150" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04150" target="_blank">
+      <rect name="TITLE:mTOR signaling pathway" fgcolor="#000000" fill="#FFFFFF" x="32" y="37" width="236" height="41" rx="10" fill-opacity="1"/>
+    </a>
+    <a id="2" name="hsa:3480 hsa:3643" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3480+hsa:3643" target="_blank">
+      <rect name="IGF1R, CD221, IGFIR, IGFR, JTK13..." fgcolor="#000000" fill="#FFFFFF" x="127" y="581.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="IGF1R, CD221, IGFIR, IGFR, JTK13..." fgcolor="#000000" fill="#0083FF" x="127" y="581.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="589" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">IGF1R</text>
+    </a>
+    <a id="3" name="hsa:3667" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3667" target="_blank">
+      <rect name="IRS1, HIRS-1" fgcolor="#000000" fill="#FFFFFF" x="315" y="580.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="IRS1, HIRS-1" fgcolor="#000000" fill="#0083FF" x="315" y="580.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="588" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">IRS1</text>
+    </a>
+    <a id="4" name="hsa:23533 hsa:5290 hsa:5291 hsa:5293 hsa:5294 hsa:5295 hsa:5296 hsa:8503" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:23533+hsa:5290+hsa:5291+hsa:5293+hsa:5294+hsa:5295+hsa:5296+hsa:8503" target="_blank">
+      <rect name="PIK3R5, F730038I15Rik, FOAP-2, P101-PI3K, p101..." fgcolor="#000000" fill="#FFFFFF" x="463" y="580.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PIK3R5, F730038I15Rik, FOAP-2, P101-PI3K, p101..." fgcolor="#000000" fill="#0083FF" x="463" y="580.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="486" y="588" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PIK3R5</text>
+    </a>
+    <a id="5" name="hsa:5894 hsa:673" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5894+hsa:673" target="_blank">
+      <rect name="RAF1, CMD1NN, CRAF, NS5, Raf-1, c-Raf..." fgcolor="#000000" fill="#FFFFFF" x="315" y="475.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RAF1, CMD1NN, CRAF, NS5, Raf-1, c-Raf..." fgcolor="#000000" fill="#0083FF" x="315" y="475.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="483" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RAF1</text>
+    </a>
+    <a id="6" name="path:hsa04010" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04010" target="_blank">
+      <rect name="MAPK signaling pathway" fgcolor="#000000" fill="#FFFFFF" x="187.5" y="431.5" width="103" height="35" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="7" name="hsa:5594 hsa:5595" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;MAPK1&quot;);">
+      <rect name="MAPK1, ERK, ERK-2, ERK2, ERT1, MAPK2, P42MAPK, PRKM1, PRKM2, p38, p40, p41, p41mapk, p42-MAPK..." fgcolor="#000000" fill="#FFFFFF" x="315" y="401.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MAPK1, ERK, ERK-2, ERK2, ERT1, MAPK2, P42MAPK, PRKM1, PRKM2, p38, p40, p41, p41mapk, p42-MAPK..." fgcolor="#000000" fill="#00FF00" x="315" y="401.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="338" y="409" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MAPK1</text>
+    </a>
+    <a id="8" name="hsa:3265 hsa:3845 hsa:4893" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3265+hsa:3845+hsa:4893" target="_blank">
+      <rect name="HRAS, C-BAS/HAS, C-H-RAS, C-HA-RAS1, CTLO, H-RASIDX, HAMSV, HRAS1, RASH1, p21ras..." fgcolor="#000000" fill="#FFFFFF" x="315" y="512.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="HRAS, C-BAS/HAS, C-H-RAS, C-HA-RAS1, CTLO, H-RASIDX, HAMSV, HRAS1, RASH1, p21ras..." fgcolor="#000000" fill="#0083FF" x="315" y="512.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="520" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">HRAS</text>
+    </a>
+    <a id="9" name="hsa:5604 hsa:5605" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5604+hsa:5605" target="_blank">
+      <rect name="MAP2K1, CFC3, MAPKK1, MEK1, MKK1, PRKMK1..." fgcolor="#000000" fill="#FFFFFF" x="315" y="438.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MAP2K1, CFC3, MAPKK1, MEK1, MKK1, PRKMK1..." fgcolor="#000000" fill="#0083FF" x="315" y="438.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="446" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MAP2K1</text>
+    </a>
+    <a id="10" name="hsa:5728" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5728" target="_blank">
+      <rect name="PTEN, 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, TEP1" fgcolor="#000000" fill="#FFFFFF" x="524" y="538.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PTEN, 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, TEP1" fgcolor="#000000" fill="#0083FF" x="524" y="538.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="547" y="546" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PTEN</text>
+    </a>
+    <a id="11" name="hsa:5170" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;PDPK1&quot;);">
+      <rect name="PDPK1, PDK1, PDPK2, PDPK2P, PRO0461" fgcolor="#000000" fill="#FFFFFF" x="463" y="495.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PDPK1, PDK1, PDPK2, PDPK2P, PRO0461" fgcolor="#000000" fill="#00FF00" x="463" y="495.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="486" y="503" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PDPK1</text>
+    </a>
+    <a id="12" name="hsa:10000 hsa:207 hsa:208" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10000+hsa:207+hsa:208" target="_blank">
+      <rect name="AKT3, MPPH, MPPH2, PKB-GAMMA, PKBG, PRKBG, RAC-PK-gamma, RAC-gamma, STK-2..." fgcolor="#000000" fill="#FFFFFF" x="463" y="445.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="AKT3, MPPH, MPPH2, PKB-GAMMA, PKBG, PRKBG, RAC-PK-gamma, RAC-gamma, STK-2..." fgcolor="#000000" fill="#0083FF" x="463" y="445.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="486" y="453" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">AKT3</text>
+    </a>
+    <a id="13" name="hsa:7248 hsa:7249" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:7248+hsa:7249" target="_blank">
+      <rect name="TSC1, LAM, TSC..." fgcolor="#000000" fill="#FFFFFF" x="463" y="325.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TSC1, LAM, TSC..." fgcolor="#000000" fill="#0083FF" x="463" y="325.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="486" y="333" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TSC1</text>
+    </a>
+    <a id="14" name="hsa:6009" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6009" target="_blank">
+      <rect name="RHEB, RHEB2" fgcolor="#000000" fill="#FFFFFF" x="556" y="333.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RHEB, RHEB2" fgcolor="#000000" fill="#0083FF" x="556" y="333.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="579" y="341" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RHEB</text>
+    </a>
+    <a id="15" name="hsa:1978" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:1978" target="_blank">
+      <rect name="EIF4EBP1, 4E-BP1, 4EBP1, BP-1, PHAS-I" fgcolor="#000000" fill="#FFFFFF" x="913" y="392.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="EIF4EBP1, 4E-BP1, 4EBP1, BP-1, PHAS-I" fgcolor="#000000" fill="#0083FF" x="913" y="392.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="400" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">EIF4EBP1</text>
+    </a>
+    <a id="16" name="hsa:23175" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:23175" target="_blank">
+      <rect name="LPIN1, PAP1" fgcolor="#000000" fill="#FFFFFF" x="913" y="318.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="LPIN1, PAP1" fgcolor="#000000" fill="#0083FF" x="913" y="318.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="326" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">LPIN1</text>
+    </a>
+    <a id="17" name="hsa:6198 hsa:6199" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;RPS6&quot;);">
+      <rect name="RPS6KB1, PS6K, S6K, S6K-beta-1, S6K1, STK14A, p70_S6KA, p70(S6K)-alpha, p70-S6K, p70-alpha..." fgcolor="#000000" fill="#FFFFFF" x="913" y="429.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RPS6KB1, PS6K, S6K, S6K-beta-1, S6K1, STK14A, p70_S6KA, p70(S6K)-alpha, p70-S6K, p70-alpha..." fgcolor="#000000" fill="#00FF00" x="913" y="429.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="936" y="437" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RPS6</text>
+    </a>
+    <a id="18" name="hsa:387" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:387" target="_blank">
+      <rect name="RHOA, ARH12, ARHA, RHO12, RHOH12" fgcolor="#000000" fill="#FFFFFF" x="913" y="529.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RHOA, ARH12, ARHA, RHO12, RHOH12" fgcolor="#000000" fill="#0083FF" x="913" y="529.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="537" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RHOA</text>
+    </a>
+    <a id="19" name="hsa:5578 hsa:5579 hsa:5582" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5578+hsa:5579+hsa:5582" target="_blank">
+      <rect name="PRKCA, AAG6, PKC-alpha, PKCA, PRKACA..." fgcolor="#000000" fill="#FFFFFF" x="913" y="565.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PRKCA, AAG6, PKC-alpha, PKCA, PRKACA..." fgcolor="#000000" fill="#0083FF" x="913" y="565.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="573" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PRKCA</text>
+    </a>
+    <a id="20" name="hsa:6446" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6446" target="_blank">
+      <rect name="SGK1, SGK" fgcolor="#000000" fill="#FFFFFF" x="913" y="601.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SGK1, SGK" fgcolor="#000000" fill="#0083FF" x="913" y="601.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="609" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SGK1</text>
+    </a>
+    <a id="21" name="cpd:C05981" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C05981" target="_blank">
+      <circle name="C05981" fgcolor="#000000" fill="#FFFFFF" cx="486" cy="546" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="22" name="hsa:107080638 hsa:51256" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:107080638+hsa:51256" target="_blank">
+      <rect name="107080638..." fgcolor="#000000" fill="#FFFFFF" x="463" y="342.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="107080638..." fgcolor="#000000" fill="#0083FF" x="463" y="342.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="486" y="350" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">107080638...</text>
+    </a>
+    <a id="23" name="hsa:10325 hsa:10670" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10325+hsa:10670" target="_blank">
+      <rect name="RRAGB, RAGB, bA465E19.1..." fgcolor="#000000" fill="#FFFFFF" x="662" y="157.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RRAGB, RAGB, bA465E19.1..." fgcolor="#000000" fill="#0083FF" x="662" y="157.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="685" y="165" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RRAGB</text>
+    </a>
+    <a id="24" name="hsa:58528 hsa:64121" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:58528+hsa:64121" target="_blank">
+      <rect name="RRAGD, RAGD, bA11D8.2.1..." fgcolor="#000000" fill="#FFFFFF" x="662" y="174.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RRAGD, RAGD, bA11D8.2.1..." fgcolor="#000000" fill="#0083FF" x="662" y="174.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="685" y="182" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RRAGD</text>
+    </a>
+    <a id="25" name="hsa:27330 hsa:6195 hsa:6196 hsa:6197" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:27330+hsa:6195+hsa:6196+hsa:6197" target="_blank">
+      <rect name="RPS6KA6, PP90RSK4, RSK4..." fgcolor="#000000" fill="#FFFFFF" x="315" y="364.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RPS6KA6, PP90RSK4, RSK4..." fgcolor="#000000" fill="#0083FF" x="315" y="364.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="372" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RPS6KA6</text>
+    </a>
+    <a id="26" name="hsa:5562 hsa:5563" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5562+hsa:5563" target="_blank">
+      <rect name="PRKAA1, AMPK, AMPKa1..." fgcolor="#000000" fill="#FFFFFF" x="315" y="235.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PRKAA1, AMPK, AMPKa1..." fgcolor="#000000" fill="#0083FF" x="315" y="235.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="243" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PRKAA1</text>
+    </a>
+    <a id="27" name="cpd:C00020" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00020" target="_blank">
+      <circle name="C00020" fgcolor="#000000" fill="#FFFFFF" cx="242" cy="244" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="28" name="hsa:2885" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2885" target="_blank">
+      <rect name="GRB2, ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2" fgcolor="#000000" fill="#FFFFFF" x="218" y="549.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GRB2, ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2" fgcolor="#000000" fill="#0083FF" x="218" y="549.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="241" y="557" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GRB2</text>
+    </a>
+    <a id="29" name="hsa:54541" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:54541" target="_blank">
+      <rect name="DDIT4, Dig2, REDD-1, REDD1" fgcolor="#000000" fill="#FFFFFF" x="315" y="268.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="DDIT4, Dig2, REDD-1, REDD1" fgcolor="#000000" fill="#0083FF" x="315" y="268.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="276" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">DDIT4</text>
+    </a>
+    <a id="30" name="path:hsa04910" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04910" target="_blank">
+      <rect name="Insulin signaling pathway" fgcolor="#000000" fill="#FFFFFF" x="36" y="610" width="94" height="32" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="31" name="hsa:1977 hsa:253314 hsa:9470" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:1977+hsa:253314+hsa:9470" target="_blank">
+      <rect name="EIF4E, AUTS19, CBP, EIF4E1, EIF4EL1, EIF4F, eIF-4E..." fgcolor="#000000" fill="#FFFFFF" x="1001" y="393.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="EIF4E, AUTS19, CBP, EIF4E1, EIF4EL1, EIF4F, eIF-4E..." fgcolor="#000000" fill="#0083FF" x="1001" y="393.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="1024" y="401" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">EIF4E</text>
+    </a>
+    <a id="32" name="hsa:25989 hsa:8408 hsa:9706" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:25989+hsa:8408+hsa:9706" target="_blank">
+      <rect name="ULK3..." fgcolor="#000000" fill="#FFFFFF" x="913" y="355.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="ULK3..." fgcolor="#000000" fill="#0083FF" x="913" y="355.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="363" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">ULK3...</text>
+    </a>
+    <a id="33" name="hsa:6194" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6194" target="_blank">
+      <rect name="RPS6, S6" fgcolor="#000000" fill="#FFFFFF" x="1001" y="439.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RPS6, S6" fgcolor="#000000" fill="#0083FF" x="1001" y="439.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="1024" y="447" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RPS6</text>
+    </a>
+    <a id="34" name="hsa:7124" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:7124" target="_blank">
+      <rect name="TNF, DIF, TNF-alpha, TNFA, TNFSF2, TNLG1F" fgcolor="#000000" fill="#FFFFFF" x="44" y="332.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TNF, DIF, TNF-alpha, TNFA, TNFSF2, TNLG1F" fgcolor="#000000" fill="#0083FF" x="44" y="332.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="67" y="340" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TNF</text>
+    </a>
+    <a id="35" name="hsa:3551" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3551" target="_blank">
+      <rect name="IKBKB, IKK-beta, IKK2, IKKB, IMD15, NFKBIKB" fgcolor="#000000" fill="#FFFFFF" x="315" y="332.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="IKBKB, IKK-beta, IKK2, IKKB, IMD15, NFKBIKB" fgcolor="#000000" fill="#0083FF" x="315" y="332.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="340" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">IKBKB</text>
+    </a>
+    <a id="36" name="hsa:7132" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:7132" target="_blank">
+      <rect name="TNFRSF1A, CD120a, FPF, MS5, TBP1, TNF-R, TNF-R-I, TNF-R55, TNFAR, TNFR1, TNFR1-d2, TNFR55, TNFR60, p55, p55-R, p60" fgcolor="#000000" fill="#FFFFFF" x="127" y="332.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TNFRSF1A, CD120a, FPF, MS5, TBP1, TNF-R, TNF-R-I, TNF-R55, TNFAR, TNFR1, TNFR1-d2, TNFR55, TNFR60, p55, p55-R, p60" fgcolor="#000000" fill="#0083FF" x="127" y="332.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="340" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TNFRSF1A</text>
+    </a>
+    <a id="37" name="hsa:6198 hsa:6199" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6198+hsa:6199" target="_blank">
+      <rect name="RPS6KB1, PS6K, S6K, S6K-beta-1, S6K1, STK14A, p70_S6KA, p70(S6K)-alpha, p70-S6K, p70-alpha..." fgcolor="#000000" fill="#FFFFFF" x="315" y="624.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RPS6KB1, PS6K, S6K, S6K-beta-1, S6K1, STK14A, p70_S6KA, p70(S6K)-alpha, p70-S6K, p70-alpha..." fgcolor="#000000" fill="#0083FF" x="315" y="624.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="632" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RPS6KB1</text>
+    </a>
+    <a id="38" name="hsa:8140" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:8140" target="_blank">
+      <rect name="SLC7A5, 4F2LC, CD98, D16S469E, E16, LAT1, MPE16, hLAT1" fgcolor="#000000" fill="#FFFFFF" x="127" y="157.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SLC7A5, 4F2LC, CD98, D16S469E, E16, LAT1, MPE16, hLAT1" fgcolor="#000000" fill="#0083FF" x="127" y="157.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="165" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SLC7A5</text>
+    </a>
+    <a id="39" name="hsa:6520" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6520" target="_blank">
+      <rect name="SLC3A2, 4F2, 4F2HC, 4T2HC, CD98, CD98HC, MDU1, NACAE" fgcolor="#000000" fill="#FFFFFF" x="127" y="174.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SLC3A2, 4F2, 4F2HC, 4T2HC, CD98, CD98HC, MDU1, NACAE" fgcolor="#000000" fill="#0083FF" x="127" y="174.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="182" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SLC3A2</text>
+    </a>
+    <a id="40" name="hsa:6654 hsa:6655" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6654+hsa:6655" target="_blank">
+      <rect name="SOS1, GF1, GGF1, GINGF, HGF, NS4..." fgcolor="#000000" fill="#FFFFFF" x="315" y="549.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SOS1, GF1, GGF1, GINGF, HGF, NS4..." fgcolor="#000000" fill="#0083FF" x="315" y="549.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="557" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SOS1</text>
+    </a>
+    <a id="41" name="hsa:10641 hsa:8131 hsa:9681" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:10641+hsa:8131+hsa:9681" target="_blank">
+      <rect name="NPRL2, NPR2, NPR2L, TUSC4..." fgcolor="#000000" fill="#FFFFFF" x="737" y="110.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="NPRL2, NPR2, NPR2L, TUSC4..." fgcolor="#000000" fill="#0083FF" x="737" y="110.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="760" y="118" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">NPRL2</text>
+    </a>
+    <a id="42" name="hsa:220441" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:220441" target="_blank">
+      <rect name="RNF152" fgcolor="#000000" fill="#FFFFFF" x="626" y="110.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RNF152" fgcolor="#000000" fill="#0083FF" x="626" y="110.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="649" y="118" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RNF152</text>
+    </a>
+    <a id="43" name="hsa:6502" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6502" target="_blank">
+      <rect name="SKP2, FBL1, FBXL1, FLB1, p45" fgcolor="#000000" fill="#FFFFFF" x="675" y="110.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SKP2, FBL1, FBXL1, FLB1, p45" fgcolor="#000000" fill="#0083FF" x="675" y="110.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="698" y="118" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SKP2</text>
+    </a>
+    <a id="44" name="hsa:54468 hsa:6396 hsa:79726 hsa:81929 hsa:84219" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:54468+hsa:6396+hsa:79726+hsa:81929+hsa:84219" target="_blank">
+      <rect name="MIOS, MIO, Sea4..." fgcolor="#000000" fill="#FFFFFF" x="825" y="110.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MIOS, MIO, Sea4..." fgcolor="#000000" fill="#0083FF" x="825" y="110.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="848" y="118" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MIOS</text>
+    </a>
+    <a id="45" name="hsa:83667" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:83667" target="_blank">
+      <rect name="SESN2, HI95, SES2, SEST2" fgcolor="#000000" fill="#FFFFFF" x="913" y="110.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SESN2, HI95, SES2, SEST2" fgcolor="#000000" fill="#0083FF" x="913" y="110.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="118" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SESN2</text>
+    </a>
+    <a id="46" name="cpd:C00123" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00123" target="_blank">
+      <circle name="C00123" fgcolor="#000000" fill="#FFFFFF" cx="894" cy="147" r="4" fill-opacity="0.0"/>
+    </a>
+    <a id="47" name="hsa:127124 hsa:245973 hsa:51382 hsa:51606 hsa:523 hsa:525 hsa:526 hsa:528 hsa:529 hsa:534 hsa:90423 hsa:9296 hsa:9550" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:127124+hsa:245973+hsa:51382+hsa:51606+hsa:523+hsa:525+hsa:526+hsa:528+hsa:529+hsa:534+hsa:90423+hsa:9296+hsa:9550" target="_blank">
+      <rect name="ATP6V1G3, ATP6G3, Vma10..." fgcolor="#000000" fill="#FFFFFF" x="360" y="144.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="ATP6V1G3, ATP6G3, Vma10..." fgcolor="#000000" fill="#0083FF" x="360" y="144.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="383" y="152" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">ATP6V1G3</text>
+    </a>
+    <a id="48" name="hsa:153129" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:153129" target="_blank">
+      <rect name="SLC38A9, URLC11" fgcolor="#000000" fill="#FFFFFF" x="360" y="123.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="SLC38A9, URLC11" fgcolor="#000000" fill="#0083FF" x="360" y="123.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="383" y="131" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">SLC38A9</text>
+    </a>
+    <a id="49" name="hsa:10542 hsa:28956 hsa:389541 hsa:55004 hsa:8649" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;MTOR&quot;);">
+      <rect name="LAMTOR5, HBXIP, XIP..." fgcolor="#000000" fill="#FFFFFF" x="556" y="134.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="LAMTOR5, HBXIP, XIP..." fgcolor="#000000" fill="#00FF00" x="556" y="134.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="579" y="142" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MTOR</text>
+    </a>
+    <a id="50" name="hsa:1147" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:1147" target="_blank">
+      <rect name="CHUK, IKBKA, IKK-alpha, IKK1, IKKA, NFKBIKA, TCF16" fgcolor="#000000" fill="#FFFFFF" x="594" y="445.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="CHUK, IKBKA, IKK-alpha, IKK1, IKKA, NFKBIKA, TCF16" fgcolor="#000000" fill="#0083FF" x="594" y="445.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="617" y="453" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">CHUK</text>
+    </a>
+    <a id="51" name="hsa:3479 hsa:3630" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3479+hsa:3630" target="_blank">
+      <rect name="IGF1, IGF-I, IGFI, MGF..." fgcolor="#000000" fill="#FFFFFF" x="44" y="581.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="IGF1, IGF-I, IGFI, MGF..." fgcolor="#000000" fill="#0083FF" x="44" y="581.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="67" y="589" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">IGF1</text>
+    </a>
+    <a id="52" name="hsa:2887" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2887" target="_blank">
+      <rect name="GRB10, GRB-IR, Grb-10, IRBP, MEG1, RSS" fgcolor="#000000" fill="#FFFFFF" x="219" y="624.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GRB10, GRB-IR, Grb-10, IRBP, MEG1, RSS" fgcolor="#000000" fill="#0083FF" x="219" y="624.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="242" y="632" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GRB10</text>
+    </a>
+    <a id="53" name="hsa:2887" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2887" target="_blank">
+      <rect name="GRB10, GRB-IR, Grb-10, IRBP, MEG1, RSS" fgcolor="#000000" fill="#FFFFFF" x="913" y="281.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GRB10, GRB-IR, Grb-10, IRBP, MEG1, RSS" fgcolor="#000000" fill="#0083FF" x="913" y="281.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="289" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GRB10</text>
+    </a>
+    <a id="54" name="hsa:201163" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:201163" target="_blank">
+      <rect name="FLCN, BHD, FLCL" fgcolor="#000000" fill="#FFFFFF" x="556" y="201.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="FLCN, BHD, FLCL" fgcolor="#000000" fill="#0083FF" x="556" y="201.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="579" y="209" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">FLCN</text>
+    </a>
+    <a id="55" name="hsa:57600 hsa:96459" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:57600+hsa:96459" target="_blank">
+      <rect name="FNIP2, FNIPL, MAPO1..." fgcolor="#000000" fill="#FFFFFF" x="556" y="184.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="FNIP2, FNIPL, MAPO1..." fgcolor="#000000" fill="#0083FF" x="556" y="184.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="579" y="192" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">FNIP2</text>
+    </a>
+    <a id="56" name="hsa:1975" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:1975" target="_blank">
+      <rect name="EIF4B, EIF-4B, PRO1843" fgcolor="#000000" fill="#FFFFFF" x="1001" y="419.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="EIF4B, EIF-4B, PRO1843" fgcolor="#000000" fill="#0083FF" x="1001" y="419.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="1024" y="427" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">EIF4B</text>
+    </a>
+    <a id="57" name="hsa:2475" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2475" target="_blank">
+      <rect name="MTOR, FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS" fgcolor="#000000" fill="#FFFFFF" x="728" y="336.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MTOR, FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS" fgcolor="#000000" fill="#0083FF" x="728" y="336.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="751" y="344" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MTOR</text>
+    </a>
+    <a id="58" name="hsa:64798" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:64798" target="_blank">
+      <rect name="DEPTOR, DEP.6, DEPDC6" fgcolor="#000000" fill="#FFFFFF" x="794" y="299.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="DEPTOR, DEP.6, DEPDC6" fgcolor="#000000" fill="#0083FF" x="794" y="299.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="307" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">DEPTOR</text>
+    </a>
+    <a id="59" name="hsa:64223" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:64223" target="_blank">
+      <rect name="MLST8, GBL, GbetaL, LST8, POP3, WAT1" fgcolor="#000000" fill="#FFFFFF" x="794" y="322.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MLST8, GBL, GbetaL, LST8, POP3, WAT1" fgcolor="#000000" fill="#0083FF" x="794" y="322.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="330" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MLST8</text>
+    </a>
+    <a id="60" name="hsa:57521" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:57521" target="_blank">
+      <rect name="RPTOR, KOG1, Mip1" fgcolor="#000000" fill="#FFFFFF" x="662" y="315.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RPTOR, KOG1, Mip1" fgcolor="#000000" fill="#0083FF" x="662" y="315.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="685" y="323" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RPTOR</text>
+    </a>
+    <a id="61" name="hsa:84335" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;AKT1&quot;);">
+      <rect name="AKT1S1, Lobe, PRAS40" fgcolor="#000000" fill="#FFFFFF" x="662" y="360.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="AKT1S1, Lobe, PRAS40" fgcolor="#000000" fill="#00FF00" x="662" y="360.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="685" y="368" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">AKT1S1</text>
+    </a>
+    <a id="62" name="hsa:9675" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:9675" target="_blank">
+      <rect name="TTI1, KIAA0406, smg-10" fgcolor="#000000" fill="#FFFFFF" x="794" y="370.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TTI1, KIAA0406, smg-10" fgcolor="#000000" fill="#0083FF" x="794" y="370.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="378" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TTI1</text>
+    </a>
+    <a id="63" name="hsa:9894" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:9894" target="_blank">
+      <rect name="TELO2, CLK2, TEL2, YHFS" fgcolor="#000000" fill="#FFFFFF" x="794" y="346.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TELO2, CLK2, TEL2, YHFS" fgcolor="#000000" fill="#0083FF" x="794" y="346.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="354" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TELO2</text>
+    </a>
+    <a id="64" name="hsa:2475" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2475" target="_blank">
+      <rect name="MTOR, FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS" fgcolor="#000000" fill="#FFFFFF" x="728" y="566.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MTOR, FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS" fgcolor="#000000" fill="#0083FF" x="728" y="566.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="751" y="574" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MTOR</text>
+    </a>
+    <a id="65" name="hsa:55615" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:55615" target="_blank">
+      <rect name="PRR5, FLJ20185k, PP610, PROTOR-1, PROTOR1" fgcolor="#000000" fill="#FFFFFF" x="662" y="596.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="PRR5, FLJ20185k, PP610, PROTOR-1, PROTOR1" fgcolor="#000000" fill="#0083FF" x="662" y="596.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="685" y="604" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">PRR5</text>
+    </a>
+    <a id="66" name="hsa:64798" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:64798" target="_blank">
+      <rect name="DEPTOR, DEP.6, DEPDC6" fgcolor="#000000" fill="#FFFFFF" x="794" y="529.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="DEPTOR, DEP.6, DEPDC6" fgcolor="#000000" fill="#0083FF" x="794" y="529.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="537" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">DEPTOR</text>
+    </a>
+    <a id="67" name="hsa:64223" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:64223" target="_blank">
+      <rect name="MLST8, GBL, GbetaL, LST8, POP3, WAT1" fgcolor="#000000" fill="#FFFFFF" x="794" y="553.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MLST8, GBL, GbetaL, LST8, POP3, WAT1" fgcolor="#000000" fill="#0083FF" x="794" y="553.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="561" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MLST8</text>
+    </a>
+    <a id="68" name="hsa:253260" type="gene" xlink:href="javascript:void(0)" onclick="kegg_pathway_assays(this, &quot;RICTOR&quot;);">
+      <rect name="RICTOR, AVO3, PIA, hAVO3" fgcolor="#000000" fill="#FFFFFF" x="662" y="566.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="RICTOR, AVO3, PIA, hAVO3" fgcolor="#000000" fill="#00FF00" x="662" y="566.5" width="46" height="17" fill-opacity="0.6"/>
+      <text x="685" y="574" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">RICTOR</text>
+    </a>
+    <a id="69" name="hsa:79109" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:79109" target="_blank">
+      <rect name="MAPKAP1, JC310, MIP1, SIN1, SIN1b, SIN1g" fgcolor="#000000" fill="#FFFFFF" x="662" y="536.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="MAPKAP1, JC310, MIP1, SIN1, SIN1b, SIN1g" fgcolor="#000000" fill="#0083FF" x="662" y="536.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="685" y="544" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">MAPKAP1</text>
+    </a>
+    <a id="70" name="hsa:9675" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:9675" target="_blank">
+      <rect name="TTI1, KIAA0406, smg-10" fgcolor="#000000" fill="#FFFFFF" x="794" y="601.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TTI1, KIAA0406, smg-10" fgcolor="#000000" fill="#0083FF" x="794" y="601.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="609" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TTI1</text>
+    </a>
+    <a id="71" name="hsa:9894" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:9894" target="_blank">
+      <rect name="TELO2, CLK2, TEL2, YHFS" fgcolor="#000000" fill="#FFFFFF" x="794" y="577.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="TELO2, CLK2, TEL2, YHFS" fgcolor="#000000" fill="#0083FF" x="794" y="577.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="817" y="585" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">TELO2</text>
+    </a>
+    <a id="72" name="path:hsa04152" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04152" target="_blank">
+      <rect name="AMPK signaling pathway" fgcolor="#000000" fill="#FFFFFF" x="423.5" y="228" width="95" height="32" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="73" name="path:hsa04810" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04810" target="_blank">
+      <rect name="Regulation of actin cytoskeleton" fgcolor="#000000" fill="#FFFFFF" x="1178" y="537" width="98" height="32" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="74" name="hsa:2932" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:2932" target="_blank">
+      <rect name="GSK3B" fgcolor="#000000" fill="#FFFFFF" x="315" y="300.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="GSK3B" fgcolor="#000000" fill="#0083FF" x="315" y="300.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="338" y="308" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">GSK3B</text>
+    </a>
+    <a id="75" name="hsa:51384 hsa:54361 hsa:7471 hsa:7472 hsa:7473 hsa:7474 hsa:7475 hsa:7476 hsa:7477 hsa:7478 hsa:7479 hsa:7480 hsa:7481 hsa:7482 hsa:7483 hsa:7484 hsa:80326 hsa:81029 hsa:89780" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:51384+hsa:54361+hsa:7471+hsa:7472+hsa:7473+hsa:7474+hsa:7475+hsa:7476+hsa:7477+hsa:7478+hsa:7479+hsa:7480+hsa:7481+hsa:7482+hsa:7483+hsa:7484+hsa:80326+hsa:81029+hsa:89780" target="_blank">
+      <rect name="WNT16..." fgcolor="#000000" fill="#FFFFFF" x="44" y="300.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="WNT16..." fgcolor="#000000" fill="#0083FF" x="44" y="300.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="67" y="308" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">WNT16...</text>
+    </a>
+    <a id="76" name="hsa:11211 hsa:2535 hsa:7855 hsa:7976 hsa:8321 hsa:8322 hsa:8323 hsa:8324 hsa:8325 hsa:8326" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:11211+hsa:2535+hsa:7855+hsa:7976+hsa:8321+hsa:8322+hsa:8323+hsa:8324+hsa:8325+hsa:8326" target="_blank">
+      <rect name="FZD10, CD350, FZ-10, Fz10, FzE7, hFz10..." fgcolor="#000000" fill="#FFFFFF" x="127" y="291.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="FZD10, CD350, FZ-10, Fz10, FzE7, hFz10..." fgcolor="#000000" fill="#0083FF" x="127" y="291.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="299" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">FZD10</text>
+    </a>
+    <a id="77" name="path:hsa04151" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04151" target="_blank">
+      <rect name="PI3K-Akt signaling pathway" fgcolor="#000000" fill="#FFFFFF" x="435.5" y="608" width="97" height="32" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="78" name="hsa:4040 hsa:4041" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:4040+hsa:4041" target="_blank">
+      <rect name="LRP6, ADCAD2, STHAG7..." fgcolor="#000000" fill="#FFFFFF" x="127" y="308.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="LRP6, ADCAD2, STHAG7..." fgcolor="#000000" fill="#0083FF" x="127" y="308.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="150" y="316" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">LRP6</text>
+    </a>
+    <a id="79" name="hsa:1855 hsa:1856 hsa:1857" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:1855+hsa:1856+hsa:1857" target="_blank">
+      <rect name="DVL1, DRS2, DVL, DVL1L1, DVL1P1..." fgcolor="#000000" fill="#FFFFFF" x="219" y="300.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="DVL1, DRS2, DVL, DVL1L1, DVL1P1..." fgcolor="#000000" fill="#0083FF" x="219" y="300.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="242" y="308" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">DVL1</text>
+    </a>
+    <a id="80" name="path:hsa04140" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa04140" target="_blank">
+      <rect name="Regulation of autophagy" fgcolor="#000000" fill="#FFFFFF" x="1200" y="350.5" width="90" height="29" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="81" name="hsa:6249" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6249" target="_blank">
+      <rect name="CLIP1, CLIP, CLIP-170, CLIP170, CYLN1, RSN" fgcolor="#000000" fill="#FFFFFF" x="913" y="244.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="CLIP1, CLIP, CLIP-170, CLIP170, CYLN1, RSN" fgcolor="#000000" fill="#0083FF" x="913" y="244.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="936" y="252" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">CLIP1</text>
+    </a>
+    <a id="82" name="path:hsa00561" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00561" target="_blank">
+      <rect name="Glycerolipid metabolism" fgcolor="#000000" fill="#FFFFFF" x="1199" y="309.5" width="90" height="29" rx="10" fill-opacity="0.0"/>
+    </a>
+    <a id="83" name="hsa:6794" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:6794" target="_blank">
+      <rect name="STK11, LKB1, PJS, hLKB1" fgcolor="#000000" fill="#FFFFFF" x="314" y="188.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="STK11, LKB1, PJS, hLKB1" fgcolor="#000000" fill="#0083FF" x="314" y="188.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="337" y="196" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">STK11</text>
+    </a>
+    <a id="84" name="hsa:55437 hsa:92335" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:55437+hsa:92335" target="_blank">
+      <rect name="STRADB, ALS2CR2, CALS-21, ILPIP, ILPIPA, PAPK, PRO1038..." fgcolor="#000000" fill="#FFFFFF" x="268" y="188.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="STRADB, ALS2CR2, CALS-21, ILPIP, ILPIPA, PAPK, PRO1038..." fgcolor="#000000" fill="#0083FF" x="268" y="188.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="291" y="196" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">STRADB</text>
+    </a>
+    <a id="85" name="hsa:51719 hsa:81617" type="gene" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:51719+hsa:81617" target="_blank">
+      <rect name="CAB39, CGI-66, MO25..." fgcolor="#000000" fill="#FFFFFF" x="360" y="188.5" width="46" height="17" fill-opacity="1"/>
+      <rect name="CAB39, CGI-66, MO25..." fgcolor="#000000" fill="#0083FF" x="360" y="188.5" width="46" height="17" fill-opacity="0.4"/>
+      <text x="383" y="196" font-family="Verdana" font-size="10" fill="black" text-anchor="middle" alignment-baseline="central">CAB39</text>
+    </a>
+  </g>
+</svg>

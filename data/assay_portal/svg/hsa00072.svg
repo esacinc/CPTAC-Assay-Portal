@@ -1,0 +1,101 @@
+<svg id="kegg_svg" viewbox="0 0 496 589" width="685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs id="svg_defs">
+		<filter id="matrix-black">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="1  1  0  0 0
+																	   0  1  0  0 0
+																	   0  1  1  0 0
+																	   0  0  0  0 1"/>
+			<feColorMatrix in="SourceGraphic" type="matrix" values="0  0  0  0 0
+																	   0  0  0  0 0
+																	   0  0  0  0 0
+																	   -1  -1  -1  1 0"/>
+		</filter>
+		<filter id="saturate">
+			<feColorMatrix in="SourceGraphic" type="saturate" values=".5" result="A"/>
+		</filter>
+		<filter id="hueRotate">
+			<feColorMatrix in="SourceGraphic" type="hueRotate" values="45" result="A"/>
+		</filter>
+		<filter id="L2A">
+			<feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="A"/>
+		</filter>
+		<filter id="grayscale">
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+		<filter id="matrix-greyscale">
+			<feColorMatrix in="SourceGraphic" type="matrix" values=".33 .33 .33 0 0 
+														  		   .33 .33 .33 0 0 
+			 													   .33 .33 .33 0 0
+																   0 0 0 1 0"/>
+		</filter>
+		<filter id="matrix-invert">
+			<feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1 
+		                                                           0 -1 0 0 1 
+		                                                           0 0 -1 0 1
+		                                                           0 0 0 1 0"/>
+		</filter>
+		<mask id="name_inverter">
+			<rect fgcolor="#fff" fill="#fff" x="937.5" y="215" width="73" height="34" rx="10" fill-opacity="0.5"></rect>
+		</mask>
+	</defs>
+<!-- Creation date: Aug 30, 2013 09:38:40 +0900 (GMT+09:00) -->
+	
+<g id="image">
+<image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="496px" height="589px"  name="path:hsa00072" org="hsa" number="00072" title="Synthesis and degradation of ketone bodies" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa00072.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00072"></image></g>
+<g id="areas"></g>
+<g id="labels" filter="url(#matrix-invert)"><image x="0" y="0" render-order="1" filter="url(#matrix-black)" width="496px" height="589px"  name="path:hsa00072" org="hsa" number="00072" title="Synthesis and degradation of ketone bodies" xlink:href="http://www.kegg.jp/kegg/pathway/hsa/hsa00072.png" link="http://www.kegg.jp/kegg-bin/show_pathway?hsa00072" mask="url(#name_inverter)"></image></g>
+<g id="links"></g>
+<g id="alls">
+
+ 	<a id="9" name="path:hsa00072" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00072">
+ 		<rect    name="TITLE:Synthesis and degradation of ketone bodies" fgcolor="#000000"  fill="#FFFFFF"    x="117.5"  y="45" width="257" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="10" name="path:hsa00071" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00071">
+ 		<rect    name="Fatty acid degradation" fgcolor="#000000"  fill="#FFFFFF"    x="150"  y="129.5" width="126" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="11" name="hsa:3157 hsa:3158" type="gene" reaction="rn:R01978" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3157+hsa:3158">
+ 		<rect    name="HMGCS1, HMGCS..." fgcolor="#000000"  fill="#BFFFBF"    x="188"  y="267.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="12" name="hsa:3155 hsa:54511" type="gene" reaction="rn:R01360" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:3155+hsa:54511">
+ 		<rect    name="HMGCL, HL..." fgcolor="#000000"  fill="#BFFFBF"    x="188"  y="345.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="13" name="ko:K01574" type="ortholog" reaction="rn:R01366" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?K01574">
+ 		<rect    name="K01574" fgcolor="#000000"  fill="#FFFFFF"    x="189"  y="454.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="14" name="hsa:38 hsa:39" type="gene" reaction="rn:R00238" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:38+hsa:39">
+ 		<rect    name="ACAT1, ACAT, MAT, T2, THIL..." fgcolor="#000000"  fill="#BFFFBF"    x="254"  y="201.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="15" name="hsa:56898 hsa:622" type="gene" reaction="rn:R01361" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:56898+hsa:622">
+ 		<rect    name="BDH2, DHRS6, EFA6R, PRO20933, SDR15C1, UCPA-OR, UNQ6308..." fgcolor="#000000"  fill="#BFFFBF"    x="267"  y="454.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="16" name="path:hsa00620" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00620">
+ 		<rect    name="Pyruvate metabolism" fgcolor="#000000"  fill="#FFFFFF"    x="335"  y="169.5" width="122" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="17" name="path:hsa00010" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00010">
+ 		<rect    name="Glycolysis / Gluconeogenesis" fgcolor="#000000"  fill="#FFFFFF"    x="375.5"  y="247.5" width="73" height="25" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="18" name="hsa:5019 hsa:64064" type="gene" reaction="rn:R00410" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa:5019+hsa:64064">
+ 		<rect    name="OXCT1, OXCT, SCOT..." fgcolor="#000000"  fill="#BFFFBF"    x="50"  y="307.5" width="46" height="17"          fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="19" name="path:hsa00650" type="map" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?hsa00650">
+ 		<rect    name="Butanoate metabolism" fgcolor="#000000"  fill="#FFFFFF"    x="50.5"  y="483" width="71" height="34" rx="10"  fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="20" name="cpd:C00332" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00332">
+ 		<circle  name="C00332" fgcolor="#000000"  fill="#FFFFFF"   cx="211" cy="210" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="21" name="cpd:C00356" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00356">
+ 		<circle  name="C00356" fgcolor="#000000"  fill="#FFFFFF"   cx="211" cy="320" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="22" name="cpd:C00207" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00207">
+ 		<circle  name="C00207" fgcolor="#000000"  fill="#FFFFFF"   cx="211" cy="510" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="23" name="cpd:C00164" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00164">
+ 		<circle  name="C00164" fgcolor="#000000"  fill="#FFFFFF"   cx="211" cy="429" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="24" name="cpd:C01089" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C01089">
+ 		<circle  name="C01089" fgcolor="#000000"  fill="#FFFFFF"   cx="289" cy="510" r="4"                           fill-opacity="0.0"/>
+ 	</a>
+ 	<a id="25" name="cpd:C00024" type="compound" xlink:href="http://www.kegg.jp/dbget-bin/www_bget?C00024">
+ 		<circle  name="C00024" fgcolor="#000000"  fill="#FFFFFF"   cx="333" cy="259" r="4"                           fill-opacity="0.0"/>
+ 	</a></g>
+</svg>

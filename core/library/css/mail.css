@@ -1,0 +1,78 @@
+body {
+    color: #444444;
+    font: normal 12px "Open Sans", "Trebuchet MS", "Arial", sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#content {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 16px 16px 16px;
+    position: relative;
+    top: 10px;
+    width: auto;
+    z-index: 15;
+}
+
+#contentHeader {
+    border-bottom: 1px dotted #cccccc;
+    margin-bottom: 10px;
+    padding: 20px 0 20px 0;
+    position: relative;
+    width: auto;
+}
+
+#contentHeader h1 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 34px;
+    position: relative;
+    top: 20px;
+}
+
+#logo {
+    clear: both;
+    width: 101px;
+    height: 101px;
+    margin: 0 0 20px 0;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container p {
+    font-size: 1.2em;
+}
+
+.container .grid-24 {
+    width: auto;
+    margin-bottom: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#footer {
+    clear: both;
+    border-top: 1px dotted #cccccc;
+    color: #999999;
+    padding: 12px 0 0 0;
+    text-align: center;
+    width: auto;
+    font-size: 1em;
+}
